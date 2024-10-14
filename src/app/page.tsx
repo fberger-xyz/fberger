@@ -1,12 +1,12 @@
 'use client'
 
 import PageWrapper from '@/components/common/PageWrapper'
-// import { useTheme } from 'next-themes'
+import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
 export default function Page() {
     const [mounted, setMounted] = useState(false)
-    // const { theme, forcedTheme, resolvedTheme, systemTheme } = useTheme()
+    const { resolvedTheme } = useTheme()
     useEffect(() => setMounted(true), [])
     if (!mounted) return null
     return (
@@ -23,10 +23,7 @@ export default function Page() {
                         <p className="bg-light-hover">hover</p>
                     </div>
                 ))}
-            {/* <p>theme: {String(theme)}</p>
-            <p>forcedTheme: {String(forcedTheme)}</p>
-            <p>systemTheme: {String(systemTheme)}</p>
-            <p>resolvedTheme: {String(resolvedTheme)}</p> */}
+            <p>Theme: {String(resolvedTheme)}</p>
         </PageWrapper>
     )
 }

@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 html.light {
-    --color-primary: "#000";
-    --color-secondary: "#57534e";
+    --color-primary: #111827;
+    --color-secondary: #7f1d1d;
     --color-discreet: #a1a1aa;
-    --color-inactive: #a8a29e;
+    --color-inactive: #9ca3af;
     --color-background: #f0fdf4;
     --color-light-hover: #e2e8f0;
     --color-light-border: #e5e7eb;
 }
 
 html.dark {
-    --color-primary: "#cffafe";
-    --color-secondary: "#a8a29e";
+    --color-primary: #99f6e4;
+    --color-secondary: #7dd3fc;
     --color-discreet: #52525b;
-    --color-inactive: #71717a;
+    --color-inactive: #4b5563;
     --color-background: #000;
-    --color-light-hover: #1e293b;
-    --color-light-border: #1f2937;
+    --color-light-hover: #171717;
+    --color-light-border: #374151;
 }

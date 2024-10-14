@@ -9,8 +9,7 @@
     "lint": "next lint",
     "eslint:fix": "eslint ./src --fix",
     "prettier:fix": "prettier --write src",
-    "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
-    "codegen": "graphql-codegen --config ./codegen.ts"
+    "lint:fix": "pnpm eslint:fix && pnpm prettier:fix"
   },
   "dependencies": {
     "@next/env": "^14.2.5",

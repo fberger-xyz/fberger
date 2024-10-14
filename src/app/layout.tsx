@@ -51,7 +51,7 @@ export default function RootLayout({
             <body className={cn(font.className, 'h-screen w-screen overflow-hidden')}>
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.DARK} disableTransitionOnChange>
                     <main className="relative flex h-full w-full flex-col bg-background text-lg text-primary transition-all md:text-base">
-                        <Header className="h-20 p-4 text-lg sm:h-fit" />
+                        <Header className="h-16 px-4 text-base sm:h-20 sm:text-lg" />
                         <Suspense
                             fallback={
                                 <div className="flex h-full w-full items-center justify-center">
