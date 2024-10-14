@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.light {
+    --color-primary: "#000";
+    --color-secondary: "#57534e";
+    --color-discreet: #a1a1aa;
+    --color-inactive: #a8a29e;
+    --color-background: #f0fdf4;
+    --color-light-hover: #e2e8f0;
+    --color-light-border: #e5e7eb;
+}
+
+html.dark {
+    --color-primary: "#cffafe";
+    --color-secondary: "#a8a29e";
+    --color-discreet: #52525b;
+    --color-inactive: #71717a;
+    --color-background: #000;
+    --color-light-hover: #1e293b;
+    --color-light-border: #1f2937;
+}
