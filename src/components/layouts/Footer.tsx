@@ -16,22 +16,20 @@ export default function Footer(props: FooterProps) {
                     <p>v{packageJson?.version ?? 'n/a'}</p>
                 </div>
                 {process.env.NODE_ENV !== 'production' && (
-                    <>
-                        <p className="flex flex-col sm:flex-row sm:gap-1">
-                            <span className="text-discreet opacity-50">Environment</span>
-                            <span>{process.env.NODE_ENV}</span>
-                        </p>
-                        <p className="flex flex-col sm:flex-row sm:gap-1">
-                            <span className="text-discreet opacity-50">Screen</span>
-                            <span className="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">xs</span>
-                            <span className="hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">sm</span>
-                            <span className="hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden">md</span>
-                            <span className="hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden">lg</span>
-                            <span className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden">xl</span>
-                            <span className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">2xl</span>
-                        </p>
-                    </>
+                    <p className="flex flex-col sm:flex-row sm:gap-1">
+                        <span className="text-discreet opacity-50">Environment</span>
+                        <span>{process.env.NODE_ENV}</span>
+                    </p>
                 )}
+                <p className="flex flex-col sm:flex-row sm:gap-1">
+                    <span className="text-discreet opacity-50">Screen</span>
+                    <span className="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">xs</span>
+                    <span className="hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">sm</span>
+                    <span className="hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden">md</span>
+                    <span className="hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden">lg</span>
+                    <span className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden">xl</span>
+                    <span className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">2xl</span>
+                </p>
             </div>
             <div className="flex flex-col items-end sm:flex-row sm:gap-1">
                 <p className="text-discreet opacity-50">Copyright © 2024</p>

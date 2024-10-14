@@ -4,17 +4,17 @@
 
 html.light {
     --color-primary: #111827;
-    --color-secondary: #7f1d1d;
+    --color-secondary: #042f2e;
     --color-discreet: #a1a1aa;
     --color-inactive: #9ca3af;
-    --color-background: #f0fdf4;
-    --color-light-hover: #e2e8f0;
+    --color-background: #e5e7eb;
+    --color-light-hover: #d4d4d8;
     --color-light-border: #e5e7eb;
 }
 
 html.dark {
     --color-primary: #99f6e4;
-    --color-secondary: #7dd3fc;
+    --color-secondary: #a8a29e;
     --color-discreet: #52525b;
     --color-inactive: #4b5563;
     --color-background: #000;

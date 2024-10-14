@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Ubuntu_Mono } from 'next/font/google'
 import './globals.css'
 import { APP_METADATA } from '../config/app.config'
 import { cn } from '../utils'
@@ -11,7 +11,7 @@ import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 
 // https://fonts.google.com/
-const font = Manrope({ subsets: ['latin'] })
+const font = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: APP_METADATA.SITE_NAME,
