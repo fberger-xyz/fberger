@@ -16,4 +16,5 @@ export const APP_METADATA = {
 export const APP_THEMES: Record<AppThemes, { index: number; iconId: IconIds }> = {
     [AppThemes.LIGHT]: { index: 0, iconId: IconIds.THEME_LIGHT },
     [AppThemes.DARK]: { index: 1, iconId: IconIds.THEME_DARK },
+    [AppThemes.DEGEN]: { index: 2, iconId: IconIds.THEME_DEGEN },
 }

@@ -7,5 +7,5 @@ export enum AppPagePaths {
 export enum AppThemes {
     LIGHT = 'light',
     DARK = 'dark',
-    // COLORFUL = 'colorful',
+    DEGEN = 'degen',
 }

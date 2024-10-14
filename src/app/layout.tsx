@@ -6,7 +6,6 @@ import { cn } from '../utils'
 import Header from '../components/layouts/Header'
 import { Suspense } from 'react'
 import Footer from '../components/layouts/Footer'
-// import { cookies } from 'next/headers'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 
@@ -49,8 +48,8 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={cn(font.className, 'h-screen w-screen overflow-hidden')}>
-                <ThemeProvider attribute="class" defaultTheme={AppThemes.DARK} disableTransitionOnChange>
-                    <main className="relative flex h-full w-full flex-col bg-background text-lg text-primary transition-all md:text-base">
+                <ThemeProvider attribute="class" defaultTheme={AppThemes.DARK} disableTransitionOnChange themes={Object.values(AppThemes)}>
+                    <main className="background-wallpaper flex h-full w-full flex-col bg-background text-lg text-primary transition-all md:text-base">
                         <Header className="h-16 px-4 text-base sm:h-20 sm:text-lg" />
                         <Suspense
                             fallback={

@@ -24,7 +24,7 @@ export enum IconIds {
     // theme
     THEME_LIGHT = 'carbon:sun',
     THEME_DARK = 'mdi:weather-night',
-    // THEME_COLOR = 'carbon:color-palette',
+    THEME_DEGEN = 'carbon:face-cool',
 
     // hugeicons
     X = 'hugeicons:new-twitter',
