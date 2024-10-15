@@ -6,11 +6,12 @@ export const APP_METADATA = {
     SITE_INFO: 'SITE_INFO',
     SITE_DESCRIPTION: 'SITE_DESCRIPTION',
     SITE_URL: 'https://fberger.vercel.app/',
-    SOCIAL_TWITTER: 'tba',
+    SOCIAL_TWITTER: 'fran6brg',
     ENS: 'fran6.eth',
     PROFILE_PICTURE: 'https://pbs.twimg.com/profile_images/1824850421078220800/jWMhjkyv_400x400.jpg',
     MAIL: 'tba@protonmail.com',
-    TELEGRAM: 'tba',
+    TELEGRAM: 'f6brg',
+    LINKEDIN: 'www.linkedin.com/in/francis-berger-a2404094',
 }
 
 export const APP_THEMES: Record<AppThemes, { index: number; iconId: IconIds }> = {

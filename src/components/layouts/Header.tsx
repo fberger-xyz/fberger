@@ -8,8 +8,8 @@ import { APP_METADATA } from '@/config/app.config'
 
 export default function Header(props: { className?: string }) {
     return (
-        <div className={cn('fixed top-0 flex justify-center w-full bg-transparent backdrop-blur-sm', props.className)}>
-            <div className="flex w-full max-w-[600px] items-center justify-between bg-transparent sm:max-w-[800px] sm:justify-around">
+        <div className={cn('fixed top-0 flex justify-center items-center w-full', props.className)}>
+            <div className="flex h-fit w-full max-w-[650px] items-center justify-between gap-0.5 rounded-md bg-transparent p-2 backdrop-blur-sm sm:justify-between">
                 <LinkWrapper href="/" className="flex items-end gap-2">
                     <Image
                         src={APP_METADATA.PROFILE_PICTURE}

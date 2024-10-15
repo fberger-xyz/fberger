@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 html.light {
-    --color-primary: #111827;
-    --color-secondary: #042f2e;
+    --color-primary: #ef4444;
+    --color-secondary: #111827;
     --color-discreet: #a1a1aa;
     --color-inactive: #9ca3af;
     --color-background: #e5e7eb;
@@ -18,7 +18,7 @@ html.dark {
     --color-discreet: #52525b;
     --color-inactive: #4b5563;
     --color-background: #000;
-    --color-light-hover: #171717;
+    --color-light-hover: #18181b;
     --color-light-border: #374151;
 }
 

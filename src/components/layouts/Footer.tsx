@@ -9,7 +9,7 @@ interface FooterProps {
 
 export default function Footer(props: FooterProps) {
     return (
-        <div className={cn('fixed bottom-0 w-full flex justify-between text-xs z-0 backdrop-blur-sm px-2 py-1.5 text-inactive', props.className)}>
+        <div className={cn('fixed bottom-0 w-full flex justify-between text-xs z-0 px-2 py-1.5 text-inactive', props.className)}>
             <div className="flex items-center gap-4">
                 <div className="flex flex-col sm:flex-row sm:gap-1">
                     <p className="text-discreet opacity-50">UI</p>
