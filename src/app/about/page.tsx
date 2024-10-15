@@ -35,9 +35,6 @@ export default function Page() {
                         <div className="flex items-center gap-2">
                             <p className="text-secondary">Self</p>
                             <p className="text-sm">Dec 2024 - now</p>
-                            <LinkWithIcon href="https://coinshares.com/">
-                                <p>CoinShares</p>
-                            </LinkWithIcon>
                         </div>
                     </li>
                     <li className="flex flex-col">
@@ -56,7 +53,7 @@ export default function Page() {
                             &#x2022; DeFi - run ethereum nodes (with secure access) ; adhoch Ethereum research for top management
                         </p>
                         <p className="text-sm">&#x2022; DeFi - shipped a DeFi dApp from scratch (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm">&#x2022; Misc - worked hard to improve the stack (vite, zustand, tailwind, eslint, CI/CD)</p>
+                        <p className="text-sm">&#x2022; Misc - worked hard to improve the stack (suggested vite, tailwind, zustand, eslint, CI/CD)</p>
                         <p className="text-sm italic">Left to focus on DeFi</p>
                     </li>
                     <li className="flex flex-col">
