@@ -7,10 +7,12 @@ export default function Page() {
         <PageWrapper>
             <div className="flex flex-col gap-2">
                 <p>Contacts</p>
-                <ul className="flex flex-col gap-0 text-discreet">
+                <ul className="flex flex-col gap-0 text-base text-discreet">
                     <li className="flex gap-1">
                         &#x2022; Twitter
-                        <span className="text-secondary">@{APP_METADATA.SOCIAL_TWITTER}</span>
+                        <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIAL_TWITTER}`}>
+                            <span className="text-secondary">@{APP_METADATA.SOCIAL_TWITTER}</span>
+                        </LinkWithIcon>
                     </li>
                     <li className="flex gap-1 text-discreet">
                         &#x2022; Email
@@ -22,23 +24,27 @@ export default function Page() {
                     </li>
                     <li className="flex gap-1 text-discreet">
                         &#x2022; Linkedin
-                        <span className="text-secondary">{APP_METADATA.LINKEDIN}</span>
+                        <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.LINKEDIN}`}>
+                            <span className="text-secondary">Profile</span>
+                        </LinkWithIcon>
                     </li>
                 </ul>
             </div>
 
+            {/* https://dev.to/timreach/how-to-preview-a-nextjs-app-on-a-mobile-device-lf6 */}
+
             {/* <p>todo mention side work</p> */}
             <div className="flex flex-col gap-2">
                 <p>Experience</p>
-                <ul className="flex flex-col gap-0.5 text-discreet">
+                <ul className="flex flex-col gap-4 text-discreet sm:gap-0.5">
                     <li className="flex flex-col">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Self</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
                     <li className="flex flex-col">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
                             <p className="text-sm">Nov 2021 - Dec 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
@@ -46,18 +52,16 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">
-                            &#x2022; Risk - coded apps used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
+                            &#x2022; Coded apps used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
                         </p>
-                        <p className="text-sm">&#x2022; Risk - coded UIs to monitor quantitative trading strategies</p>
-                        <p className="text-sm">
-                            &#x2022; DeFi - run ethereum nodes (with secure access) ; adhoch Ethereum research for top management
-                        </p>
-                        <p className="text-sm">&#x2022; DeFi - shipped a DeFi dApp from scratch (hardhat, ethers, the Graph)</p>
+                        <p className="text-sm">&#x2022; Coded UIs to monitor quantitative trading strategies</p>
+                        <p className="text-sm">&#x2022; Run ethereum nodes (with secure access) + adhoch research</p>
+                        <p className="text-sm">&#x2022; Shipped a DeFi dApp from scratch (hardhat, ethers, the Graph)</p>
                         <p className="text-sm">&#x2022; Misc - worked hard to improve the stack (suggested vite, tailwind, zustand, eslint, CI/CD)</p>
                         <p className="text-sm italic">Left to focus on DeFi</p>
                     </li>
                     <li className="flex flex-col">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Full-Stack Developer</p>
                             <p className="text-sm">Jan 2021 - Sept 2021</p>
                             <LinkWithIcon href="https://stationf.co/">
@@ -68,7 +72,7 @@ export default function Page() {
                         <p className="text-sm italic">Left to work in crypto</p>
                     </li>
                     <li className="flex flex-col">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Transaction Services Intern</p>
                             <p className="text-sm">2017 ; 2019</p>
                             <LinkWithIcon href="https://www.grantthornton.fr/fr/">
@@ -88,28 +92,19 @@ export default function Page() {
                         <div className="flex items-center gap-2">
                             <p className="text-secondary">42</p>
                             <p className="text-sm">Jan 2021</p>
-                            <LinkWithIcon href="https://42.fr/en/42-in-paris/facilities/">
-                                <p>42</p>
-                            </LinkWithIcon>
                         </div>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex items-center gap-2">
                             <p className="text-secondary">Msc. Corporate Finance</p>
                             <p className="text-sm">Jul 2019</p>
-                            <LinkWithIcon href="https://u-paris.fr/en/">
-                                <p>Paris Universités</p>
-                            </LinkWithIcon>
                         </div>
-                        <p className="text-sm">&#x2022; French CFA (DSCG) as external candidate (Oct 2019)</p>
+                        <p className="text-sm">+ DSCG (french CFA) as external candidate</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex items-center gap-2">
                             <p className="text-secondary">Le Wagon</p>
                             <p className="text-sm">Dec 2017</p>
-                            <LinkWithIcon href="https://www.lewagon.com/fr">
-                                <p>Le Wagon</p>
-                            </LinkWithIcon>
                         </div>
                     </li>
                 </ul>

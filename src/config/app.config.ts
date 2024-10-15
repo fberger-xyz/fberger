@@ -11,11 +11,11 @@ export const APP_METADATA = {
     PROFILE_PICTURE: 'https://pbs.twimg.com/profile_images/1824850421078220800/jWMhjkyv_400x400.jpg',
     MAIL: 'tba@protonmail.com',
     TELEGRAM: 'f6brg',
-    LINKEDIN: 'www.linkedin.com/in/francis-berger-a2404094',
+    LINKEDIN: 'francis-berger-a2404094',
 }
 
-export const APP_THEMES: Record<AppThemes, { index: number; iconId: IconIds }> = {
+export const APP_THEMES: Partial<Record<AppThemes, { index: number; iconId: IconIds }>> = {
     [AppThemes.LIGHT]: { index: 0, iconId: IconIds.THEME_LIGHT },
     [AppThemes.DARK]: { index: 1, iconId: IconIds.THEME_DARK },
-    [AppThemes.DEGEN]: { index: 2, iconId: IconIds.THEME_DEGEN },
+    // [AppThemes.DEGEN]: { index: 2, iconId: IconIds.THEME_DEGEN },
 }
