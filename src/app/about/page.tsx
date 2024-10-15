@@ -11,7 +11,7 @@ export default function Page() {
                     <li className="flex gap-1">
                         &#x2022; Twitter
                         <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIAL_TWITTER}`}>
-                            <span className="text-secondary">@{APP_METADATA.SOCIAL_TWITTER}</span>
+                            <span>@{APP_METADATA.SOCIAL_TWITTER}</span>
                         </LinkWithIcon>
                     </li>
                     <li className="flex gap-1 text-discreet">
@@ -25,7 +25,7 @@ export default function Page() {
                     <li className="flex gap-1 text-discreet">
                         &#x2022; Linkedin
                         <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.LINKEDIN}`}>
-                            <span className="text-secondary">Profile</span>
+                            <span>Profile</span>
                         </LinkWithIcon>
                     </li>
                 </ul>
@@ -36,7 +36,7 @@ export default function Page() {
             {/* <p>todo mention side work</p> */}
             <div className="flex flex-col gap-2">
                 <p>Experience</p>
-                <ul className="flex flex-col gap-4 text-discreet sm:gap-0.5">
+                <ul className="flex flex-col gap-4 text-discreet sm:gap-1">
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Self</p>
@@ -46,7 +46,7 @@ export default function Page() {
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
-                            <p className="text-sm">Nov 2021 - Dec 2024</p>
+                            <p className="text-sm underline underline-offset-2">Nov 2021 {'>'} Dec 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
                                 <p>CoinShares</p>
                             </LinkWithIcon>
@@ -57,13 +57,13 @@ export default function Page() {
                         <p className="text-sm">&#x2022; Coded UIs to monitor quantitative trading strategies</p>
                         <p className="text-sm">&#x2022; Run ethereum nodes (with secure access) + adhoch research</p>
                         <p className="text-sm">&#x2022; Shipped a DeFi dApp from scratch (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm">&#x2022; Misc - worked hard to improve the stack (suggested vite, tailwind, zustand, eslint, CI/CD)</p>
+                        <p className="text-sm">&#x2022; Worked hard to improve the stack (suggested vite, tailwind, zustand, eslint, CI/CD)</p>
                         <p className="text-sm italic">Left to focus on DeFi</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Full-Stack Developer</p>
-                            <p className="text-sm">Jan 2021 - Sept 2021</p>
+                            <p className="text-sm underline underline-offset-2">Jan 2021 {'>'} Sept 2021</p>
                             <LinkWithIcon href="https://stationf.co/">
                                 <p>Station F</p>
                             </LinkWithIcon>
@@ -74,8 +74,8 @@ export default function Page() {
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                             <p className="text-secondary">Transaction Services Intern</p>
-                            <p className="text-sm">2017 ; 2019</p>
-                            <LinkWithIcon href="https://www.grantthornton.fr/fr/">
+                            <p className="text-sm underline underline-offset-2">2017 ; 2019</p>
+                            <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
                                 <p>Grant Thornton</p>
                             </LinkWithIcon>
                         </div>
@@ -87,7 +87,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col gap-2">
                 <p>Studies</p>
-                <ul className="flex flex-col gap-0.5 text-discreet">
+                <ul className="flex flex-col text-discreet">
                     <li className="flex flex-col">
                         <div className="flex items-center gap-2">
                             <p className="text-secondary">42</p>
@@ -96,10 +96,16 @@ export default function Page() {
                     </li>
                     <li className="flex flex-col">
                         <div className="flex items-center gap-2">
+                            <p className="text-secondary">DSCG</p>
+                            <p className="text-sm">Oct 2019</p>
+                        </div>
+                        <p className="text-sm">&#x2022; Equivalent to french CPA</p>
+                    </li>
+                    <li className="flex flex-col">
+                        <div className="flex items-center gap-2">
                             <p className="text-secondary">Msc. Corporate Finance</p>
                             <p className="text-sm">Jul 2019</p>
                         </div>
-                        <p className="text-sm">+ DSCG (french CFA) as external candidate</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex items-center gap-2">
