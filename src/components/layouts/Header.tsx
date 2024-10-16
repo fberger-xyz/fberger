@@ -21,9 +21,9 @@ export default function Header(props: { className?: string }) {
                     <p className="hidden text-xl text-inactive sm:block">{APP_METADATA.ENS}</p>
                 </LinkWrapper>
                 <div className="flex gap-0.5 sm:gap-1">
-                    <HeaderButton pagePath={AppPagePaths.HOME} />
-                    <HeaderButton pagePath={AppPagePaths.PROJECTS} />
-                    <HeaderButton pagePath={AppPagePaths.ABOUT} />
+                    {(Object.values(AppPagePaths) as AppPagePaths[]).map((path) => (
+                        <HeaderButton key={path} pagePath={path} />
+                    ))}
                 </div>
                 <ThemeSwitcher />
             </div>
