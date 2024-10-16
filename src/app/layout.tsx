@@ -10,7 +10,7 @@ import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 
 // https://fonts.google.com/
-const font = Ubuntu_Mono({ weight: '400', subsets: ['latin'] })
+const font = Ubuntu_Mono({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: APP_METADATA.SITE_NAME,
