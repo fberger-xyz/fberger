@@ -46,7 +46,7 @@ export default function Page() {
                             <p className="font-bold text-secondary">Risk and DeFi Developer</p>
                             <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
-                                <p className="text-lg font-bold">CoinShares</p>
+                                <p className="text-base font-bold">CoinShares</p>
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">
@@ -65,7 +65,7 @@ export default function Page() {
                             <p className="font-bold text-secondary">Full-Stack Developer</p>
                             <p className="text-sm">Jan 2021 {'>'} Oct 2021</p>
                             <LinkWithIcon href="https://stationf.co/">
-                                <p className="text-lg font-bold">Station F</p>
+                                <p className="text-base font-bold">Station F</p>
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
@@ -76,7 +76,7 @@ export default function Page() {
                             <p className="font-bold text-secondary">Transaction Services Intern</p>
                             <p className="text-sm">2017 ; 2019</p>
                             <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
-                                <p className="text-lg font-bold">Grant Thornton</p>
+                                <p className="text-base font-bold">Grant Thornton</p>
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
