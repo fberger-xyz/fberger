@@ -94,7 +94,7 @@ export default function Page() {
                     </li>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">DSCG</p>
-                        <p className="text-sm">(= french CPA)</p>
+                        <p className="text-sm">(french CPA)</p>
                         <p className="text-sm">2019</p>
                     </li>
                     <li className="flex items-baseline gap-2">
