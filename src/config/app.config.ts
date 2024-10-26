@@ -1,7 +1,6 @@
 import { AppThemes, IconIds } from '@/enums'
 
 export const APP_METADATA = {
-    EMOJI: '👨‍💻',
     SITE_NAME: 'fberger',
     SITE_INFO: 'SITE_INFO',
     SITE_DESCRIPTION: 'SITE_DESCRIPTION',
