@@ -50,15 +50,15 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">
-                            &#x2022; Coded apps used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
+                            &#x2022; Coded web tools used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
                         </p>
-                        <p className="text-sm">&#x2022; Coded UIs used daily to monitor quantitative trading strategies</p>
-                        <p className="text-sm">&#x2022; Run ethereum nodes (with secure access) + adhoch research</p>
-                        <p className="text-sm">&#x2022; Shipped a DeFi dApp from scratch (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm">
-                            &#x2022; Worked hard to improve CS frontend stack (opted for vite, tailwind, zustand - added eslint/prettier hooks)
-                        </p>
-                        <p className="text-sm">&#x2022; Left to focus on DeFi</p>
+                        <p className="text-sm">&#x2022; Coded UIs used daily to monitor trading strategies (orders, positions, P&L)</p>
+                        <p className="text-sm">&#x2022; Coded bots to monitor markets</p>
+                        <p className="text-sm">&#x2022; Adhoch research on Staking or DeFi</p>
+                        <p className="text-sm">&#x2022; Run ethereum nodes (with secure access)</p>
+                        <p className="text-sm">&#x2022; Shipped a DeFi dApp still used (hardhat, ethers, the Graph)</p>
+                        <p className="text-sm">&#x2022; Worked hard to improve CS stack (vite, tailwind, zustand, eslint/prettier, etc.)</p>
+                        <p className="text-sm underline">Left to focus on DeFi</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -69,7 +69,7 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
-                        <p className="text-sm">&#x2022; Left to work in crypto</p>
+                        <p className="text-sm underline">Left to work in crypto</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -81,7 +81,7 @@ export default function Page() {
                         </div>
                         <p className="text-sm">&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
                         <p className="text-sm">&#x2022; Memorandum, due diligences, litigation support</p>
-                        <p className="text-sm">&#x2022; Left to pivot in tech</p>
+                        <p className="text-sm underline">Left to pivot in tech</p>
                     </li>
                 </ul>
             </div>

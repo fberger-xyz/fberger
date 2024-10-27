@@ -9,9 +9,10 @@ interface FooterProps {
 
 export default function Footer(props: FooterProps) {
     return (
-        <div className={cn('fixed bottom-0 w-full flex justify-between text-xs z-0 px-2 py-1.5 text-inactive', props.className)}>
+        <div className={cn('fixed bottom-0 w-full flex justify-between items-end text-xs z-0 px-2 py-1.5 text-inactive', props.className)}>
             <div className="flex items-center gap-4">
-                <div className="flex flex-col sm:flex-row sm:gap-1">
+                <p className="text-discreet opacity-50 sm:hidden">UI v{packageJson?.version ?? 'n/a'}</p>
+                <div className="hidden flex-row gap-1 sm:flex">
                     <p className="text-discreet opacity-50">UI</p>
                     <p>v{packageJson?.version ?? 'n/a'}</p>
                 </div>
@@ -35,7 +36,7 @@ export default function Footer(props: FooterProps) {
             </div>
             <div className="flex flex-col items-end sm:flex-row sm:gap-1">
                 <p className="text-discreet opacity-50">Copyright © 2024</p>
-                <LinkWrapper href="https://x.com/fran6brg">
+                <LinkWrapper href="https://x.com/fran6brg" className="hidden sm:flex">
                     <p>{APP_METADATA.ENS}</p>
                 </LinkWrapper>
             </div>
