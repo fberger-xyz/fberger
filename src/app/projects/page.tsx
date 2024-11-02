@@ -34,12 +34,12 @@ export default function Page() {
             <ProjectCard path={AppPagePaths.PROJECTS}>
                 <p className="text-primary">Aptos Liquidation bot</p>
                 <p className="text-sm text-secondary">Time to code: 🚧 - Nov 2024</p>
-                <SkillsLine skills={['Self-control', 'Autism', 'Basic mathematics']} />
+                <SkillsLine skills={['Autism']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
                 <p className="text-primary">Better Farside</p>
                 <p className="text-sm text-secondary">Time to code: 4 days - Nov 2024</p>
-                <SkillsLine skills={['Vercel', 'Xata DB', 'Prisma ORM', 'Inngest', 'Grammy', 'Vercel']} />
+                <SkillsLine skills={['Next', 'Xata DB', 'Prisma ORM', 'Inngest', 'Grammy']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS}>
                 <p className="text-primary">Seed encrypt</p>
