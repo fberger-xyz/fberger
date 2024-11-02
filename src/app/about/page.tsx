@@ -4,7 +4,8 @@ import { APP_METADATA } from '@/config/app.config'
 
 export default function Page() {
     return (
-        <PageWrapper>
+        <PageWrapper className="gap-8">
+            {/* socials */}
             <div className="flex flex-col gap-2">
                 <p className="font-bold">Contacts</p>
                 <ul className="text-sm text-discreet">
@@ -27,14 +28,13 @@ export default function Page() {
                 </ul>
             </div>
 
-            {/* https://dev.to/timreach/how-to-preview-a-nextjs-app-on-a-mobile-device-lf6 */}
-
+            {/* xp */}
             <div className="flex flex-col gap-2">
                 <div className="flex items-baseline gap-2">
                     <p className="font-bold">Experience</p>
                     <p className="text-xs italic text-discreet">Not exhaustive</p>
                 </div>
-                <ul className="flex flex-col gap-5 text-discreet sm:gap-1">
+                <ul className="flex flex-col gap-3 text-discreet sm:gap-1">
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="font-bold text-secondary">Self</p>
@@ -52,7 +52,7 @@ export default function Page() {
                         <p className="text-sm">
                             &#x2022; Coded web tools used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
                         </p>
-                        <p className="text-sm">&#x2022; Coded UIs used daily to monitor trading strategies (orders, positions, P&L)</p>
+                        <p className="text-sm">&#x2022; Coded UIs used daily to monitor trading strategies in live</p>
                         <p className="text-sm">&#x2022; Coded bots to monitor markets</p>
                         <p className="text-sm">&#x2022; Adhoch research on Staking or DeFi</p>
                         <p className="text-sm">&#x2022; Run ethereum nodes (with secure access)</p>
@@ -85,7 +85,9 @@ export default function Page() {
                     </li>
                 </ul>
             </div>
-            <div className="flex flex-col gap-2">
+
+            {/* studies */}
+            <div className="flex flex-col gap-1">
                 <p className="font-bold">Studies</p>
                 <ul className="text-discreet">
                     <li className="flex items-baseline gap-2">

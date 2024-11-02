@@ -6,20 +6,20 @@ import ExcalidrawSVG from '@/components/excalidraw/ExcalidrawSVG'
 export default function Page() {
     return (
         <PageWrapper className="gap-4">
-            <div className="flex w-full flex-col gap-1">
+            <div className="flex w-full flex-col gap-2">
                 <p className="text-primary">Why I coded this</p>
-                <div className="flex items-baseline gap-2">
+                <div className="flex flex-wrap items-baseline gap-2">
                     <p className="text-sm text-discreet">
-                        1) bc farside frontend is <span className="underline">ugly af</span>.
+                        1) bc farside's frontend is <span className="underline">ugly af</span>.
                     </p>
                     <LinkWithIcon href="https://stationf.co/">
-                        <p className="text-base">See by yourself</p>
+                        <p className="text-nowrap text-sm">See by yourself</p>
                     </LinkWithIcon>
                 </div>
-                <p className="text-sm text-discreet">2) to teach boomers the right tools to use in 2024</p>
+                <p className="text-sm text-discreet">2) to list the right tools to use in 2024</p>
             </div>
             <div className="flex w-full flex-col gap-1">
-                <p className="text-primary">Iframe</p>
+                <p className="text-primary">Preview</p>
                 <IframeWrapper src="https://better-farside.vercel.app/" width="w-full" height="h-[400px]" />
             </div>
             <div className="flex w-full flex-col gap-1">
@@ -32,7 +32,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-1">
                 <p className="text-primary">Conclusion</p>
                 <p className="text-sm text-secondary">
-                    This shows how 1 developer using the right tools can achieve what would otherwise require a full team of five.
+                    This shows how 1 developer using the right tools can achieve what would require a full team of five in the corporate world.
                 </p>
             </div>
         </PageWrapper>
