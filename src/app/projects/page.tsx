@@ -5,7 +5,7 @@ import { ReactNode } from 'react'
 
 function SkillsLine(props: { skills: string[] }) {
     return (
-        <div className="mt-2 flex w-full justify-end gap-1 text-xs">
+        <div className="my-1 flex w-full justify-end gap-1 text-xs">
             {props.skills.map((skill) => (
                 <div className="flex w-fit flex-wrap items-center border border-inactive px-1 py-0.5">
                     <p className="text-nowrap text-secondary">{skill}</p>

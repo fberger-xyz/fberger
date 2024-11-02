@@ -22,13 +22,13 @@ export const useAppStore = create<{
     initialized: false,
     links: [
         {
-            name: 'Hi',
+            name: '/home',
             path: AppPagePaths.HOME,
             enabled: true,
             sublinks: [],
         },
         {
-            name: 'Projects',
+            name: '/projects',
             path: AppPagePaths.PROJECTS,
             enabled: true,
             sublinks: [
@@ -41,7 +41,7 @@ export const useAppStore = create<{
             ],
         },
         {
-            name: 'About',
+            name: '/about',
             path: AppPagePaths.ABOUT,
             enabled: true,
             sublinks: [],
