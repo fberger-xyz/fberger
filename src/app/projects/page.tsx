@@ -39,7 +39,7 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            <p className="text-xs text-default">Projects I can publicly speak about</p>
+            <p className="text-default">Projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
                 <div className="flex w-full flex-col gap-3">
                     {/* <ProjectCard path={AppPagePaths.PROJECTS}>
@@ -48,9 +48,19 @@ export default function Page() {
                         <p className="text-sm text-secondary">🚧</p>
                         <SkillsLine skills={['Autism']} />
                     </ProjectCard> */}
+                    <ProjectCard path={AppPagePaths.PROJECTS_SAFES_TRADES}>
+                        <div className="flex justify-between">
+                            <p className="text-primary">Safes Trades</p>
+                            <p className="text-xs text-secondary">Nov 2024</p>
+                        </div>
+                        <p className="text-xs text-default">WIP</p>
+                        <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap', 'Vercel']} />
+                    </ProjectCard>
                     <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
-                        <p className="text-primary">Better Farside</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
+                        <div className="flex justify-between">
+                            <p className="text-primary">Better Farside</p>
+                            <p className="text-xs text-secondary">Nov 2024</p>
+                        </div>
                         <p className="text-xs text-default">Time to code: 4 days</p>
                         <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
                     </ProjectCard>
@@ -70,8 +80,10 @@ export default function Page() {
                     path="https://www.linkedin.com/posts/francis-berger-a2404094_degen-web3-nft-activity-6879062483768795136-WomP?utm_source=share&utm_medium=member_desktop"
                     target="_blank"
                 >
-                    <p className="text-primary">NFT stonks</p>
-                    <p className="text-xs text-secondary">Oct 2021</p>
+                    <div className="flex justify-between">
+                        <p className="text-primary">NFT stonks</p>
+                        <p className="text-xs text-secondary">Oct 2021</p>
+                    </div>
                     <p className="text-xs text-default">Time to code: 3 weeks</p>
                     <SkillsLine skills={['VueJS', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud', 'Netlify']} />
                 </ProjectCard>

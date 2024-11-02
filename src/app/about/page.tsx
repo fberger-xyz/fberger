@@ -5,7 +5,7 @@ import PageWrapper from '@/components/common/PageWrapper'
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            <p className="text-xs text-default">Life and career</p>
+            <p className="text-default">Life and career</p>
             {/* socials */}
             {/* <div className="flex flex-col gap-2">
                 <p className="font-bold">Contacts</p>
