@@ -31,7 +31,14 @@ export const useAppStore = create<{
             name: 'Projects',
             path: AppPagePaths.PROJECTS,
             enabled: true,
-            sublinks: [],
+            sublinks: [
+                {
+                    name: 'Better Farside',
+                    path: AppPagePaths.PROJECTS_BETTER_FARSIDE,
+                    enabled: true,
+                    sublinks: [],
+                },
+            ],
         },
         {
             name: 'About',

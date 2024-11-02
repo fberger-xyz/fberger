@@ -22,9 +22,11 @@ export default function Header(props: { className?: string }) {
                     <p className="hidden text-xl text-primary sm:block">{APP_METADATA.ENS}</p>
                 </LinkWrapper>
                 <div className="flex gap-0.5 sm:gap-1">
-                    {(Object.values(AppPagePaths) as AppPagePaths[]).map((path) => (
-                        <HeaderButton key={path} pagePath={path} />
-                    ))}
+                    {(Object.values(AppPagePaths) as AppPagePaths[])
+                        .filter((path) => path.split('/').length < 3)
+                        .map((path) => (
+                            <HeaderButton key={path} pagePath={path} />
+                        ))}
                 </div>
                 <ThemeSwitcher />
             </div>

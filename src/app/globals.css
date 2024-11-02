@@ -5,10 +5,11 @@
 html.light {
     --color-primary: #ef4444;
     --color-secondary: #111827;
-    --color-discreet: #a1a1aa;
+    --color-discreet: #71717a;
     --color-inactive: #9ca3af;
-    --color-background: #e5e7eb;
+    --color-background: #e4e4e7;
     --color-light-hover: #d4d4d8;
+    --color-very-light-hover: #e4e4e7;
     --color-light-border: #e5e7eb;
 }
 
@@ -19,10 +20,11 @@ html.dark {
     --color-inactive: #4b5563;
     --color-background: #000;
     --color-light-hover: #1e293b;
+    --color-very-light-hover: #020617;
     --color-light-border: #374151;
 }
 
-html.degen {
+/* html.degen {
     --color-primary: red;
     --color-secondary: green;
     --color-discreet: pink;
@@ -37,4 +39,4 @@ html.degen .background-wallpaper {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+} */
