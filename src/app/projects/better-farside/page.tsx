@@ -12,6 +12,7 @@ export default function Page() {
                     <LinkWrapper href="https://better-farside.vercel.app/" className="underline-offset-4 hover:underline">
                         <p className="w-full text-xl text-primary md:text-3xl">Better Farside</p>
                     </LinkWrapper>
+                    <p className="text-xs text-default">Just better than the original</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>

@@ -1,38 +1,33 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
-import LinkWrapper from '@/components/common/LinkWrapper'
+// import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import { APP_METADATA } from '@/config/app.config'
-import { AppPagePaths } from '@/enums'
+// import { AppPagePaths } from '@/enums'
 
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            {/* context */}
-            <div className="flex flex-col gap-2">
-                <p className="font-bold">Contact me!</p>
-                <p className="text-sm text-default">For any inquiries regarding [contracting, hiring, investment], reach out on:</p>
+            {/* tldr */}
+            <div className="mt-4 flex flex-col gap-2">
+                <p className="font-bold">Tldr;</p>
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
-                        &#x2022; Telegram
-                        <span className="font-bold text-secondary">@{APP_METADATA.TELEGRAM}</span>
+                        &#x2022;
+                        <p>Into DeFi - always learning</p>
                     </li>
                     <li className="flex gap-3">
-                        &#x2022; Twitter
-                        <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIAL_TWITTER}`}>
-                            <span>@{APP_METADATA.SOCIAL_TWITTER}</span>
-                        </LinkWithIcon>
+                        &#x2022;
+                        <p>Senior Fullstack Dev</p>
                     </li>
                     <li className="flex gap-3">
-                        &#x2022; Linkedin
-                        <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.LINKEDIN}`}>
-                            <span>Francis Berger</span>
-                        </LinkWithIcon>
+                        &#x2022;
+                        <p>Experiences in Risk Management and M&A</p>
                     </li>
                 </ul>
             </div>
 
             {/* index */}
-            <div className="mt-4 flex flex-col gap-2">
+            {/* <div className="mt-4 flex flex-col gap-2">
                 <p className="text-primary">Index</p>
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
@@ -54,15 +49,24 @@ export default function Page() {
                         <p>life and career</p>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
-            {/* tldr */}
-            <div className="mt-4 flex flex-col gap-2">
-                <p className="text-primary">Tldr</p>
-                <ul className="flex flex-col gap-1 text-base text-default">
+            {/* context */}
+            <div className="flex flex-col gap-2">
+                <p className="font-bold">Contact</p>
+                <p className="text-sm text-default">For any inquiries [contracting, hiring, investment], reach out on:</p>
+                <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
-                        &#x2022;
-                        <p>redacted</p>
+                        &#x2022; Telegram
+                        <LinkWithIcon href={`https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`}>@{APP_METADATA.SOCIALS.TELEGRAM}</LinkWithIcon>
+                    </li>
+                    <li className="flex gap-3">
+                        &#x2022; Twitter
+                        <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIALS.TWITTER}`}>@{APP_METADATA.SOCIALS.TWITTER}</LinkWithIcon>
+                    </li>
+                    <li className="flex gap-3">
+                        &#x2022; Linkedin
+                        <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`}>Francis Berger</LinkWithIcon>
                     </li>
                 </ul>
             </div>

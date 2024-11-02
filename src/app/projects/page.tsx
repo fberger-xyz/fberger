@@ -39,32 +39,33 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            <div className="flex w-full flex-col">
+            <p className="text-xs text-default">Projects I can publicly speak about</p>
+            <div className="flex w-full flex-col gap-3">
                 <div className="flex w-full flex-col gap-3">
-                    <ProjectCard path={AppPagePaths.PROJECTS}>
+                    {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Aptos Liquidation bot</p>
                         <p className="text-sm text-secondary">Nov 2024</p>
                         <p className="text-sm text-secondary">🚧</p>
                         <SkillsLine skills={['Autism']} />
-                    </ProjectCard>
+                    </ProjectCard> */}
                     <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
                         <p className="text-primary">Better Farside</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
-                        <p className="text-xs text-secondary">Time to code: 4 days</p>
-                        <SkillsLine skills={['Next', 'Xata DB', 'Prisma ORM', 'Inngest', 'Grammy']} />
+                        <p className="text-xs text-default">Time to code: 4 days</p>
+                        <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
                     </ProjectCard>
-                    <ProjectCard path={AppPagePaths.PROJECTS}>
+                    {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
                         <p className="text-xs text-secondary">Time to code: 2 days</p>
                         <SkillsLine skills={['BIP44', 'Next']} />
-                    </ProjectCard>
+                    </ProjectCard> */}
                 </div>
-                <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
+                {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Nov 2024</p>
                     <p className="text-base text-secondary">Risk and DeFi Developer @CoinShares</p>
                     <p className="text-xs text-inactive">Nov 2021</p>
-                </div>
+                </div> */}
                 <ProjectCard
                     path="https://www.linkedin.com/posts/francis-berger-a2404094_degen-web3-nft-activity-6879062483768795136-WomP?utm_source=share&utm_medium=member_desktop"
                     target="_blank"
@@ -74,11 +75,11 @@ export default function Page() {
                     <p className="text-xs text-secondary">Time to code: 3 weeks</p>
                     <SkillsLine skills={['VueJS', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud', 'Netlify']} />
                 </ProjectCard>
-                <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
+                {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Oct 2021</p>
                     <p className="text-base text-secondary">Full Stack Developer @StationF</p>
                     <p className="text-xs text-inactive">Janv 2021</p>
-                </div>
+                </div> */}
             </div>
         </PageWrapper>
     )
