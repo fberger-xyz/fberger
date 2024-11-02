@@ -32,7 +32,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why did I code this?</p>
                 <div className="flex flex-wrap items-baseline gap-2">
-                    <p className="text-sm text-default">- to automate limit orders and small leverages on risks assets</p>
+                    <p className="text-sm text-default">- to automate loops, limit orders and small leverages on lending markets</p>
                 </div>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
