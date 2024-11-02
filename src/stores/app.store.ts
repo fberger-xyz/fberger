@@ -32,7 +32,7 @@ export const useAppStore = create<{
     initialized: false,
     links: [
         {
-            name: ' ~ ',
+            name: 'home',
             path: AppPagePaths.HOME,
             enabled: true,
             sublinks: [],

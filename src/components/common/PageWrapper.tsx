@@ -18,8 +18,8 @@ export default function PageWrapper({ children, className, ...props }: { childre
             <div
                 {...props}
                 className={cn(
-                    'mx-auto mb-40 mt-20 flex max-w-[600px] flex-col items-start gap-2 overflow-auto px-3 sm:max-w-[800px] sm:px-16 md:mt-24 md:max-w-[900px] md:gap-6',
-                    className,
+                    'mx-auto mb-40 mt-20 flex max-w-[600px] flex-col items-start overflow-auto px-4 sm:max-w-[800px] sm:px-16 md:mt-24 md:max-w-[900px] ',
+                    className, // gap-2 md:gap-6
                 )}
             >
                 {pathname !== '/' && <GoBack />}

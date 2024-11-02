@@ -9,19 +9,19 @@ import { APP_METADATA } from '@/config/app.config'
 export default function Header(props: { className?: string }) {
     return (
         <div className={cn('fixed top-0 flex justify-center items-center w-full', props.className)}>
-            <div className="relative flex h-fit w-full max-w-[650px] items-center justify-between gap-0.5 rounded-xl bg-transparent p-2 backdrop-blur-sm sm:justify-between">
-                <div className="absolute inset-0 z-10 rounded-xl bg-background opacity-50" />
+            <div className="relative flex h-fit w-full max-w-[650px] items-center justify-between gap-0.5 rounded-xl bg-transparent py-2 backdrop-blur-sm sm:justify-between">
+                <div className="absolute inset-0 z-10 rounded-xl bg-background opacity-20" />
                 <LinkWrapper href="/" className="z-50 flex items-end gap-2">
                     <Image
                         src={APP_METADATA.PROFILE_PICTURE}
                         width={38}
                         height={38}
                         alt="https://x.com/fran6brg/photo"
-                        className="rounded-md bg-discreet p-0.5"
+                        className="rounded-md bg-default p-0.5"
                     />
-                    <p className="hidden text-xl text-primary sm:block">{APP_METADATA.SITE_AUTHOR}</p>
+                    <p className="hidden text-2xl text-primary sm:block">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
-                <div className="z-50 flex gap-1 sm:gap-1.5">
+                <div className="z-50 flex sm:gap-1 md:gap-1.5">
                     {(Object.values(AppPagePaths) as AppPagePaths[])
                         .filter((path) => path.split('/').length < 3)
                         .map((path) => (

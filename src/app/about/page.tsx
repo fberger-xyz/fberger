@@ -1,40 +1,40 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA } from '@/config/app.config'
+// import { APP_METADATA } from '@/config/app.config'
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-8">
+        <PageWrapper className="mb-10 gap-5">
             {/* socials */}
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
                 <p className="font-bold">Contacts</p>
-                <ul className="text-sm text-discreet">
+                <ul className="flex flex-col gap-1 text-sm text-default">
+                    <li className="flex gap-2 text-default">
+                        Telegram
+                        <span className="text-secondary">@{APP_METADATA.TELEGRAM}</span>
+                    </li>
                     <li className="flex gap-2">
                         Twitter
                         <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIAL_TWITTER}`}>
                             <span>@{APP_METADATA.SOCIAL_TWITTER}</span>
                         </LinkWithIcon>
                     </li>
-                    <li className="flex gap-2 text-discreet">
-                        Telegram
-                        <span className="text-secondary">@{APP_METADATA.TELEGRAM}</span>
-                    </li>
-                    <li className="flex gap-2 text-discreet">
+                    <li className="flex gap-2 text-default">
                         Linkedin
                         <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.LINKEDIN}`}>
                             <span>Profile</span>
                         </LinkWithIcon>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* xp */}
             <div className="flex flex-col gap-2">
                 <div className="flex items-baseline gap-2">
-                    <p className="font-bold">Experiences</p>
-                    <p className="text-xs italic text-light-hover">Not exhaustive</p>
+                    <p>Experiences</p>
+                    <p className="text-xs italic text-light-hover">Excluding freelance and side projects</p>
                 </div>
-                <ul className="flex flex-col gap-3 text-discreet sm:gap-1">
+                <ul className="flex flex-col gap-3 text-default sm:gap-1">
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="font-bold text-secondary">Self</p>
@@ -49,7 +49,7 @@ export default function Page() {
                                 <p className="text-base">CoinShares</p>
                             </LinkWithIcon>
                         </div>
-                        <p className="text-sm">&#x2022; Coded frontends and backends used daily by traders, ops and quants</p>
+                        <p className="text-sm">&#x2022; Coded frontends and backends used daily by ops, quants, traders and top management</p>
                         <p className="pl-4 text-sm">1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)</p>
                         <p className="pl-4 text-sm">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
                         <p className="pl-4 text-sm">3) to adapt to market macro events</p>
@@ -87,8 +87,8 @@ export default function Page() {
 
             {/* studies */}
             <div className="flex flex-col gap-1">
-                <p className="font-bold">Studies</p>
-                <ul className="text-discreet">
+                <p>Studies</p>
+                <ul className="text-default">
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">42</p>
                         <p className="text-sm">2020</p>
