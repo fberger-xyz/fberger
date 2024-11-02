@@ -54,7 +54,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm text-default">
-                    Using these tools, one developer can achieve what would require a full team in the corporate world.
+                    With these tools, a skilled developer can achieve feats that would normally an entire team in the corporate.
                 </p>
             </div>
         </PageWrapper>
