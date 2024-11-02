@@ -41,7 +41,7 @@ export default function Page() {
                 <p className="text-secondary">How it works</p>
                 <div className="flex w-full flex-col items-center">
                     <ExcalidrawSVG src="/better-farside" className="w-full p-2" />
-                    <p className="text-xs italic text-inactive">it's not complicated</p>
+                    <p className="text-xs italic text-inactive">It's that simple</p>
                 </div>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-8">
