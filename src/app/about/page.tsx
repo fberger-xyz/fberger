@@ -53,7 +53,7 @@ export default function Page() {
                         <p className="text-sm">&#x2022; Coded frontends and backends used daily by ops, quants, traders and top management</p>
                         <p className="pl-4 text-sm">1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)</p>
                         <p className="pl-4 text-sm">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
-                        <p className="pl-4 text-sm">3) to adapt to market macro events</p>
+                        <p className="pl-4 text-sm">3) to adapt strategies to economic calendar</p>
                         <p className="text-sm">&#x2022; Research and training on Staking and DeFi</p>
                         <p className="text-sm">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
                         <p className="text-sm">&#x2022; Run ethereum nodes (with https access)</p>
