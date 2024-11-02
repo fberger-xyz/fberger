@@ -29,7 +29,12 @@ export default function HeaderButton(props: { pagePath: AppPagePaths; disabled?:
                 'bg-light-hover': isCurrentPath(),
             })}
         >
-            <p className={cn({ 'text-primary': isCurrentPath(), 'text-inactive': !isCurrentPath() })}>{link?.name ?? 'Not found'}</p>
+            <p className={cn({ 'text-primary': isCurrentPath(), 'text-inactive': !isCurrentPath() })}>
+                {props.pagePath !== AppPagePaths.HOME && (
+                    <span className={cn({ 'text-inactive': isCurrentPath(), 'text-light-hover': !isCurrentPath() })}>/</span>
+                )}
+                {link?.name ?? 'Not found'}
+            </p>
         </LinkWrapper>
     )
 }
