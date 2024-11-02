@@ -21,7 +21,7 @@ export default function Page() {
                     <p className="text-xs text-discreet">Conclusion</p>
                 </div>
             </div>
-            <div className="flex w-full flex-col gap-2 border-t border-light-hover pt-6">
+            <div className="flex w-full flex-col gap-2 border-t border-light-hover pt-8">
                 <p className="text-secondary">Why I coded this ?</p>
                 <div className="flex flex-wrap items-baseline gap-2">
                     <p className="text-sm text-discreet">
@@ -33,18 +33,18 @@ export default function Page() {
                 </div>
                 <p className="text-sm text-discreet">2) to list the right tools to use in 2024</p>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-6">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-8">
                 <p className="text-secondary">Preview 📷</p>
                 <IframeWrapper src="https://better-farside.vercel.app/" width="w-full" height="h-[400px]" />
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-6">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-8">
                 <p className="text-secondary">How it works</p>
                 <div className="flex w-full flex-col items-center">
                     <ExcalidrawSVG src="/better-farside" className="w-full p-2" />
-                    <p className="text-xs italic text-inactive">drawn with excalidraw</p>
+                    <p className="text-xs italic text-inactive">it's not complicated</p>
                 </div>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-6">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-8">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm text-secondary">
                     This shows how 1 developer using the right tools can achieve what would require a full team of five devs in the corporate world.
