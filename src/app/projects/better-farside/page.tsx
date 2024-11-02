@@ -15,14 +15,14 @@ export default function Page() {
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
-                    <p className="text-xs text-discreet">Why I coded this ?</p>
+                    <p className="text-xs text-discreet">Why did I code this?</p>
                     <p className="text-xs text-discreet">Preview</p>
                     <p className="text-xs text-discreet">How it works</p>
                     <p className="text-xs text-discreet">Conclusion</p>
                 </div>
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover pt-8">
-                <p className="text-secondary">Why I coded this ?</p>
+                <p className="text-secondary">Why did I code this?</p>
                 <div className="flex flex-wrap items-baseline gap-2">
                     <p className="text-sm text-discreet">
                         1) bc farside's frontend is <span className="underline">ugly af</span>

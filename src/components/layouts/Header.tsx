@@ -19,7 +19,7 @@ export default function Header(props: { className?: string }) {
                         alt="https://x.com/fran6brg/photo"
                         className="rounded-md bg-discreet p-0.5"
                     />
-                    <p className="hidden text-xl text-primary sm:block">{APP_METADATA.ENS}</p>
+                    <p className="hidden text-xl text-primary sm:block">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
                 <div className="z-50 flex gap-1 sm:gap-1.5">
                     {(Object.values(AppPagePaths) as AppPagePaths[])

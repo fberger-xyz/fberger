@@ -37,7 +37,7 @@ export default function Footer(props: FooterProps) {
             <div className="flex flex-col items-end sm:flex-row sm:gap-1">
                 <p className="text-discreet opacity-50">Copyright © 2024</p>
                 <LinkWrapper href="https://x.com/fran6brg" className="hidden sm:flex">
-                    <p>{APP_METADATA.ENS}</p>
+                    <p>{APP_METADATA.SITE_NAME}</p>
                 </LinkWrapper>
             </div>
         </div>

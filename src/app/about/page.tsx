@@ -31,8 +31,8 @@ export default function Page() {
             {/* xp */}
             <div className="flex flex-col gap-2">
                 <div className="flex items-baseline gap-2">
-                    <p className="font-bold">Experience</p>
-                    <p className="text-xs italic text-discreet">Not exhaustive</p>
+                    <p className="font-bold">Experiences</p>
+                    <p className="text-xs italic text-light-hover">Not exhaustive</p>
                 </div>
                 <ul className="flex flex-col gap-3 text-discreet sm:gap-1">
                     <li className="flex flex-col">
@@ -49,15 +49,14 @@ export default function Page() {
                                 <p className="text-base">CoinShares</p>
                             </LinkWithIcon>
                         </div>
-                        <p className="text-sm">
-                            &#x2022; Coded web tools used daily to monitor risk exposure (hedge funds, lending, staking) with max granularity
-                        </p>
-                        <p className="text-sm">&#x2022; Coded UIs used daily to monitor trading strategies in live</p>
-                        <p className="text-sm">&#x2022; Coded bots to monitor markets</p>
-                        <p className="text-sm">&#x2022; Adhoch research on Staking or DeFi</p>
-                        <p className="text-sm">&#x2022; Run ethereum nodes (with secure access)</p>
-                        <p className="text-sm">&#x2022; Shipped a DeFi dApp still used (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm">&#x2022; Worked hard to improve CS stack (vite, tailwind, zustand, eslint/prettier, etc.)</p>
+                        <p className="text-sm">&#x2022; Coded frontends and backends used daily by traders, ops and quants</p>
+                        <p className="pl-4 text-sm">1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)</p>
+                        <p className="pl-4 text-sm">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
+                        <p className="pl-4 text-sm">3) to adapt to market macro events</p>
+                        <p className="text-sm">&#x2022; Research and training on Staking and DeFi</p>
+                        <p className="text-sm">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
+                        <p className="text-sm">&#x2022; Run ethereum nodes (with https access)</p>
+                        <p className="text-sm">&#x2022; Worked hard to improve CS legacy stack (vite, tailwind, zustand, eslint/prettier)</p>
                         <p className="text-sm underline">Left to focus on DeFi</p>
                     </li>
                     <li className="flex flex-col">

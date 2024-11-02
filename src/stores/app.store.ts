@@ -11,9 +11,19 @@ export const useAppStore = create<{
     initialized: boolean
     loading: boolean
     links: InterfaceAppLink[]
-    actions: Record<string, () => void>
+    about: {
+        self: boolean
+        cs: boolean
+        stationf: boolean
+        ts: boolean
+    }
+    actions: {
+        about: {
+            display: (section: 'self' | 'cs' | 'stationf' | 'ts') => void
+        }
+    }
     computeds: Record<string, () => void>
-}>(() => ({
+}>((set) => ({
     name: APP_METADATA.SITE_NAME,
     version: '0.0.0',
     env: String(process.env.NEXT_PUBLIC_APP_ENV),
@@ -22,7 +32,7 @@ export const useAppStore = create<{
     initialized: false,
     links: [
         {
-            name: '~',
+            name: ' ~ ',
             path: AppPagePaths.HOME,
             enabled: true,
             sublinks: [],
@@ -47,6 +57,16 @@ export const useAppStore = create<{
             sublinks: [],
         },
     ],
-    actions: {},
+    about: {
+        self: false,
+        cs: false,
+        stationf: false,
+        ts: false,
+    },
+    actions: {
+        about: {
+            display: (section) => set((state) => ({ about: { ...state.about, [section]: !state.about[section] } })),
+        },
+    },
     computeds: {},
 }))
