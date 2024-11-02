@@ -72,7 +72,7 @@ export default function Page() {
                 >
                     <p className="text-primary">NFT stonks</p>
                     <p className="text-xs text-secondary">Oct 2021</p>
-                    <p className="text-xs text-secondary">Time to code: 3 weeks</p>
+                    <p className="text-xs text-default">Time to code: 3 weeks</p>
                     <SkillsLine skills={['VueJS', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud', 'Netlify']} />
                 </ProjectCard>
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">

@@ -11,11 +11,11 @@ interface FooterProps {
 
 export default function Footer(props: FooterProps) {
     return (
-        <div className={cn('fixed bottom-0 w-full flex justify-between items-baseline text-sm z-0 px-2 pb-1.5 opacity-50', props.className)}>
+        <div className={cn('fixed bottom-0 w-full flex justify-between items-baseline text-sm z-0 px-3 pb-1.5 opacity-50', props.className)}>
             <div className="flex items-start gap-1 text-inactive">
                 <p>UI v{packageJson?.version ?? 'n/a'}</p>
             </div>
-            <div className="flex items-end gap-3 text-default">
+            <div className="flex items-end gap-3.5 text-default">
                 <LinkWrapper target="_blank" href={`https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`}>
                     <IconWrapper icon={IconIds.TELEGRAM} className="h-5 w-5" />
                 </LinkWrapper>
