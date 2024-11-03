@@ -36,13 +36,13 @@ export default function Page() {
                     <p className="text-xs italic text-light-hover">Excluding freelance and side projects</p>
                 </div>
                 <ul className="flex flex-col gap-3 text-default sm:gap-1">
-                    <li className="flex flex-col">
+                    <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Self</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
-                    <li className="flex flex-col">
+                    <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
                             <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
@@ -58,9 +58,9 @@ export default function Page() {
                         <p className="text-sm">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
                         <p className="text-sm">&#x2022; Run ethereum nodes (with https access)</p>
                         <p className="text-sm">&#x2022; Worked hard to improve CS legacy stack (vite, tailwind, zustand, eslint/prettier)</p>
-                        <p className="text-sm underline">Left to focus on DeFi</p>
+                        <p className="text-sm">{'>'} Left to focus on DeFi</p>
                     </li>
-                    <li className="flex flex-col">
+                    <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Full-Stack Developer</p>
                             <p className="text-sm">Jan 2021 {'>'} Oct 2021</p>
@@ -69,7 +69,7 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm">&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
-                        <p className="text-sm underline">Left to work in crypto</p>
+                        <p className="text-sm">{'>'} Left to work in crypto</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -81,7 +81,7 @@ export default function Page() {
                         </div>
                         <p className="text-sm">&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
                         <p className="text-sm">&#x2022; Memorandum, due diligences, litigation support</p>
-                        <p className="text-sm underline">Left to pivot in tech</p>
+                        <p className="text-sm">{'>'} Left to pivot in tech</p>
                     </li>
                 </ul>
             </div>

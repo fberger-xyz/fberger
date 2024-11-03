@@ -34,12 +34,6 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why did I code this?</p>
-                {/* <div className="flex flex-wrap items-baseline gap-2">
-                    <p className="text-sm text-default">- for crypto twitter, bc farside's frontend is ugly af</p>
-                    <LinkWithIcon href="https://stationf.co/">
-                        <p className="text-nowrap text-sm">See by yourself</p>
-                    </LinkWithIcon>
-                </div> */}
                 <p className="text-sm text-default">- tba</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">

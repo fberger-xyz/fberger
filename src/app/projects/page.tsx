@@ -28,7 +28,7 @@ function ProjectCard({
             <LinkWrapper
                 href={props.path}
                 target={target}
-                className="flex w-full flex-col rounded-sm border border-light-hover p-1 transition duration-500 hover:border-primary"
+                className="flex w-full flex-col rounded-sm border border-light-hover p-1 transition duration-300 hover:border-primary"
             >
                 {props.children}
             </LinkWrapper>
@@ -76,10 +76,7 @@ export default function Page() {
                     <p className="text-base text-secondary">Risk and DeFi Developer @CoinShares</p>
                     <p className="text-xs text-inactive">Nov 2021</p>
                 </div> */}
-                <ProjectCard
-                    path="https://www.linkedin.com/posts/francis-berger-a2404094_degen-web3-nft-activity-6879062483768795136-WomP?utm_source=share&utm_medium=member_desktop"
-                    target="_blank"
-                >
+                <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS}>
                     <div className="flex justify-between">
                         <p className="text-primary">NFT stonks</p>
                         <p className="text-xs text-secondary">Oct 2021</p>

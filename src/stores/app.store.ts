@@ -54,6 +54,12 @@ export const useAppStore = create<{
                     enabled: true,
                     sublinks: [],
                 },
+                {
+                    name: 'NFT Stonks',
+                    path: AppPagePaths.PROJECTS_NFT_STONKS,
+                    enabled: true,
+                    sublinks: [],
+                },
             ],
         },
         {

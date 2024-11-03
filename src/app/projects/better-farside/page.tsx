@@ -36,7 +36,7 @@ export default function Page() {
                 <p className="text-secondary">2. Why did I code this?</p>
                 <div className="flex flex-wrap items-baseline gap-2">
                     <p className="text-sm text-default">- for crypto twitter, bc farside's frontend is ugly af</p>
-                    <LinkWithIcon href="https://stationf.co/">
+                    <LinkWithIcon href="https://farside.co.uk/btc/">
                         <p className="text-nowrap text-sm">See by yourself</p>
                     </LinkWithIcon>
                 </div>
