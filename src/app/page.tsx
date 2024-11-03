@@ -6,7 +6,7 @@ import { APP_METADATA } from '@/config/app.config'
 
 export default function Page() {
     return (
-        <PageWrapper className="mb-10 gap-5">
+        <PageWrapper className="gap-5">
             {/* tldr */}
             <div className="mt-4 flex flex-col gap-2">
                 <p className="font-bold">Tldr;</p>
@@ -54,7 +54,7 @@ export default function Page() {
             {/* context */}
             <div className="flex flex-col gap-2">
                 <p className="font-bold">Contact</p>
-                <p className="text-sm text-default">For any inquiries [contracting, hiring, investment], reach out on:</p>
+                <p className="text-sm text-default">For any inquiries, reach out on:</p>
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
                         &#x2022; Telegram

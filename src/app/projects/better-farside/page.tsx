@@ -8,7 +8,7 @@ import { IconIds } from '@/enums'
 
 export default function Page() {
     return (
-        <PageWrapper className="mb-10 gap-5">
+        <PageWrapper className="gap-5">
             <div className="flex w-full items-center justify-between">
                 <div className="flex w-full flex-col">
                     <LinkWrapper
