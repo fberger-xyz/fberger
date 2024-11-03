@@ -5,7 +5,7 @@ import PageWrapper from '@/components/common/PageWrapper'
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            <p className="text-default">Life and career</p>
+            <p className="text-sm text-default">Life and career</p>
             {/* socials */}
             {/* <div className="flex flex-col gap-2">
                 <p className="font-bold">Contacts</p>
@@ -38,13 +38,13 @@ export default function Page() {
                 <ul className="flex flex-col gap-3 text-default sm:gap-1">
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="font-bold text-secondary">Self</p>
+                            <p className="text-secondary">Self</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="font-bold text-secondary">Risk and DeFi Developer</p>
+                            <p className="text-secondary">Risk and DeFi Developer</p>
                             <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
                                 <p className="text-base">CoinShares</p>
@@ -62,7 +62,7 @@ export default function Page() {
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="font-bold text-secondary">Full-Stack Developer</p>
+                            <p className="text-secondary">Full-Stack Developer</p>
                             <p className="text-sm">Jan 2021 {'>'} Oct 2021</p>
                             <LinkWithIcon href="https://stationf.co/">
                                 <p className="text-base">Station F</p>
@@ -73,7 +73,7 @@ export default function Page() {
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="font-bold text-secondary">Transaction Services Intern</p>
+                            <p className="text-secondary">Transaction Services Analyst</p>
                             <p className="text-sm">2017 ; 2019</p>
                             <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
                                 <p className="text-base">Grant Thornton</p>

@@ -35,9 +35,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why did I code this?</p>
                 <div className="flex flex-wrap items-baseline gap-2">
-                    <p className="text-sm text-default">
-                        - bc farside's frontend is <span className="underline">ugly af</span>
-                    </p>
+                    <p className="text-sm text-default">- bc farside's frontend is ugly af</p>
                     <LinkWithIcon href="https://stationf.co/">
                         <p className="text-nowrap text-sm">See by yourself</p>
                     </LinkWithIcon>
@@ -54,7 +52,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm text-default">
-                    With these tools, a skilled developer can achieve feats that would normally an entire team in the corporate.
+                    With these tools, one developer can deploy features that would require an entire team in the corporate world.
                 </p>
             </div>
         </PageWrapper>

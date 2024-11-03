@@ -39,7 +39,7 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="mb-10 gap-5">
-            <p className="text-default">Projects I can publicly speak about</p>
+            <p className="text-sm text-default">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
                 <div className="flex w-full flex-col gap-3">
                     {/* <ProjectCard path={AppPagePaths.PROJECTS}>
