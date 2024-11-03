@@ -53,7 +53,7 @@ export default function Page() {
                             <p className="text-primary">Safes Trades</p>
                             <p className="text-xs text-secondary">Nov 2024</p>
                         </div>
-                        <p className="text-xs text-default">WIP</p>
+                        <p className="text-xs text-default">Time to code: 1 afternoon</p>
                         <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap', 'Vercel']} />
                     </ProjectCard>
                     <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
