@@ -1,7 +1,7 @@
 import { AppThemes, IconIds } from '@/enums'
 
 export const APP_METADATA = {
-    SITE_AUTHOR: 'Francis Berger',
+    SITE_AUTHOR: 'fberger',
     SITE_NAME: 'fberger.xyz',
     SITE_INFO: 'SITE_INFO',
     SITE_DESCRIPTION: "Rising on giants' shoulders.",
