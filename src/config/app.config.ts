@@ -4,7 +4,7 @@ export const APP_METADATA = {
     SITE_AUTHOR: 'fberger',
     SITE_NAME: 'fberger.xyz',
     SITE_INFO: 'SITE_INFO',
-    SITE_DESCRIPTION: 'SITE_DESCRIPTION',
+    SITE_DESCRIPTION: 'Climbing on the shoulders of giants',
     SITE_URL: 'https://fberger.xyz/',
     SOCIALS: {
         TWITTER: 'fberger_xyz',

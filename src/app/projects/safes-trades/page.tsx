@@ -1,9 +1,7 @@
 import IconWrapper from '@/components/common/IconWrapper'
 import IframeWrapper from '@/components/common/IframeWrapper'
-// import LinkWithIcon from '@/components/common/LinkWithIcon'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
-// import ExcalidrawSVG from '@/components/excalidraw/ExcalidrawSVG'
 import { IconIds } from '@/enums'
 
 export default function Page() {
@@ -18,13 +16,12 @@ export default function Page() {
                         <p className="w-full text-xl text-secondary md:text-3xl">Safes Trades</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs text-default">tba</p>
+                    <p className="text-xs text-default">One linktree to manage all your safes</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
                     <p className="text-xs text-default">1. Preview</p>
                     <p className="text-xs text-default">2. Why did I code this?</p>
-                    <p className="text-xs text-default">3. How it works</p>
                     <p className="text-xs text-default">Conclusion</p>
                 </div>
             </div>
@@ -34,18 +31,11 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why did I code this?</p>
-                <p className="text-sm text-default">- tba</p>
-            </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
-                <p className="text-secondary">3. How it works</p>
-                {/* <div className="flex w-full flex-col items-center">
-                    <ExcalidrawSVG src="/better-farside" className="w-full p-2" />
-                    <p className="text-xs italic text-inactive">It's that simple</p>
-                </div> */}
+                <p className="text-sm text-default">- to gain time while managing my multisigs</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
-                <p className="text-sm text-default">Tba</p>
+                <p className="text-sm text-default">Useful to me</p>
             </div>
         </PageWrapper>
     )
