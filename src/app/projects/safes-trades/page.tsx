@@ -16,7 +16,7 @@ export default function Page() {
                         <p className="w-full text-xl text-secondary md:text-3xl">Safes Trades</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs text-default">One linktree to manage all your safes</p>
+                    <p className="text-xs text-default">One linktree to manage your safes</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>

@@ -18,6 +18,9 @@ export default function Footer(props: FooterProps) {
                 <LinkWrapper target="_blank" href={`https://x.com/${APP_METADATA.SOCIALS.TWITTER}`} className="hover:text-primary">
                     <IconWrapper icon={IconIds.X} className="h-5 w-5" />
                 </LinkWrapper>
+                <LinkWrapper target="_blank" href={`https://github.com/${APP_METADATA.SOCIALS.GITHUB}`} className="hover:text-primary">
+                    <IconWrapper icon={IconIds.GITHUB} className="h-5 w-5" />
+                </LinkWrapper>
                 <LinkWrapper target="_blank" href={`https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`} className="hover:text-primary">
                     <IconWrapper icon={IconIds.LINKEDIN} className="h-5 w-5" />
                 </LinkWrapper>

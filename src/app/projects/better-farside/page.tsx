@@ -13,7 +13,7 @@ export default function Page() {
                 <div className="flex w-full flex-col">
                     <LinkWrapper
                         href="https://better-farside.vercel.app/"
-                        className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
+                        className="flex w-fit cursor-alias items-baseline gap-1 underline-offset-4 hover:underline"
                     >
                         <p className="w-full text-xl text-secondary md:text-3xl">Better Farside</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />

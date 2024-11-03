@@ -1,14 +1,15 @@
 import { AppThemes, IconIds } from '@/enums'
 
 export const APP_METADATA = {
-    SITE_AUTHOR: 'fberger',
-    SITE_NAME: 'FBerger',
+    SITE_AUTHOR: 'Francis Berger',
+    SITE_NAME: 'fberger.xyz',
     SITE_INFO: 'SITE_INFO',
     SITE_DESCRIPTION: "Rising on giants' shoulders.",
     SITE_URL: 'https://fberger.xyz/',
     SOCIALS: {
         TWITTER: 'fberger_xyz',
         TELEGRAM: 'fberger_xyz',
+        GITHUB: 'fberger-xyz',
         LINKEDIN: 'francis-berger-a2404094',
         ENS: 'fran6.eth',
     },
