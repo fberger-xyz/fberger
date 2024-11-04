@@ -39,7 +39,7 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm text-default">Some side projects I can publicly speak about</p>
+            <p className="text-sm text-default">Some side projects that I've coded for practice</p>
             {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Aptos Liquidation bot</p>
                         <p className="text-sm text-secondary">Nov 2024</p>
@@ -48,7 +48,7 @@ export default function Page() {
                     </ProjectCard> */}
             <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
                 <div className="flex justify-between">
-                    <p className="text-secondary">RabbyKit</p>
+                    <p className="text-secondary group-hover:text-primary">RabbyKit</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 1 afternoon</p>
@@ -56,7 +56,7 @@ export default function Page() {
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_SAFES_TRADES}>
                 <div className="flex justify-between">
-                    <p className="text-secondary">Safes Trades</p>
+                    <p className="text-secondary group-hover:text-primary">Safes Trades</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 1 afternoon</p>
@@ -64,7 +64,7 @@ export default function Page() {
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
                 <div className="flex justify-between">
-                    <p className="text-secondary">Better Farside</p>
+                    <p className="text-secondary group-hover:text-primary">Better Farside</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 4 days</p>
@@ -83,7 +83,7 @@ export default function Page() {
                 </div> */}
             <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS}>
                 <div className="flex justify-between">
-                    <p className="text-secondary">NFT stonks</p>
+                    <p className="text-secondary group-hover:text-primary">NFT stonks</p>
                     <p className="text-xs text-secondary">Oct 2021</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 3 weeks</p>

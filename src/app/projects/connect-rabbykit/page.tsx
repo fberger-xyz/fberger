@@ -14,7 +14,7 @@ export default function Page() {
                         target="_blank"
                         className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
                     >
-                        <p className="w-full text-xl text-secondary md:text-3xl">Connect with RabbyKit</p>
+                        <p className="w-full text-xl text-secondary md:text-3xl">Connect RabbyKit</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs text-default">WIP 🚧</p>

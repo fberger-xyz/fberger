@@ -13,7 +13,7 @@ export default function Page() {
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>Into DeFi - always learning</p>
+                        <p>Interested in linking TradFi with DeFi</p>
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
@@ -21,7 +21,7 @@ export default function Page() {
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>Experiences in Risk Management and M&A</p>
+                        <p>Experiences in Risk Management ; prev. into M&A</p>
                     </li>
                 </ul>
             </div>
