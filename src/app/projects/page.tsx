@@ -1,6 +1,7 @@
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import { AppPagePaths } from '@/enums'
+import { cn } from '@/utils'
 import { ReactNode } from 'react'
 
 function SkillsLine(props: { skills: string[] }) {
@@ -17,18 +18,23 @@ function SkillsLine(props: { skills: string[] }) {
 
 function ProjectCard({
     target = '_self',
+    disabled = false,
     ...props
 }: {
     children: ReactNode
     path: AppPagePaths | string
     target?: '_blank' | '_self' | '_parent' | '_top'
+    disabled?: boolean
 }) {
     return (
         <div className="group w-full border-b border-light-hover p-0.5 hover:border-primary">
             <LinkWrapper
                 href={props.path}
                 target={target}
-                className="flex w-full flex-col rounded-sm pb-3 pt-1 transition duration-300 hover:border-primary"
+                disabled={disabled}
+                className={cn('flex w-full flex-col rounded-sm pb-3 pt-1 transition duration-300 hover:border-primary', {
+                    // 'opacity-50 cursor-not-allowed': disabled,
+                })}
             >
                 {props.children}
             </LinkWrapper>
@@ -40,14 +46,16 @@ export default function Page() {
     return (
         <PageWrapper className="gap-5">
             <p className="text-sm text-default">Some side projects that I've coded for practice</p>
-            {/* <ProjectCard path={AppPagePaths.PROJECTS}>
-                        <p className="text-primary">Aptos Liquidation bot</p>
-                        <p className="text-sm text-secondary">Nov 2024</p>
-                        <p className="text-sm text-secondary">🚧</p>
-                        <SkillsLine skills={['Autism']} />
-                    </ProjectCard> */}
+            <ProjectCard path={AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT}>
+                <div className="flex w-full justify-between">
+                    <p className="text-secondary group-hover:text-primary">Aptos Liquidation Bot</p>
+                    <p className="text-xs text-secondary">Nov 2024</p>
+                </div>
+                <p className="text-xs text-default">Time to code: 🚧</p>
+                <SkillsLine skills={['Autism']} />
+            </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
-                <div className="flex justify-between">
+                <div className="flex w-full justify-between">
                     <p className="text-secondary group-hover:text-primary">RabbyKit</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
@@ -55,7 +63,7 @@ export default function Page() {
                 <SkillsLine skills={['Next', 'RabbyKit', 'Wagmi']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_SAFES_TRADES}>
-                <div className="flex justify-between">
+                <div className="flex w-full justify-between">
                     <p className="text-secondary group-hover:text-primary">Safes Trades</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
@@ -63,7 +71,7 @@ export default function Page() {
                 <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
-                <div className="flex justify-between">
+                <div className="flex w-full justify-between">
                     <p className="text-secondary group-hover:text-primary">Better Farside</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
@@ -82,7 +90,7 @@ export default function Page() {
                     <p className="text-xs text-inactive">Nov 2021</p>
                 </div> */}
             <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS}>
-                <div className="flex justify-between">
+                <div className="flex w-full justify-between">
                     <p className="text-secondary group-hover:text-primary">NFT stonks</p>
                     <p className="text-xs text-secondary">Oct 2021</p>
                 </div>

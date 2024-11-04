@@ -43,7 +43,13 @@ export const useAppStore = create<{
             enabled: true,
             sublinks: [
                 {
-                    name: 'Connect RabbyKit',
+                    name: 'Aptos Liquidation Bot',
+                    path: AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT,
+                    enabled: true,
+                    sublinks: [],
+                },
+                {
+                    name: 'RabbyKit',
                     path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
                     enabled: true,
                     sublinks: [],
