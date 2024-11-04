@@ -46,13 +46,21 @@ export default function Page() {
                         <p className="text-sm text-secondary">🚧</p>
                         <SkillsLine skills={['Autism']} />
                     </ProjectCard> */}
+            <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
+                <div className="flex justify-between">
+                    <p className="text-secondary">RabbyKit</p>
+                    <p className="text-xs text-secondary">Nov 2024</p>
+                </div>
+                <p className="text-xs text-default">Time to code: 1 afternoon</p>
+                <SkillsLine skills={['Next', 'RabbyKit', 'Wagmi']} />
+            </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_SAFES_TRADES}>
                 <div className="flex justify-between">
                     <p className="text-secondary">Safes Trades</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 1 afternoon</p>
-                <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap', 'Vercel']} />
+                <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
                 <div className="flex justify-between">
