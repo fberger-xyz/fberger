@@ -12,14 +12,14 @@ export default function Page() {
                     <LinkWrapper
                         href="https://connect.fberger.xyz"
                         target="_blank"
-                        className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
+                        className="flex items-baseline gap-1 truncate underline-offset-4 hover:underline"
                     >
-                        <p className="w-full text-xl text-secondary md:text-3xl">Connect RabbyKit</p>
+                        <p className="text-xl text-secondary md:text-3xl">Connect RabbyKit</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs text-default">RabbyKit effectively resolves conflicts between multiple wallets</p>
                 </div>
-                <div className="flex w-full flex-col items-end pl-4">
+                <div className="flex flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
                     <p className="text-xs text-default">1. Preview</p>
                     <p className="text-xs text-default">2. Why</p>

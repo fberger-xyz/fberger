@@ -75,7 +75,7 @@ export const useAppStore = create<{
             ],
         },
         {
-            name: 'about',
+            name: 'cv',
             path: AppPagePaths.ABOUT,
             enabled: true,
             sublinks: [],

@@ -14,12 +14,12 @@ export default function Page() {
                         target="_blank"
                         className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
                     >
-                        <p className="w-full text-xl text-secondary md:text-3xl">Safes</p>
+                        <p className="truncate text-xl text-secondary md:text-3xl">Safes</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs text-default">One linktree to manage your safes</p>
                 </div>
-                <div className="flex w-full flex-col items-end pl-4">
+                <div className="flex flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
                     <p className="text-xs text-default">1. Preview</p>
                     <p className="text-xs text-default">2. Why</p>
