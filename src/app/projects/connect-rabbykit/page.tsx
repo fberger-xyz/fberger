@@ -22,7 +22,7 @@ export default function Page() {
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
                     <p className="text-xs text-default">1. Preview</p>
-                    <p className="text-xs text-default">2. Why did I code this?</p>
+                    <p className="text-xs text-default">2. Why</p>
                     <p className="text-xs text-default">Conclusion</p>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function Page() {
                 <IframeWrapper src="https://connect-seven-snowy.vercel.app/" width="w-full" height="h-[400px]" />
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
-                <p className="text-secondary">2. Why did I code this?</p>
+                <p className="text-secondary">2. Why</p>
                 <p className="text-sm text-default">WIP 🚧</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">

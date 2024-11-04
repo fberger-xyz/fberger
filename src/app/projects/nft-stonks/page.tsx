@@ -22,7 +22,7 @@ export default function Page() {
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
                     <p className="text-xs text-default">1. Preview</p>
-                    <p className="text-xs text-default">2. Why did I code this?</p>
+                    <p className="text-xs text-default">2. Why</p>
                     <p className="text-xs text-default">Conclusion</p>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function Page() {
                 <IframeWrapper src="https://nft-stonks.netlify.app/" width="w-full" height="h-[400px]" />
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
-                <p className="text-secondary">2. Why did I code this?</p>
+                <p className="text-secondary">2. Why</p>
                 <div className="flex flex-wrap items-baseline gap-2">
                     <p className="text-sm text-default">- for CT</p>
                 </div>
