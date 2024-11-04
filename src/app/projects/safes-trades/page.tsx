@@ -11,6 +11,7 @@ export default function Page() {
                 <div className="flex w-full flex-col">
                     <LinkWrapper
                         href="https://safes-trades.vercel.app/"
+                        target="_blank"
                         className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
                     >
                         <p className="w-full text-xl text-secondary md:text-3xl">Safes Trades</p>

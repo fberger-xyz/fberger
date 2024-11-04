@@ -43,14 +43,20 @@ export const useAppStore = create<{
             enabled: true,
             sublinks: [
                 {
-                    name: 'Better Farside',
-                    path: AppPagePaths.PROJECTS_BETTER_FARSIDE,
+                    name: 'Connect RabbyKit',
+                    path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
                     enabled: true,
                     sublinks: [],
                 },
                 {
                     name: 'Safes Trades',
                     path: AppPagePaths.PROJECTS_SAFES_TRADES,
+                    enabled: true,
+                    sublinks: [],
+                },
+                {
+                    name: 'Better Farside',
+                    path: AppPagePaths.PROJECTS_BETTER_FARSIDE,
                     enabled: true,
                     sublinks: [],
                 },
