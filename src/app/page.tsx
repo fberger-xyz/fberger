@@ -54,7 +54,7 @@ export default function Page() {
             {/* context */}
             <div className="flex flex-col gap-2">
                 <p className="font-bold">Contact</p>
-                <p className="text-sm text-default">Reach out on:</p>
+                {/* <p className="text-sm text-default">Reach out on:</p> */}
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
                         &#x2022; Telegram

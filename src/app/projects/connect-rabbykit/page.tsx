@@ -17,7 +17,7 @@ export default function Page() {
                         <p className="w-full text-xl text-secondary md:text-3xl">Connect RabbyKit</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs text-default">WIP 🚧</p>
+                    <p className="text-xs text-default">RabbyKit effectively resolves conflicts between multiple wallets</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
@@ -32,11 +32,11 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
-                <p className="text-sm text-default">WIP 🚧</p>
+                <p className="text-sm text-default">- Based on @wagmi/core and viem + great Desktop/Mobile/Extension integration</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
-                <p className="text-sm text-default">WIP 🚧</p>
+                <p className="text-sm text-default">Nice tool</p>
             </div>
         </PageWrapper>
     )
