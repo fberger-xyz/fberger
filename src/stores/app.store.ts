@@ -55,14 +55,14 @@ export const useAppStore = create<{
                     sublinks: [],
                 },
                 {
-                    name: 'Safes Trades',
+                    name: 'Safes',
                     path: AppPagePaths.PROJECTS_SAFES_TRADES,
                     enabled: true,
                     sublinks: [],
                 },
                 {
-                    name: 'Better Farside',
-                    path: AppPagePaths.PROJECTS_BETTER_FARSIDE,
+                    name: 'Farside',
+                    path: AppPagePaths.PROJECTS_FARSIDE,
                     enabled: true,
                     sublinks: [],
                 },

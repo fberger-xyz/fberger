@@ -64,15 +64,15 @@ export default function Page() {
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_SAFES_TRADES}>
                 <div className="flex w-full justify-between">
-                    <p className="text-secondary group-hover:text-primary">Safes Trades</p>
+                    <p className="text-secondary group-hover:text-primary">Safes</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 1 afternoon</p>
                 <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']} />
             </ProjectCard>
-            <ProjectCard path={AppPagePaths.PROJECTS_BETTER_FARSIDE}>
+            <ProjectCard path={AppPagePaths.PROJECTS_FARSIDE}>
                 <div className="flex w-full justify-between">
-                    <p className="text-secondary group-hover:text-primary">Better Farside</p>
+                    <p className="text-secondary group-hover:text-primary">Farside</p>
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 4 days</p>

@@ -5,8 +5,8 @@ export enum AppPagePaths {
     // PROJECTS_BINANCE_LISTINGS = '/projects/binance-listings',
     PROJECTS_APTOS_LIQUIDATION_BOT = '/projects/aptos-liquidation-bot',
     PROJECTS_CONNECT_RABBYKIT = '/projects/connect-rabbykit',
-    PROJECTS_SAFES_TRADES = '/projects/safes-trades',
-    PROJECTS_BETTER_FARSIDE = '/projects/better-farside',
+    PROJECTS_SAFES_TRADES = '/projects/safes',
+    PROJECTS_FARSIDE = '/projects/better-farside',
     PROJECTS_NFT_STONKS = '/projects/nft-stonks',
     ABOUT = '/about',
 }

@@ -12,11 +12,11 @@ export default function Page() {
             <div className="flex w-full items-center justify-between">
                 <div className="flex w-full flex-col">
                     <LinkWrapper
-                        href="https://better-farside.vercel.app/"
+                        href="https://farside.fberger.xyz"
                         target="_blank"
                         className="flex w-fit cursor-alias items-baseline gap-1 underline-offset-4 hover:underline"
                     >
-                        <p className="w-full text-xl text-secondary md:text-3xl">Better Farside</p>
+                        <p className="w-full text-xl text-secondary md:text-3xl">Farside</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs text-default">Just better than the original</p>
@@ -31,7 +31,7 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">1. Preview</p>
-                <IframeWrapper src="https://better-farside.vercel.app/" width="w-full" height="h-[400px]" />
+                <IframeWrapper src="https://farside.fberger.xyz" width="w-full" height="h-[400px]" />
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
