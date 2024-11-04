@@ -52,7 +52,7 @@ export default function Page() {
                     <p className="text-xs text-secondary">Nov 2024</p>
                 </div>
                 <p className="text-xs text-default">Time to code: 🚧</p>
-                <SkillsLine skills={['Autism']} />
+                <SkillsLine skills={['?']} />
             </ProjectCard>
             <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
                 <div className="flex w-full justify-between">
