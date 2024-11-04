@@ -17,11 +17,11 @@ export default function Page() {
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>10x Fullstack Dev</p>
+                        <p>10x fullstack dev</p>
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>Experiences in Risk Management ; prev. into M&A</p>
+                        <p>Experiences in risk Management ; prev. into M&A</p>
                     </li>
                 </ul>
             </div>
