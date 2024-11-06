@@ -45,7 +45,7 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm text-default">Some side projects that I've coded for practice</p>
+            <p className="text-sm text-default">Some side projects (WIP). Click to see more</p>
             <div className="flex w-full flex-col gap-3">
                 <ProjectCard path={AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT}>
                     <div className="flex w-full justify-between">

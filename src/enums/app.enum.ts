@@ -8,7 +8,7 @@ export enum AppPagePaths {
     PROJECTS_SAFES_TRADES = '/projects/safes',
     PROJECTS_FARSIDE = '/projects/farside',
     PROJECTS_NFT_STONKS = '/projects/nft-stonks',
-    ABOUT = '/about',
+    ABOUT = '/cv',
 }
 
 export enum AppThemes {

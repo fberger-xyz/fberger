@@ -50,15 +50,21 @@ export default function Page() {
                                 <p className="text-base">CoinShares</p>
                             </LinkWithIcon>
                         </div>
-                        <p className="text-sm">&#x2022; Coded frontends and backends used daily by ops, quants, traders and top management</p>
-                        <p className="pl-4 text-sm">1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)</p>
-                        <p className="pl-4 text-sm">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
-                        <p className="pl-4 text-sm">3) to adapt strategies to economic calendar</p>
-                        <p className="text-sm">&#x2022; Research and training on Staking and DeFi</p>
-                        <p className="text-sm">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm">&#x2022; Run ethereum nodes (with https access)</p>
-                        <p className="text-sm">&#x2022; Worked hard to improve CS legacy stack (vite, tailwind, zustand, eslint/prettier)</p>
-                        <p className="text-sm">{'>'} Left to focus on DeFi</p>
+                        <p className="text-sm text-inactive">
+                            &#x2022; Coded frontends and backends used daily by ops, quants, traders and top management
+                        </p>
+                        <p className="pl-4 text-sm text-inactive">
+                            1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)
+                        </p>
+                        <p className="pl-4 text-sm text-inactive">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
+                        <p className="pl-4 text-sm text-inactive">3) to adapt strategies to economic calendar</p>
+                        <p className="text-sm text-inactive">&#x2022; Research and training on Staking and DeFi</p>
+                        <p className="text-sm text-inactive">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
+                        <p className="text-sm text-inactive">&#x2022; Run ethereum nodes (with https access)</p>
+                        <p className="text-sm text-inactive">
+                            &#x2022; Worked hard to improve CS legacy stack (vite, tailwind, zustand, eslint/prettier)
+                        </p>
+                        <p className="text-sm text-inactive">{'>'} Left to focus on DeFi</p>
                     </li>
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -68,8 +74,10 @@ export default function Page() {
                                 <p className="text-base">Station F</p>
                             </LinkWithIcon>
                         </div>
-                        <p className="text-sm">&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
-                        <p className="text-sm">{'>'} Left to work in crypto</p>
+                        <p className="text-sm text-inactive">
+                            &#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)
+                        </p>
+                        <p className="text-sm text-inactive">{'>'} Left to work in crypto</p>
                     </li>
                     <li className="flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -79,9 +87,9 @@ export default function Page() {
                                 <p className="text-base">Grant Thornton</p>
                             </LinkWithIcon>
                         </div>
-                        <p className="text-sm">&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
-                        <p className="text-sm">&#x2022; Memorandum, due diligences, litigation support</p>
-                        <p className="text-sm">{'>'} Left to pivot in tech</p>
+                        <p className="text-sm text-inactive">&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
+                        <p className="text-sm text-inactive">&#x2022; Memorandum, due diligences, litigation support</p>
+                        <p className="text-sm text-inactive">{'>'} Left to pivot in tech</p>
                     </li>
                 </ul>
             </div>
@@ -96,8 +104,8 @@ export default function Page() {
                     </li>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">DSCG</p>
-                        <p className="text-sm">(french CPA)</p>
                         <p className="text-sm">2019</p>
+                        <p className="text-sm text-inactive">(french CPA)</p>
                     </li>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">Msc. Corporate Finance</p>
