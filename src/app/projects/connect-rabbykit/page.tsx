@@ -33,7 +33,8 @@ export default function Page() {
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
                 <p className="text-sm text-default">- based on @wagmi/core and viem</p>
-                <p className="text-sm text-default">- great Desktop/Mobile/Extension integration</p>
+                <p className="text-sm text-default">- great browser/mobile ux</p>
+                <p className="text-sm text-default">- sign in with ethereum integration</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
