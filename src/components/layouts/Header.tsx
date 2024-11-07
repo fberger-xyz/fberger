@@ -9,7 +9,7 @@ import { APP_METADATA } from '@/config/app.config'
 export default function Header(props: { className?: string }) {
     return (
         <div className={cn('fixed top-0 flex justify-center items-center w-full', props.className)}>
-            <div className="relative flex h-fit w-full max-w-[650px] items-center justify-between gap-0.5 rounded-lg bg-transparent p-2 backdrop-blur-sm sm:justify-between">
+            <div className="relative flex h-fit w-full max-w-[650px] items-center justify-between gap-0.5 rounded-lg bg-transparent p-2 backdrop-blur-md sm:justify-between">
                 {/* <!-- eslint-disable-next-line --> */}
                 <div className="bg-background/10 absolute inset-0 z-40 rounded-xl" />
                 <LinkWrapper href="/" className="z-50 flex items-end gap-2">
