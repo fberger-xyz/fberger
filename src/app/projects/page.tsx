@@ -55,6 +55,14 @@ export default function Page() {
                     <p className="text-xs text-default">Time to code: 🚧</p>
                     <SkillsLine skills={['?']} />
                 </ProjectCard>
+                <ProjectCard path={AppPagePaths.PROJECTS_FARSIDE}>
+                    <div className="flex w-full justify-between">
+                        <p className="text-secondary group-hover:text-primary">Farside</p>
+                        <p className="text-xs text-secondary">Nov 2024</p>
+                    </div>
+                    <p className="text-xs text-default">Time to code: 4 days</p>
+                    <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
+                </ProjectCard>
                 <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
                     <div className="flex w-full justify-between">
                         <p className="text-secondary group-hover:text-primary">RabbyKit</p>
@@ -70,14 +78,6 @@ export default function Page() {
                     </div>
                     <p className="text-xs text-default">Time to code: 1 afternoon</p>
                     <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']} />
-                </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_FARSIDE}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Farside</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs text-default">Time to code: 4 days</p>
-                    <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
                 </ProjectCard>
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
