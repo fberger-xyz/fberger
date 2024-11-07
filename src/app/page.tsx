@@ -1,8 +1,6 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
-// import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import { APP_METADATA } from '@/config/app.config'
-// import { AppPagePaths } from '@/enums'
 
 export default function Page() {
     return (
@@ -13,11 +11,11 @@ export default function Page() {
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>Interested in linking TradFi with DeFi</p>
+                        <p>10x fullstack dev</p>
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
-                        <p>10x fullstack dev</p>
+                        <p>Interested in linking TradFi with DeFi</p>
                     </li>
                     <li className="flex gap-3">
                         &#x2022;
@@ -26,35 +24,9 @@ export default function Page() {
                 </ul>
             </div>
 
-            {/* index */}
-            {/* <div className="mt-4 flex flex-col gap-2">
-                <p className="text-primary">Index</p>
-                <ul className="flex flex-col gap-1 text-sm text-default">
-                    <li className="flex gap-3">
-                        &#x2022;
-                        <LinkWrapper href={AppPagePaths.PROJECTS} className="underline-offset-4 hover:underline">
-                            <p>
-                                /<span className="text-secondary">projects</span>
-                            </p>
-                        </LinkWrapper>
-                        <p>projects I can publicly speak about</p>
-                    </li>
-                    <li className="flex gap-3">
-                        &#x2022;
-                        <LinkWrapper href={AppPagePaths.ABOUT} className="underline-offset-4 hover:underline">
-                            <p>
-                                /<span className="text-secondary">about</span>
-                            </p>
-                        </LinkWrapper>
-                        <p>life and career</p>
-                    </li>
-                </ul>
-            </div> */}
-
             {/* context */}
             <div className="flex flex-col gap-2">
                 <p className="font-bold">Contact</p>
-                {/* <p className="text-sm text-default">Reach out on:</p> */}
                 <ul className="flex flex-col gap-1 text-sm text-default">
                     <li className="flex gap-3">
                         &#x2022; Telegram
