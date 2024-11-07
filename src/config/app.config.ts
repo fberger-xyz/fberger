@@ -6,7 +6,7 @@ export const APP_METADATA = {
     SITE_DESCRIPTION: 'into Risk and DeFi - fullstack dev',
     SITE_URL: 'https://fberger.xyz/',
     SOCIALS: {
-        TWITTER: 'fberger_xyz',
+        X: 'fberger_xyz',
         TELEGRAM: 'fberger_xyz',
         GITHUB: 'fberger-xyz',
         LINKEDIN: 'francis-berger-a2404094',

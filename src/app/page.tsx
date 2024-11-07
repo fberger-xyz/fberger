@@ -1,6 +1,8 @@
+import IconWrapper from '@/components/common/IconWrapper'
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import { APP_METADATA } from '@/config/app.config'
+import { IconIds } from '@/enums'
 
 export default function Page() {
     return (
@@ -9,18 +11,17 @@ export default function Page() {
             <div className="mt-4 flex flex-col gap-2">
                 <p className="font-bold">Tldr;</p>
                 <ul className="flex flex-col gap-1 text-sm text-default">
-                    <li className="flex gap-3">
-                        &#x2022;
-                        <p>10x fullstack dev</p>
-                    </li>
-                    <li className="flex gap-3">
-                        &#x2022;
-                        <p>Interested in linking TradFi with DeFi</p>
-                    </li>
-                    <li className="flex gap-3">
-                        &#x2022;
-                        <p>Experiences in risk Management ; prev. into M&A</p>
-                    </li>
+                    {[
+                        '10x fullstack dev',
+                        'Interested in linking TradFi with DeFi',
+                        'XP in DeFi and Risk Management @CoinShares',
+                        'Based in Paris 🇫🇷',
+                    ].map((interest) => (
+                        <li key={interest} className="flex gap-3">
+                            <span className="text-inactive">&#x2022;</span>
+                            <p>{interest}</p>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
@@ -28,18 +29,20 @@ export default function Page() {
             <div className="flex flex-col gap-2">
                 <p className="font-bold">Contact</p>
                 <ul className="flex flex-col gap-1 text-sm text-default">
-                    <li className="flex gap-3">
-                        &#x2022; Telegram
-                        <LinkWithIcon href={`https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`}>@{APP_METADATA.SOCIALS.TELEGRAM}</LinkWithIcon>
-                    </li>
-                    <li className="flex gap-3">
-                        &#x2022; Twitter
-                        <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIALS.TWITTER}`}>@{APP_METADATA.SOCIALS.TWITTER}</LinkWithIcon>
-                    </li>
-                    <li className="flex gap-3">
-                        &#x2022; Linkedin
-                        <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`}>Francis Berger</LinkWithIcon>
-                    </li>
+                    {[
+                        { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
+                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },
+                        {
+                            href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`,
+                            icon: IconIds.LINKEDIN,
+                            id: 'Francis Berger',
+                        },
+                    ].map((social) => (
+                        <li key={social.href} className="flex gap-3">
+                            <IconWrapper icon={social.icon} className="h-4 w-4" />
+                            <LinkWithIcon href={social.href}>{social.id}</LinkWithIcon>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </PageWrapper>

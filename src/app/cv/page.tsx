@@ -1,36 +1,12 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
-// import { APP_METADATA } from '@/config/app.config'
 
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
             <p className="text-sm text-default">Summary</p>
-            {/* socials */}
-            {/* <div className="flex flex-col gap-2">
-                <p className="font-bold">Contacts</p>
-                <ul className="flex flex-col gap-1 text-sm text-default">
-                    <li className="flex gap-2 text-default">
-                        Telegram
-                        <span className="text-secondary">@{APP_METADATA.TELEGRAM}</span>
-                    </li>
-                    <li className="flex gap-2">
-                        Twitter
-                        <LinkWithIcon href={`https://x.com/${APP_METADATA.SOCIAL_TWITTER}`}>
-                            <span>@{APP_METADATA.SOCIAL_TWITTER}</span>
-                        </LinkWithIcon>
-                    </li>
-                    <li className="flex gap-2 text-default">
-                        Linkedin
-                        <LinkWithIcon href={`https://www.linkedin.com/in/${APP_METADATA.LINKEDIN}`}>
-                            <span>Profile</span>
-                        </LinkWithIcon>
-                    </li>
-                </ul>
-            </div> */}
-
             {/* xp */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 pb-1">
                 <div className="flex items-baseline gap-2">
                     <p>Experiences</p>
                     <p className="text-xs italic text-light-hover">Excluding freelance and side projects</p>
@@ -51,18 +27,18 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm text-inactive">
-                            &#x2022; Coded frontends and backends used daily by ops, quants, traders and top management
+                            &#x2022; Coded frontends and backends used daily by ops + quants + traders + top management
                         </p>
                         <p className="pl-4 text-sm text-inactive">
-                            1) to monitor P&L and risk exposure (hedge funds, lending and staking activities)
+                            1) to compute P&L and risk exposure (hedge funds, lending and staking activities)
                         </p>
                         <p className="pl-4 text-sm text-inactive">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
                         <p className="pl-4 text-sm text-inactive">3) to adapt strategies to economic calendar</p>
                         <p className="text-sm text-inactive">&#x2022; Research and training on Staking and DeFi</p>
                         <p className="text-sm text-inactive">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
-                        <p className="text-sm text-inactive">&#x2022; Run ethereum nodes (with https access)</p>
+                        <p className="text-sm text-inactive">&#x2022; Run ethereum nodes to test Shanghai upgrade (with https access)</p>
                         <p className="text-sm text-inactive">
-                            &#x2022; Worked hard to improve CS legacy stack (vite, tailwind, zustand, eslint/prettier)
+                            &#x2022; Proactive to improve CS legacy stack w/ best-in-class tools (vite, tailwind, zustand)
                         </p>
                         <p className="text-sm text-inactive">{'>'} Left to focus on DeFi</p>
                     </li>

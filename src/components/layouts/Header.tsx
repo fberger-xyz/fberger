@@ -18,7 +18,7 @@ export default function Header(props: { className?: string }) {
                         width={40}
                         height={40}
                         alt="https://x.com/fran6brg/photo"
-                        className="rounded-md bg-default p-0.5"
+                        className="rounded-md bg-light-hover p-0.5"
                     />
                     <p className="hidden text-2xl text-primary sm:block">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
