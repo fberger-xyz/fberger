@@ -14,7 +14,7 @@ export default function Page() {
                         target="_blank"
                         className="flex w-full flex-wrap items-baseline gap-1 decoration-primary underline-offset-4 hover:underline"
                     >
-                        <p className="text-xl text-secondary md:text-3xl">Connect RabbyKit</p>
+                        <p className="text-xl text-secondary md:text-3xl">RabbyKit + Next Auth via SIWE</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs">RabbyKit effectively resolves conflicts between multiple wallets</p>
@@ -34,7 +34,7 @@ export default function Page() {
                 <p className="text-secondary">2. Why</p>
                 <p className="text-sm">- based on @wagmi/core and viem</p>
                 <p className="text-sm">- great browser/mobile ux</p>
-                <p className="text-sm">- sign in with ethereum integration</p>
+                <p className="text-sm">- sign in with ethereum integration (SIWE)</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
