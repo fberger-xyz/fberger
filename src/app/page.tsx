@@ -27,7 +27,7 @@ export default function Page() {
 
             {/* context */}
             <div className="flex flex-col gap-2">
-                <p className="font-bold text-primary">Contact</p>
+                <p className="font-bold text-primary">Contact me</p>
                 <ul className="flex flex-col gap-1 text-sm">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },

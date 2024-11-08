@@ -45,7 +45,7 @@ export const useAppStore = create<{
                 {
                     name: 'Aptos Liquidation Bot',
                     path: AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT,
-                    enabled: true,
+                    enabled: false,
                     sublinks: [],
                 },
                 {
