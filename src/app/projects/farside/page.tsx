@@ -16,7 +16,7 @@ export default function Page() {
                         target="_blank"
                         className="flex w-full flex-wrap items-baseline gap-1 decoration-primary underline-offset-4 hover:underline"
                     >
-                        <p className="w-full text-xl text-secondary md:text-3xl">Farside</p>
+                        <p className="text-xl text-secondary md:text-3xl">Farside</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
                     <p className="text-xs">Just better than the original</p>
