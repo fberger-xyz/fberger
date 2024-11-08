@@ -7,7 +7,7 @@ export enum AppPagePaths {
     PROJECTS_FARSIDE = '/projects/farside',
     PROJECTS_SAFES = '/projects/safes',
     PROJECTS_CONNECT_RABBYKIT = '/projects/connect-rabbykit',
-    PROJECTS_MACRO = '/projects/macro',
+    PROJECTS_ALPHA = '/projects/alpha',
     PROJECTS_NFT_STONKS = '/projects/nft-stonks',
     ABOUT = '/cv',
 }

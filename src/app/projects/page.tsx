@@ -6,7 +6,7 @@ import { ReactNode } from 'react'
 
 function SkillsLine(props: { skills: string[] }) {
     return (
-        <div className="flex w-full flex-wrap justify-end gap-1 text-xs">
+        <div className="mt-1 flex w-full flex-wrap justify-end gap-1 text-xs">
             {props.skills.map((skill) => (
                 <div className="flex w-fit items-center border border-very-light-hover px-1 py-0.5 group-hover:border-inactive">
                     <p className="text-nowrap text-inactive group-hover:text-primary">{skill}</p>
@@ -79,9 +79,9 @@ export default function Page() {
                     <p className="text-xs">Time to code: 1 afternoon</p>
                     <SkillsLine skills={['Next', 'RabbyKit', 'Wagmi']} />
                 </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_MACRO}>
+                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA}>
                     <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Macro</p>
+                        <p className="text-secondary group-hover:text-primary">Alpha</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
                     </div>
                     <p className="text-xs">Time to code: 1 afternoon</p>

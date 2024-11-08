@@ -14,7 +14,7 @@ export default function Page() {
                     {[
                         '10x fullstack dev',
                         'Based in Paris 🇫🇷',
-                        'Connecting the dots: TradFi x DeFi',
+                        'Connecting the dots: TradFi <> DeFi',
                         'XP in DeFi and Risk Management @CoinShares',
                     ].map((interest) => (
                         <li key={interest} className="flex gap-3">
