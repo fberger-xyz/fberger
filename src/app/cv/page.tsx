@@ -14,7 +14,7 @@ export default function Page() {
                 <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="text-secondary">Self</p>
+                            <p className="text-secondary">Freelance</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
