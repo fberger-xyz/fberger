@@ -79,6 +79,14 @@ export default function Page() {
                     <p className="text-xs">Time to code: 1 afternoon</p>
                     <SkillsLine skills={['Next', 'RabbyKit', 'Wagmi']} />
                 </ProjectCard>
+                <ProjectCard path={AppPagePaths.PROJECTS_MACRO}>
+                    <div className="flex w-full justify-between">
+                        <p className="text-secondary group-hover:text-primary">Macro</p>
+                        <p className="text-xs text-secondary">Nov 2024</p>
+                    </div>
+                    <p className="text-xs">Time to code: 1 afternoon</p>
+                    <SkillsLine skills={['Next']} />
+                </ProjectCard>
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
