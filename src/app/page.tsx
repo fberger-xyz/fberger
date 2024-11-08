@@ -9,8 +9,8 @@ export default function Page() {
         <PageWrapper className="gap-5">
             {/* tldr */}
             <div className="mt-4 flex flex-col gap-2">
-                <p className="font-bold">Tldr;</p>
-                <ul className="flex flex-col gap-1 text-sm text-default">
+                <p className="font-bold text-primary">Tldr;</p>
+                <ul className="flex flex-col gap-1 text-sm">
                     {[
                         '10x fullstack dev',
                         'Interested in linking TradFi with DeFi',
@@ -27,8 +27,8 @@ export default function Page() {
 
             {/* context */}
             <div className="flex flex-col gap-2">
-                <p className="font-bold">Contact</p>
-                <ul className="flex flex-col gap-1 text-sm text-default">
+                <p className="font-bold text-primary">Contact</p>
+                <ul className="flex flex-col gap-1 text-sm">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },

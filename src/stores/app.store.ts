@@ -56,7 +56,7 @@ export const useAppStore = create<{
                 },
                 {
                     name: 'Safes',
-                    path: AppPagePaths.PROJECTS_SAFES_TRADES,
+                    path: AppPagePaths.PROJECTS_SAFES,
                     enabled: true,
                     sublinks: [],
                 },

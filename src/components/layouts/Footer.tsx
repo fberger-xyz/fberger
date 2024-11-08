@@ -11,7 +11,7 @@ interface FooterProps {
 export default function Footer(props: FooterProps) {
     return (
         <div className={cn('fixed bottom-0 w-full flex justify-end text-sm z-0', props.className)}>
-            <div className="flex items-end gap-4 rounded-ss-xl bg-background p-3 text-default opacity-80 backdrop-blur-sm">
+            <div className="flex items-end gap-4 rounded-ss-xl bg-background p-3 opacity-80 backdrop-blur-sm">
                 {[
                     { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM },
                     { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X },

@@ -12,18 +12,18 @@ export default function Page() {
                     <LinkWrapper
                         href="https://www.linkedin.com/posts/francis-berger-a2404094_degen-web3-nft-activity-6879062483768795136-WomP/?utm_source=share&utm_medium=member_desktop"
                         target="_blank"
-                        className="flex w-fit items-baseline gap-1 underline-offset-4 hover:underline"
+                        className="flex w-full flex-wrap items-baseline gap-1 decoration-primary underline-offset-4 hover:underline"
                     >
                         <p className="w-full text-xl text-secondary md:text-3xl">NFT Stonks</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs text-default">List all OpenSea trades for any address/ENS and compute profit per NFT</p>
+                    <p className="text-xs">List all OpenSea trades for any address/ENS and compute profit per NFT</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
-                    <p className="text-xs text-default">1. Preview</p>
-                    <p className="text-xs text-default">2. Why</p>
-                    <p className="text-xs text-default">Conclusion</p>
+                    <p className="text-xs">1. Preview</p>
+                    <p className="text-xs">2. Why</p>
+                    <p className="text-xs">Conclusion</p>
                 </div>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
@@ -33,12 +33,12 @@ export default function Page() {
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
                 <div className="flex flex-wrap items-baseline gap-2">
-                    <p className="text-sm text-default">- for CT</p>
+                    <p className="text-sm">- for CT</p>
                 </div>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
-                <p className="text-sm text-default">Got some traction.</p>
+                <p className="text-sm">Got some traction.</p>
             </div>
         </PageWrapper>
     )

@@ -4,14 +4,14 @@ import PageWrapper from '@/components/common/PageWrapper'
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm text-default">Summary</p>
+            <p className="text-sm">Summary</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
                 <div className="flex items-baseline gap-2">
-                    <p>Experiences</p>
+                    <p className="text-primary">Experiences</p>
                     <p className="text-xs italic text-light-hover">Excluding freelance and side projects</p>
                 </div>
-                <ul className="flex flex-col gap-3 text-default sm:gap-1">
+                <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Self</p>
@@ -72,8 +72,8 @@ export default function Page() {
 
             {/* studies */}
             <div className="flex flex-col gap-1">
-                <p>Studies</p>
-                <ul className="text-default">
+                <p className="text-primary">Studies</p>
+                <ul>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">42</p>
                         <p className="text-sm">2020</p>
@@ -81,7 +81,7 @@ export default function Page() {
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">DSCG</p>
                         <p className="text-sm">2019</p>
-                        <p className="text-sm text-inactive">(french CPA)</p>
+                        <p className="text-sm text-inactive">french CPA</p>
                     </li>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">Msc. Corporate Finance</p>
