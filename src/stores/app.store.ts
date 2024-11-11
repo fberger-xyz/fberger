@@ -61,7 +61,7 @@ export const useAppStore = create<{
                     sublinks: [],
                 },
                 {
-                    name: 'Farside',
+                    name: 'ETFs',
                     path: AppPagePaths.PROJECTS_FARSIDE,
                     enabled: true,
                     sublinks: [],
