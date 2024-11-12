@@ -2,7 +2,12 @@ import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import { AppPagePaths } from '@/enums'
 import { cn } from '@/utils'
+import { Metadata } from 'next'
 import { ReactNode } from 'react'
+
+export const metadata: Metadata = {
+    title: 'Projects | fberger',
+}
 
 function SkillsLine(props: { skills: string[] }) {
     return (

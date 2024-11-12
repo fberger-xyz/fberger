@@ -1,5 +1,10 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'CV | fberger',
+}
 
 export default function Page() {
     return (

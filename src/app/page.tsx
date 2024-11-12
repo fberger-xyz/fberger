@@ -3,6 +3,11 @@ import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import { APP_METADATA } from '@/config/app.config'
 import { IconIds } from '@/enums'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Home | fberger',
+}
 
 export default function Page() {
     return (
