@@ -62,7 +62,7 @@ export const useAppStore = create<{
                 },
                 {
                     name: 'ETFs',
-                    path: AppPagePaths.PROJECTS_FARSIDE,
+                    path: AppPagePaths.PROJECTS_ETFS,
                     enabled: true,
                     sublinks: [],
                 },

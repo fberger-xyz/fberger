@@ -62,9 +62,9 @@ export default function Page() {
                     </p>
                     <SkillsLine skills={['?']} />
                 </ProjectCard> */}
-                <ProjectCard path={AppPagePaths.PROJECTS_FARSIDE}>
+                <ProjectCard path={AppPagePaths.PROJECTS_ETFS}>
                     <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Farside</p>
+                        <p className="text-secondary group-hover:text-primary">ETFs</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
                     </div>
                     <p className="text-xs">
