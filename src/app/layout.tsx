@@ -13,7 +13,7 @@ import { AppThemes } from '@/enums'
 const font = Nunito_Sans({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: APP_METADATA.SITE_NAME,
+    // title: APP_METADATA.SITE_NAME, // specified in pages
     description: APP_METADATA.SITE_DESCRIPTION,
     applicationName: APP_METADATA.SITE_NAME,
     metadataBase: new URL(APP_METADATA.SITE_URL),
