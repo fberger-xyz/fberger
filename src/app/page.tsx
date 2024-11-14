@@ -16,7 +16,13 @@ export default function Page() {
             <div className="mt-4 flex flex-col gap-2">
                 <p className="font-bold text-primary">Tldr;</p>
                 <ul className="flex flex-col gap-1 text-sm">
-                    {['10x dev', 'Connecting the dots', 'XP in DeFi + Risk Management @CoinShares', 'Based in 🇫🇷'].map((interest) => (
+                    {[
+                        '10x dev',
+                        'XP in DeFi and Risk Management @CoinShares + prev. M&A',
+                        'Do at least a little every day - a lot if possible',
+                        'Connecting the dots',
+                        '🇫🇷',
+                    ].map((interest) => (
                         <li key={interest} className="flex gap-3">
                             <span className="text-inactive">&#x2022;</span>
                             <p>{interest}</p>

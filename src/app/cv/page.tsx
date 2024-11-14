@@ -26,7 +26,7 @@ export default function Page() {
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
-                            <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
+                            <p className="text-sm">Nov 2021 {'>'} Dec 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
                                 <p className="text-base">CoinShares</p>
                             </LinkWithIcon>
