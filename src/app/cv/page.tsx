@@ -80,7 +80,7 @@ export default function Page() {
                 <p className="text-primary">Studies</p>
                 <ul>
                     <li className="flex items-baseline gap-2">
-                        <p className="text-secondary">School 42</p>
+                        <p className="text-secondary">42</p>
                         <p className="text-sm">2020</p>
                     </li>
                     <li className="flex items-baseline gap-2">
