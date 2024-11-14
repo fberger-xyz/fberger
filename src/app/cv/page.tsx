@@ -19,7 +19,7 @@ export default function Page() {
                 <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="text-secondary">Freelance</p>
+                            <p className="text-secondary">Consultancy</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
@@ -32,7 +32,7 @@ export default function Page() {
                             </LinkWithIcon>
                         </div>
                         <p className="text-sm text-inactive">
-                            &#x2022; Coded frontends and backends used daily by ops + quants + traders + top management
+                            &#x2022; Coded frontends and backends used daily by ops team + quants + traders + top management
                         </p>
                         <p className="pl-4 text-sm text-inactive">
                             1) to compute P&L and risk exposure (hedge funds, lending and staking activities)
@@ -43,7 +43,7 @@ export default function Page() {
                         <p className="text-sm text-inactive">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
                         <p className="text-sm text-inactive">&#x2022; Run ethereum nodes to test Shanghai upgrade (with https access)</p>
                         <p className="text-sm text-inactive">
-                            &#x2022; Proactive to improve CS legacy stack w/ best-in-class tools (vite, tailwind, zustand)
+                            &#x2022; Proactive to improve CS legacy stack w/ best-in-class tech stack (vite, tailwind, zustand)
                         </p>
                         <p className="text-sm text-inactive">{'>'} Left to focus on DeFi</p>
                     </li>

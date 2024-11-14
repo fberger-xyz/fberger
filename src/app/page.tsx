@@ -18,10 +18,10 @@ export default function Page() {
                 <ul className="flex flex-col gap-1 text-sm">
                     {[
                         '10x dev',
-                        'XP in DeFi and Risk Management @CoinShares + prev. M&A',
+                        'XP in DeFi and Risk Management @CoinShares',
+                        'Connecting the dots TradFi <> DeFi',
                         'Do at least a little every day - a lot if possible',
-                        'Connecting the dots',
-                        '🇫🇷',
+                        'In Paris 🇫🇷',
                     ].map((interest) => (
                         <li key={interest} className="flex gap-3">
                             <span className="text-inactive">&#x2022;</span>
