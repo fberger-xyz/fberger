@@ -19,14 +19,14 @@ export default function Page() {
                 <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-                            <p className="text-secondary">Consultancy</p>
+                            <p className="text-secondary">Freelance</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
                     <li className="mb-1 flex flex-col">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
-                            <p className="text-sm">Nov 2021 {'>'} Dec 2024</p>
+                            <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
                                 <p className="text-base">CoinShares</p>
                             </LinkWithIcon>
@@ -42,6 +42,7 @@ export default function Page() {
                         <p className="text-sm text-inactive">&#x2022; Research and training on Staking and DeFi</p>
                         <p className="text-sm text-inactive">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
                         <p className="text-sm text-inactive">&#x2022; Run ethereum nodes to test Shanghai upgrade (with https access)</p>
+                        <p className="text-sm text-inactive">&#x2022; AWS DevOps to run bots (Nestjs APIs)</p>
                         <p className="text-sm text-inactive">
                             &#x2022; Proactive to improve CS legacy stack w/ best-in-class tech stack (vite, tailwind, zustand)
                         </p>

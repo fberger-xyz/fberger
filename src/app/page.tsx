@@ -20,7 +20,7 @@ export default function Page() {
                         '10x dev',
                         'XP in DeFi and Risk Management @CoinShares',
                         'Connecting the dots TradFi <> DeFi',
-                        'Do at least a little every day - a lot if possible',
+                        // 'Do at least a little every day - a lot if possible',
                         '🇫🇷',
                     ].map((interest) => (
                         <li key={interest} className="flex gap-3">
