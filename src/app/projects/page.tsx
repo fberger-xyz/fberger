@@ -60,7 +60,7 @@ export default function Page() {
                     <p className="text-xs">
                         <span className="mr-1 text-inactive">Time to code:</span>4 days
                     </p>
-                    <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
+                    <SkillsLine skills={['Next.js', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
                 </ProjectCard>
                 <ProjectCard path={AppPagePaths.PROJECTS_SEEDS}>
                     <div className="flex w-full justify-between">
@@ -82,7 +82,7 @@ export default function Page() {
                         <span className="mr-1 text-inactive">Time to code:</span>
                         {'<'} 1 day
                     </p>
-                    <SkillsLine skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']} />
+                    <SkillsLine skills={['Next.js', 'Gnosis Safe', '1inch', 'Cowswap']} />
                 </ProjectCard>
                 <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
                     <div className="flex w-full justify-between">
@@ -93,7 +93,7 @@ export default function Page() {
                         <span className="mr-1 text-inactive">Time to code:</span>
                         {'<'} 1 day
                     </p>
-                    <SkillsLine skills={['Next', 'RabbyKit', 'Wagmi']} />
+                    <SkillsLine skills={['Next.js', 'RabbyKit', 'Wagmi']} />
                 </ProjectCard>
                 <ProjectCard path={AppPagePaths.PROJECTS_ALPHA}>
                     <div className="flex w-full justify-between">
@@ -104,13 +104,13 @@ export default function Page() {
                         <span className="mr-1 text-inactive">Time to code:</span>
                         {'<'} 1 day
                     </p>
-                    <SkillsLine skills={['Next']} />
+                    <SkillsLine skills={['Next.js']} />
                 </ProjectCard>
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
                         <p className="text-xs text-secondary"><span className="text-inactive mr-1">Time to code:</span>2 days</p>
-                        <SkillsLine skills={['BIP44', 'Next']} />
+                        <SkillsLine skills={['BIP44', 'Next.js']} />
                     </ProjectCard> */}
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Nov 2024</p>
@@ -125,7 +125,7 @@ export default function Page() {
                     <p className="text-xs">
                         <span className="mr-1 text-inactive">Time to code:</span>3 weeks
                     </p>
-                    <SkillsLine skills={['VueJS', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud', 'Netlify']} />
+                    <SkillsLine skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']} />
                 </ProjectCard>
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Oct 2021</p>
