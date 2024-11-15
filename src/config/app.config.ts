@@ -3,7 +3,8 @@ import { AppThemes, IconIds } from '@/enums'
 export const APP_METADATA = {
     SITE_AUTHOR: 'fberger',
     SITE_NAME: 'fberger.xyz',
-    SITE_DESCRIPTION: 'Do at least a little every day - a lot if possible',
+    // SITE_DESCRIPTION: 'Do at least a little every day - a lot if possible',
+    SITE_DESCRIPTION: 'Connecting the dots TradFi <> DeFi',
     SITE_URL: 'https://fberger.xyz/',
     SOCIALS: {
         X: 'fberger_xyz',
