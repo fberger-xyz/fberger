@@ -38,9 +38,10 @@ export default function Page() {
                     </li>
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
-                        <div className="flex items-center gap-1">
-                            <p>Connecting the dots {'>>>'} TradFi</p>
-                            <IconWrapper icon={IconIds.LOADING_DOTS} className="size-5" />
+                        <div className="flex items-center gap-0.5">
+                            <p className="pr-1">"Connecting the Dots"</p>
+                            <p>TradFi</p>
+                            <IconWrapper icon={IconIds.LOADING_DOTS} className="size-5 text-primary" />
                             <p>DeFi</p>
                         </div>
                     </li>
