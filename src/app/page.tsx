@@ -1,6 +1,7 @@
 import IconWrapper from '@/components/common/IconWrapper'
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
+import SvgMapper from '@/components/common/SvgMapper'
 import { APP_METADATA } from '@/config/app.config'
 import { IconIds } from '@/enums'
 import { Metadata } from 'next'
@@ -38,10 +39,10 @@ export default function Page() {
                     </li>
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
-                        <div className="flex items-center gap-0.5">
-                            <p className="pr-1">"Connecting the Dots"</p>
+                        <div className="flex items-center gap-1">
+                            <p className="pr-0.5">"Connecting the Dots"</p>
                             <p>TradFi</p>
-                            <IconWrapper icon={IconIds.LOADING_DOTS} className="size-5 text-primary" />
+                            <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4 text-primary" />
                             <p>DeFi</p>
                         </div>
                     </li>
