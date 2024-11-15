@@ -16,12 +16,38 @@ export default function Page() {
             <div className="mt-4 flex flex-col gap-2">
                 <p className="font-bold text-primary">Tldr;</p>
                 <ul className="flex flex-col gap-1 text-sm">
-                    {['10x dev', 'XP in DeFi and Risk Management @CoinShares', APP_METADATA.SITE_DESCRIPTION, '🇫🇷'].map((interest) => (
-                        <li key={interest} className="flex gap-3">
+                    {/* {[
+                        { text: '10x dev' },
+                        { text: 'XP in DeFi and Risk Management @CoinShares' },
+                        { text: APP_METADATA.SITE_DESCRIPTION },
+                        { text: '🇫🇷' },
+                    ].map((interest) => (
+                        <li key={interest.text} className="flex gap-3">
                             <span className="text-inactive">&#x2022;</span>
-                            <p>{interest}</p>
+                            <p>{interest.text}</p>
                         </li>
-                    ))}
+                    ))} */}
+
+                    <li className="flex gap-3">
+                        <span className="text-inactive">&#x2022;</span>
+                        <p>10x dev</p>
+                    </li>
+                    <li className="flex gap-3">
+                        <span className="text-inactive">&#x2022;</span>
+                        <p>XP in DeFi and Risk Management @CoinShares</p>
+                    </li>
+                    <li className="flex gap-3">
+                        <span className="text-inactive">&#x2022;</span>
+                        <div className="flex items-center gap-1">
+                            <p>Connecting the dots {'>>>'} TradFi</p>
+                            <IconWrapper icon={IconIds.LOADING_DOTS} className="size-5" />
+                            <p>DeFi</p>
+                        </div>
+                    </li>
+                    <li className="flex gap-3">
+                        <span className="text-inactive">&#x2022;</span>
+                        <p>🇫🇷</p>
+                    </li>
                 </ul>
             </div>
 
@@ -39,7 +65,7 @@ export default function Page() {
                         },
                     ].map((social) => (
                         <li key={social.href} className="flex gap-3">
-                            <IconWrapper icon={social.icon} className="h-4 w-4" />
+                            <IconWrapper icon={social.icon} className="size-4" />
                             <LinkWithIcon href={social.href}>{social.id}</LinkWithIcon>
                         </li>
                     ))}

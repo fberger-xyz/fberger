@@ -37,4 +37,7 @@ export enum IconIds {
     // evm
     TRANSACTION = 'carbon:text-align-center',
     CONTRACT = 'carbon:cics-program',
+
+    // -
+    LOADING_DOTS = 'eos-icons:three-dots-loading',
 }
