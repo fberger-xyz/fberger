@@ -43,8 +43,8 @@ export const useAppStore = create<{
             enabled: true,
             sublinks: [
                 {
-                    name: 'Aptos Liquidation Bot',
-                    path: AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT,
+                    name: 'Seeds',
+                    path: AppPagePaths.PROJECTS_SEEDS,
                     enabled: false,
                     sublinks: [],
                 },

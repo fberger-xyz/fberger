@@ -3,7 +3,7 @@ export enum AppPagePaths {
     PROJECTS = '/projects',
     // PROJECTS_POLYMARKET_SLACK = '/projects/polymarket-slack', // https://learn.polymarket.com/docs/guides/get-started/what-is-polymarket/
     // PROJECTS_BINANCE_LISTINGS = '/projects/binance-listings',
-    PROJECTS_APTOS_LIQUIDATION_BOT = '/projects/aptos-liquidation-bot',
+    PROJECTS_SEEDS = '/projects/seeds',
     PROJECTS_ETFS = '/projects/etfs',
     PROJECTS_SAFES = '/projects/safes',
     PROJECTS_CONNECT_RABBYKIT = '/projects/connect-rabbykit',

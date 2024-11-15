@@ -52,16 +52,6 @@ export default function Page() {
         <PageWrapper className="gap-5">
             <p className="text-sm">Some side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
-                {/* <ProjectCard path={AppPagePaths.PROJECTS_APTOS_LIQUIDATION_BOT}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Aptos Liquidation Bot</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>🚧
-                    </p>
-                    <SkillsLine skills={['?']} />
-                </ProjectCard> */}
                 <ProjectCard path={AppPagePaths.PROJECTS_ETFS}>
                     <div className="flex w-full justify-between">
                         <p className="text-secondary group-hover:text-primary">ETFs</p>
@@ -71,6 +61,17 @@ export default function Page() {
                         <span className="mr-1 text-inactive">Time to code:</span>4 days
                     </p>
                     <SkillsLine skills={['Next', 'Xata DB', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
+                </ProjectCard>
+                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS}>
+                    <div className="flex w-full justify-between">
+                        <p className="text-secondary group-hover:text-primary">Seeds</p>
+                        <p className="text-xs text-secondary">Nov 2024</p>
+                    </div>
+                    <p className="text-xs">
+                        <span className="mr-1 text-inactive">Time to code:</span>
+                        {'<'} 1 day
+                    </p>
+                    <SkillsLine skills={['BIP39', 'Rot Cipher']} />
                 </ProjectCard>
                 <ProjectCard path={AppPagePaths.PROJECTS_SAFES}>
                     <div className="flex w-full justify-between">
