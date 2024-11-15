@@ -39,5 +39,5 @@ export enum IconIds {
     CONTRACT = 'carbon:cics-program',
 
     // -
-    LOADING_DOTS = 'eos-icons:three-dots-loading',
+    LOADING_DOTS = 'svg-spinners:3-dots-scale-middle',
 }
