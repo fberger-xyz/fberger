@@ -36,12 +36,10 @@ export default function Page() {
                         <p className="pl-4 text-xs">2) to monitor trading strategies (positions, volatility surfaces, greeks)</p>
                         <p className="pl-4 text-xs">3) to adapt strategies to economic calendar</p>
                         <p className="text-xs">&#x2022; Practical research on Staking</p>
-                        <p className="text-xs">&#x2022; Shipped an operational DeFi dApp (hardhat, ethers, the Graph)</p>
+                        <p className="text-xs">&#x2022; Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</p>
                         <p className="text-xs">&#x2022; Run ethereum nodes to test Shanghai upgrade (with https access)</p>
                         <p className="text-xs">&#x2022; AWS DevOps to run bots (Nestjs APIs)</p>
-                        <p className="text-xs">
-                            &#x2022; Proactive to improve CS legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
-                        </p>
+                        <p className="text-xs">&#x2022; Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)</p>
                         <p className="text-xs">{'>'} Left to focus on DeFi</p>
                     </li>
                     <li className="mb-1 flex flex-col">
