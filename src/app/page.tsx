@@ -42,7 +42,7 @@ export default function Page() {
                         <div className="flex items-center gap-1">
                             <p className="pr-0.5 italic">"Connecting the Dots"</p>
                             <p>TradFi</p>
-                            <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4 text-primary" />
+                            <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
                             <p>DeFi</p>
                         </div>
                     </li>
