@@ -56,7 +56,7 @@ export default function Page() {
             {/* context */}
             <div className="flex flex-col gap-2">
                 <p className="font-bold text-primary">Contact me</p>
-                <ul className="flex flex-col gap-1 text-sm">
+                <ul className="flex flex-col gap-1.5 text-sm">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },
@@ -65,8 +65,13 @@ export default function Page() {
                             icon: IconIds.LINKEDIN,
                             id: 'Francis Berger',
                         },
+                        {
+                            href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`,
+                            icon: IconIds.GITHUB,
+                            id: 'fberger-xyz',
+                        },
                     ].map((social) => (
-                        <li key={social.href} className="flex gap-3">
+                        <li key={social.href} className="flex items-center gap-3">
                             <IconWrapper icon={social.icon} className="size-4" />
                             <LinkWithIcon href={social.href}>{social.id}</LinkWithIcon>
                         </li>

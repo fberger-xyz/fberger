@@ -22,7 +22,7 @@ export default function Header(props: { className?: string }) {
                     />
                     <p className="hidden text-2xl text-primary sm:block">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
-                <div className="z-50 flex gap-0.5 sm:gap-1 md:gap-1.5">
+                <div className="z-50 flex gap-1 md:gap-1.5">
                     {(Object.values(AppPagePaths) as AppPagePaths[])
                         .filter((path) => path.split('/').length < 3)
                         .map((path) => (
