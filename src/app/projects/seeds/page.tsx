@@ -18,7 +18,7 @@ export default function Page() {
                         <p className="text-xl capitalize text-secondary md:text-3xl">{projectName}</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs">Keep your private key out of plain sight, anon</p>
+                    <p className="text-xs">Encrypt your seed phrase with a basic substitution cipher method</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
@@ -33,7 +33,7 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
-                <p className="text-sm">- for everyone to encode their seed storage</p>
+                <p className="text-sm">- for everyone to encrypt their seed with a simple encryption</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>

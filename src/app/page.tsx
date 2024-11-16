@@ -40,7 +40,7 @@ export default function Page() {
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
                         <div className="flex items-center gap-1">
-                            <p className="pr-0.5">"Connecting the Dots"</p>
+                            <p className="pr-0.5 italic">"Connecting the Dots"</p>
                             <p>TradFi</p>
                             <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4 text-primary" />
                             <p>DeFi</p>

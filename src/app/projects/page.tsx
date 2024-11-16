@@ -32,12 +32,12 @@ function ProjectCard({
     disabled?: boolean
 }) {
     return (
-        <div className="group w-full border-b border-light-hover p-0.5 hover:border-primary">
+        <div className="group w-full border-b border-light-hover pt-0.5 hover:border-primary">
             <LinkWrapper
                 href={props.path}
                 target={target}
                 disabled={disabled}
-                className={cn('flex w-full flex-col rounded-sm pb-3 pt-1 transition duration-300 hover:border-primary', {
+                className={cn('flex w-full flex-col rounded-sm pb-3 transition duration-300 hover:border-primary', {
                     // 'opacity-50 cursor-not-allowed': disabled,
                 })}
             >
