@@ -9,7 +9,7 @@ export enum AppPagePaths {
     PROJECTS_CONNECT_RABBYKIT = '/projects/connect-rabbykit',
     PROJECTS_ALPHA = '/projects/alpha',
     PROJECTS_NFT_STONKS = '/projects/nft-stonks',
-    ABOUT = '/cv',
+    CAREER = '/career',
 }
 
 export enum AppThemes {
