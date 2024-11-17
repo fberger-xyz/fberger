@@ -18,7 +18,7 @@ export default function Page() {
                         <p className="text-xl capitalize text-secondary md:text-3xl">{projectName}</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs">Encrypt your seed phrase with a basic substitution cipher method</p>
+                    <p className="text-xs">Encrypt your seed phrase with a simple substitution cipher method</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
