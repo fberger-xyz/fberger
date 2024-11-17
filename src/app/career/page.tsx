@@ -3,7 +3,7 @@ import PageWrapper from '@/components/common/PageWrapper'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'CV | fberger',
+    title: 'Career | fberger',
 }
 
 export default function Page() {
