@@ -12,9 +12,7 @@ export default function Page() {
             <p className="text-sm lg:text-base">Summary excluding freelance and side projects</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
-                <div className="flex items-baseline gap-2">
-                    <p className="font-bold text-primary">Experiences</p>
-                </div>
+                <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
                 <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
                         <div className="mb-0.5 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
@@ -75,7 +73,7 @@ export default function Page() {
 
             {/* studies */}
             <div className="flex flex-col gap-1">
-                <p className="font-bold text-primary">Studies</p>
+                <p className="text-base font-bold text-primary lg:text-lg">Studies</p>
                 <ul>
                     <li className="flex items-baseline gap-2">
                         <p className="text-secondary">42</p>

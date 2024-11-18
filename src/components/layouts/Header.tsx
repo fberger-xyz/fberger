@@ -9,26 +9,14 @@ import { APP_METADATA } from '@/config/app.config'
 export default function Header(props: { className?: string }) {
     return (
         <div className={cn('fixed top-0 flex justify-center items-center w-full', props.className)}>
-            <div className="relative flex h-16 w-full max-w-[550px] items-center justify-between gap-0.5 border-b border-very-light-hover bg-background px-4 text-base backdrop-blur-md sm:mt-2 sm:h-fit sm:justify-between sm:rounded-lg sm:border-transparent sm:bg-transparent sm:p-2 sm:text-lg">
+            <div className="relative flex h-16 w-full max-w-[600px] items-center justify-between gap-0.5 border-b border-very-light-hover bg-background px-4 text-base backdrop-blur-md sm:mt-2 sm:h-fit sm:justify-between sm:rounded-lg sm:border-transparent sm:bg-transparent sm:p-2 sm:text-lg">
                 {/* <!-- eslint-disable-next-line --> */}
                 <div className="bg-background/10 absolute inset-0 z-40 rounded-xl" />
                 <LinkWrapper href="/" className="z-50 flex items-end gap-2 md:hidden">
-                    <Image
-                        src={APP_METADATA.PROFILE_PICTURE}
-                        width={38}
-                        height={38}
-                        alt="https://x.com/fran6brg/photo"
-                        className="rounded-md bg-primary p-0.5"
-                    />
+                    <Image src={APP_METADATA.PROFILE_PICTURE} width={38} height={38} alt="https://x.com/fran6brg/photo" className="rounded-md" />
                 </LinkWrapper>
                 <LinkWrapper href="/" className="z-50 hidden items-end gap-2 md:flex">
-                    <Image
-                        src={APP_METADATA.PROFILE_PICTURE}
-                        width={42}
-                        height={42}
-                        alt="https://x.com/fran6brg/photo"
-                        className="rounded-md bg-light-hover p-0.5"
-                    />
+                    <Image src={APP_METADATA.PROFILE_PICTURE} width={42} height={42} alt="https://x.com/fran6brg/photo" className="rounded-md" />
                     <p className="mb-1 text-2xl text-primary">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
                 <div className="z-50 flex gap-1 md:gap-1.5">
