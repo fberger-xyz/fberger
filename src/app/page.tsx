@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-5">
+        <PageWrapper className="gap-5 lg:gap-7">
             {/* tldr */}
-            <div className="mt-4 flex flex-col gap-2">
-                <p className="font-bold text-primary">Tldr;</p>
-                <ul className="flex flex-col gap-1 text-sm">
+            <div className="mt-4 flex flex-col gap-3">
+                <p className="text-base font-bold text-primary lg:text-lg">Tldr;</p>
+                <ul className="flex flex-col gap-1 text-sm lg:text-base">
                     {/* {[
                         { text: '10x dev' },
                         { text: 'XP in DeFi and Risk Management @CoinShares' },
@@ -54,9 +54,9 @@ export default function Page() {
             </div>
 
             {/* context */}
-            <div className="flex flex-col gap-2">
-                <p className="font-bold text-primary">Contact me</p>
-                <ul className="flex flex-col gap-1.5 text-sm">
+            <div className="flex flex-col gap-3">
+                <p className="text-base font-bold text-primary lg:text-lg">Contact me</p>
+                <ul className="flex flex-col gap-1.5 text-sm lg:text-base">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },

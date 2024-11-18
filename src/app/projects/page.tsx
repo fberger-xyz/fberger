@@ -24,12 +24,18 @@ function SkillsLine(props: { skills: string[] }) {
 function ProjectCard({
     target = '_self',
     disabled = false,
+    title,
+    date,
+    ttc,
     ...props
 }: {
     children: ReactNode
     path: AppPagePaths | string
     target?: '_blank' | '_self' | '_parent' | '_top'
     disabled?: boolean
+    title: string
+    date: string
+    ttc: string
 }) {
     return (
         <div className="group w-full border-b border-light-hover pt-0.5 hover:border-primary">
@@ -41,6 +47,14 @@ function ProjectCard({
                     // 'opacity-50 cursor-not-allowed': disabled,
                 })}
             >
+                <div className="flex w-full justify-between">
+                    <p className="text-secondary group-hover:text-primary lg:text-lg">{title}</p>
+                    <p className="text-xs text-secondary lg:text-sm">{date}</p>
+                </div>
+                <p className="text-xs lg:text-sm">
+                    <span className="mr-1 text-inactive">Time to code:</span>
+                    {ttc}
+                </p>
                 {props.children}
             </LinkWrapper>
         </div>
@@ -50,60 +64,21 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm">Some side projects I can publicly speak about</p>
+            <p className="text-sm lg:text-base">Some side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
-                <ProjectCard path={AppPagePaths.PROJECTS_ETFS}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">ETFs</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>4 days
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_ETFS} title="ETFs" date="Nov 2024" ttc="4 days">
                     <SkillsLine skills={['Next.js', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
                 </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Seeds</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>
-                        {'<'} 1 day
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS} title="Seeds" date="Nov 2024" ttc="< 1 day">
                     <SkillsLine skills={['BIP39', 'Rot Cipher']} />
                 </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_SAFES}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Safes</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>
-                        {'<'} 1 day
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_SAFES} title="Safes" date="Nov 2024" ttc="< 1 day">
                     <SkillsLine skills={['Next.js', 'Gnosis Safe', '1inch', 'Cowswap']} />
                 </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">RabbyKit</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>
-                        {'<'} 1 day
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT} title="RabbyKit" date="Nov 2024" ttc="< 1 day">
                     <SkillsLine skills={['Next.js', 'RabbyKit', 'Wagmi']} />
                 </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">Alpha</p>
-                        <p className="text-xs text-secondary">Nov 2024</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>
-                        {'<'} 1 day
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day">
                     <SkillsLine skills={['Next.js']} />
                 </ProjectCard>
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
@@ -117,14 +92,7 @@ export default function Page() {
                     <p className="text-base text-secondary">Risk and DeFi Developer @CoinShares</p>
                     <p className="text-xs text-inactive">Nov 2021</p>
                 </div> */}
-                <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS}>
-                    <div className="flex w-full justify-between">
-                        <p className="text-secondary group-hover:text-primary">NFT stonks</p>
-                        <p className="text-xs text-secondary">Oct 2021</p>
-                    </div>
-                    <p className="text-xs">
-                        <span className="mr-1 text-inactive">Time to code:</span>3 weeks
-                    </p>
+                <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS} title="NFT stonks" date="Oct 2021" ttc="3 weeks">
                     <SkillsLine skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']} />
                 </ProjectCard>
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
