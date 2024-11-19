@@ -23,7 +23,7 @@ const IframeWrapper: React.FC<{
             )}
             <iframe
                 src={src}
-                className={`absolute left-0 top-0 rounded-md border-2 border-transparent hover:border-secondary ${width} ${height}`}
+                className={`absolute left-0 top-0 rounded-md border-2 border-very-light-hover hover:border-secondary ${width} ${height}`}
                 // className={`absolute left-0 top-0 rounded-md border border-inactive grayscale hover:border-blue-500 group-hover:grayscale-0 ${width} ${height}`}
                 onLoad={handleLoad}
             ></iframe>

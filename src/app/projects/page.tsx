@@ -3,7 +3,6 @@ import PageWrapper from '@/components/common/PageWrapper'
 import { AppPagePaths } from '@/enums'
 import { cn } from '@/utils'
 import { Metadata } from 'next'
-import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
     title: 'Projects | fberger',
@@ -27,35 +26,36 @@ function ProjectCard({
     title,
     date,
     ttc,
+    skills,
     ...props
 }: {
-    children: ReactNode
     path: AppPagePaths | string
     target?: '_blank' | '_self' | '_parent' | '_top'
     disabled?: boolean
     title: string
     date: string
     ttc: string
+    skills: string[]
 }) {
     return (
-        <div className="group w-full border-b border-light-hover pt-0.5 hover:border-primary">
+        <div className="group w-full border-b-2 border-dotted border-light-hover hover:border-solid hover:border-primary">
             <LinkWrapper
                 href={props.path}
                 target={target}
                 disabled={disabled}
-                className={cn('flex w-full flex-col rounded-sm pb-3 transition duration-300 hover:border-primary', {
+                className={cn('flex w-full flex-col rounded-sm pb-2 transition duration-300 hover:border-primary', {
                     // 'opacity-50 cursor-not-allowed': disabled,
                 })}
             >
                 <div className="flex w-full justify-between">
-                    <p className="text-secondary group-hover:text-primary lg:text-lg">{title}</p>
+                    <p className="text-secondary group-hover:font-bold group-hover:text-primary">{title}</p>
                     <p className="text-xs text-secondary lg:text-sm">{date}</p>
                 </div>
                 <p className="text-xs lg:text-sm">
                     <span className="mr-1 text-inactive">Time to code:</span>
                     {ttc}
                 </p>
-                {props.children}
+                <SkillsLine skills={skills} />
             </LinkWrapper>
         </div>
     )
@@ -64,23 +64,31 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm lg:text-base">Some side projects I can publicly speak about</p>
+            <p className="text-sm lg:text-base">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
-                <ProjectCard path={AppPagePaths.PROJECTS_ETFS} title="ETFs" date="Nov 2024" ttc="4 days">
-                    <SkillsLine skills={['Next.js', 'Prisma', 'Inngest', 'Grammy', 'Vercel']} />
-                </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS} title="Seeds" date="Nov 2024" ttc="< 1 day">
-                    <SkillsLine skills={['BIP39', 'Rot Cipher']} />
-                </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_SAFES} title="Safes" date="Nov 2024" ttc="< 1 day">
-                    <SkillsLine skills={['Next.js', 'Gnosis Safe', '1inch', 'Cowswap']} />
-                </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT} title="RabbyKit" date="Nov 2024" ttc="< 1 day">
-                    <SkillsLine skills={['Next.js', 'RabbyKit', 'Wagmi']} />
-                </ProjectCard>
-                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day">
-                    <SkillsLine skills={['Next.js']} />
-                </ProjectCard>
+                <ProjectCard
+                    path={AppPagePaths.PROJECTS_ETFS}
+                    title="ETFs"
+                    date="Nov 2024"
+                    ttc="4 days"
+                    skills={['Next.js', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
+                />
+                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS} title="Seeds" date="Nov 2024" ttc="< 1 day" skills={['BIP39', 'Rot Cipher']} />
+                <ProjectCard
+                    path={AppPagePaths.PROJECTS_SAFES}
+                    title="Safes"
+                    date="Nov 2024"
+                    ttc="< 1 day"
+                    skills={['Next.js', 'Gnosis Safe', '1inch', 'Cowswap']}
+                />
+                <ProjectCard
+                    path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}
+                    title="RabbyKit"
+                    date="Nov 2024"
+                    ttc="< 1 day"
+                    skills={['Next.js', 'RabbyKit', 'Wagmi']}
+                />
+                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day" skills={['Next.js']} />
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
@@ -92,9 +100,13 @@ export default function Page() {
                     <p className="text-base text-secondary">Risk and DeFi Developer @CoinShares</p>
                     <p className="text-xs text-inactive">Nov 2021</p>
                 </div> */}
-                <ProjectCard path={AppPagePaths.PROJECTS_NFT_STONKS} title="NFT stonks" date="Oct 2021" ttc="3 weeks">
-                    <SkillsLine skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']} />
-                </ProjectCard>
+                <ProjectCard
+                    path={AppPagePaths.PROJECTS_NFT_STONKS}
+                    title="NFT stonks"
+                    date="Oct 2021"
+                    ttc="3 weeks"
+                    skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']}
+                />
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Oct 2021</p>
                     <p className="text-base text-secondary">Full Stack Developer @StationF</p>
