@@ -15,13 +15,13 @@ export default function Page() {
                 <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
                 <ul className="flex flex-col gap-3 sm:gap-1">
                     <li className="mb-1 flex flex-col">
-                        <div className="mb-0.5 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                        <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Freelance</p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
                     </li>
                     <li className="mb-1 flex flex-col">
-                        <div className="mb-0.5 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                        <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Risk and DeFi Developer</p>
                             <p className="text-sm">Nov 2021 {'>'} Nov 2024</p>
                             <LinkWithIcon href="https://coinshares.com/">
@@ -48,7 +48,7 @@ export default function Page() {
                         <p className="text-xs text-inactive">{'>'} Left to focus on DeFi</p>
                     </li>
                     <li className="mb-1 flex flex-col">
-                        <div className="mb-0.5 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                        <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Full-Stack Developer</p>
                             <p className="text-sm">Jan 2021 {'>'} Oct 2021</p>
                             <LinkWithIcon href="https://stationf.co/">
@@ -61,7 +61,7 @@ export default function Page() {
                         <p className="text-xs text-inactive">{'>'} Left to work in crypto</p>
                     </li>
                     <li className="flex flex-col">
-                        <div className="mb-0.5 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+                        <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="text-secondary">Transaction Services Analyst</p>
                             <p className="text-sm">2017 ; 2019</p>
                             <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
