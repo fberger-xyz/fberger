@@ -12,7 +12,7 @@ function SkillsLine(props: { skills: string[] }) {
     return (
         <div className="mt-1 flex w-full flex-wrap justify-end gap-1 text-xs">
             {props.skills.map((skill) => (
-                <div className="flex w-fit items-center border border-very-light-hover px-1 py-0.5 group-hover:border-inactive">
+                <div key={skill} className="flex w-fit items-center border border-very-light-hover px-1 py-0.5 group-hover:border-inactive">
                     <p className="text-nowrap text-inactive group-hover:text-primary">{skill}</p>
                 </div>
             ))}
@@ -47,10 +47,10 @@ function ProjectCard({
             >
                 <div className="flex w-full justify-between">
                     <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">{title}</p>
-                    <p className="text-xs text-secondary lg:text-sm">{date}</p>
+                    <p className="text-xs text-default">{date}</p>
                 </div>
                 <p className="text-xs lg:text-sm">
-                    <span className="mr-1 text-inactive">Time to code:</span>
+                    <span className="mr-1 text-inactive">Time to code</span>
                     {ttc}
                 </p>
                 <SkillsLine skills={skills} />
