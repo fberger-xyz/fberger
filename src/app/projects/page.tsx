@@ -38,17 +38,15 @@ function ProjectCard({
     skills: string[]
 }) {
     return (
-        <div className="group w-full border-b-2 border-dotted border-light-hover hover:border-solid hover:border-primary">
+        <div className="group w-full rounded-sm border-b-2 border-dotted border-light-hover p-1 hover:border-solid hover:border-primary hover:bg-very-light-hover">
             <LinkWrapper
                 href={props.path}
                 target={target}
                 disabled={disabled}
-                className={cn('flex w-full flex-col rounded-sm pb-2 transition duration-300 hover:border-primary', {
-                    // 'opacity-50 cursor-not-allowed': disabled,
-                })}
+                className={cn('flex w-full flex-col rounded-sm pb-1 transition duration-300 hover:border-primary')}
             >
                 <div className="flex w-full justify-between">
-                    <p className="text-secondary group-hover:font-bold group-hover:text-primary">{title}</p>
+                    <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">{title}</p>
                     <p className="text-xs text-secondary lg:text-sm">{date}</p>
                 </div>
                 <p className="text-xs lg:text-sm">
