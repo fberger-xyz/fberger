@@ -5,7 +5,7 @@ import { cn } from '@/utils'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'fberger >> Projects',
+    title: 'fberger.xyz | Projects',
 }
 
 function SkillsLine(props: { skills: string[] }) {

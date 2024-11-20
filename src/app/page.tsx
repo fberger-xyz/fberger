@@ -7,7 +7,7 @@ import { IconIds } from '@/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'fberger >> Home',
+    title: 'fberger.xyz | Home',
 }
 
 export default function Page() {
@@ -78,6 +78,11 @@ export default function Page() {
                     ))}
                 </ul>
             </div>
+
+            {/* <div className="flex items-center gap-1.5 text-sm lg:text-base">
+                <p className="text-base font-bold text-primary lg:text-lg">... or check my projects</p>
+                <HeaderButton pagePath={AppPagePaths.PROJECTS} />
+            </div> */}
         </PageWrapper>
     )
 }

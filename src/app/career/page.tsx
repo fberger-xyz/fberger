@@ -3,13 +3,13 @@ import PageWrapper from '@/components/common/PageWrapper'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'fberger >> Career',
+    title: 'fberger.xyz | Career',
 }
 
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm lg:text-base">Summary excluding freelance and side projects</p>
+            <p className="text-sm lg:text-base">Summary excluding freelance</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
                 <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
