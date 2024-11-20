@@ -18,7 +18,7 @@ export default function Header(props: { className?: string }) {
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={42} height={42} alt="https://x.com/fran6brg/photo" className="rounded-md" />
                     <p className="mb-1 text-2xl text-primary">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
-                <div className="z-50 flex gap-1.5 md:gap-2">
+                <div className="z-50 flex gap-1.5 lg:gap-2">
                     {(Object.values(AppPagePaths) as AppPagePaths[])
                         .filter((path) => path.split('/').length < 3)
                         .map((path) => (

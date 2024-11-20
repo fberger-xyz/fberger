@@ -7,7 +7,7 @@ import { IconIds } from '@/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Home | fberger',
+    title: 'fberger >> Home',
 }
 
 export default function Page() {
