@@ -6,7 +6,7 @@ export enum AppPagePaths {
     PROJECTS_SEEDS = '/projects/seeds',
     PROJECTS_ETFS = '/projects/etfs',
     PROJECTS_SAFES = '/projects/safes',
-    PROJECTS_CONNECT_RABBYKIT = '/projects/connect-rabbykit',
+    PROJECTS_CONNECT_RABBYKIT = '/projects/connect',
     PROJECTS_ALPHA = '/projects/alpha',
     PROJECTS_NFT_STONKS = '/projects/nft-stonks',
     CAREER = '/career',
