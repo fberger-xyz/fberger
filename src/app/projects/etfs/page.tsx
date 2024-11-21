@@ -19,7 +19,7 @@ export default function Page() {
                         <p className="text-xl text-secondary md:text-3xl">ETFs</p>
                         <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="h-6 w-6 text-primary" />
                     </LinkWrapper>
-                    <p className="text-xs">Just better than the original (https://farside.co.uk/)</p>
+                    <p className="text-xs">Better than the original (https://farside.co.uk/)</p>
                 </div>
                 <div className="flex w-full flex-col items-end pl-4">
                     <p className="text-secondary">Summary</p>
@@ -36,7 +36,7 @@ export default function Page() {
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
                 <div className="flex flex-wrap items-baseline gap-2">
-                    <p className="text-sm">- for crypto twitter, bc farside's frontend is ugly af</p>
+                    <p className="text-sm">- for crypto twitter, bc farside's frontend is poorly designed</p>
                     <LinkWithIcon href="https://farside.co.uk/btc/">
                         <p className="text-nowrap text-sm">See by yourself</p>
                     </LinkWithIcon>
