@@ -12,7 +12,7 @@ const IframeWrapper: React.FC<{
     const [isLoading, setIsLoading] = useState(true)
 
     const handleLoad = () => {
-        toast.success('Site preview loaded  ⬆️', { style: toastStyle })
+        toast.success('Preview loaded ⬆️', { style: toastStyle })
         setIsLoading(false)
     }
 
