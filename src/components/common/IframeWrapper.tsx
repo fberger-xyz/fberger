@@ -1,6 +1,8 @@
 'use client'
 
+import { toastStyle } from '@/config/toasts.config'
 import { useState } from 'react'
+import toast from 'react-hot-toast'
 
 const IframeWrapper: React.FC<{
     src: string
@@ -10,6 +12,7 @@ const IframeWrapper: React.FC<{
     const [isLoading, setIsLoading] = useState(true)
 
     const handleLoad = () => {
+        toast.success('Site preview loaded 👀', { style: toastStyle })
         setIsLoading(false)
     }
 

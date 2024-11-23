@@ -8,6 +8,7 @@ import { Suspense } from 'react'
 import Footer from '../components/layouts/Footer'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
+import { Toaster } from 'react-hot-toast'
 
 // https://fonts.google.com/
 const font = Lato({ weight: ['400', '700'], subsets: ['latin'] })
@@ -61,6 +62,7 @@ export default function RootLayout({
                             <div className="h-full overflow-scroll">{children}</div>
                         </Suspense>
                         <Footer />
+                        <Toaster position="bottom-center" reverseOrder={false} />
                     </main>
                 </ThemeProvider>
             </body>
