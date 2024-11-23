@@ -9,7 +9,7 @@ import toast from 'react-hot-toast'
 
 export default function NotFound() {
     useEffect(() => {
-        toast.error('Page not found. Redirected to /projects', { style: toastStyle })
+        toast.error('404 Not Found. Redirected to /projects page', { style: toastStyle })
         redirect(AppPagePaths.PROJECTS)
     })
     return (
