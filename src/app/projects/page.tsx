@@ -65,11 +65,18 @@ export default function Page() {
             <p className="text-sm lg:text-base">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
                 <ProjectCard
+                    path={AppPagePaths.PROJECTS_PROPOSE}
+                    title="Propose"
+                    date="Nov 2024"
+                    ttc="2 days"
+                    skills={['Next', 'Gnosis', 'CowSwap', 'RabbyKit']}
+                />
+                <ProjectCard
                     path={AppPagePaths.PROJECTS_ETFS}
                     title="ETFs"
                     date="Nov 2024"
                     ttc="4 days"
-                    skills={['Next.js', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
+                    skills={['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
                 />
                 <ProjectCard path={AppPagePaths.PROJECTS_SEEDS} title="Seeds" date="Nov 2024" ttc="< 1 day" skills={['BIP39', 'Rot Cipher']} />
                 <ProjectCard
@@ -77,21 +84,21 @@ export default function Page() {
                     title="Safes"
                     date="Nov 2024"
                     ttc="< 1 day"
-                    skills={['Next.js', 'Gnosis Safe', '1inch', 'Cowswap']}
+                    skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']}
                 />
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}
                     title="RabbyKit"
                     date="Nov 2024"
                     ttc="< 1 day"
-                    skills={['Next.js', 'RabbyKit', 'Wagmi']}
+                    skills={['Next', 'RabbyKit', 'Wagmi']}
                 />
-                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day" skills={['Next.js']} />
+                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day" skills={['Next']} />
                 {/* <ProjectCard path={AppPagePaths.PROJECTS}>
                         <p className="text-primary">Seed encrypt</p>
                         <p className="text-xs text-secondary">Nov 2024</p>
                         <p className="text-xs text-secondary"><span className="text-inactive mr-1">Time to code:</span>2 days</p>
-                        <SkillsLine skills={['BIP44', 'Next.js']} />
+                        <SkillsLine skills={['BIP44', 'Next']} />
                     </ProjectCard> */}
                 {/* <div className="my-2 ml-4 flex flex-col justify-center border-l border-dotted border-primary p-4">
                     <p className="text-xs text-inactive">Nov 2024</p>
