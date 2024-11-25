@@ -73,7 +73,7 @@ export default function Page() {
                     <li className="group flex flex-col rounded-sm p-1 hover:bg-very-light-hover">
                         <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
                             <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                                Transaction Services Analyst
+                                Transaction Advisory Services Analyst
                             </p>
                             <p className="text-sm">2017 & 2019</p>
                             <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
