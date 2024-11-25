@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm lg:text-base">A non-exhaustive summary</p>
+            <p className="text-sm lg:text-base">Non-exhaustive summary</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
                 <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
@@ -21,6 +21,9 @@ export default function Page() {
                             </p>
                             <p className="text-sm">Dec 2024 - now</p>
                         </div>
+                        <p className="text-xs text-inactive group-hover:text-default lg:text-sm">
+                            &#x2022; Go-getter for B2C and B2B clients interested in DeFi
+                        </p>
                     </li>
                     <li className="group flex flex-col rounded-sm p-1 hover:bg-very-light-hover">
                         <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
