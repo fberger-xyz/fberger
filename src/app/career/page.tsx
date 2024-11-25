@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm lg:text-base">Key experiences</p>
+            <p className="text-sm lg:text-base">A non-exhaustive summary</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
                 <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
