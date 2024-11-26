@@ -48,7 +48,7 @@ export default function Page() {
                     </li>
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
-                        <p>Based in Paris 🇫🇷</p>
+                        <p>Paris 🇫🇷</p>
                     </li>
                 </ul>
             </div>

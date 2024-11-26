@@ -33,7 +33,7 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
-                <p className="text-sm">- for b2b and b2c clients interested in DeFi</p>
+                <p className="text-sm">- for b2b/b2c clients interested in DeFi</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
