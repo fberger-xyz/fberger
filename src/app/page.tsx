@@ -16,7 +16,7 @@ export default function Page() {
             {/* tldr */}
             <div className="mt-4 flex flex-col gap-3">
                 <p className="text-lg font-bold text-primary lg:text-xl">Tldr;</p>
-                <ul className="flex flex-col gap-1 text-sm lg:text-base">
+                <ul className="flex flex-col gap-1 text-base">
                     {/* {[
                         { text: '10x dev' },
                         { text: 'XP in DeFi and Risk Management @CoinShares' },
@@ -56,7 +56,7 @@ export default function Page() {
             {/* context */}
             <div className="flex flex-col gap-3">
                 <p className="text-lg font-bold text-primary lg:text-xl">Contact me</p>
-                <ul className="flex flex-col gap-1.5 text-sm lg:text-base">
+                <ul className="flex flex-col gap-1 text-base">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },
@@ -72,7 +72,7 @@ export default function Page() {
                         },
                     ].map((social) => (
                         <li key={social.href} className="flex items-center gap-3">
-                            <IconWrapper icon={social.icon} className="size-4" />
+                            <IconWrapper icon={social.icon} className="size-5" />
                             <LinkWithIcon href={social.href}>{social.id}</LinkWithIcon>
                         </li>
                     ))}
