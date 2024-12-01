@@ -12,7 +12,7 @@ export default function Page() {
             <p className="text-sm lg:text-base">Non-exhaustive summary</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
-                <p className="text-base font-bold text-primary lg:text-lg">Experiences</p>
+                <p className="text-lg font-bold text-primary lg:text-xl">Experiences</p>
                 <ul className="flex flex-col gap-2 sm:gap-0">
                     <li className="group flex flex-col rounded-sm p-1 hover:bg-very-light-hover">
                         <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
@@ -94,7 +94,7 @@ export default function Page() {
 
             {/* studies */}
             <div className="flex flex-col gap-1">
-                <p className="text-base font-bold text-primary lg:text-lg">Studies</p>
+                <p className="text-lg font-bold text-primary lg:text-xl">Studies</p>
                 <ul>
                     <li className="flex items-baseline gap-2">
                         <p className="font-bold text-secondary">42</p>

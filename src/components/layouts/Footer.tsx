@@ -24,7 +24,7 @@ export default function Footer(props: FooterProps) {
                     { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB },
                 ].map((link) => (
                     <LinkWrapper key={link.href} target="_blank" href={link.href} className="cursor-alias hover:text-primary">
-                        <IconWrapper icon={link.icon} className="h-5 w-5" />
+                        <IconWrapper icon={link.icon} className="size-5 md:size-6" />
                     </LinkWrapper>
                 ))}
             </div>

@@ -15,7 +15,7 @@ export default function Page() {
         <PageWrapper className="gap-5 lg:gap-7">
             {/* tldr */}
             <div className="mt-4 flex flex-col gap-3">
-                <p className="text-base font-bold text-primary lg:text-lg">Tldr;</p>
+                <p className="text-lg font-bold text-primary lg:text-xl">Tldr;</p>
                 <ul className="flex flex-col gap-1 text-sm lg:text-base">
                     {/* {[
                         { text: '10x dev' },
@@ -40,10 +40,10 @@ export default function Page() {
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
                         <div className="flex items-center gap-1">
-                            <p className="pr-0.5 italic">"Connecting the Dots"</p>
-                            <p>TradFi</p>
+                            <p className="pr-0.5">Connecting the Dots</p>
+                            <p className="text-secondary">TradFi</p>
                             <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
-                            <p>DeFi</p>
+                            <p className="text-secondary">DeFi</p>
                         </div>
                     </li>
                     <li className="flex gap-3">
@@ -55,7 +55,7 @@ export default function Page() {
 
             {/* context */}
             <div className="flex flex-col gap-3">
-                <p className="text-base font-bold text-primary lg:text-lg">Contact me</p>
+                <p className="text-lg font-bold text-primary lg:text-xl">Contact me</p>
                 <ul className="flex flex-col gap-1.5 text-sm lg:text-base">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
