@@ -40,15 +40,15 @@ export default function Page() {
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
                         <div className="flex items-center gap-1">
-                            <p className="pr-0.5">Connecting the Dots</p>
-                            <p className="text-secondary">TradFi</p>
+                            <p>Connecting the Dots</p>
+                            <p className="font-bold text-secondary">TradFi</p>
                             <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
-                            <p className="text-secondary">DeFi</p>
+                            <p className="font-bold text-secondary">DeFi</p>
                         </div>
                     </li>
                     <li className="flex gap-3">
                         <span className="text-inactive">&#x2022;</span>
-                        <p>Paris 🇫🇷</p>
+                        <p>🇫🇷</p>
                     </li>
                 </ul>
             </div>
