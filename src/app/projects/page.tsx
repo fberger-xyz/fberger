@@ -64,13 +64,13 @@ export default function Page() {
         <PageWrapper className="gap-5">
             <p className="text-sm lg:text-base">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
-                <ProjectCard
+                {/* <ProjectCard
                     path={AppPagePaths.PROJECTS_PROPOSE}
                     title="Propose"
                     date="Nov 2024"
                     ttc="2 days"
                     skills={['Next', 'Gnosis', 'CowSwap', 'RabbyKit']}
-                />
+                /> */}
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_ETFS}
                     title="ETFs"
