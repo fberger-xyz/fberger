@@ -25,14 +25,21 @@ export default function HeaderButton(props: { pagePath: AppPagePaths; disabled?:
     return (
         <LinkWrapper
             href={props.disabled ? pathname : props.pagePath}
-            className={cn('rounded-sm p-1.5 sm:px-2 lg:px-2.5 xl:px-3 sm:py-1 hover:bg-light-hover bg-opacity-50 group', {
+            className={cn('rounded-sm px-2 py-1 lg:px-2.5 xl:px-3 sm:py-1 hover:bg-light-hover bg-opacity-50 group', {
                 'bg-light-hover': isCurrentPath(),
             })}
         >
-            <p>
-                <span className={cn({ 'text-secondary': isCurrentPath(), 'text-light-hover group-hover:text-inactive': !isCurrentPath() })}>/</span>
-                <span className={cn({ 'text-primary': isCurrentPath(), 'text-inactive': !isCurrentPath() })}>{link?.name ?? 'Not found'}</span>
-            </p>
+            <div className="flex items-center">
+                <p
+                    className={cn('hidden md:block', {
+                        'text-secondary': isCurrentPath(),
+                        'text-light-hover group-hover:text-inactive': !isCurrentPath(),
+                    })}
+                >
+                    /
+                </p>
+                <p className={cn({ 'text-primary': isCurrentPath(), 'text-inactive': !isCurrentPath() })}>{link?.name ?? 'Not found'}</p>
+            </div>
         </LinkWrapper>
     )
 }
