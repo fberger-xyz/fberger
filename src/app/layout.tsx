@@ -49,7 +49,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={cn(font.className, 'h-screen w-screen overflow-hidden')}>
-                <ThemeProvider attribute="class" defaultTheme={AppThemes.DARK} disableTransitionOnChange themes={Object.values(AppThemes)}>
+                <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
                     <main className="flex h-full w-full flex-col bg-background text-lg text-default transition-all">
                         <Header />
                         <Suspense
