@@ -59,17 +59,17 @@ export default function Page() {
                 <ul className="flex flex-col gap-1 text-base">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM, id: `@${APP_METADATA.SOCIALS.TELEGRAM}` },
-                        // { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },
+                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: `@${APP_METADATA.SOCIALS.X}` },
                         {
                             href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`,
                             icon: IconIds.LINKEDIN,
                             id: 'Francis Berger',
                         },
-                        // {
-                        //     href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`,
-                        //     icon: IconIds.GITHUB,
-                        //     id: 'fberger-xyz',
-                        // },
+                        {
+                            href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`,
+                            icon: IconIds.GITHUB,
+                            id: 'fberger-xyz',
+                        },
                     ].map((social) => (
                         <li key={social.href} className="flex items-center gap-3">
                             <IconWrapper icon={social.icon} className="size-5" />
