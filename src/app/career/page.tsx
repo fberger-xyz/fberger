@@ -54,7 +54,9 @@ export default function Page() {
                         <p className="text-xs text-inactive group-hover:text-default lg:text-sm">
                             &#x2022; Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                         </p>
-                        <p className="text-xs text-inactive group-hover:text-default lg:text-sm">{'>'} Left to go all-in DeFi</p>
+                        <p className="text-xs text-inactive group-hover:text-default lg:text-sm">
+                            {'>'} References on request. Left to go all-in DeFi
+                        </p>
                     </li>
                     <li className="group flex flex-col rounded-sm p-1 hover:bg-very-light-hover">
                         <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
