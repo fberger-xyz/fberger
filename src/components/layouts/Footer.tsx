@@ -4,16 +4,13 @@ import { cn } from '@/utils'
 import LinkWrapper from '../common/LinkWrapper'
 import { APP_METADATA } from '@/config/app.config'
 import IconWrapper from '../common/IconWrapper'
-import { AppPagePaths, IconIds } from '@/enums'
-import { usePathname } from 'next/navigation'
+import { IconIds } from '@/enums'
 
 interface FooterProps {
     className?: string
 }
 
 export default function Footer(props: FooterProps) {
-    const pathname = usePathname()
-    if (pathname === AppPagePaths.HOME) return null
     return (
         <div className={cn('fixed bottom-0 w-full flex justify-end text-sm z-0', props.className)}>
             <div className="flex items-end gap-4 rounded-ss-xl bg-background p-3 opacity-80 backdrop-blur-sm">

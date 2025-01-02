@@ -25,7 +25,7 @@ export default function HeaderButton(props: { pagePath: AppPagePaths; disabled?:
     return (
         <LinkWrapper
             href={props.disabled ? pathname : props.pagePath}
-            className={cn('rounded-sm px-2 py-1 lg:px-2.5 xl:px-3 sm:py-1 hover:bg-light-hover bg-opacity-50 group', {
+            className={cn('rounded-md px-2 py-1 lg:px-2.5 xl:px-3 sm:py-1 hover:bg-light-hover bg-opacity-50 group', {
                 'bg-light-hover': isCurrentPath(),
             })}
         >

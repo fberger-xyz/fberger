@@ -28,7 +28,9 @@ export enum IconIds {
 
     // hugeicons
     X = 'ri:twitter-x-fill',
-    TELEGRAM = 'mdi:telegram',
+    // TELEGRAM = 'mdi:telegram',
+    TELEGRAM = 'ph:telegram-logo',
+    TELEGRAM_LOGO = 'logos:telegram',
     WEBSITE = 'mdi:web',
     DISCORD = 'mdi:discord',
     GITHUB = 'mdi:github',

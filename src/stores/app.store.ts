@@ -75,8 +75,8 @@ export const useAppStore = create<{
             ],
         },
         {
-            name: 'career',
-            path: AppPagePaths.CAREER,
+            name: 'xp',
+            path: AppPagePaths.XP,
             enabled: true,
             sublinks: [],
         },
