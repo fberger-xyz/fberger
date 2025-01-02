@@ -10,11 +10,9 @@ import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
 
-// https://fonts.google.com/
 const font = Lato({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    // title: APP_METADATA.SITE_NAME, // specified in pages
     description: APP_METADATA.SITE_DESCRIPTION,
     applicationName: APP_METADATA.SITE_NAME,
     metadataBase: new URL(APP_METADATA.SITE_URL),
@@ -50,8 +48,8 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body className={cn(font.className, 'h-screen w-screen overflow-hidden')}>
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
-                    <main className="flex h-full w-full flex-col bg-background text-lg text-default transition-all">
-                        <Header />
+                    <main className="flex h-full w-full flex-col bg-background text-xl text-default transition-all">
+                        <Header className="z-50" />
                         <Suspense
                             fallback={
                                 <div className="flex h-full w-full items-center justify-center">

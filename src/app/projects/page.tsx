@@ -38,12 +38,12 @@ function ProjectCard({
     skills: string[]
 }) {
     return (
-        <div className="group w-full rounded-sm border-b-2 border-dotted border-light-hover p-1 hover:border-solid hover:border-primary hover:bg-very-light-hover">
+        <div className="group w-full rounded-md border-b-2 border-dotted border-light-hover p-1 hover:border-solid hover:border-primary hover:bg-very-light-hover">
             <LinkWrapper
                 href={props.path}
                 target={target}
                 disabled={disabled}
-                className={cn('flex w-full flex-col rounded-sm pb-1 transition duration-300 hover:border-primary')}
+                className={cn('flex w-full flex-col rounded-md pb-1 transition duration-300 hover:border-primary')}
             >
                 <div className="flex w-full justify-between">
                     <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">{title}</p>
@@ -62,15 +62,15 @@ function ProjectCard({
 export default function Page() {
     return (
         <PageWrapper className="gap-5">
-            <p className="text-sm lg:text-base">Side projects I can publicly speak about</p>
+            <p className="text-inactive">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
-                {/* <ProjectCard
-                    path={AppPagePaths.PROJECTS_PROPOSE}
-                    title="Propose"
-                    date="Nov 2024"
-                    ttc="2 days"
-                    skills={['Next', 'Gnosis', 'CowSwap', 'RabbyKit']}
-                /> */}
+                <ProjectCard
+                    path={AppPagePaths.PROJECTS_TRUSTEES}
+                    title="Trustees"
+                    date="Dec 2024"
+                    ttc="2 weeks"
+                    skills={['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum']}
+                />
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_ETFS}
                     title="ETFs"

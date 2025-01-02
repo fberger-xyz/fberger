@@ -1,28 +1,19 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import { Suspense } from 'react'
-import GoBack from './GoBack'
 import { cn } from '@/utils'
 
 export default function PageWrapper({ children, className, ...props }: { children: React.ReactNode; className?: string }) {
-    const pathname = usePathname()
+    const commonClassName = 'mx-auto mt-[20px] flex max-w-[600px] flex-col items-start overflow-auto px-2 sm:mt-20 sm:max-w-[700px] md:mt-32'
     return (
         <Suspense
             fallback={
-                <div className="flex h-full w-full items-center justify-center">
-                    <p className="text-orange-400">Page loading...</p>
+                <div className={commonClassName}>
+                    <div className="h-96 w-full animate-pulse rounded-lg bg-very-light-hover" />
                 </div>
             }
         >
-            <div
-                {...props}
-                className={cn(
-                    'mx-auto mb-10 pb-28 mt-24 flex max-w-[600px] flex-col items-start overflow-auto px-6 sm:max-w-[700px] sm:px-16 md:mt-28',
-                    className, // gap-2 md:gap-6
-                )}
-            >
-                {pathname !== '/' && <GoBack />}
+            <div {...props} className={cn(commonClassName, className)}>
                 {children}
             </div>
         </Suspense>
