@@ -61,7 +61,7 @@ function ProjectCard({
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-5">
+        <PageWrapper className="gap-8">
             <p className="text-inactive">Side projects I can publicly speak about</p>
             <div className="flex w-full flex-col gap-3">
                 <ProjectCard

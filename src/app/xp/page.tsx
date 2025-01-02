@@ -6,11 +6,11 @@ export const metadata: Metadata = {
     title: 'fberger.xyz | Experiences',
 }
 
+const bulletPointClassNames = 'text-base text-inactive group-hover:text-default'
 export default function Page() {
-    const bulletPointClassNames = 'text-base text-inactive group-hover:text-default'
     return (
-        <PageWrapper className="gap-5">
-            <p className="truncate text-sm lg:text-base">Non-exhaustive summary</p>
+        <PageWrapper className="gap-8">
+            <p className="text-inactive">Non-exhaustive summary</p>
             {/* xp */}
             <div className="flex flex-col gap-2 pb-1">
                 <p className="text-xl font-bold text-primary lg:text-xl">Experiences</p>
