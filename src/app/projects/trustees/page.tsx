@@ -1,4 +1,5 @@
 import IconWrapper from '@/components/common/IconWrapper'
+import IframeWrapper from '@/components/common/IframeWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import { IconIds } from '@/enums'
@@ -28,12 +29,11 @@ export default function Page() {
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">1. Preview</p>
-                <p className="text-sm">Redacted</p>
-                {/* <IframeWrapper src={`https://${projectName}.fberger.xyz`} width="w-full" height="h-[400px]" /> */}
+                <IframeWrapper src={`https://${projectName}.fberger.xyz`} width="w-full" height="h-[400px]" />
             </div>
             <div className="flex w-full flex-col gap-2 border-t border-light-hover py-4">
                 <p className="text-secondary">2. Why</p>
-                <p className="text-sm">- WIP</p>
+                <p className="text-sm">- Redacted</p>
             </div>
             <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
                 <p className="text-secondary">Conclusion</p>
