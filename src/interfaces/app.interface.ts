@@ -5,7 +5,6 @@ export interface InterfaceAppLink {
     path: AppPagePaths
     inHeader: boolean
     icon?: IconIds
-    enabled: boolean
     description?: string
     sublinks: InterfaceAppLink[]
 }

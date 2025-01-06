@@ -38,7 +38,7 @@ export default function Page() {
                 </p>
                 <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Passionate 10x dev</p>
+                    Passionate 10x dev
                 </p>
                 <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
@@ -63,13 +63,13 @@ export default function Page() {
                     <BulletPoint />
                     Working on
                     <LinkWithIcon href={`https://trustees.fberger.xyz`}>
-                        <p className="font-bold">Trustees</p>
+                        <span className="font-bold">Trustees</span>
                     </LinkWithIcon>
                 </p>
                 <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Freelance go-getter for B2C & B2B clients</p>
-                    <p className="text-inactive">Since Dec 2024</p>
+                    Freelance go-getter for B2C & B2B clients
+                    <span className="text-inactive">Since Dec 2024</span>
                 </p>
             </SectionWrapper>
             <SectionWrapper title="Experiences">
