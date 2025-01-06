@@ -39,7 +39,7 @@ export default function Page() {
                 </li>
                 <li className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>10x dev</p>
+                    <p>10x dev, skin in the game</p>
                 </li>
                 <li className={bulletPointWrapperClassNames}>
                     <BulletPoint />
