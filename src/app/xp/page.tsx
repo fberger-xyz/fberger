@@ -113,6 +113,7 @@ export default function Page() {
                 </ul>
             </div>
             <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
+            <br />
         </PageWrapper>
     )
 }

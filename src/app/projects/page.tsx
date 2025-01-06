@@ -120,6 +120,7 @@ export default function Page() {
                 </div> */}
             </div>
             <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.XP} />
+            <br />
         </PageWrapper>
     )
 }

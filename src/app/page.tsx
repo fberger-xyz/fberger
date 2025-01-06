@@ -96,6 +96,7 @@ export default function Page() {
                 </p>
             </SectionWrapper>
             <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
+            <br />
         </PageWrapper>
     )
 }
