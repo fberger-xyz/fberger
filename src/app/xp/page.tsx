@@ -1,5 +1,7 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import { AppPagePaths } from '@/enums'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -110,6 +112,7 @@ export default function Page() {
                     </li>
                 </ul>
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }
