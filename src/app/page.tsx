@@ -88,7 +88,7 @@ export default function Page() {
                 </li>
                 <li className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Transaction Advisory Services Analyst (TAS)</p>
+                    <p>TAS Analyst @GrantThornton</p>
                     <p className="text-inactive">2017 & 2019</p>
                 </li>
                 <li className={bulletPointWrapperClassNames}>
