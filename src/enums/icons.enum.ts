@@ -22,9 +22,10 @@ export enum IconIds {
     IC_BASELINE_OPEN_IN_NEW = 'ic:baseline-open-in-new',
 
     // theme
-    THEME_LIGHT = 'carbon:sun',
-    THEME_DARK = 'mdi:weather-night',
-    THEME_DEGEN = 'carbon:face-cool',
+    // THEME_LIGHT = 'carbon:sun',
+    THEME_LIGHT = 'line-md:sunny-filled-loop',
+    // THEME_DARK = 'mdi:weather-night',
+    THEME_DARK = 'line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition',
 
     // hugeicons
     X = 'ri:twitter-x-fill',
