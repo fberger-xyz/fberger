@@ -26,6 +26,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
     {
         name: 'Home',
         path: AppPagePaths.HOME,
+        inHeader: true,
         enabled: true,
         description: '',
         sublinks: [],
@@ -33,36 +34,42 @@ export const APP_PAGES: InterfaceAppLink[] = [
     {
         name: 'Projects',
         path: AppPagePaths.PROJECTS,
+        inHeader: true,
         enabled: true,
         description: '',
         sublinks: [
             {
                 name: 'Seeds',
                 path: AppPagePaths.PROJECTS_SEEDS,
+                inHeader: false,
                 enabled: false,
                 sublinks: [],
             },
             {
                 name: 'RabbyKit',
                 path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
+                inHeader: false,
                 enabled: true,
                 sublinks: [],
             },
             {
                 name: 'Safes',
                 path: AppPagePaths.PROJECTS_SAFES,
+                inHeader: false,
                 enabled: true,
                 sublinks: [],
             },
             {
                 name: 'ETFs',
                 path: AppPagePaths.PROJECTS_ETFS,
+                inHeader: false,
                 enabled: true,
                 sublinks: [],
             },
             {
                 name: 'NFT Stonks',
                 path: AppPagePaths.PROJECTS_NFT_STONKS,
+                inHeader: false,
                 enabled: true,
                 sublinks: [],
             },
@@ -71,6 +78,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
     {
         name: 'XP',
         path: AppPagePaths.XP,
+        inHeader: false,
         enabled: true,
         sublinks: [],
     },

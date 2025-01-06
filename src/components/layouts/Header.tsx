@@ -1,10 +1,9 @@
 import HeaderButton from './HeaderButton'
-import { AppPagePaths } from '@/enums'
 import { cn } from '@/utils'
 import ThemeSwitcher from './ThemeSwitcher'
 import Image from 'next/image'
 import LinkWrapper from '../common/LinkWrapper'
-import { APP_METADATA } from '@/config/app.config'
+import { APP_METADATA, APP_PAGES } from '@/config/app.config'
 
 export default function Header(props: { className?: string }) {
     return (
@@ -19,11 +18,9 @@ export default function Header(props: { className?: string }) {
                     <p className="mb-1 text-2xl text-primary">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
                 <div className="z-50 flex gap-0.5 sm:gap-1 lg:gap-2">
-                    {(Object.values(AppPagePaths) as AppPagePaths[])
-                        .filter((path) => path.split('/').length < 3)
-                        .map((path) => (
-                            <HeaderButton key={path} pagePath={path} />
-                        ))}
+                    {APP_PAGES.filter((page) => page.inHeader).map((page) => (
+                        <HeaderButton key={page.path} pagePath={page.path} />
+                    ))}
                 </div>
                 <ThemeSwitcher />
             </div>

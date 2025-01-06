@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     title: 'fberger.xyz | Home',
 }
 
-const BulletPoint = () => <span className="pr-1 text-inactive">&#x2022;</span>
-const bulletPointWrapperClassNames = 'flex gap-2 items-center flex-wrap'
+const BulletPoint = () => <span className="pr-2 text-inactive">&#x2022;</span>
+const bulletPointWrapperClassNames = 'flex gap-1 items-center flex-wrap'
 const SectionWrapper = (props: { title: string; children: ReactNode }) => (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
         <p className="font-bold text-primary">{props.title}</p>
         <ul className="flex flex-col gap-1 text-lg">{props.children}</ul>
     </div>
@@ -23,79 +23,77 @@ const SectionWrapper = (props: { title: string; children: ReactNode }) => (
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-8">
+        <PageWrapper className="gap-6">
             <SectionWrapper title="About">
-                <li className={bulletPointWrapperClassNames}>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <div className="flex items-center gap-1">
-                        <p>Connecting the Dots</p>
-                        <p className="font-bold text-primary">TradFi</p>
-                        <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
-                        <p className="font-bold text-primary">DeFi</p>
-                    </div>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    Connecting the Dots
+                    <span className="font-bold text-primary">TradFi</span>
+                    <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
+                    <span className="font-bold text-primary">DeFi</span>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>XP in DeFi and Risk Management</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    XP in DeFi and Risk Management
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
                     <p>Passionate 10x dev</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Skin in the game</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    Skin in the game
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>🇫🇷</p>
-                </li>
+                    🇫🇷
+                </p>
             </SectionWrapper>
             <SectionWrapper title="Contact">
-                <li className={bulletPointWrapperClassNames}>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
                     Telegram
                     <LinkWithIcon href={`https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`}>
                         @{APP_METADATA.SOCIALS.TELEGRAM} <IconWrapper icon={IconIds.TELEGRAM_LOGO} className="size-5" />
                     </LinkWithIcon>
-                </li>
+                </p>
             </SectionWrapper>
             <SectionWrapper title="Currently">
-                <li className={bulletPointWrapperClassNames}>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Working on dynamic asset management with</p>
+                    Working on
                     <LinkWithIcon href={`https://trustees.fberger.xyz`}>
                         <p className="font-bold">Trustees</p>
                     </LinkWithIcon>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
                     <p>Freelance go-getter for B2C & B2B clients</p>
                     <p className="text-inactive">Since Dec 2024</p>
-                </li>
+                </p>
             </SectionWrapper>
             <SectionWrapper title="Experiences">
                 <p className="text-inactive">Non exhaustive</p>
-                <li className={bulletPointWrapperClassNames}>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>DeFi then Risk Developer @CoinShares</p>
-                    <p className="text-inactive">Nov 2021 {'>'} Nov 2024</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    DeFi and Risk Developer @CoinShares
+                    <span className="text-inactive">2021 {'>'} 2024</span>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Full-Stack Developer @StationF</p>
-                    <p className="text-inactive">Jan 2021 {'>'} Oct 2021</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    Full-Stack Developer @StationF
+                    <span className="text-inactive">2021</span>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>TAS Analyst @GrantThornton</p>
-                    <p className="text-inactive">2017 & 2019</p>
-                </li>
-                <li className={bulletPointWrapperClassNames}>
+                    TAS Analyst @GrantThornton
+                    <span className="text-inactive">2017 & 2019</span>
+                </p>
+                <p className={bulletPointWrapperClassNames}>
                     <BulletPoint />
-                    <p>Studies</p>
-                    <p className="text-inactive">Msc. finance + chartered accountant + 42 in Paris</p>
-                </li>
+                    Studies
+                    <span className="text-inactive">Msc. Finance + CPA + 42</span>
+                </p>
             </SectionWrapper>
             <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
         </PageWrapper>
