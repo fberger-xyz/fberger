@@ -13,14 +13,14 @@ export default function ThemeSwitcher() {
     useEffect(() => setMounted(true), [])
     if (mounted) {
         return (
-            <div className="z-50 flex items-center gap-0.5 rounded-md sm:gap-1 lg:gap-2">
+            <div className="z-50 flex items-center gap-0.5 sm:gap-1 lg:gap-2">
                 {Object.entries(APP_THEMES)
                     .sort((curr, next) => curr[1].index - next[1].index)
                     .map(([theme, config]) => (
                         <button
                             key={theme}
                             onClick={() => setTheme(theme)}
-                            className={cn('rounded-md px-2 sm:px-2.5 py-2 hover:bg-light-hover border', {
+                            className={cn('rounded-lg px-2 sm:px-2.5 py-2 hover:bg-light-hover border', {
                                 'bg-very-light-hover border-light-hover text-primary': resolvedTheme === theme,
                                 'text-inactive border-transparent': resolvedTheme !== theme,
                             })}

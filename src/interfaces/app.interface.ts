@@ -3,6 +3,7 @@ import { AppPagePaths, IconIds } from '../enums'
 export interface InterfaceAppLink {
     name: string
     path: AppPagePaths
+    inHeader: boolean
     icon?: IconIds
     enabled: boolean
     description?: string
