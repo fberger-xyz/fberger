@@ -1,6 +1,4 @@
 import { create } from 'zustand'
-import { InterfaceAppLink } from '../interfaces'
-import { AppPagePaths } from '../enums'
 import { APP_METADATA } from '../config/app.config'
 
 export const useAppStore = create<{
@@ -10,7 +8,6 @@ export const useAppStore = create<{
     debug: boolean
     initialized: boolean
     loading: boolean
-    links: InterfaceAppLink[]
     about: {
         self: boolean
         cs: boolean
@@ -30,57 +27,6 @@ export const useAppStore = create<{
     debug: process.env.NEXT_PUBLIC_APP_DEBUG === 'true',
     loading: false,
     initialized: false,
-    links: [
-        {
-            name: 'home',
-            path: AppPagePaths.HOME,
-            enabled: true,
-            sublinks: [],
-        },
-        {
-            name: 'projects',
-            path: AppPagePaths.PROJECTS,
-            enabled: true,
-            sublinks: [
-                {
-                    name: 'Seeds',
-                    path: AppPagePaths.PROJECTS_SEEDS,
-                    enabled: false,
-                    sublinks: [],
-                },
-                {
-                    name: 'RabbyKit',
-                    path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
-                    enabled: true,
-                    sublinks: [],
-                },
-                {
-                    name: 'Safes',
-                    path: AppPagePaths.PROJECTS_SAFES,
-                    enabled: true,
-                    sublinks: [],
-                },
-                {
-                    name: 'ETFs',
-                    path: AppPagePaths.PROJECTS_ETFS,
-                    enabled: true,
-                    sublinks: [],
-                },
-                {
-                    name: 'NFT Stonks',
-                    path: AppPagePaths.PROJECTS_NFT_STONKS,
-                    enabled: true,
-                    sublinks: [],
-                },
-            ],
-        },
-        {
-            name: 'xp',
-            path: AppPagePaths.XP,
-            enabled: true,
-            sublinks: [],
-        },
-    ],
     about: {
         self: false,
         cs: false,

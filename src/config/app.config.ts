@@ -35,6 +35,43 @@ export const APP_PAGES: InterfaceAppLink[] = [
         path: AppPagePaths.PROJECTS,
         enabled: true,
         description: '',
+        sublinks: [
+            {
+                name: 'Seeds',
+                path: AppPagePaths.PROJECTS_SEEDS,
+                enabled: false,
+                sublinks: [],
+            },
+            {
+                name: 'RabbyKit',
+                path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
+                enabled: true,
+                sublinks: [],
+            },
+            {
+                name: 'Safes',
+                path: AppPagePaths.PROJECTS_SAFES,
+                enabled: true,
+                sublinks: [],
+            },
+            {
+                name: 'ETFs',
+                path: AppPagePaths.PROJECTS_ETFS,
+                enabled: true,
+                sublinks: [],
+            },
+            {
+                name: 'NFT Stonks',
+                path: AppPagePaths.PROJECTS_NFT_STONKS,
+                enabled: true,
+                sublinks: [],
+            },
+        ],
+    },
+    {
+        name: 'XP',
+        path: AppPagePaths.XP,
+        enabled: true,
         sublinks: [],
     },
 ]
