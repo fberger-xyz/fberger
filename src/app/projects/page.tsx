@@ -1,5 +1,6 @@
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths } from '@/enums'
 import { cn } from '@/utils'
 import { Metadata } from 'next'
@@ -118,6 +119,7 @@ export default function Page() {
                     <p className="text-xs text-inactive">Janv 2021</p>
                 </div> */}
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.XP} />
         </PageWrapper>
     )
 }

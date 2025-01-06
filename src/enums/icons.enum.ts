@@ -5,6 +5,8 @@ export enum IconIds {
     CARBON_CHEVRON_UP = 'carbon:chevron-up',
     CARBON_CHEVRON_RIGHT = 'carbon:chevron-right',
     CARBON_CHEVRON_LEFT = 'carbon:chevron-left',
+    DOUBLE_CHEVRON_LEFT = 'mdi-light:chevron-double-left',
+    DOUBLE_CHEVRON_RIGHT = 'mdi-light:chevron-double-right',
     CARBON_OVERFLOW_MENU_VERTICAL = 'carbon:overflow-menu-vertical',
     CARBON_CLOSE = 'carbon:close',
     CARBON_SEARCH = 'carbon:search',

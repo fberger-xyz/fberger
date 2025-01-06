@@ -1,4 +1,5 @@
-import { AppThemes, IconIds } from '@/enums'
+import { AppPagePaths, AppThemes, IconIds } from '@/enums'
+import { InterfaceAppLink } from '@/interfaces'
 
 export const APP_METADATA = {
     SITE_AUTHOR: 'fberger',
@@ -20,3 +21,20 @@ export const APP_THEMES: Partial<Record<AppThemes, { index: number; iconId: Icon
     [AppThemes.LIGHT]: { index: 0, iconId: IconIds.THEME_LIGHT },
     [AppThemes.DARK]: { index: 1, iconId: IconIds.THEME_DARK },
 }
+
+export const APP_PAGES: InterfaceAppLink[] = [
+    {
+        name: 'Home',
+        path: AppPagePaths.HOME,
+        enabled: true,
+        description: '',
+        sublinks: [],
+    },
+    {
+        name: 'Projects',
+        path: AppPagePaths.PROJECTS,
+        enabled: true,
+        description: '',
+        sublinks: [],
+    },
+]
