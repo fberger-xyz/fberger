@@ -38,7 +38,9 @@ export default function Page() {
                         positionName="Risk and DeFi Developer"
                         dates={`Nov 2021 > Nov 2024`}
                     />
-                    <TextWithBulletPoint>Coded frontends and backends used daily by ops team + quants + traders + top management</TextWithBulletPoint>
+                    <TextWithBulletPoint>
+                        Designed and coded frontends and backends used daily by ops team + quants + traders + top management
+                    </TextWithBulletPoint>
                     <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
                         1) to compute P&L and risk exposure (hedge funds, lending and staking activities)
                     </p>
