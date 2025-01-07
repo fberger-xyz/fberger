@@ -55,7 +55,6 @@ export default function Page() {
                 </p>
             </SectionWrapper>
             <SectionWrapper title="XP">
-                <p className="text-inactive">Non exhaustive summary</p>
                 <p className={bulletPointClassNames}>
                     <BulletPoint />
                     DeFi and Risk Developer @CoinShares
@@ -107,7 +106,7 @@ export default function Page() {
                 </p>
             </SectionWrapper>
             <SectionWrapper title="Side projects">
-                <p className="text-inactive">Those I can publicly speak about</p>
+                <p className="text-inactive">Always TradFi/DeFi related</p>
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
                         path={AppPagePaths.PROJECTS_TRUSTEES}
