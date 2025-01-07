@@ -39,7 +39,7 @@ function ProjectCard({
                     <span className="mr-1 text-inactive">Time to code</span>
                     {ttc}
                 </p>
-                <div className="mt-1 flex w-full flex-wrap justify-end gap-1 text-xs">
+                <div className="mt-2 flex w-full flex-wrap justify-end gap-1 text-xs">
                     {skills.map((skill) => (
                         <div
                             key={skill}
