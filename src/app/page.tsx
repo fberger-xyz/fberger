@@ -3,7 +3,7 @@ import LinkWithIcon from '@/components/common/LinkWithIcon'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import ProjectCard from '@/components/common/ProjectCard'
-import { BulletPoint, bulletPointClassNames, SectionWrapper } from '@/components/common/SectionWrapper'
+import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import SvgMapper from '@/components/common/SvgMapper'
 import { APP_METADATA } from '@/config/app.config'
 import { AppPagePaths, IconIds } from '@/enums'
@@ -15,25 +15,18 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="About">
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                <TextWithBulletPoint>
                     Connecting the Dots
                     <span className="font-bold text-primary">TradFi</span>
                     <SvgMapper icon={IconIds.LOADING_DOTS} className="size-4" />
                     <span className="font-bold text-primary">DeFi</span>
-                </p>
+                </TextWithBulletPoint>
                 {/* <p className={bulletPointClassNames}>
                     <BulletPoint />
                     XP in DeFi and Risk Management
                 </p> */}
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
-                    Passionate 10x dev
-                </p>
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
-                    Skin in the game
-                </p>
+                <TextWithBulletPoint>Passionate 10x dev</TextWithBulletPoint>
+                <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
                 {/* <p className={bulletPointClassNames}>
                     <BulletPoint />
                     🇫🇷
@@ -41,43 +34,37 @@ export default function Page() {
             </SectionWrapper>
             <SectionWrapper title="Currently">
                 {/* <p className="text-inactive">Mainly</p> */}
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                <TextWithBulletPoint>
                     Freelance go-getter for B2C & B2B
                     {/* <span className="text-inactive">Since Dec 2024</span> */}
-                </p>
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
                     Working on
                     <LinkWithIcon href={`https://trustees.fberger.xyz`}>
                         <span className="font-bold">Trustees 💸</span>
                     </LinkWithIcon>
-                </p>
+                </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="XP">
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                <TextWithBulletPoint>
                     DeFi and Risk Developer @CoinShares
                     {/* <span className="text-inactive">2021 {'>'} 2024</span> */}
-                </p>
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
                     Full-Stack Developer @StationF
                     {/* <span className="text-inactive">2021</span> */}
-                </p>
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
                     TAS Analyst @GrantThornton
                     {/* <span className="text-inactive">2017 & 2019</span> */}
-                </p>
-                <p className={bulletPointClassNames}>
-                    <BulletPoint />
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
                     Student in Finance + Computer Sciences
                     {/* <span className="text-inactive">Msc. Finance + CPA + 42</span> */}
-                </p>
+                </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Socials">
-                <p className={bulletPointClassNames}>
+                <p className="flex items-center gap-1.5">
                     {/* <BulletPoint /> */}
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
