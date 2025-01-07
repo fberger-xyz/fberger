@@ -16,7 +16,7 @@ export default function Page() {
                     path={AppPagePaths.PROJECTS_TRUSTEES}
                     title="Trustees"
                     date="Dec 2024"
-                    ttc="2 weeks"
+                    ttc="+3 weeks"
                     skills={['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum']}
                 />
                 <ProjectCard
