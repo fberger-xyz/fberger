@@ -1,5 +1,6 @@
-import { APP_PAGES } from '@/config/app.config'
+import { APP_METADATA, APP_PAGES } from '@/config/app.config'
 import { AppPagePaths } from '@/enums'
+import { Metadata } from 'next'
 
 export * from './cn.util'
 export * from './error.util'
@@ -15,3 +16,8 @@ export const getPageConfig = (path: AppPagePaths) => {
     }
     return APP_PAGES[0]
 }
+
+export const generatePageMetadata = (pagePath: AppPagePaths): Metadata => ({
+    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).name}`,
+    description: APP_METADATA.SITE_DESCRIPTION,
+})

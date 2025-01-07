@@ -5,12 +5,10 @@ import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import SvgMapper from '@/components/common/SvgMapper'
 import { APP_METADATA } from '@/config/app.config'
 import { AppPagePaths, IconIds } from '@/enums'
-import { Metadata } from 'next'
+import { generatePageMetadata } from '@/utils'
 import { ReactNode } from 'react'
 
-export const metadata: Metadata = {
-    title: 'fberger.xyz | Home',
-}
+export const metadata = generatePageMetadata(AppPagePaths.HOME)
 
 const BulletPoint = () => <span className="pr-2 text-inactive">&#x2022;</span>
 const bulletPointWrapperClassNames = 'flex gap-1.5 items-center flex-wrap'

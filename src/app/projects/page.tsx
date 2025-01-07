@@ -2,12 +2,9 @@ import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths } from '@/enums'
-import { cn } from '@/utils'
-import { Metadata } from 'next'
+import { cn, generatePageMetadata } from '@/utils'
 
-export const metadata: Metadata = {
-    title: 'fberger.xyz | Projects',
-}
+export const metadata = generatePageMetadata(AppPagePaths.PROJECTS)
 
 function ProjectCard({
     target = '_self',
