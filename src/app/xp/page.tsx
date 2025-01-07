@@ -2,7 +2,7 @@ import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths } from '@/enums'
-import { generatePageMetadata } from '@/utils'
+import { cn, generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
@@ -12,7 +12,7 @@ const commonClasses = 'group flex flex-col items-start gap-1 rounded-2xl border 
 export default function Page() {
     return (
         <PageWrapper>
-            <p className="text-inactive">Non-exhaustive summary of my prev. experiences</p>
+            <p className="text-inactive">Non-exhaustive summary</p>
             <ul className="flex flex-col gap-2">
                 <li className={commonClasses}>
                     <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
@@ -50,7 +50,7 @@ export default function Page() {
                     <p className={bulletPointClassNames}>
                         &#x2022; Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                     </p>
-                    <p className={bulletPointClassNames}>{'>'} References on request. Left to go all-in DeFi</p>
+                    <p className={cn(bulletPointClassNames, 'mt-2')}>{'>'} References on request. Left to go all-in DeFi</p>
                 </li>
                 <li className={commonClasses}>
                     <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
@@ -63,7 +63,7 @@ export default function Page() {
                         </LinkWithIcon>
                     </div>
                     <p className={bulletPointClassNames}>&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
-                    <p className={bulletPointClassNames}>{'>'} Left to work in crypto</p>
+                    <p className={cn(bulletPointClassNames, 'mt-2')}>{'>'} Left to work in crypto</p>
                 </li>
                 <li className={commonClasses}>
                     <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
@@ -77,7 +77,7 @@ export default function Page() {
                     </div>
                     <p className={bulletPointClassNames}>&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
                     <p className={bulletPointClassNames}>&#x2022; Memorandum, due diligences, litigation support</p>
-                    <p className={bulletPointClassNames}>{'>'} Left to pivot in tech</p>
+                    <p className={cn(bulletPointClassNames, 'mt-2')}>{'>'} Left to pivot in tech</p>
                 </li>
             </ul>
 
