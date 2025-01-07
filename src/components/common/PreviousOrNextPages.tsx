@@ -13,7 +13,7 @@ export default function PreviousOrNextPages({
 }) {
     return (
         <div
-            className={cn('mt-4 grid w-full gap-3 md:gap-4', {
+            className={cn('my-4 grid w-full gap-3 md:gap-4', {
                 'text-base': isIphoneDemo,
                 'text-xl': !isIphoneDemo,
                 'grid-cols-2': props.previous && props.next,
@@ -29,7 +29,7 @@ export default function PreviousOrNextPages({
                         <IconWrapper icon={IconIds.DOUBLE_CHEVRON_LEFT} className="size-6 text-inactive" />
                         <p className="text-base text-inactive">Previous</p>
                     </div>
-                    <p className="text-primary decoration-2 underline-offset-4 group-hover:underline">{getPageConfig(props.previous).name}</p>
+                    <p className="pl-1 text-primary decoration-2 underline-offset-4 group-hover:underline">{getPageConfig(props.previous).name}</p>
                 </LinkWrapper>
             )}
             {props.next && (
@@ -41,7 +41,9 @@ export default function PreviousOrNextPages({
                         <p className="text-base text-inactive">Next</p>
                         <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6 text-inactive" />
                     </div>
-                    <p className="text-right text-primary decoration-2 underline-offset-4 group-hover:underline">{getPageConfig(props.next).name}</p>
+                    <p className="pr-1 text-right text-primary decoration-2 underline-offset-4 group-hover:underline">
+                        {getPageConfig(props.next).name}
+                    </p>
                 </LinkWrapper>
             )}
         </div>
