@@ -2,11 +2,9 @@ import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths } from '@/enums'
-import { Metadata } from 'next'
+import { generatePageMetadata } from '@/utils'
 
-export const metadata: Metadata = {
-    title: 'fberger.xyz | Experiences',
-}
+export const metadata = generatePageMetadata(AppPagePaths.XP)
 
 const bulletPointClassNames = 'text-base text-inactive group-hover:text-default'
 const commonClasses = 'group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5'
