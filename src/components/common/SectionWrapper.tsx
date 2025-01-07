@@ -4,9 +4,9 @@ import { ReactNode } from 'react'
 export const BulletPoint = () => <span className="w-min pr-2 text-inactive">&#x2022;</span>
 export const TextWithBulletPoint = (props: { children?: ReactNode }) => {
     return (
-        <div className="flex items-baseline gap-0.5">
+        <div className="flex items-baseline">
             <BulletPoint />
-            <p className="flex flex-wrap items-baseline gap-1.5">{props.children}</p>
+            <p className="flex items-baseline gap-1.5">{props.children}</p>
         </div>
     )
 }
