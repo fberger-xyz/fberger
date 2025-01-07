@@ -14,7 +14,7 @@ export default function PreviousOrNextPages({
     return (
         <>
             <div
-                className={cn('my-4 grid w-full gap-3 md:gap-4', {
+                className={cn('grid w-full gap-3 md:gap-4', {
                     'text-base': isIphoneDemo,
                     'text-xl': !isIphoneDemo,
                     'grid-cols-2': props.previous && props.next,

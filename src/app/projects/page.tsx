@@ -1,64 +1,17 @@
-import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import ProjectCard from '@/components/common/ProjectCard'
+import { SectionWrapper } from '@/components/common/SectionWrapper'
 import { AppPagePaths } from '@/enums'
-import { cn, generatePageMetadata } from '@/utils'
+import { generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.PROJECTS)
-
-function ProjectCard({
-    target = '_self',
-    disabled = false,
-    title,
-    date,
-    ttc,
-    skills,
-    ...props
-}: {
-    path: AppPagePaths | string
-    target?: '_blank' | '_self' | '_parent' | '_top'
-    disabled?: boolean
-    title: string
-    date: string
-    ttc: string
-    skills: string[]
-}) {
-    return (
-        <div className="group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5">
-            <LinkWrapper
-                href={props.path}
-                target={target}
-                disabled={disabled}
-                className={cn('flex w-full flex-col rounded-md pb-1 transition duration-300 hover:border-primary')}
-            >
-                <div className="flex w-full justify-between">
-                    <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">{title}</p>
-                    <p className="text-xs text-inactive">{date}</p>
-                </div>
-                <p className="text-xs lg:text-sm">
-                    <span className="mr-1 text-inactive">Time to code</span>
-                    {ttc}
-                </p>
-                <div className="mt-2 flex w-full flex-wrap justify-end gap-1 text-xs">
-                    {skills.map((skill) => (
-                        <div
-                            key={skill}
-                            className="flex w-fit items-center rounded-lg border border-very-light-hover px-1.5 py-0.5 group-hover:bg-very-light-hover"
-                        >
-                            <p className="text-nowrap text-inactive group-hover:text-primary">{skill}</p>
-                        </div>
-                    ))}
-                </div>
-            </LinkWrapper>
-        </div>
-    )
-}
 
 export default function Page() {
     return (
         <PageWrapper>
-            <p className="text-inactive">Side projects I can publicly speak about</p>
-            <div className="flex w-full flex-col gap-3">
+            <SectionWrapper title="Side projects" ulClassname="gap-3">
+                <p className="text-inactive">Some of those I can publicly speak about</p>
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_TRUSTEES}
                     title="Trustees"
@@ -96,7 +49,7 @@ export default function Page() {
                     ttc="3 weeks"
                     skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']}
                 />
-            </div>
+            </SectionWrapper>
             <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.XP} />
         </PageWrapper>
     )
