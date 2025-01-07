@@ -39,7 +39,7 @@ export default function Page() {
                     {/* <span className="text-inactive">Since Dec 2024</span> */}
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>
-                    Working on
+                    Working on{' '}
                     <LinkWithIcon href={`https://trustees.fberger.xyz`}>
                         <span className="font-bold">Trustees 💸</span>
                     </LinkWithIcon>
