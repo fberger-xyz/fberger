@@ -11,7 +11,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="Side projects" ulClassname="gap-3">
-                <p className="text-inactive">Some of those I can publicly speak about</p>
+                <p className="text-inactive">Some projects I can publicly speak about</p>
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_TRUSTEES}
                     title="Trustees"
