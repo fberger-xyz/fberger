@@ -35,7 +35,7 @@ export default function Page() {
             <SectionWrapper title="Currently">
                 {/* <p className="text-inactive">Mainly</p> */}
                 <TextWithBulletPoint>
-                    Freelance go-getter for B2C & B2B
+                    Freelance / fullstack dev for B2C & B2B clients
                     {/* <span className="text-inactive">Since Dec 2024</span> */}
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>
