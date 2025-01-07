@@ -1,109 +1,103 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import { AppPagePaths } from '@/enums'
-import { cn, generatePageMetadata } from '@/utils'
+import { generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
-const bulletPointClassNames = 'text-base text-inactive group-hover:text-default'
+const positionTitle = 'truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline text-lg'
 const commonClasses = 'group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5'
-
+const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
+    return (
+        <div className="flex w-full flex-col items-baseline gap-1 sm:flex-row sm:gap-2">
+            {props.companyName && props.href && (
+                <LinkWithIcon href={props.href}>
+                    <span className="truncate text-base">@{props.companyName}</span>
+                </LinkWithIcon>
+            )}
+            <p className={positionTitle}>{props.positionName}</p>
+            <p className="grow truncate text-right text-xs text-inactive">{props.dates}</p>
+        </div>
+    )
+}
 export default function Page() {
     return (
         <PageWrapper>
-            <p className="text-inactive">Non-exhaustive summary</p>
-            <ul className="flex flex-col gap-2">
+            <SectionWrapper title="Experiences" ulClassname="gap-3">
+                <p className="text-inactive">Non-exhaustive</p>
                 <li className={commonClasses}>
-                    <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
-                        <p className="truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                            Freelance
-                        </p>
-                        <p className="truncate text-sm">Dec 2024 - now</p>
-                    </div>
-                    <p className={bulletPointClassNames}>&#x2022; Go-getter for B2C / B2B clients</p>
+                    <PositionWrapper positionName={'Freelance'} dates={'Dec 2024 - now'} />
+                    <TextWithBulletPoint>Fullstack developer with a go getter mindset for clients like @CoinShares</TextWithBulletPoint>
                 </li>
                 <li className={commonClasses}>
-                    <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
-                        <p className="truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                            Risk and DeFi Developer
-                        </p>
-                        <p className="truncate text-sm">Nov 2021 {'>'} Nov 2024</p>
-                        <LinkWithIcon href="https://coinshares.com/">
-                            <p className="truncate text-base">@CoinShares</p>
-                        </LinkWithIcon>
-                    </div>
-                    <p className={bulletPointClassNames}>
-                        &#x2022; Coded frontends and backends used daily by ops team + quants + traders + top management
-                    </p>
-                    <p className="pl-4 text-xs text-inactive group-hover:text-default lg:text-sm">
+                    <PositionWrapper
+                        companyName="CoinShares"
+                        href="https://coinshares.com/"
+                        positionName="Risk and DeFi Developer"
+                        dates={`Nov 2021 > Nov 2024`}
+                    />
+                    <TextWithBulletPoint>Coded frontends and backends used daily by ops team + quants + traders + top management</TextWithBulletPoint>
+                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
                         1) to compute P&L and risk exposure (hedge funds, lending and staking activities)
                     </p>
-                    <p className="pl-4 text-xs text-inactive group-hover:text-default lg:text-sm">
+                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
                         2) to monitor trading strategies (positions, volatility surfaces, greeks)
                     </p>
-                    <p className="pl-4 text-xs text-inactive group-hover:text-default lg:text-sm">3) to adapt strategies to economic calendar</p>
-                    <p className={bulletPointClassNames}>&#x2022; Practical research on Staking</p>
-                    <p className={bulletPointClassNames}>&#x2022; Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</p>
-                    <p className={bulletPointClassNames}>&#x2022; Run ethereum nodes to test Shanghai upgrade (with https access)</p>
-                    <p className={bulletPointClassNames}>&#x2022; AWS DevOps to run bots (Nestjs APIs)</p>
-                    <p className={bulletPointClassNames}>
-                        &#x2022; Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
+                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
+                        3) to adapt strategies to economic calendar
                     </p>
-                    <p className={cn(bulletPointClassNames, 'mt-2')}>References on request. Left to all-in DeFi</p>
+                    <TextWithBulletPoint>Practical research on Staking</TextWithBulletPoint>
+                    <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
+                    <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access)</TextWithBulletPoint>
+                    <TextWithBulletPoint>AWS DevOps to run bots (Nestjs APIs)</TextWithBulletPoint>
+                    <TextWithBulletPoint>
+                        Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
+                    </TextWithBulletPoint>
+                    <p className="mt-2 text-base text-inactive">References on request. Left to all-in DeFi</p>
                 </li>
                 <li className={commonClasses}>
-                    <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
-                        <p className="truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                            Full-Stack Developer
-                        </p>
-                        <p className="truncate text-sm">Jan 2021 {'>'} Oct 2021</p>
-                        <LinkWithIcon href="https://stationf.co/">
-                            <p className="truncate text-base">@Station F</p>
-                        </LinkWithIcon>
-                    </div>
-                    <p className={bulletPointClassNames}>&#x2022; Best practices to engineer + commit a clean code (unit, integration, e2e tests)</p>
-                    <p className={cn(bulletPointClassNames, 'mt-2')}>Left to work in crypto</p>
+                    <PositionWrapper
+                        companyName="StationF"
+                        href="https://stationf.co/"
+                        positionName="Risk and DeFi Developer"
+                        dates={`Jan 2021 > Oct 2021`}
+                    />
+                    <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
+                    <p className="mt-2 text-base text-inactive">Left to work in crypto</p>
                 </li>
                 <li className={commonClasses}>
-                    <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
-                        <p className="truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                            Transaction Advisory Services Analyst
-                        </p>
-                        <p className="truncate text-sm">2017 & 2019</p>
-                        <LinkWithIcon href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/">
-                            <p className="truncate text-base">@GrantThornton</p>
-                        </LinkWithIcon>
-                    </div>
-                    <p className={bulletPointClassNames}>&#x2022; Small & mid cap valuations in M&A context, waterfalls, statistical modelling</p>
-                    <p className={bulletPointClassNames}>&#x2022; Memorandum, due diligences, litigation support</p>
-                    <p className={cn(bulletPointClassNames, 'mt-2')}>Left to pivot in tech</p>
+                    <PositionWrapper
+                        companyName="GrantThornton"
+                        href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/"
+                        positionName="Transaction Advisory Services Analyst"
+                        dates={`2017 & 2019`}
+                    />
+
+                    <TextWithBulletPoint>Small & mid cap valuations in M&A context, waterfalls, statistical modelling</TextWithBulletPoint>
+                    <TextWithBulletPoint>Memorandum, due diligences, litigation support</TextWithBulletPoint>
+                    <p className="mt-2 text-base text-inactive">Left to pivot in tech</p>
                 </li>
-            </ul>
+            </SectionWrapper>
 
             {/* studies */}
-            <div className="flex flex-col gap-1">
-                <p className="text-xl font-bold text-primary lg:text-xl">Studies</p>
-                <ul>
-                    <li className="flex items-baseline gap-2">
-                        <p className="font-bold text-secondary">42</p>
-                        <p className="truncate text-sm">2020</p>
-                    </li>
-                    <li className="flex items-baseline gap-2">
-                        <p className="font-bold text-secondary">DSCG</p>
-                        <p className="truncate text-sm">2019</p>
-                        <p className={bulletPointClassNames}>french CPA</p>
-                    </li>
-                    <li className="flex items-baseline gap-2">
-                        <p className="font-bold text-secondary">MSc Corporate Finance</p>
-                        <p className="truncate text-sm">2019</p>
-                    </li>
-                    <li className="flex items-baseline gap-2">
-                        <p className="font-bold text-secondary">Le Wagon</p>
-                        <p className="truncate text-sm">2017</p>
-                    </li>
-                </ul>
-            </div>
+            <SectionWrapper title="Studies">
+                <TextWithBulletPoint>
+                    42 <span className="text-inactive">2020</span>
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
+                    French CPA <span className="text-inactive">2019</span>
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>
+                    MSc Corporate Finance <span className="text-inactive">2019</span>
+                </TextWithBulletPoint>
+            </SectionWrapper>
+            <SectionWrapper title="Hobbies">
+                <TextWithBulletPoint>Philosophy</TextWithBulletPoint>
+                <TextWithBulletPoint>Boxing</TextWithBulletPoint>
+                <TextWithBulletPoint>Countryside to touch grass</TextWithBulletPoint>
+            </SectionWrapper>
             <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )

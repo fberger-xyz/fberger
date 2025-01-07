@@ -53,11 +53,11 @@ export default function RootLayout({
                         <Suspense
                             fallback={
                                 <div className="flex h-full w-full items-center justify-center">
-                                    <p className="text-orange-500">App loading...</p>
+                                    <p className="text-orange-500">Loading...</p>
                                 </div>
                             }
                         >
-                            <div className="h-full overflow-scroll">{children}</div>
+                            {children}
                         </Suspense>
                         <Footer />
                         <Toaster position="bottom-center" reverseOrder={false} />
