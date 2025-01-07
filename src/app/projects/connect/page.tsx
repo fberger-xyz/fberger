@@ -2,7 +2,8 @@ import IconWrapper from '@/components/common/IconWrapper'
 import IframeWrapper from '@/components/common/IframeWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
-import { IconIds } from '@/enums'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
     return (
@@ -36,10 +37,11 @@ export default function Page() {
                 <p className="text-sm">- great browser/mobile ux</p>
                 <p className="text-sm">- sign in with ethereum integration (SIWE)</p>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-4">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm">Nice tool</p>
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }

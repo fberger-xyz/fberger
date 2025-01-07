@@ -3,12 +3,13 @@ import IframeWrapper from '@/components/common/IframeWrapper'
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import ExcalidrawSVG from '@/components/excalidraw/ExcalidrawSVG'
-import { IconIds } from '@/enums'
+import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-5">
+        <PageWrapper>
             <div className="flex w-full items-center justify-between">
                 <div className="flex w-full flex-col">
                     <LinkWrapper
@@ -50,12 +51,11 @@ export default function Page() {
                     <p className="text-xs italic text-inactive">It's that simple</p>
                 </div>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-4">
                 <p className="text-secondary">Conclusion</p>
-                <p className="text-sm">
-                    With these tools, one developer can deploy features that would require an entire team in the corporate world
-                </p>
+                <p className="text-sm">With these tools, 1 dev can deploy features that would require an entire team in the corporate world</p>
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }

@@ -3,7 +3,8 @@ import IframeWrapper from '@/components/common/IframeWrapper'
 // import IframeWrapper from '@/components/common/IframeWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
-import { IconIds } from '@/enums'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
     return (
@@ -36,10 +37,11 @@ export default function Page() {
                 <p className="text-secondary">2. Why</p>
                 <p className="text-sm">WIP</p>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-4">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm">WIP</p>
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }

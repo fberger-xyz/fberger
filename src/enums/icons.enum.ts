@@ -17,8 +17,6 @@ export enum IconIds {
     CARBON_CLOUD_UPLOAD = 'carbon:cloud-upload',
     CARBON_REPORT = 'carbon:report-data',
     CARBON_ARROW_RIGHT = 'carbon:arrow-right',
-
-    // ic
     IC_OUTLINE_CALENDAR_MONTH = 'ic:outline-calendar-month',
     IC_OUTLINE_MODE_EDIT = 'ic:outline-mode-edit',
     IC_BASELINE_OPEN_IN_NEW = 'ic:baseline-open-in-new',
@@ -29,7 +27,6 @@ export enum IconIds {
     // THEME_DARK = 'mdi:weather-night',
     THEME_DARK = 'line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition',
 
-    // hugeicons
     X = 'ri:twitter-x-fill',
     // TELEGRAM = 'mdi:telegram',
     TELEGRAM = 'ph:telegram-logo',
@@ -38,11 +35,7 @@ export enum IconIds {
     DISCORD = 'mdi:discord',
     GITHUB = 'mdi:github',
     LINKEDIN = 'mdi:linkedin',
-
-    // evm
     TRANSACTION = 'carbon:text-align-center',
     CONTRACT = 'carbon:cics-program',
-
-    // -
     LOADING_DOTS = 'LOADING_DOTS',
 }

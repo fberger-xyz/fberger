@@ -2,11 +2,12 @@ import IconWrapper from '@/components/common/IconWrapper'
 import IframeWrapper from '@/components/common/IframeWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
-import { IconIds } from '@/enums'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
+import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
     return (
-        <PageWrapper className="gap-5">
+        <PageWrapper>
             <div className="flex w-full items-center justify-between">
                 <div className="flex w-full flex-col">
                     <LinkWrapper
@@ -34,10 +35,11 @@ export default function Page() {
                 <p className="text-secondary">2. Why</p>
                 <p className="text-sm">- to gain time while managing my multisigs</p>
             </div>
-            <div className="flex w-full flex-col gap-1 border-t border-light-hover py-4">
+            <div className="flex w-full flex-col gap-1 border-t border-light-hover pt-4">
                 <p className="text-secondary">Conclusion</p>
                 <p className="text-sm">Useful to me</p>
             </div>
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }

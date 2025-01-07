@@ -71,7 +71,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
     {
         name: 'XP',
         path: AppPagePaths.XP,
-        inHeader: false,
+        inHeader: true,
         sublinks: [],
     },
 ]
