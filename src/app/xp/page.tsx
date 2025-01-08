@@ -7,7 +7,6 @@ import { generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
-const positionTitle = 'truncate font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline text-lg'
 const commonClasses = 'group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
@@ -17,7 +16,9 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
                     <span className="truncate text-base">@{props.companyName}</span>
                 </LinkWithIcon>
             )}
-            <p className={positionTitle}>{props.positionName}</p>
+            <p className="truncate text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
+                {props.positionName}
+            </p>
             <p className="grow truncate text-right text-xs text-inactive">{props.dates}</p>
         </div>
     )
@@ -56,7 +57,7 @@ export default function Page() {
                         Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                     </TextWithBulletPoint>
                     <TextWithBulletPoint>References on request</TextWithBulletPoint>
-                    <p className="text-base text-inactive">Left for DeFi</p>
+                    <p className="mt-2 text-base text-inactive">Left for DeFi</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
