@@ -27,7 +27,9 @@ export default function ProjectCard({
         >
             <div className="flex w-full flex-col rounded-md pb-1 transition duration-300 hover:border-primary">
                 <div className="flex w-full justify-between">
-                    <p className="font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">{title}</p>
+                    <p className="text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
+                        {title}
+                    </p>
                     <p className="text-xs text-inactive">{date}</p>
                 </div>
                 <p className="text-xs lg:text-sm">
