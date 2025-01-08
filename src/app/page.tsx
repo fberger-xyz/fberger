@@ -113,8 +113,8 @@ export default function Page() {
                         href={AppPagePaths.PROJECTS}
                         className="group flex items-center justify-center gap-1 rounded-2xl p-2 text-primary underline-offset-2 transition-all hover:tracking-wide hover:underline"
                     >
-                        <p className="font-bold">See all projects</p>
-                        <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-5" />
+                        <p className="text-xl font-bold">See all projects</p>
+                        <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6" />
                     </LinkWrapper>
                 </div>
             </SectionWrapper>
