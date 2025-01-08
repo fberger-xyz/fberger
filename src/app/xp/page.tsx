@@ -39,25 +39,24 @@ export default function Page() {
                         dates={`Nov 2021 > Nov 2024`}
                     />
                     <TextWithBulletPoint>
-                        Designed and coded frontends and backends used daily by ops team + quants + traders + top management
+                        Designed and coded frontends and backends used daily by ops team + quants + traders + top management to compute/monitor
                     </TextWithBulletPoint>
-                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
-                        1) to compute P&L and risk exposure (hedge funds, lending and staking activities)
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                        1) P&L and risk exposure (hedge funds, lending and staking activities)
                     </p>
-                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
-                        2) to monitor trading strategies (positions, volatility surfaces, greeks)
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                        2) Trading strategies (positions, volatility surfaces, greeks)
                     </p>
-                    <p className="pl-8 text-xs italic text-inactive group-hover:text-default lg:text-sm">
-                        3) to adapt strategies to economic calendar
-                    </p>
-                    <TextWithBulletPoint>Practical research on Staking</TextWithBulletPoint>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">3) Strategies reactions to economic calendar</p>
+                    <TextWithBulletPoint>Practical research for Staking operations</TextWithBulletPoint>
                     <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
                     <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access)</TextWithBulletPoint>
                     <TextWithBulletPoint>AWS DevOps to run bots (Nestjs APIs)</TextWithBulletPoint>
                     <TextWithBulletPoint>
                         Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                     </TextWithBulletPoint>
-                    <p className="mt-2 text-base text-inactive">References on request. Left to all-in DeFi</p>
+                    <TextWithBulletPoint>References on request</TextWithBulletPoint>
+                    <p className="text-base text-inactive">Left for DeFi</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
