@@ -14,6 +14,7 @@ const config: Config = {
                 'light-hover': 'var(--color-light-hover)',
                 'very-light-hover': 'var(--color-very-light-hover)',
                 'light-border': 'var(--color-light-border)',
+                telegram: '#24A1DE',
             },
         },
     },

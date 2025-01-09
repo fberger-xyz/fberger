@@ -76,7 +76,11 @@ export default function Page() {
                         },
                         { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB, id: APP_METADATA.SOCIALS.GITHUB },
                     ].map((link) => (
-                        <LinkWithIcon key={link.href} href={link.href}>
+                        <LinkWithIcon
+                            key={link.href}
+                            href={link.href}
+                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10' : ''}
+                        >
                             {link.id}
                             <IconWrapper icon={link.icon} className="size-6 pl-1" />
                         </LinkWithIcon>
