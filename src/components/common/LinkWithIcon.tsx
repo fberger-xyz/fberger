@@ -1,12 +1,16 @@
 // import IconWrapper from '@/components/common/IconWrapper'
 // import { IconIds } from '@/enums'
+import { cn } from '@/utils'
 import LinkWrapper from './LinkWrapper'
 
-export default function LinkWithIcon({ children, href }: { href: string; children?: React.ReactNode }) {
+export default function LinkWithIcon({ children, href, ...props }: { href: string; children?: React.ReactNode; className?: string }) {
     return (
         <LinkWrapper
             href={href}
-            className="flex w-fit cursor-alias items-center gap-2 rounded-xl border border-light-hover px-3 py-1 text-default underline-offset-2 hover:bg-very-light-hover hover:underline"
+            className={cn(
+                'flex w-fit cursor-alias items-center gap-2 rounded-xl border border-light-hover px-3 py-1 text-default underline-offset-2 hover:bg-very-light-hover hover:underline',
+                props.className,
+            )}
             target="_blank"
         >
             {children}
