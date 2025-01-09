@@ -46,7 +46,7 @@ export default function Page() {
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="XP">
-                <TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">
                     DeFi and Risk Developer @CoinShares
                     {/* <span className="text-inactive">2021 {'>'} 2024</span> */}
                 </TextWithBulletPoint>
@@ -64,7 +64,7 @@ export default function Page() {
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Socials">
-                <p className="flex flex-wrap items-center gap-1.5">
+                <p className="flex flex-wrap items-center gap-2">
                     {/* <BulletPoint /> */}
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
