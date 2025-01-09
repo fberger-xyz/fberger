@@ -32,4 +32,6 @@ export enum IconIds {
     TRANSACTION = 'carbon:text-align-center',
     CONTRACT = 'carbon:cics-program',
     LOADING_DOTS = 'LOADING_DOTS',
+    CRYPTO_BTC = 'cryptocurrency-color:btc',
+    CRYPTO_ETH = 'cryptocurrency-color:eth',
 }

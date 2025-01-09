@@ -1,5 +1,7 @@
 import LinkWrapper from '@/components/common/LinkWrapper'
-import { AppPagePaths } from '@/enums'
+import { AppPagePaths, IconIds } from '@/enums'
+import { cn } from '@/utils'
+import IconWrapper from './IconWrapper'
 
 export default function ProjectCard({
     target = '_self',
@@ -27,9 +29,17 @@ export default function ProjectCard({
         >
             <div className="flex w-full flex-col rounded-md pb-1 transition duration-300 hover:border-primary">
                 <div className="flex w-full justify-between">
-                    <p className="text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                        {title}
-                    </p>
+                    <div className="flex items-center justify-center gap-1">
+                        <p className="text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
+                            {title}
+                        </p>
+                        {title === 'ETFs' && (
+                            <>
+                                <IconWrapper icon={IconIds.CRYPTO_BTC} className={cn('size-5', { grayscale: true })} />
+                                <IconWrapper icon={IconIds.CRYPTO_ETH} className={cn('size-5', { grayscale: true })} />
+                            </>
+                        )}
+                    </div>
                     <p className="text-xs text-inactive">{date}</p>
                 </div>
                 <p className="text-xs lg:text-sm">
