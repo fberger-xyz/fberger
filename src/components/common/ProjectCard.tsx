@@ -8,7 +8,7 @@ export default function ProjectCard({
     disabled = false,
     title,
     date,
-    ttc,
+    // ttc,
     skills,
     ...props
 }: {
@@ -42,10 +42,10 @@ export default function ProjectCard({
                     </div>
                     <p className="text-xs text-inactive">{date}</p>
                 </div>
-                <p className="text-xs lg:text-sm">
+                {/* <p className="text-xs lg:text-sm">
                     <span className="mr-1 text-inactive">Time to code</span>
                     {ttc}
-                </p>
+                </p> */}
                 <div className="mt-2 flex w-full flex-wrap justify-end gap-1 text-xs">
                     {skills.map((skill) => (
                         <div
