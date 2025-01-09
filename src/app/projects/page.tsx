@@ -15,6 +15,7 @@ export default function Page() {
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_TRUSTEES}
                     title="Trustees"
+                    description="Dynamic management for busy holders"
                     date="Dec 2024"
                     ttc="+3 weeks"
                     skills={['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum']}
@@ -22,6 +23,7 @@ export default function Page() {
                 <ProjectCard
                     path={AppPagePaths.PROJECTS_ETFS}
                     title="ETFs"
+                    description="Better farside"
                     date="Nov 2024"
                     ttc="4 days"
                     skills={['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}

@@ -37,7 +37,7 @@ export default function Page() {
                         companyName="CoinShares"
                         href="https://coinshares.com/"
                         positionName="Risk and DeFi Developer"
-                        dates={`Nov 2021 > Nov 2024`}
+                        dates="Nov 2021 > Nov 2024"
                     />
                     <TextWithBulletPoint>
                         Designed and coded frontends and backends used daily by ops team + quants + traders + top management to compute/monitor
