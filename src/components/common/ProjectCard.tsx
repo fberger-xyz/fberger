@@ -8,6 +8,7 @@ export default function ProjectCard({
     disabled = false,
     title,
     date,
+    description,
     // ttc,
     skills,
     ...props
@@ -17,6 +18,7 @@ export default function ProjectCard({
     disabled?: boolean
     title: string
     date: string
+    description?: string
     ttc: string
     skills: string[]
 }) {
@@ -46,6 +48,7 @@ export default function ProjectCard({
                     <span className="mr-1 text-inactive">Time to code</span>
                     {ttc}
                 </p> */}
+                {description && <p className="text-xs text-inactive lg:text-sm">{description}</p>}
                 <div className="mt-2 flex w-full flex-wrap justify-end gap-1 text-xs">
                     {skills.map((skill) => (
                         <div
