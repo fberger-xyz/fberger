@@ -97,7 +97,7 @@ export default function Page() {
                 </p>
             </SectionWrapper>
             <SectionWrapper title="Side projects">
-                <p className="text-inactive">Always TradFi/DeFi related</p>
+                {/* <p className="text-inactive">Always TradFi/DeFi related</p> */}
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
                         path={AppPagePaths.PROJECTS_TRUSTEES}
