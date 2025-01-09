@@ -68,21 +68,21 @@ export default function Page() {
                     {/* <BulletPoint /> */}
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
-                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: APP_METADATA.SOCIALS.X },
+                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: '' },
                         {
                             href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`,
                             icon: IconIds.LINKEDIN,
-                            id: 'Francis Berger',
+                            id: '',
                         },
-                        { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB, id: APP_METADATA.SOCIALS.GITHUB },
+                        { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB, id: '' },
                     ].map((link) => (
                         <LinkWithIcon
                             key={link.href}
                             href={link.href}
-                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10' : ''}
+                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10 text-telegram' : ''}
                         >
-                            {link.id}
-                            <IconWrapper icon={link.icon} className="size-6 pl-1" />
+                            {link.id && <span className="pr-1">{link.id}</span>}
+                            <IconWrapper icon={link.icon} className="size-5" />
                         </LinkWithIcon>
                     ))}
                     {/* <LinkWithIcon href={`https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`}>
@@ -119,7 +119,7 @@ export default function Page() {
                         href={AppPagePaths.PROJECTS}
                         className="group flex items-center justify-center gap-1 rounded-2xl p-2 text-primary underline-offset-2 transition-all hover:tracking-wide hover:underline"
                     >
-                        <p className="text-xl font-bold">See projects</p>
+                        <p className="text-xl font-bold">All projects</p>
                         <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6" />
                     </LinkWrapper>
                 </div>
