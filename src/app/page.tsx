@@ -16,7 +16,7 @@ export default function Page() {
         <PageWrapper>
             <SectionWrapper title="About">
                 <TextWithBulletPoint>
-                    Connecting the Dots
+                    Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
                     <SvgMapper icon={IconIds.LOADING_DOTS} className="size-3" />
                     <span className="font-bold text-primary">DeFi</span>
