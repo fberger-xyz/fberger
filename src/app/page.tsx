@@ -59,7 +59,7 @@ export default function Page() {
                     {/* <span className="text-inactive">2017 & 2019</span> */}
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>
-                    Student in Finance + Computer Sciences @42
+                    Msc finance x Computer sciences @42
                     {/* <span className="text-inactive">Msc. Finance + CPA + 42</span> */}
                 </TextWithBulletPoint>
             </SectionWrapper>
