@@ -25,7 +25,7 @@ export default function Page() {
                     <BulletPoint />
                     XP in DeFi and Risk Management
                 </p> */}
-                <TextWithBulletPoint>Passionate 10x dev</TextWithBulletPoint>
+                <TextWithBulletPoint>Passionate 10x developer</TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
                 {/* <p className={bulletPointClassNames}>
                     <BulletPoint />
