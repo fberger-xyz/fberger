@@ -56,7 +56,7 @@ export default function Page() {
                     <TextWithBulletPoint>
                         Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                     </TextWithBulletPoint>
-                    <TextWithBulletPoint>References on request</TextWithBulletPoint>
+                    <TextWithBulletPoint>Best xp so far. References on request</TextWithBulletPoint>
                     <p className="mt-2 text-base text-inactive">Left for DeFi</p>
                 </li>
                 <li className={commonClasses}>
