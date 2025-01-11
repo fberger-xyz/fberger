@@ -19,7 +19,7 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
             <p className="truncate text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
                 {props.positionName}
             </p>
-            <p className="grow truncate text-right text-xs text-inactive">{props.dates}</p>
+            <p className="grow truncate text-right text-sm text-inactive">{props.dates}</p>
         </div>
     )
 }
