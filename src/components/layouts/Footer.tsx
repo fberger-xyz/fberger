@@ -14,7 +14,7 @@ export default function Footer(props: { className?: string }) {
         <div className={cn('fixed bottom-0 w-full flex justify-end text-sm z-50', props.className)}>
             <div className="flex items-end gap-5 rounded-ss-2xl bg-background px-4 py-3 opacity-80 backdrop-blur-sm">
                 {[
-                    { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM },
+                    { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO },
                     { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X },
                     { href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`, icon: IconIds.LINKEDIN },
                     { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB },
