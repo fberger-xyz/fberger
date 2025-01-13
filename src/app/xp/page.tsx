@@ -40,7 +40,8 @@ export default function Page() {
                         dates="Nov 2021 > Nov 2024"
                     />
                     <TextWithBulletPoint>
-                        Designed and coded frontends and backends used daily by ops team + quants + traders + top management to compute/monitor
+                        Designed, coded and maintained frontends and backends used daily by ops team + quants + traders + top management to
+                        compute/monitor
                     </TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                         1) P&L and risk exposure (hedge funds, lending and staking activities)
