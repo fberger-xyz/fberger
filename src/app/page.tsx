@@ -25,12 +25,12 @@ export default function Page() {
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Currently">
-                <TextWithBulletPoint>Freelance / fullstack dev for B2C & B2B clients</TextWithBulletPoint>
+                <TextWithBulletPoint>Freelance fullstack dev</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Working on{' '}
                     <LinkWithIcon href={`https://trustees.fberger.xyz`}>
                         <span className="font-bold">Trustees 💸</span>
-                    </LinkWithIcon>
+                    </LinkWithIcon>{' '}
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="XP">
