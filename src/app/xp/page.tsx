@@ -30,7 +30,7 @@ export default function Page() {
                 <p className="text-inactive">Non-exhaustive</p>
                 <li className={commonClasses}>
                     <PositionWrapper positionName={'Freelance'} dates={'Dec 2024 - now'} />
-                    <TextWithBulletPoint>Fullstack developer with a go getter mindset for clients like @CoinShares</TextWithBulletPoint>
+                    <TextWithBulletPoint>Fullstack developer / go getter for clients like @CoinShares</TextWithBulletPoint>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
