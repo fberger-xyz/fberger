@@ -29,7 +29,12 @@ export default function Page() {
             <SectionWrapper title="Experiences" ulClassname="gap-3">
                 <p className="text-inactive">Non-exhaustive</p>
                 <li className={commonClasses}>
-                    <PositionWrapper positionName={'Developer Freelance'} dates={'Dec 2024 - now'} />
+                    <PositionWrapper
+                        companyName="Freelance"
+                        href="https://fberger.xyz/"
+                        positionName={'Fullstack Developer'}
+                        dates={'Dec 2024 - now'}
+                    />
                     <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
                 </li>
                 <li className={commonClasses}>
