@@ -40,8 +40,7 @@ export default function Page() {
                         dates="Nov 2021 > Nov 2024"
                     />
                     <TextWithBulletPoint>
-                        Designed, coded and maintained frontends and backends used daily by ops team + quants + traders + top management to
-                        compute/monitor
+                        Designed, coded and maintained risk applications used daily by ops team + quants + traders + top management to compute/monitor
                     </TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                         1) P&L and risk exposure (hedge funds, lending and staking activities)
@@ -53,7 +52,7 @@ export default function Page() {
                     <TextWithBulletPoint>Practical research for Staking operations</TextWithBulletPoint>
                     <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
                     <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access)</TextWithBulletPoint>
-                    <TextWithBulletPoint>AWS DevOps to run bots (Nestjs APIs)</TextWithBulletPoint>
+                    <TextWithBulletPoint>DevOps to run bots (AWS lambda, AWS DynamoDB, Cloudwatch, etc.)</TextWithBulletPoint>
                     <TextWithBulletPoint>
                         Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
                     </TextWithBulletPoint>
