@@ -13,8 +13,8 @@ export default function Page() {
             <SectionWrapper title="Side projects" ulClassname="gap-3">
                 <p className="text-inactive">Some projects I can publicly speak about</p>
                 <ProjectCard
-                    path={AppPagePaths.PROJECTS_TRUSTEES}
-                    title="Trustees"
+                    path={AppPagePaths.PROJECTS_TRUSTEE}
+                    title="Trustee"
                     description="Dynamic management for busy holders"
                     date="Dec 2024"
                     ttc="+3 weeks"
