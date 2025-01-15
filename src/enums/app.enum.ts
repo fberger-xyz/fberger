@@ -1,7 +1,7 @@
 export enum AppPagePaths {
     HOME = '/',
     PROJECTS = '/projects',
-    PROJECTS_TRUSTEES = '/projects/trustees',
+    PROJECTS_TRUSTEE = '/projects/trustee',
     PROJECTS_ETFS = '/projects/etfs',
     PROJECTS_SEEDS = '/projects/seeds',
     PROJECTS_SAFES = '/projects/safes',

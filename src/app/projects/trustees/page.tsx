@@ -6,12 +6,12 @@ import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
-    const projectName = 'Trustees'
+    const projectName = 'Trustee'
     return (
         <PageWrapper>
             <div className="flex w-full flex-col">
                 <LinkWrapper
-                    href={`https://${projectName}.fberger.xyz`}
+                    href={`https://trustee.fund`}
                     target="_blank"
                     className="flex w-full flex-wrap items-center gap-2 decoration-primary underline-offset-4 hover:underline"
                 >
@@ -19,7 +19,7 @@ export default function Page() {
                     <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="size-7 text-primary" />
                 </LinkWrapper>
             </div>
-            <IframeWrapper src={`https://${projectName}.fberger.xyz`} width="w-full" height="h-[400px]" />
+            <IframeWrapper src={`https://trustee.fund`} width="w-full" height="h-[400px]" />
             <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )

@@ -28,8 +28,8 @@ export default function Page() {
                 <TextWithBulletPoint>Freelance fullstack dev</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Working on{' '}
-                    <LinkWithIcon href={`https://trustees.fberger.xyz`}>
-                        <span className="font-bold">Trustees 💸</span>
+                    <LinkWithIcon href={`https://trustee.fund`}>
+                        <span className="font-bold">Trustee 💸</span>
                     </LinkWithIcon>{' '}
                 </TextWithBulletPoint>
             </SectionWrapper>
@@ -65,8 +65,8 @@ export default function Page() {
             <SectionWrapper title="Side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
-                        path={AppPagePaths.PROJECTS_TRUSTEES}
-                        title="Trustees"
+                        path={AppPagePaths.PROJECTS_TRUSTEE}
+                        title="Trustee"
                         description="Dynamic management for busy holders"
                         date="Dec 2024"
                         ttc="2 weeks"
