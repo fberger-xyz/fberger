@@ -6,7 +6,7 @@ import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { AppPagePaths, IconIds } from '@/enums'
 
 export default function Page() {
-    const projectName = 'Trustee'
+    const projectName = 'trustee.fund'
     return (
         <PageWrapper>
             <div className="flex w-full flex-col">
