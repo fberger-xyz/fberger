@@ -15,7 +15,7 @@ export default function Page() {
                     target="_blank"
                     className="flex w-full flex-wrap items-center gap-2 decoration-primary underline-offset-4 hover:underline"
                 >
-                    <p className="text-3xl capitalize text-secondary">{projectName}</p>
+                    <p className="text-3xl text-secondary">{projectName}</p>
                     <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="size-7 text-primary" />
                 </LinkWrapper>
             </div>
