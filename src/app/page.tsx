@@ -29,7 +29,7 @@ export default function Page() {
                 <TextWithBulletPoint>
                     Working on{' '}
                     <LinkWithIcon href={`https://trustee.fund`}>
-                        <span className="font-bold">Trustee 💸</span>
+                        <span className="font-bold">Trustee fund 💸</span>
                     </LinkWithIcon>{' '}
                 </TextWithBulletPoint>
             </SectionWrapper>
