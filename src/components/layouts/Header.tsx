@@ -15,8 +15,10 @@ export default function Header(props: { className?: string }) {
                     <p className="mb-1 hidden text-xl text-primary sm:flex">{APP_METADATA.SITE_AUTHOR}</p>
                 </LinkWrapper>
                 <LinkWrapper href="/" className="hidden items-center gap-3 md:z-50 md:flex">
-                    <Image src={APP_METADATA.PROFILE_PICTURE} width={50} height={50} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
-                    <p className="mb-1 hidden text-2xl text-primary md:flex lg:font-bold">{APP_METADATA.SITE_NAME}</p>
+                    <Image src={APP_METADATA.PROFILE_PICTURE} width={44} height={44} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
+                    <p className="mb-1 hidden text-2xl text-primary underline decoration-light-hover decoration-2 underline-offset-2 hover:decoration-primary md:flex lg:font-bold">
+                        {APP_METADATA.SITE_NAME}
+                    </p>
                 </LinkWrapper>
                 <div className="z-50 flex gap-0.5 sm:gap-1">
                     {APP_PAGES.filter((page) => page.inHeader).map((page) => (
