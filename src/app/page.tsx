@@ -7,9 +7,12 @@ import { SectionWrapper, TextWithBulletPoint } from '@/components/common/Section
 import SvgMapper from '@/components/common/SvgMapper'
 import { APP_METADATA } from '@/config/app.config'
 import { AppPagePaths, IconIds } from '@/enums'
-import { generatePageMetadata } from '@/utils'
+import { Metadata } from 'next'
 
-export const metadata = generatePageMetadata(AppPagePaths.HOME)
+export const metadata: Metadata = {
+    title: `${APP_METADATA.SITE_NAME}`,
+    description: APP_METADATA.SITE_DESCRIPTION,
+}
 
 export default function Page() {
     return (
