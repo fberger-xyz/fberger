@@ -4,7 +4,7 @@ import { InterfaceAppLink } from '@/interfaces'
 export const APP_METADATA = {
     SITE_AUTHOR: 'fberger',
     SITE_NAME: 'fberger.xyz',
-    SITE_DESCRIPTION: 'Connecting the dots TradFi <> DeFi',
+    SITE_DESCRIPTION: 'Connecting the dots TradFi <> DeFi. Skin in the game.',
     SITE_URL: 'https://fberger.xyz/',
     SOCIALS: {
         X: 'fberger_xyz',
