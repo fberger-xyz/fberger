@@ -40,7 +40,7 @@ export default function Page() {
                 <TextWithBulletPoint className="font-bold">DeFi and Risk Developer @CoinShares</TextWithBulletPoint>
                 <TextWithBulletPoint>Full-Stack Developer @StationF</TextWithBulletPoint>
                 <TextWithBulletPoint>TAS Analyst @GrantThornton</TextWithBulletPoint>
-                <TextWithBulletPoint>Msc finance / CPA / 42</TextWithBulletPoint>
+                <TextWithBulletPoint>Msc corp. finance / CPA (lot of law) / CS @42</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Socials">
                 <p className="flex flex-wrap items-center gap-2">
