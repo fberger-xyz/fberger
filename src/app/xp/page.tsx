@@ -60,7 +60,7 @@ export default function Page() {
                     <TextWithBulletPoint>AWS devOps to run bots (Lambda, DynamoDB, Cloudwatch, etc.)</TextWithBulletPoint>
                     <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
                     <TextWithBulletPoint>
-                        Proactive to improve legacy stack w/ best-in-class dev tools (eg. vite, tailwind, zustand)
+                        Proactive to improve legacy stack w/ best-in-class typescript dev tools (eg. vite, tailwind, zustand)
                     </TextWithBulletPoint>
                     <TextWithBulletPoint>Best xp so far. References on request</TextWithBulletPoint>
                     <p className="mt-2 text-base text-inactive">Left for DeFi</p>
@@ -69,7 +69,7 @@ export default function Page() {
                     <PositionWrapper
                         companyName="StationF"
                         href="https://stationf.co/"
-                        positionName="Fullstack Developer"
+                        positionName="Fullstack Typescript Developer"
                         dates={`Jan 2021 > Oct 2021`}
                     />
                     <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
