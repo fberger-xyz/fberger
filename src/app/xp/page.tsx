@@ -56,7 +56,7 @@ export default function Page() {
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">3) Strategies reactions to economic calendar</p>
                     <TextWithBulletPoint>Practical research for Staking operations</TextWithBulletPoint>
                     <TextWithBulletPoint>DeFi research for top management</TextWithBulletPoint>
-                    <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access - traefik)</TextWithBulletPoint>
+                    <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access via traefik)</TextWithBulletPoint>
                     <TextWithBulletPoint>AWS devOps to run bots (Lambda, DynamoDB, Cloudwatch, etc.)</TextWithBulletPoint>
                     <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
                     <TextWithBulletPoint>
@@ -69,7 +69,7 @@ export default function Page() {
                     <PositionWrapper
                         companyName="StationF"
                         href="https://stationf.co/"
-                        positionName="Risk and DeFi Developer"
+                        positionName="Fullstack Developer"
                         dates={`Jan 2021 > Oct 2021`}
                     />
                     <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
