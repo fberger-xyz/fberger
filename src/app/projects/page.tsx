@@ -13,6 +13,15 @@ export default function Page() {
             <SectionWrapper title="Side projects" ulClassname="gap-3">
                 <p className="text-inactive">Some projects I can publicly speak about</p>
                 <ProjectCard
+                    target="_blank"
+                    path="https://www.trustee.fund/rates"
+                    title="Lend"
+                    description="Live APYs for $, €, ETH and BTC"
+                    date="Jan 2025"
+                    ttc="WIP 🚧"
+                    skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
+                />
+                <ProjectCard
                     path={AppPagePaths.PROJECTS_TRUSTEE}
                     title="Trustee"
                     description="Dynamic management for busy holders"
