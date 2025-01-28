@@ -9,7 +9,6 @@ export default function ProjectCard({
     title,
     date,
     description,
-    // ttc,
     skills,
     ...props
 }: {

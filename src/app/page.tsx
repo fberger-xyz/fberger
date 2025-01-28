@@ -68,6 +68,15 @@ export default function Page() {
             <SectionWrapper title="Side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
+                        target="_blank"
+                        path="https://www.trustee.fund/rates"
+                        title="Lend"
+                        description="Live APYs for $, €, ETH and BTC"
+                        date="Jan 2025"
+                        ttc="WIP 🚧"
+                        skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
+                    />
+                    <ProjectCard
                         path={AppPagePaths.PROJECTS_TRUSTEE}
                         title="Trustee"
                         description="Dynamic management for busy holders"
@@ -87,12 +96,12 @@ export default function Page() {
                         href={AppPagePaths.PROJECTS}
                         className="group flex items-center justify-center gap-1 rounded-2xl p-2 text-primary underline-offset-2 transition-all hover:tracking-wide hover:underline"
                     >
-                        <p className="text-xl font-bold">All projects</p>
+                        <p className="text-xl font-bold">See all projects</p>
                         <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6" />
                     </LinkWrapper>
                 </div>
             </SectionWrapper>
-            <div className="flex w-full justify-center border-t-4 border-double border-very-light-hover pt-4 text-base text-inactive">
+            <div className="flex w-full justify-center border-t-4 border-double border-very-light-hover pt-10 text-base text-inactive">
                 <p className="text-center italic">
                     « If I have seen further, it is by standing on the shoulders of giants »<span className="mx-1">-</span>
                     <span className="font-bold not-italic">Isaac Newton</span>
