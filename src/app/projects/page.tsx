@@ -15,7 +15,7 @@ export default function Page() {
                 <ProjectCard
                     target="_blank"
                     path="https://www.trustee.fund/rates"
-                    title="Lend"
+                    title="APYs"
                     description="Live APYs for $, €, ETH and BTC"
                     date="Jan 2025"
                     ttc="WIP 🚧"
