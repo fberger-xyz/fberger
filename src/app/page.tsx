@@ -71,7 +71,7 @@ export default function Page() {
                         target="_blank"
                         path="https://www.trustee.fund/rates"
                         title="APYs"
-                        description="Live APYs for $, €, ETH and BTC"
+                        description="Live metrics for $, €, ETH and BTC lending markets"
                         date="Jan 2025"
                         ttc="WIP 🚧"
                         skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
