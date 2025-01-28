@@ -77,7 +77,8 @@ export default function Page() {
                         skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
                     />
                     <ProjectCard
-                        path={AppPagePaths.PROJECTS_TRUSTEE}
+                        target="_blank"
+                        path="https://trustee.fund"
                         title="Trustee"
                         description="Dynamic management for busy holders"
                         date="Dec 2024"
