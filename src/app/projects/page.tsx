@@ -15,8 +15,8 @@ export default function Page() {
                 <ProjectCard
                     target="_blank"
                     path="https://www.trustee.fund/rates"
-                    title="APYs (WIP 🚧)"
-                    description="Live APYs on main lending markets"
+                    title="APYs"
+                    description="Live metrics on lending markets"
                     date="Jan 2025"
                     ttc="WIP 🚧"
                     skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
