@@ -28,25 +28,20 @@ export default function ProjectCard({
             disabled={disabled}
             className="group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5"
         >
-            <div className="flex w-full flex-col rounded-md pb-1 transition duration-300 hover:border-primary">
+            <div className="flex w-full flex-col rounded-md transition duration-300 hover:border-primary">
                 <div className="flex w-full justify-between">
-                    <div className="flex items-center justify-center gap-1">
-                        <p className="text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                            {title}
-                        </p>
+                    <div className="flex items-center justify-center gap-1 border-b-2 border-transparent group-hover:border-primary">
+                        <p className="text-xl font-bold text-secondary">{title}</p>
                         {title === 'ETFs' && (
                             <>
                                 <IconWrapper icon={IconIds.CRYPTO_BTC} className={cn('size-5', { grayscale: true })} />
                                 <IconWrapper icon={IconIds.CRYPTO_ETH} className={cn('size-5', { grayscale: true })} />
                             </>
                         )}
+                        <IconWrapper icon={IconIds.IC_BASELINE_OPEN_IN_NEW} className="hidden size-5 text-primary group-hover:flex" />
                     </div>
                     <p className="text-xs text-inactive">{date}</p>
                 </div>
-                {/* <p className="text-xs lg:text-sm">
-                    <span className="mr-1 text-inactive">Time to code</span>
-                    {ttc}
-                </p> */}
                 {description && <p className="text-sm text-inactive lg:text-base">{description}</p>}
                 <div className="mt-2 flex w-full flex-wrap justify-end gap-1 text-xs">
                     {skills.map((skill) => (

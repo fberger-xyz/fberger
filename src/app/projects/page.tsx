@@ -39,25 +39,47 @@ export default function Page() {
                     ttc="4 days"
                     skills={['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
                 />
-                <ProjectCard path={AppPagePaths.PROJECTS_SEEDS} title="Seeds" date="Nov 2024" ttc="< 1 day" skills={['BIP39', 'Rot Cipher']} />
                 <ProjectCard
-                    path={AppPagePaths.PROJECTS_SAFES}
+                    target="_blank"
+                    path="https://seeds.fberger.xyz"
+                    title="Seeds"
+                    date="Nov 2024"
+                    description="Simple cipher to store your seed phrase"
+                    ttc="< 1 day"
+                    skills={['BIP39', 'Rot Cipher']}
+                />
+                <ProjectCard
+                    target="_blank"
+                    path="https://safes.fberger.xyz"
+                    description="[WIP] entrypoint to manage several safes"
                     title="Safes"
                     date="Nov 2024"
                     ttc="< 1 day"
                     skills={['Next', 'Gnosis Safe', '1inch', 'Cowswap']}
                 />
                 <ProjectCard
-                    path={AppPagePaths.PROJECTS_CONNECT_RABBYKIT}
-                    title="RabbyKit"
+                    title="Auth"
+                    target="_blank"
+                    path="https://connect.fberger.xyz"
+                    description="RabbyKit + Next Auth via SIWE (template)"
                     date="Nov 2024"
                     ttc="< 1 day"
                     skills={['Next', 'RabbyKit', 'Wagmi']}
                 />
-                <ProjectCard path={AppPagePaths.PROJECTS_ALPHA} title="Alpha" date="Nov 2024" ttc="< 1 day" skills={['Next']} />
                 <ProjectCard
-                    path={AppPagePaths.PROJECTS_NFT_STONKS}
+                    target="_blank"
+                    path="https://alpha.fberger.xyz"
+                    description="[WIP] Alpha sources, without noise"
+                    title="Alpha"
+                    date="Nov 2024"
+                    ttc="< 1 day"
+                    skills={['Next']}
+                />
+                <ProjectCard
+                    target="_blank"
+                    path="https://www.linkedin.com/posts/francis-berger-a2404094_degen-web3-nft-activity-6879062483768795136-WomP/?utm_source=share&utm_medium=member_desktop"
                     title="NFT stonks"
+                    description="OpenSea trades recap w/ P&L"
                     date="Oct 2021"
                     ttc="3 weeks"
                     skills={['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud']}
