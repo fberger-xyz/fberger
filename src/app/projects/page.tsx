@@ -31,7 +31,8 @@ export default function Page() {
                     skills={['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum']}
                 />
                 <ProjectCard
-                    path={AppPagePaths.PROJECTS_ETFS}
+                    target="_blank"
+                    path="https://etfs.fberger.xyz"
                     title="ETFs"
                     description="Better farside"
                     date="Nov 2024"
