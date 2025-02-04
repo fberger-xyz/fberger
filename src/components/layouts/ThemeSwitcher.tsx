@@ -20,9 +20,9 @@ export default function ThemeSwitcher() {
                         <button
                             key={theme}
                             onClick={() => setTheme(theme)}
-                            className={cn('rounded-2xl px-2 sm:px-2.5 py-2 border md:hover:bg-very-light-hover hover:text-default', {
+                            className={cn('rounded-2xl px-2 sm:px-2.5 py-2 border md:hover:bg-very-light-hover', {
                                 'bg-very-light-hover border-light-hover text-primary': resolvedTheme === theme,
-                                'text-inactive border-transparent': resolvedTheme !== theme,
+                                'text-inactive border-transparent hover:text-default': resolvedTheme !== theme,
                             })}
                         >
                             <IconWrapper icon={config.iconId} className="size-6" />
