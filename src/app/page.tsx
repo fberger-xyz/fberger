@@ -18,13 +18,13 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="About">
+                <TextWithBulletPoint>Passionate 10x developer</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
                     <SvgMapper icon={IconIds.LOADING_DOTS} className="size-3" />
                     <span className="font-bold text-primary">DeFi</span>
                 </TextWithBulletPoint>
-                <TextWithBulletPoint>Passionate 10x developer</TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Currently">
