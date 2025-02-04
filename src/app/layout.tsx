@@ -5,7 +5,7 @@ import { APP_METADATA } from '../config/app.config'
 import { cn } from '../utils'
 import Header from '../components/layouts/Header'
 import { Suspense } from 'react'
-import Footer from '../components/layouts/Footer'
+// import Footer from '../components/layouts/Footer'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
@@ -60,7 +60,7 @@ export default function RootLayout({
                         >
                             {children}
                         </Suspense>
-                        <Footer />
+                        {/* <Footer /> */}
                         <NewFooter />
                         <Toaster position="bottom-center" reverseOrder={false} />
                     </main>
