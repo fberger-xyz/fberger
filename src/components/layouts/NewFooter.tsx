@@ -10,7 +10,7 @@ import Image from 'next/image'
 export default function NewFooter(props: { className?: string }) {
     return (
         <div className={cn('w-full flex justify-center text-sm bg-very-light-hover', props.className)}>
-            <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 border-b p-6 sm:max-w-[700px]">
+            <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 border-b border-light-hover p-6 sm:max-w-[700px]">
                 <div className="flex flex-col gap-3">
                     <div className="flex items-center gap-2">
                         <Image
