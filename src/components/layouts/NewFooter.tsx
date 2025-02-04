@@ -15,14 +15,14 @@ export default function NewFooter(props: { className?: string }) {
                     <div className="flex items-center gap-2">
                         <Image
                             src={APP_METADATA.PROFILE_PICTURE}
-                            width={36}
-                            height={36}
+                            width={32}
+                            height={32}
                             alt="https://x.com/fberger_xyz/photo"
                             className="rounded-xl"
                         />
-                        <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_AUTHOR}</p>
+                        <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_NAME}</p>
                     </div>
-                    <p className="text-inactive">{APP_METADATA.SITE_DESCRIPTION}</p>
+                    <p className="font-semibold text-inactive">{APP_METADATA.SITE_DESCRIPTION}</p>
                 </div>
                 <div className="flex gap-4">
                     {[
