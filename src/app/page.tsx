@@ -1,7 +1,7 @@
 import IconWrapper from '@/components/common/IconWrapper'
 import LinkWithIcon from '@/components/common/LinkWithIcon'
-import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
+import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import ProjectCard from '@/components/common/ProjectCard'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import SvgMapper from '@/components/common/SvgMapper'
@@ -42,7 +42,7 @@ export default function Page() {
                 <TextWithBulletPoint>TAS Analyst @GrantThornton</TextWithBulletPoint>
                 <TextWithBulletPoint>Msc finance / CPA (lot of law) / CS @42</TextWithBulletPoint>
             </SectionWrapper>
-            <SectionWrapper title="Socials">
+            <SectionWrapper title="Contact me">
                 <p className="flex flex-wrap items-center gap-2">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
@@ -65,7 +65,7 @@ export default function Page() {
                     ))}
                 </p>
             </SectionWrapper>
-            <SectionWrapper title="Side projects">
+            <SectionWrapper title="Some side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
                         target="_blank"
@@ -94,22 +94,16 @@ export default function Page() {
                         ttc="4 days"
                         skills={['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
                     />
-                    <LinkWrapper
-                        href={AppPagePaths.PROJECTS}
-                        className="group flex items-center justify-center gap-1 rounded-2xl p-2 text-primary underline-offset-2 transition-all hover:tracking-wide hover:underline"
-                    >
-                        <p className="text-xl font-bold">See all projects</p>
-                        <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6" />
-                    </LinkWrapper>
+                    <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
                 </div>
             </SectionWrapper>
-            <div className="flex w-full justify-center border-t-4 border-double border-very-light-hover pt-10 text-base text-inactive">
+            {/* <div className="flex w-full justify-center border-t-4 border-double border-very-light-hover pt-10 text-base text-inactive">
                 <p className="text-center italic">
                     « If I have seen further, it is by standing on the shoulders of giants »<span className="mx-1">-</span>
                     <span className="font-bold not-italic">Isaac Newton</span>
                 </p>
-            </div>
-            <br />
+            </div> */}
+            {/* <br /> */}
         </PageWrapper>
     )
 }

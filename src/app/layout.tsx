@@ -9,8 +9,9 @@ import Footer from '../components/layouts/Footer'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
+import NewFooter from '@/components/layouts/NewFooter'
 
-const font = Lato({ weight: ['400', '700'], subsets: ['latin'] })
+const font = Lato({ weight: ['100', '300', '400', '700', '900'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
     description: APP_METADATA.SITE_DESCRIPTION,
@@ -60,6 +61,7 @@ export default function RootLayout({
                             {children}
                         </Suspense>
                         <Footer />
+                        <NewFooter />
                         <Toaster position="bottom-center" reverseOrder={false} />
                     </main>
                 </ThemeProvider>
