@@ -7,7 +7,7 @@ import { generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
-const commonClasses = 'group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5'
+const commonClasses = 'group flex flex-col items-start gap-0.5 rounded-2xl border border-transparent p-2 hover:border-light-hover md:px-2'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 sm:flex-row sm:gap-2">
@@ -26,7 +26,7 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
 export default function Page() {
     return (
         <PageWrapper>
-            <SectionWrapper title="Experiences" ulClassname="gap-3">
+            <SectionWrapper title="Experiences">
                 <p className="text-inactive">Non-exhaustive</p>
                 <li className={commonClasses}>
                     <PositionWrapper
