@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 export default function NewFooter(props: { className?: string }) {
     return (
-        <div className={cn('w-full flex justify-center text-sm bg-very-light-hover', props.className)}>
-            <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 border-b border-light-hover p-6 sm:max-w-[700px]">
+        <div className={cn('w-full flex justify-center text-sm border-t-4 border-double border-light-hover', props.className)}>
+            <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 p-6 sm:max-w-[700px]">
                 <div className="flex flex-col gap-3">
                     <div className="flex items-center gap-2">
                         <Image
@@ -31,8 +31,8 @@ export default function NewFooter(props: { className?: string }) {
                         { href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`, icon: IconIds.LINKEDIN },
                         { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB },
                     ].map((link) => (
-                        <LinkWrapper key={link.href} target="_blank" href={link.href} className="cursor-alias hover:text-primary">
-                            <IconWrapper icon={link.icon} className="size-6 text-inactive" />
+                        <LinkWrapper key={link.href} target="_blank" href={link.href} className="cursor-alias text-inactive hover:text-primary">
+                            <IconWrapper icon={link.icon} className="size-6" />
                         </LinkWrapper>
                     ))}
                 </div>
