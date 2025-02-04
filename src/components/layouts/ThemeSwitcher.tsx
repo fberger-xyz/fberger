@@ -20,7 +20,7 @@ export default function ThemeSwitcher() {
                         <button
                             key={theme}
                             onClick={() => setTheme(theme)}
-                            className={cn('rounded-xl px-2 sm:px-2.5 py-2 hover:bg-light-hover border', {
+                            className={cn('rounded-2xl px-2 sm:px-2.5 py-2 border md:hover:bg-very-light-hover hover:text-default', {
                                 'bg-very-light-hover border-light-hover text-primary': resolvedTheme === theme,
                                 'text-inactive border-transparent': resolvedTheme !== theme,
                             })}
@@ -32,11 +32,11 @@ export default function ThemeSwitcher() {
         )
     } else
         return (
-            <div className="z-50 flex items-center rounded-xl sm:gap-1 lg:gap-2">
+            <div className="z-50 flex items-center rounded-2xl sm:gap-1 lg:gap-2">
                 {Object.entries(APP_THEMES)
                     .sort((curr, next) => curr[1].index - next[1].index)
                     .map(([theme, config]) => (
-                        <button key={theme} className="rounded-xl p-2 hover:bg-light-hover sm:px-2.5">
+                        <button key={theme} className="rounded-2xl p-2 hover:bg-light-hover sm:px-2.5">
                             <SvgMapper icon={config.iconId} className="size-6" />
                         </button>
                     ))}
