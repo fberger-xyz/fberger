@@ -11,18 +11,12 @@ export default function NewFooter(props: { className?: string }) {
     return (
         <div className={cn('w-full flex justify-center text-sm border-t-4 border-double border-light-hover', props.className)}>
             <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 p-6 sm:max-w-[700px]">
-                <div className="flex flex-col gap-3">
-                    <div className="flex items-center gap-2">
-                        <Image
-                            src={APP_METADATA.PROFILE_PICTURE}
-                            width={32}
-                            height={32}
-                            alt="https://x.com/fberger_xyz/photo"
-                            className="rounded-xl"
-                        />
+                <div className="flex items-center gap-3">
+                    <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-xl" />
+                    <div className="flex h-min flex-col justify-center">
                         <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_NAME}</p>
+                        <p className="font-semibold text-inactive">{APP_METADATA.SITE_DESCRIPTION}</p>
                     </div>
-                    <p className="font-semibold text-inactive">{APP_METADATA.SITE_DESCRIPTION}</p>
                 </div>
                 <div className="flex gap-4">
                     {[
