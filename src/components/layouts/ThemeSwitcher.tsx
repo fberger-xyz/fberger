@@ -25,19 +25,19 @@ export default function ThemeSwitcher() {
                                 'text-inactive border-transparent hover:text-default': resolvedTheme !== theme,
                             })}
                         >
-                            <IconWrapper icon={config.iconId} className="size-6" />
+                            <IconWrapper icon={config.iconId} className="m-auto size-6" />
                         </button>
                     ))}
             </div>
         )
     } else
         return (
-            <div className="z-50 flex items-center rounded-2xl sm:gap-1 lg:gap-2">
+            <div className="z-50 flex items-center gap-0.5 sm:gap-1 lg:gap-2">
                 {Object.entries(APP_THEMES)
                     .sort((curr, next) => curr[1].index - next[1].index)
                     .map(([theme, config]) => (
-                        <button key={theme} className="rounded-2xl p-2 hover:bg-light-hover sm:px-2.5">
-                            <SvgMapper icon={config.iconId} className="size-6" />
+                        <button key={theme} className="rounded-2xl border p-2 text-inactive sm:px-2.5 md:hover:bg-very-light-hover">
+                            <SvgMapper icon={config.iconId} className="m-auto size-6" />
                         </button>
                     ))}
             </div>

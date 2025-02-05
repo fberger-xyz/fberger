@@ -51,7 +51,7 @@ export default function RootLayout({
             <body className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default bg-background')}>
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
                     <MorphingGradientBackground>
-                        <Header className="z-50" />
+                        <Header />
                         <Suspense
                             fallback={
                                 <div className="flex h-full w-full items-center justify-center">
