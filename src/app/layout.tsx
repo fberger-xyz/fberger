@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import { Lato } from 'next/font/google'
 import './globals.css'
 import { APP_METADATA } from '../config/app.config'
+import { cn } from '../utils'
 import Header from '../components/layouts/Header'
 import { Suspense } from 'react'
+// import Footer from '../components/layouts/Footer'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
@@ -46,9 +48,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <MorphingGradientBackground className={font.className}>
+            <body className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default bg-background')}>
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
-                    <main className="flex h-screen flex-col">
+                    <MorphingGradientBackground>
                         <Header className="z-50" />
                         <Suspense
                             fallback={
@@ -61,9 +63,9 @@ export default function RootLayout({
                         </Suspense>
                         <NewFooter />
                         <Toaster position="bottom-center" reverseOrder={false} />
-                    </main>
+                    </MorphingGradientBackground>
                 </ThemeProvider>
-            </MorphingGradientBackground>
+            </body>
         </html>
     )
 }

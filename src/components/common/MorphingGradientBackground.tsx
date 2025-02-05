@@ -1,10 +1,9 @@
 'use client'
-import { cn } from '@/utils'
 import React from 'react'
 
-export const MorphingGradientBackground = ({ children, ...props }: { children: React.ReactNode; className?: string }) => {
+export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
     return (
-        <body className={cn('h-screen w-screen overflow-auto bg-background text-lg text-default', props.className)}>
+        <main className="flex h-screen w-full flex-col">
             {/* dynamic morphing gradient for light mode */}
             <div
                 className="absolute inset-0 animate-gradient-morph opacity-40 blur-xl dark:opacity-0 sm:blur-2xl lg:blur-3xl"
@@ -22,8 +21,8 @@ export const MorphingGradientBackground = ({ children, ...props }: { children: R
                 className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-50 sm:blur-2xl lg:blur-3xl"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 75%),
-                        radial-gradient(at 75% 75%, var(--color-light-hover) 15%, transparent 85%)
+                        radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 55%),
+                        radial-gradient(at 75% 75%, var(--color-very-light-hover) 15%, transparent 85%)
                     `,
                     backgroundSize: '300% 300%',
                 }}
@@ -43,6 +42,6 @@ export const MorphingGradientBackground = ({ children, ...props }: { children: R
 
             {/* Scrollable Content Wrapper */}
             <div className="relative z-10 h-full w-full overflow-auto">{children}</div>
-        </body>
+        </main>
     )
 }
