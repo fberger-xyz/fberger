@@ -6,11 +6,11 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
         <main className="flex h-screen w-screen flex-col">
             {/* dynamic morphing gradient for light mode */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-40 blur-xl dark:opacity-0 sm:blur-2xl lg:blur-3xl"
+                className="absolute inset-0 animate-gradient-morph opacity-80 blur-xl dark:opacity-0"
                 style={{
                     backgroundImage: `
                         radial-gradient(at 25% 35%, white 10%, transparent 75%),
-                        radial-gradient(at 80% 60%, var(--color-light-hover) 20%, transparent 80%)
+                        radial-gradient(at 75% 75%, var(--color-light-hover) 15%, transparent 85%)
                     `,
                     backgroundSize: '300% 300%',
                 }}
@@ -18,11 +18,11 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
 
             {/* dynamic morphing gradient for dark mode */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-50 sm:blur-2xl lg:blur-3xl"
+                className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-50"
                 style={{
                     backgroundImage: `
                         radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 55%),
-                        radial-gradient(at 75% 75%, var(--color-very-light-hover) 15%, transparent 85%)
+                        radial-gradient(at 75% 75%, var(--color-light-hover) 15%, transparent 85%)
                     `,
                     backgroundSize: '300% 300%',
                 }}
