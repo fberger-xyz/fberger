@@ -3,13 +3,13 @@ import React from 'react'
 
 export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className="relative h-screen w-full bg-background">
+        <div className="relative min-h-screen w-full bg-background">
             {/* dynamic morphing gradient for light mode */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-40 blur-3xl dark:opacity-0"
+                className="absolute inset-0 animate-gradient-morph opacity-40 blur-xl dark:opacity-0 sm:blur-2xl lg:blur-3xl"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 75%),
+                        radial-gradient(at 25% 35%, white 10%, transparent 75%),
                         radial-gradient(at 80% 60%, var(--color-light-hover) 20%, transparent 80%)
                     `,
                     backgroundSize: '300% 300%',
@@ -18,7 +18,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
 
             {/* dynamic morphing gradient for dark mode */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-0 blur-3xl dark:opacity-50"
+                className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-50 sm:blur-2xl lg:blur-3xl"
                 style={{
                     backgroundImage: `
                         radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 75%),
@@ -28,20 +28,20 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 }}
             />
 
-            {/* pulsating ambient glow */}
+            {/* pulsating ambient glow (adjusted for mobile) */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="bg-primary/20 absolute left-1/4 top-1/4 h-96 w-96 animate-pulse-slow rounded-full blur-[140px]" />
-                <div className="bg-background/20 absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse-slow rounded-full blur-[140px]" />
+                <div className="bg-primary/20 absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full blur-[80px] sm:h-80 sm:w-80 sm:blur-[120px] lg:h-96 lg:w-96 lg:blur-[140px]" />
+                <div className="bg-background/20 absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full blur-[80px] sm:h-80 sm:w-80 sm:blur-[120px] lg:h-96 lg:w-96 lg:blur-[140px]" />
             </div>
 
-            {/* additional floating lights */}
+            {/* additional floating lights (adjusted for mobile) */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="bg-primary/30 absolute left-1/3 top-16 h-40 w-40 animate-float rounded-full blur-[100px]" />
-                <div className="bg-background/30 absolute bottom-16 right-1/3 h-40 w-40 animate-float rounded-full blur-[100px] delay-500" />
+                <div className="bg-primary/30 absolute left-1/3 top-16 h-24 w-24 animate-float rounded-full blur-[60px] sm:h-32 sm:w-32 sm:blur-[80px] lg:h-40 lg:w-40 lg:blur-[100px]" />
+                <div className="bg-background/30 absolute bottom-16 right-1/3 h-24 w-24 animate-float rounded-full blur-[60px] delay-500 sm:h-32 sm:w-32 sm:blur-[80px] lg:h-40 lg:w-40 lg:blur-[100px]" />
             </div>
 
             {/* Scrollable Content Wrapper */}
-            <div className="relative z-10 h-full w-full overflow-auto">{children}</div>
+            <div className="relative z-10 min-h-screen w-full overflow-auto p-4">{children}</div>
         </div>
     )
 }
