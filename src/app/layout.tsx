@@ -49,10 +49,6 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default bg-background')}>
-                {/* <body
-                className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default')}
-                style={{ backgroundImage: "url('/blurry-gradient-haikei.svg')" }}
-            > */}
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
                     <main className="flex h-screen flex-col">
                         <MorphingGradientBackground>
