@@ -3,35 +3,45 @@ import React from 'react'
 
 export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className="h-full w-full overflow-auto bg-white dark:bg-black">
-            {/* Light mode morphing effect (more visible white shadows) */}
+        <div className="relative h-screen w-full bg-background">
+            {/* dynamic morphing gradient for light mode */}
             <div
-                className="fixed inset-0 animate-gradient-fast opacity-80 transition-opacity duration-1000 ease-in-out dark:opacity-0"
+                className="absolute inset-0 animate-gradient-morph opacity-40 blur-3xl dark:opacity-0"
                 style={{
-                    background: `
-                        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 1) 15%, transparent 70%),
-                        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.9) 20%, transparent 75%),
-                        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.85) 15%, transparent 80%)
+                    backgroundImage: `
+                        radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 75%),
+                        radial-gradient(at 80% 60%, var(--color-light-hover) 20%, transparent 80%)
                     `,
-                    backgroundSize: '250% 250%',
+                    backgroundSize: '300% 300%',
                 }}
             />
 
-            {/* Dark mode morphing effect (more visible deep black shadows) */}
+            {/* dynamic morphing gradient for dark mode */}
             <div
-                className="fixed inset-0 animate-gradient-deviate opacity-0 transition-opacity duration-1000 ease-in-out dark:opacity-100"
+                className="absolute inset-0 animate-gradient-morph opacity-0 blur-3xl dark:opacity-50"
                 style={{
-                    background: `
-                        radial-gradient(circle at 30% 30%, rgba(0, 0, 0, 1) 20%, transparent 65%),
-                        radial-gradient(circle at 60% 60%, rgba(0, 0, 0, 0.95) 20%, transparent 70%),
-                        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.9) 15%, transparent 75%)
+                    backgroundImage: `
+                        radial-gradient(at 25% 35%, var(--color-background) 10%, transparent 75%),
+                        radial-gradient(at 75% 75%, var(--color-light-hover) 15%, transparent 85%)
                     `,
-                    backgroundSize: '250% 250%',
+                    backgroundSize: '300% 300%',
                 }}
             />
 
-            {/* Content container */}
-            <div className="relative z-10">{children}</div>
+            {/* pulsating ambient glow */}
+            <div className="pointer-events-none absolute inset-0">
+                <div className="bg-primary/20 absolute left-1/4 top-1/4 h-96 w-96 animate-pulse-slow rounded-full blur-[140px]" />
+                <div className="bg-background/20 absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse-slow rounded-full blur-[140px]" />
+            </div>
+
+            {/* additional floating lights */}
+            <div className="pointer-events-none absolute inset-0">
+                <div className="bg-primary/30 absolute left-1/3 top-16 h-40 w-40 animate-float rounded-full blur-[100px]" />
+                <div className="bg-background/30 absolute bottom-16 right-1/3 h-40 w-40 animate-float rounded-full blur-[100px] delay-500" />
+            </div>
+
+            {/* Scrollable Content Wrapper */}
+            <div className="relative z-10 h-full w-full overflow-auto">{children}</div>
         </div>
     )
 }
