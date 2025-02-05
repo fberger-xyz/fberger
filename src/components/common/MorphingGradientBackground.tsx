@@ -41,7 +41,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
             </div>
 
             {/* Scrollable Content Wrapper */}
-            <div className="relative z-10 min-h-screen w-full overflow-auto">{children}</div>
+            <div className="relative z-10 h-full w-full overflow-auto">{children}</div>
         </div>
     )
 }
