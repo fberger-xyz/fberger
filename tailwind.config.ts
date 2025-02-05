@@ -17,8 +17,8 @@ const config: Config = {
                 telegram: '#24A1DE',
             },
             animation: {
-                'gradient-fast': 'gradient-move 15s linear infinite',
-                'gradient-deviate': 'gradient-move-alt 18s linear infinite',
+                'gradient-fast': 'gradient-move 12s linear infinite',
+                'gradient-deviate': 'gradient-move-alt 15s linear infinite',
             },
             keyframes: {
                 'gradient-move': {
