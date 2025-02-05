@@ -3,7 +3,7 @@ import React from 'react'
 
 export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
     return (
-        <main className="flex h-screen w-full flex-col">
+        <main className="flex h-screen w-screen flex-col">
             {/* dynamic morphing gradient for light mode */}
             <div
                 className="absolute inset-0 animate-gradient-morph opacity-40 blur-xl dark:opacity-0 sm:blur-2xl lg:blur-3xl"
@@ -41,7 +41,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
             </div>
 
             {/* Scrollable Content Wrapper */}
-            <div className="relative z-10 h-full w-full overflow-auto">{children}</div>
+            <div className="z-10 flex h-screen flex-col">{children}</div>
         </main>
     )
 }
