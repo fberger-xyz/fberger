@@ -7,7 +7,7 @@ html.light {
     --color-secondary: #111827;
     --color-default: #71717a;
     --color-inactive: #9ca3af;
-    --color-background: #ffff;
+    --color-background: #ffffff;
     --color-light-hover: #e4e4e7;
     --color-very-light-hover: #f4f4f5;
     --color-light-border: #e5e7eb;
@@ -22,4 +22,17 @@ html.dark {
     --color-light-hover: #1e293b;
     --color-very-light-hover: #111827;
     --color-light-border: #374151;
+}
+
+@layer utilities {
+    .animate-gradient-slow {
+        animation: gradient-xy 22s ease-in-out infinite;
+        background-size: 200% 200%;
+    }
+}
+
+.test-gradient {
+    background: linear-gradient(270deg, #ff0000, #0000ff);
+    background-size: 400% 400%;
+    animation: gradient-xy 14s ease infinite;
 }
