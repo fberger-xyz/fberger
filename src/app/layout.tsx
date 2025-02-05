@@ -10,6 +10,7 @@ import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
 import NewFooter from '@/components/layouts/NewFooter'
+import { MorphingGradientBackground } from '@/components/common/MorphingGradientBackground'
 
 const font = Lato({ weight: ['100', '300', '400', '700', '900'], subsets: ['latin'] })
 
@@ -48,21 +49,26 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default bg-background')}>
+                {/* <body
+                className={cn(font.className, 'h-screen w-screen overflow-auto text-lg text-default')}
+                style={{ backgroundImage: "url('/blurry-gradient-haikei.svg')" }}
+            > */}
                 <ThemeProvider attribute="class" defaultTheme={AppThemes.LIGHT} disableTransitionOnChange themes={Object.values(AppThemes)}>
                     <main className="flex h-screen flex-col">
-                        <Header className="z-50" />
-                        <Suspense
-                            fallback={
-                                <div className="flex h-full w-full items-center justify-center">
-                                    <p className="text-orange-500">Loading...</p>
-                                </div>
-                            }
-                        >
-                            {children}
-                        </Suspense>
-                        {/* <Footer /> */}
-                        <NewFooter />
-                        <Toaster position="bottom-center" reverseOrder={false} />
+                        <MorphingGradientBackground>
+                            <Header className="z-50" />
+                            <Suspense
+                                fallback={
+                                    <div className="flex h-full w-full items-center justify-center">
+                                        <p className="text-orange-500">Loading...</p>
+                                    </div>
+                                }
+                            >
+                                {children}
+                            </Suspense>
+                            <NewFooter />
+                            <Toaster position="bottom-center" reverseOrder={false} />
+                        </MorphingGradientBackground>
                     </main>
                 </ThemeProvider>
             </body>
