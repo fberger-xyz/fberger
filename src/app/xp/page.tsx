@@ -57,7 +57,7 @@ export default function Page() {
                     <TextWithBulletPoint>Practical research for Staking operations</TextWithBulletPoint>
                     <TextWithBulletPoint>DeFi research for top management</TextWithBulletPoint>
                     <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access via traefik)</TextWithBulletPoint>
-                    <TextWithBulletPoint>AWS devOps to run bots (Lambda, DynamoDB, Cloudwatch, etc.)</TextWithBulletPoint>
+                    <TextWithBulletPoint>AWS devOps to run bots (Nest.js API, Lambda, DynamoDB, Cloudwatch, etc.)</TextWithBulletPoint>
                     <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
                     <TextWithBulletPoint>
                         Proactive to improve legacy stack w/ best-in-class typescript dev tools (eg. vite, tailwind, zustand)
