@@ -9,8 +9,8 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 className="absolute inset-0 animate-gradient-morph opacity-95 blur-2xl dark:opacity-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 20% 30%, rgba(255, 255, 255, 1) 10%, transparent 55%),
-                        radial-gradient(at 80% 70%, rgba(230, 250, 250, 0.8) 50%, transparent 85%)
+                        radial-gradient(at 20% 30%, rgba(255, 255, 255, 0.9) 10%, transparent 55%),
+                        radial-gradient(at 80% 70%, rgba(230, 240, 250, 0.7) 50%, transparent 85%)
                     `,
                     backgroundSize: '200% 200%',
                 }}
@@ -21,8 +21,8 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-60"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 20% 30%, rgba(10, 10, 10, 0.9) 10%, transparent 55%),
-                        radial-gradient(at 80% 70%, rgba(30, 30, 30, 0.3) 50%, transparent 85%)
+                        radial-gradient(at 20% 30%, rgba(10, 30, 10, 0.9) 10%, transparent 50%),
+                        radial-gradient(at 80% 70%, rgba(30, 10, 10, 0.3) 50%, transparent 85%)
                     `,
                     backgroundSize: '200% 200%',
                 }}
