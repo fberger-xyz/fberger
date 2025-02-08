@@ -9,7 +9,7 @@ export default function Header(props: { className?: string }) {
     return (
         <div className={cn('fixed top-0 flex justify-center z-50 w-full', props.className)}>
             <div className="relative flex h-[70px] w-full max-w-[800px] items-center justify-between gap-0.5 border-b border-very-light-hover pl-3 pr-2 backdrop-blur-md md:mt-3 md:h-fit md:justify-between md:rounded-3xl md:border md:border-very-light-hover md:bg-transparent md:px-3 md:py-2.5">
-                <div className="absolute inset-0 z-40 rounded-xl bg-background/50" />
+                <div className="absolute inset-0 z-40 rounded-xl bg-background/50 md:rounded-3xl" />
                 <LinkWrapper href="/" className="z-50 flex items-end gap-2 md:hidden">
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={40} height={40} alt="https://x.com/fberger_xyz/photo" className="rounded-xl" />
                     <p className="mb-1 hidden text-xl font-bold text-primary sm:flex">{APP_METADATA.SITE_AUTHOR}</p>
