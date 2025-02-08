@@ -5,12 +5,11 @@ import { APP_METADATA } from '../config/app.config'
 import { cn } from '../utils'
 import Header from '../components/layouts/Header'
 import { Suspense } from 'react'
-// import Footer from '../components/layouts/Footer'
 import { ThemeProvider } from 'next-themes'
 import { AppThemes } from '@/enums'
 import { Toaster } from 'react-hot-toast'
-import NewFooter from '@/components/layouts/NewFooter'
 import { MorphingGradientBackground } from '@/components/common/MorphingGradientBackground'
+import Footer from '@/components/layouts/Footer'
 
 const font = Lato({ weight: ['100', '300', '400', '700', '900'], subsets: ['latin'] })
 
@@ -61,7 +60,7 @@ export default function RootLayout({
                         >
                             {children}
                         </Suspense>
-                        <NewFooter />
+                        <Footer />
                         <Toaster position="bottom-center" reverseOrder={false} />
                     </MorphingGradientBackground>
                 </ThemeProvider>

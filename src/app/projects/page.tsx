@@ -14,9 +14,9 @@ export default function Page() {
                 <p className="text-inactive">Some projects I can publicly speak about</p>
                 <ProjectCard
                     target="_blank"
-                    path="https://www.trustee.fund/rates"
-                    title="APYs"
-                    description="Live metrics on lending markets"
+                    path="https://apy.fberger.xyz"
+                    title="APY"
+                    description="Live money markets metrics"
                     date="Jan 2025"
                     ttc="WIP 🚧"
                     skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}

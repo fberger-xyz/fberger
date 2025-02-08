@@ -7,7 +7,7 @@ import IconWrapper from '../common/IconWrapper'
 import { IconIds } from '@/enums'
 import Image from 'next/image'
 
-export default function NewFooter(props: { className?: string }) {
+export default function Footer(props: { className?: string }) {
     return (
         <div className={cn('w-full flex justify-center text-sm border-t border-very-light-hover', props.className)}>
             <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 p-6 sm:max-w-[700px]">
