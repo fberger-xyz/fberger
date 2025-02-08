@@ -24,7 +24,7 @@ export default function ProjectCard({
             href={props.path}
             target="_blank"
             disabled={disabled}
-            className="group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5"
+            className="group flex flex-col items-start gap-1 rounded-2xl border border-light-hover bg-background/50 p-3 hover:border-primary md:px-5"
         >
             <div className="flex w-full flex-col rounded-md transition duration-300 hover:border-primary">
                 <div className="flex w-full justify-between">

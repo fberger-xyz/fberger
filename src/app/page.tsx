@@ -18,7 +18,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="About">
-                <TextWithBulletPoint>Passionate 10x developer</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">Passionate 10x fullstack developer</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
@@ -26,15 +26,6 @@ export default function Page() {
                     <span className="font-bold text-primary">DeFi</span>
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
-            </SectionWrapper>
-            <SectionWrapper title="Currently">
-                <TextWithBulletPoint>Freelance fullstack dev</TextWithBulletPoint>
-                <TextWithBulletPoint>
-                    Working on{' '}
-                    <LinkWithIcon href={`https://trustee.fund`}>
-                        <span className="font-bold">Trustee fund 💸</span>
-                    </LinkWithIcon>{' '}
-                </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="XP">
                 <TextWithBulletPoint className="font-bold">DeFi and Risk Developer @CoinShares</TextWithBulletPoint>
@@ -77,7 +68,7 @@ export default function Page() {
                     />
                     <ProjectCard
                         path="https://trustee.fund"
-                        title="Trustee"
+                        title="Trustee 💸"
                         description="Dynamic management for busy holders"
                         date="Dec 2024"
                         ttc="2 weeks"

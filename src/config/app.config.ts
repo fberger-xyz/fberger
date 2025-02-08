@@ -87,7 +87,7 @@ export const projectsList = [
     },
     {
         path: 'https://trustee.fund',
-        title: 'Trustee',
+        title: 'Trustee 💸',
         description: 'Dynamic management for busy holders',
         date: 'Dec 2024',
         ttc: '+3 weeks',
