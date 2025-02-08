@@ -22,7 +22,7 @@ export default function Page() {
                 <TextWithBulletPoint>
                     Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
-                    <SvgMapper icon={IconIds.LOADING_DOTS} className="size-3" />
+                    <SvgMapper icon={IconIds.LOADING_DOTS} className="size-3 text-primary" />
                     <span className="font-bold text-primary">DeFi</span>
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
