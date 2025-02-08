@@ -68,7 +68,7 @@ export default function Page() {
             <SectionWrapper title="Some side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
-                        path="https://www.trustee.fund/rates"
+                        path="https://apy.fberger.xyz"
                         title="APYs"
                         description="Live metrics on lending markets"
                         date="Jan 2025"
