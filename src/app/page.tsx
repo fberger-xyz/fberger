@@ -68,7 +68,6 @@ export default function Page() {
             <SectionWrapper title="Some side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
-                        target="_blank"
                         path="https://www.trustee.fund/rates"
                         title="APYs"
                         description="Live metrics on lending markets"
@@ -77,7 +76,6 @@ export default function Page() {
                         skills={['Aave', 'Morpho', 'Fluid', 'Liquity']}
                     />
                     <ProjectCard
-                        target="_blank"
                         path="https://trustee.fund"
                         title="Trustee"
                         description="Dynamic management for busy holders"
@@ -86,7 +84,6 @@ export default function Page() {
                         skills={['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum']}
                     />
                     <ProjectCard
-                        target="_blank"
                         path="https://etfs.fberger.xyz"
                         title="ETFs"
                         description="Better farside"

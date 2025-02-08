@@ -4,7 +4,6 @@ import { cn } from '@/utils'
 import IconWrapper from './IconWrapper'
 
 export default function ProjectCard({
-    target = '_self',
     disabled = false,
     title,
     date,
@@ -13,7 +12,6 @@ export default function ProjectCard({
     ...props
 }: {
     path: AppPagePaths | string
-    target?: '_blank' | '_self' | '_parent' | '_top'
     disabled?: boolean
     title: string
     date: string
@@ -24,7 +22,7 @@ export default function ProjectCard({
     return (
         <LinkWrapper
             href={props.path}
-            target={target}
+            target="_blank"
             disabled={disabled}
             className="group flex flex-col items-start gap-1 rounded-2xl border border-light-hover p-3 hover:border-primary md:px-5"
         >
