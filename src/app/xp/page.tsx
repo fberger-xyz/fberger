@@ -36,7 +36,10 @@ export default function Page() {
                         dates={'Dec 2024 - now'}
                     />
                     <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
-                    <TextWithBulletPoint>Typescript stack: with Next, Tailwind, Zustand, Nest (APIs), Vercel, AWS</TextWithBulletPoint>
+                    <TextWithBulletPoint>State-of-the-art Typescript stack</TextWithBulletPoint>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                        Next/React, Tailwind, Zustand, Nest APIs, Vercel, AWS and more
+                    </p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
