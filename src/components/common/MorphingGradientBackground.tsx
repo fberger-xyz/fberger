@@ -10,7 +10,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 style={{
                     backgroundImage: `
                         radial-gradient(at 20% 30%, rgba(255, 255, 255, 0.9) 10%, transparent 55%),
-                        radial-gradient(at 80% 70%, rgba(230, 240, 250, 0.7) 50%, transparent 85%)
+                        radial-gradient(at 80% 70%, rgba(240, 240, 240, 0.7) 50%, transparent 85%)
                     `,
                     backgroundSize: '200% 200%',
                 }}
@@ -22,7 +22,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 style={{
                     backgroundImage: `
                         radial-gradient(at 20% 30%, rgba(10, 30, 10, 0.9) 10%, transparent 50%),
-                        radial-gradient(at 80% 70%, rgba(30, 10, 10, 0.3) 50%, transparent 85%)
+                        radial-gradient(at 80% 70%, rgba(10, 10, 10, 0.3) 50%, transparent 85%)
                     `,
                     backgroundSize: '200% 200%',
                 }}
@@ -37,7 +37,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
             {/* additional floating lights (adjusted for mobile) */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-1/3 top-16 h-24 w-24 animate-float rounded-full bg-white/50 blur-[90px] sm:h-32 sm:w-32 sm:blur-[110px] lg:h-40 lg:w-40 lg:blur-[130px]" />
-                <div className="absolute bottom-16 right-1/3 h-24 w-24 animate-float rounded-full bg-gray-100/50 blur-[90px] delay-500 sm:h-32 sm:w-32 sm:blur-[110px] lg:h-40 lg:w-40 lg:blur-[130px]" />
+                <div className="absolute bottom-16 right-1/3 h-24 w-24 animate-float rounded-full bg-gray-100/40 blur-[90px] delay-500 sm:h-32 sm:w-32 sm:blur-[110px] lg:h-40 lg:w-40 lg:blur-[130px]" />
             </div>
 
             {/* Scrollable Content Wrapper */}
