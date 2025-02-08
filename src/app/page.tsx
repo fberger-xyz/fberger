@@ -85,13 +85,6 @@ export default function Page() {
                     <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
                 </div>
             </SectionWrapper>
-            {/* <div className="flex w-full justify-center border-t-4 border-double border-very-light-hover pt-10 text-base text-inactive">
-                <p className="text-center italic">
-                    « If I have seen further, it is by standing on the shoulders of giants »<span className="mx-1">-</span>
-                    <span className="font-bold not-italic">Isaac Newton</span>
-                </p>
-            </div> */}
-            {/* <br /> */}
         </PageWrapper>
     )
 }
