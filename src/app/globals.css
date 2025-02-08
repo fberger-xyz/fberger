@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html.light {
+/* html.light {
     --color-primary: #22c55e;
     --color-secondary: #111827;
     --color-default: #71717a;
@@ -22,6 +22,50 @@ html.dark {
     --color-light-hover: #1e293b;
     --color-very-light-hover: #111827;
     --color-light-border: #374151;
+} */
+
+/* html.light {
+    --color-primary: 34, 197, 94;
+    --color-secondary: 17, 24, 39;
+    --color-default: 113, 113, 122;
+    --color-inactive: 156, 163, 175;
+    --color-background: 255, 255, 255;
+    --color-light-hover: 228, 228, 231;
+    --color-very-light-hover: 244, 244, 245;
+    --color-light-border: 229, 231, 235;
+}
+
+html.dark {
+    --color-primary: 110, 231, 183;
+    --color-secondary: 120, 113, 108;
+    --color-default: 139, 155, 177;
+    --color-inactive: 75, 85, 99;
+    --color-background: 15, 15, 15;
+    --color-light-hover: 30, 41, 59;
+    --color-very-light-hover: 17, 24, 39;
+    --color-light-border: 55, 65, 81;
+} */
+
+html.light {
+    --color-primary: 142 71% 45%;
+    --color-secondary: 221 39% 11%;
+    --color-default: 240 4% 46%;
+    --color-inactive: 218 11% 65%;
+    --color-background: 0 0% 100%;
+    --color-light-hover: 240 6% 90%;
+    --color-very-light-hover: 240 5% 96%;
+    --color-light-border: 220 13% 91%;
+}
+
+html.dark {
+    --color-primary: 156 72% 67%;
+    --color-secondary: 25 5% 45%;
+    --color-default: 215 20% 62%;
+    --color-inactive: 215 14% 34%;
+    --color-background: 0 0% 6%;
+    --color-light-hover: 217 33% 17%;
+    --color-very-light-hover: 221 39% 11%;
+    --color-light-border: 217 19% 27%;
 }
 
 @layer utilities {
