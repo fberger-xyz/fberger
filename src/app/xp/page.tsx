@@ -38,7 +38,7 @@ export default function Page() {
                     <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
                     <TextWithBulletPoint>State-of-the-art Typescript stack</TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                        Next/React, Tailwind, Zustand, Nest APIs, Vercel, AWS and more
+                        Next/React, Tailwind, Zustand, Nest, Vercel, Docker, PostgreSQL, AWS and more
                     </p>
                 </li>
                 <li className={commonClasses}>
