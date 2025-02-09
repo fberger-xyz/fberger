@@ -7,7 +7,8 @@ import { generatePageMetadata } from '@/utils'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
-const commonClasses = 'group flex flex-col items-start gap-0.5 rounded-2xl border border-transparent p-2 hover:border-light-hover md:px-2'
+const commonClasses =
+    'group flex flex-col items-start gap-0.5 rounded-2xl border border-transparent p-2 hover:border-light-hover md:px-2 hover:bg-background/50'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 sm:flex-row sm:gap-2">
@@ -38,8 +39,11 @@ export default function Page() {
                     <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
                     <TextWithBulletPoint>State-of-the-art Typescript stack</TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                        Next/React, Tailwind, Zustand, Nest, Vercel, Docker, PostgreSQL, AWS and more
+                        Frontend: react with next, tailwind, zustand, vercel
                     </p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, docker, AWS</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Database: postgresql, prisma</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth, kinde</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
