@@ -48,7 +48,7 @@ export default function Page() {
                         <LinkWithIcon
                             key={link.href}
                             href={link.href}
-                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10 text-telegram' : 'h-9'}
+                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10 text-telegram' : 'h-9 border-2'}
                         >
                             {link.id && <span className="pr-1">{link.id}</span>}
                             <IconWrapper icon={link.icon} className="size-5" />

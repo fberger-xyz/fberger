@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Footer(props: { className?: string }) {
     return (
-        <div className={cn('w-full flex justify-center text-sm border-t border-light-hover bg-background/40', props.className)}>
+        <div className={cn('w-full flex justify-center text-sm border-t-2 border-light-hover bg-background/30', props.className)}>
             <div className="m-8 flex w-full max-w-[600px] flex-col justify-center gap-5 p-6 sm:max-w-[700px]">
                 <div className="flex items-center gap-3">
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-xl" />
