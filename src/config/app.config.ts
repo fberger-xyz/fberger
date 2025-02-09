@@ -79,7 +79,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
 export const projectsList = [
     {
         path: 'https://apy.fberger.xyz',
-        title: 'APY',
+        title: 'APYs',
         description: 'Live money markets metrics',
         date: 'Jan 2025',
         ttc: 'WIP 🚧',
