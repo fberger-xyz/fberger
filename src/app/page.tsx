@@ -28,9 +28,9 @@ export default function Page() {
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="XP">
-                <TextWithBulletPoint className="font-bold">DeFi and Risk Developer @CoinShares</TextWithBulletPoint>
-                <TextWithBulletPoint>Fullstack Developer @StationF</TextWithBulletPoint>
-                <TextWithBulletPoint>Transaction Services Analyst @GrantThornton</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">DeFi dev + Risk management @CoinShares</TextWithBulletPoint>
+                <TextWithBulletPoint>Fullstack developer @StationF</TextWithBulletPoint>
+                <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
                 <TextWithBulletPoint>Msc. finance + french CPA + code @42</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Contact me">
