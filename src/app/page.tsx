@@ -29,9 +29,9 @@ export default function Page() {
             </SectionWrapper>
             <SectionWrapper title="XP">
                 <TextWithBulletPoint className="font-bold">DeFi and Risk Developer @CoinShares</TextWithBulletPoint>
-                <TextWithBulletPoint>Full-Stack Developer @StationF</TextWithBulletPoint>
-                <TextWithBulletPoint>TAS Analyst @GrantThornton</TextWithBulletPoint>
-                <TextWithBulletPoint>Msc finance + CPA + CS @42</TextWithBulletPoint>
+                <TextWithBulletPoint>Fullstack Developer @StationF</TextWithBulletPoint>
+                <TextWithBulletPoint>Transaction Services Analyst @GrantThornton</TextWithBulletPoint>
+                <TextWithBulletPoint>Msc. finance + french CPA + code @42</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Contact me">
                 <p className="flex flex-wrap items-center gap-2">
