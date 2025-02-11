@@ -36,7 +36,10 @@ export default function ThemeSwitcher() {
                 {Object.entries(APP_THEMES)
                     .sort((curr, next) => curr[1].index - next[1].index)
                     .map(([theme, config]) => (
-                        <button key={theme} className="rounded-2xl border-2 p-2 text-inactive sm:px-2.5 md:hover:bg-very-light-hover">
+                        <button
+                            key={theme}
+                            className="rounded-2xl border-2 border-background p-2 text-inactive sm:px-2.5 md:hover:bg-very-light-hover"
+                        >
                             <SvgMapper icon={config.iconId} className="m-auto size-6" />
                         </button>
                     ))}
