@@ -39,11 +39,13 @@ export default function Page() {
                     <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
                     <TextWithBulletPoint>State-of-the-art Typescript stack</TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                        Frontend: next, tailwind, zustand, vercel (v good for SEO)
+                        Frontend: next, tailwind, zustand (v good for SEO)
                     </p>
-                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, docker, AWS</p>
-                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Database: postgresql, prisma</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, prisma, postgresql</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DevOps: vercel, docker, AWS</p>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth, kinde</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: view, ethers, etc.</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
