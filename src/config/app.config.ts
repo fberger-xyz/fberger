@@ -1,4 +1,4 @@
-import { AppPagePaths, AppThemes, IconIds } from '@/enums'
+import { AppPagePaths, AppThemes, IconIds, SupportedProtocolsForRatesDashboard } from '@/enums'
 import { InterfaceAppLink } from '@/interfaces'
 
 export const APP_METADATA = {
@@ -35,38 +35,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
         path: AppPagePaths.PROJECTS,
         inHeader: true,
         description: '',
-        sublinks: [
-            // {
-            //     name: 'Seeds',
-            //     path: AppPagePaths.PROJECTS_SEEDS,
-            //     inHeader: false,
-            //     sublinks: [],
-            // },
-            // {
-            //     name: 'RabbyKit',
-            //     path: AppPagePaths.PROJECTS_CONNECT_RABBYKIT,
-            //     inHeader: false,
-            //     sublinks: [],
-            // },
-            // {
-            //     name: 'Safes',
-            //     path: AppPagePaths.PROJECTS_SAFES,
-            //     inHeader: false,
-            //     sublinks: [],
-            // },
-            // {
-            //     name: 'ETFs',
-            //     path: AppPagePaths.PROJECTS_ETFS,
-            //     inHeader: false,
-            //     sublinks: [],
-            // },
-            // {
-            //     name: 'NFT Stonks',
-            //     path: AppPagePaths.PROJECTS_NFT_STONKS,
-            //     inHeader: false,
-            //     sublinks: [],
-            // },
-        ],
+        sublinks: [],
     },
     {
         name: 'XP',
@@ -142,3 +111,44 @@ export const projectsList = [
         skills: ['Vue.js', 'OpenSea API', 'Etherscan API', 'Coingecko API', 'Google Cloud'],
     },
 ]
+
+export const ProtocolsConfigForRatesDashboard: Record<
+    string,
+    { iconId?: IconIds; name: string; logoUri: string; integrated: boolean; system: string }
+> = {
+    [SupportedProtocolsForRatesDashboard.AAVE_V3]: {
+        name: 'Aave v3',
+        iconId: IconIds.AAVE,
+        logoUri: 'https://assets.coingecko.com/coins/images/12645/standard/aave-token-round.png?1720472354',
+        integrated: true,
+        system: 'Pools',
+    },
+    [SupportedProtocolsForRatesDashboard.MORPHO]: {
+        name: 'Morpho vaults',
+        iconId: undefined,
+        logoUri: 'https://assets.coingecko.com/coins/images/29837/standard/Morpho-token-icon.png?1726771230',
+        integrated: true,
+        system: 'Vaults',
+    },
+    [SupportedProtocolsForRatesDashboard.SPARK]: {
+        name: 'Spark',
+        iconId: IconIds.SPARK,
+        logoUri: 'https://icons.llamao.fi/icons/protocols/spark',
+        integrated: false,
+        system: 'TBA',
+    },
+    [SupportedProtocolsForRatesDashboard.COMPOUND]: {
+        name: 'Compound v3',
+        iconId: IconIds.COMPOUND,
+        logoUri: '',
+        integrated: true,
+        system: 'Pools',
+    },
+    [SupportedProtocolsForRatesDashboard.FLUID]: {
+        name: 'Fluid',
+        iconId: undefined,
+        logoUri: 'https://icons.llamao.fi/icons/protocols/fluid',
+        integrated: true,
+        system: 'Vaults',
+    },
+}
