@@ -2,6 +2,9 @@ import LinkWrapper from '@/components/common/LinkWrapper'
 import { AppPagePaths, IconIds } from '@/enums'
 import { cn } from '@/utils'
 import IconWrapper from './IconWrapper'
+import { ProtocolsConfigForRatesDashboard } from '@/config/app.config'
+import Image from 'next/image'
+import SvgMapper from './SvgMapper'
 
 export default function ProjectCard({
     disabled = false,
@@ -30,6 +33,26 @@ export default function ProjectCard({
                 <div className="flex w-full justify-between">
                     <div className="flex items-center justify-center gap-1 border-b-2 border-transparent group-hover:border-primary">
                         <p className="text-xl font-bold text-secondary">{title}</p>
+                        {/* this code is crap but I got 99 projects to code */}
+                        {title === 'APYs' &&
+                            Object.values(ProtocolsConfigForRatesDashboard).map((protocol, protocolIndex) =>
+                                protocol.iconId ? (
+                                    <SvgMapper
+                                        key={`${protocol}-${protocolIndex}`}
+                                        icon={protocol.iconId}
+                                        className="-mr-2 size-5 rounded-full border border-light-hover bg-background grayscale"
+                                    />
+                                ) : (
+                                    <Image
+                                        key={`${protocol}-${protocolIndex}`}
+                                        src={String(protocol?.logoUri)}
+                                        width={20}
+                                        height={20}
+                                        alt={`Logo of ${protocol}`}
+                                        className="-mr-2 size-5 rounded-full border border-light-hover bg-background grayscale"
+                                    />
+                                ),
+                            )}
                         {title === 'ETFs' && (
                             <>
                                 <IconWrapper icon={IconIds.CRYPTO_BTC} className={cn('size-5', { grayscale: true })} />

@@ -35,4 +35,8 @@ export enum IconIds {
     LOADING_DOTS = 'LOADING_DOTS',
     CRYPTO_BTC = 'cryptocurrency-color:btc',
     CRYPTO_ETH = 'cryptocurrency-color:eth',
+    AAVE = 'token-branded:aave',
+    FLUID = 'token-branded:inst',
+    COMPOUND = 'token-branded:comp',
+    SPARK = 'SPARK',
 }

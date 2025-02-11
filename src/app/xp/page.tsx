@@ -45,7 +45,7 @@ export default function Page() {
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, prisma, postgresql</p>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DevOps: vercel, docker, AWS</p>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth, kinde</p>
-                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: view, ethers, etc.</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: viem, ethers, etc.</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
