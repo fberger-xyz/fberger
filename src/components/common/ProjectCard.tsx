@@ -42,7 +42,7 @@ export default function ProjectCard({
                                         <SvgMapper
                                             key={`${protocol}-${protocolIndex}`}
                                             icon={protocol.iconId}
-                                            className="size-5 bg-background grayscale"
+                                            className="size-5 rounded-full bg-background grayscale"
                                         />
                                     ) : (
                                         <Image
@@ -51,7 +51,7 @@ export default function ProjectCard({
                                             width={20}
                                             height={20}
                                             alt={`Logo of ${protocol}`}
-                                            className="size-5 bg-background grayscale"
+                                            className="size-5 rounded-full bg-background grayscale"
                                         />
                                     ),
                                 )}
