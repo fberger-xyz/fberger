@@ -55,7 +55,7 @@ export default function Page() {
                         dates="Nov 2021 > Nov 2024"
                     />
                     <TextWithBulletPoint>
-                        Designed, coded and maintained risk applications used daily by ops team + quants + traders + top management to monitor
+                        Designed, coded and maintained risk UIs used daily by ops team + quants + traders + top management to monitor
                     </TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                         1) P&L and risk exposure (hedge funds, lending and staking activities)
