@@ -34,25 +34,30 @@ export default function ProjectCard({
                     <div className="flex items-center justify-center gap-1 border-b-2 border-transparent group-hover:border-primary">
                         <p className="text-xl font-bold text-secondary">{title}</p>
                         {/* this code is crap but I got 99 projects to code */}
-                        {title === 'APYs' &&
-                            Object.values(ProtocolsConfigForRatesDashboard).map((protocol, protocolIndex) =>
-                                protocol.iconId ? (
-                                    <SvgMapper
-                                        key={`${protocol}-${protocolIndex}`}
-                                        icon={protocol.iconId}
-                                        className="-mr-2 size-5 rounded-full border border-light-hover bg-background grayscale"
-                                    />
-                                ) : (
-                                    <Image
-                                        key={`${protocol}-${protocolIndex}`}
-                                        src={String(protocol?.logoUri)}
-                                        width={20}
-                                        height={20}
-                                        alt={`Logo of ${protocol}`}
-                                        className="-mr-2 size-5 rounded-full border border-light-hover bg-background grayscale"
-                                    />
-                                ),
-                            )}
+                        {title === 'APYs' && (
+                            <>
+                                <span className="ml-1" />
+                                {Object.values(ProtocolsConfigForRatesDashboard).map((protocol, protocolIndex) =>
+                                    protocol.iconId ? (
+                                        <SvgMapper
+                                            key={`${protocol}-${protocolIndex}`}
+                                            icon={protocol.iconId}
+                                            className="size-5 bg-background grayscale"
+                                        />
+                                    ) : (
+                                        <Image
+                                            key={`${protocol}-${protocolIndex}`}
+                                            src={String(protocol?.logoUri)}
+                                            width={20}
+                                            height={20}
+                                            alt={`Logo of ${protocol}`}
+                                            className="size-5 bg-background grayscale"
+                                        />
+                                    ),
+                                )}
+                                {/* <span className="mr-2" /> */}
+                            </>
+                        )}
                         {title === 'ETFs' && (
                             <>
                                 <IconWrapper icon={IconIds.CRYPTO_BTC} className={cn('size-5', { grayscale: true })} />
