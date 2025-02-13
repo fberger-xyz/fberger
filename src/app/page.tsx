@@ -18,7 +18,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="About">
-                <TextWithBulletPoint className="font-bold">Passionate 10x fullstack developer</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">Passionate 10x developer</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
@@ -27,13 +27,8 @@ export default function Page() {
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
             </SectionWrapper>
-            <SectionWrapper title="XP">
-                <TextWithBulletPoint className="font-bold">DeFi dev + Risk management @CoinShares</TextWithBulletPoint>
-                <TextWithBulletPoint>Fullstack developer @StationF</TextWithBulletPoint>
-                <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
-                <TextWithBulletPoint>Msc. finance + french CPA + code @42</TextWithBulletPoint>
-            </SectionWrapper>
-            <SectionWrapper title="Contact me">
+            <SectionWrapper title="Currently">
+                <TextWithBulletPoint className="font-bold">Freelance fullstack developer</TextWithBulletPoint>
                 <p className="flex flex-wrap items-center gap-2">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
@@ -55,6 +50,12 @@ export default function Page() {
                         </LinkWithIcon>
                     ))}
                 </p>
+            </SectionWrapper>
+            <SectionWrapper title="Previously">
+                <TextWithBulletPoint className="font-bold">DeFi + Risk developer @CoinShares</TextWithBulletPoint>
+                <TextWithBulletPoint>Fullstack developer @StationF</TextWithBulletPoint>
+                <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
+                <TextWithBulletPoint>42 + msc. finance + french CPA</TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Some side projects">
                 <div className="flex w-full flex-col gap-2">
