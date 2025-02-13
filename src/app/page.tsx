@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <PageWrapper>
-            <SectionWrapper title="About">
+            {/* <SectionWrapper title="About">
                 <TextWithBulletPoint className="font-bold">Passionate 10x developer</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Connecting the dots
@@ -26,9 +26,16 @@ export default function Page() {
                     <span className="font-bold text-primary">DeFi</span>
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
-            </SectionWrapper>
-            <SectionWrapper title="Currently">
-                <TextWithBulletPoint className="font-bold">Freelance fullstack developer</TextWithBulletPoint>
+            </SectionWrapper> */}
+            <SectionWrapper title="About">
+                <TextWithBulletPoint className="font-bold">Freelance 10x fullstack developer</TextWithBulletPoint>
+                <TextWithBulletPoint>
+                    Connecting the dots
+                    <span className="font-bold text-primary">TradFi</span>
+                    <SvgMapper icon={IconIds.LOADING_DOTS} className="size-3 text-primary" />
+                    <span className="font-bold text-primary">DeFi</span>
+                </TextWithBulletPoint>
+                <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
                 <p className="flex flex-wrap items-center gap-2">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
