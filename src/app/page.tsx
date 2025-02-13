@@ -1,5 +1,3 @@
-import IconWrapper from '@/components/common/IconWrapper'
-import LinkWithIcon from '@/components/common/LinkWithIcon'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import ProjectCard from '@/components/common/ProjectCard'
@@ -36,7 +34,7 @@ export default function Page() {
                     <span className="font-bold text-primary">DeFi</span>
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
-                <p className="flex flex-wrap items-center gap-2">
+                {/* <div className="flex flex-wrap items-center gap-2">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: '' },
@@ -52,11 +50,11 @@ export default function Page() {
                             href={link.href}
                             className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10 text-telegram' : 'h-9 border-2'}
                         >
-                            {link.id && <span className="pr-1">{link.id}</span>}
+                            <p>{link.id && <span className="pr-1">{link.id}</span>}</p>
                             <IconWrapper icon={link.icon} className="size-5" />
                         </LinkWithIcon>
                     ))}
-                </p>
+                </div> */}
             </SectionWrapper>
             <SectionWrapper title="Previously">
                 <TextWithBulletPoint className="font-bold">DeFi + Risk developer @CoinShares</TextWithBulletPoint>
@@ -64,7 +62,7 @@ export default function Page() {
                 <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
                 <TextWithBulletPoint>42 + msc. finance + french CPA</TextWithBulletPoint>
             </SectionWrapper>
-            <SectionWrapper title="Some side projects">
+            <SectionWrapper title="Side projects">
                 <div className="flex w-full flex-col gap-2">
                     <ProjectCard
                         path="https://apy.fberger.xyz"
