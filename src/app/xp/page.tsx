@@ -85,15 +85,15 @@ export default function Page() {
                             </p>
                             <TextWithBulletPoint>Proactive to improve legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
                             <TextWithBulletPoint>Research for top management</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">For Staking operations</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">On DeFi protocols</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- For Staking operations</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols</p>
                             <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access via traefik)</TextWithBulletPoint>
                             <TextWithBulletPoint>
                                 Shipped an operational, audited DeFi dApp to tokenize investment fund liabilities
                             </TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Fullstack DeFi Developer</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)
+                                - AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)
                             </p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
                                 <p className="">Best xp so far, references on request. Left for DeFi</p>
