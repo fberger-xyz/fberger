@@ -117,7 +117,7 @@ export default function Page() {
                             <PositionWrapper
                                 companyName="GrantThornton"
                                 href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/"
-                                positionName="Transaction Advisory Services Analyst"
+                                positionName="Transaction Services Analyst"
                                 dates={`2017 & 2019`}
                             />
 
