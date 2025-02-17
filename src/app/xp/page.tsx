@@ -26,7 +26,7 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
                     <span className="truncate text-base">@{props.companyName}</span>
                 </LinkWithIcon>
             )}
-            <p className="truncate text-xl font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline">
+            <p className="truncate text-lg font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline md:text-xl">
                 {props.positionName}
             </p>
             <p className="grow truncate text-right text-sm text-inactive">{props.dates}</p>
