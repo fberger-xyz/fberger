@@ -11,16 +11,16 @@ export const metadata = generatePageMetadata(AppPagePaths.XP)
 const PositionLayout = (props: { children?: ReactNode }) => {
     return (
         <div className="flex w-full items-center">
-            <div className="w-6 border-b-2 border-dotted border-light-hover" />
+            <div className="w-6 border-b-2 border-dotted border-inactive" />
             {props.children}
         </div>
     )
 }
 const commonClasses =
-    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-light-hover hover:border-primary border-dotted hover:border-solid md:px-2 hover:bg-background/50 w-full'
+    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-inactive hover:border-primary border-dotted hover:border-solid md:px-2 hover:bg-background/50 w-full'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
-        <div className="flex w-full flex-col items-baseline gap-1 px-2 sm:flex-row sm:gap-2">
+        <div className="flex w-full flex-col items-baseline gap-1 pl-2 sm:flex-row sm:gap-2 md:p-0">
             {props.companyName && props.href && (
                 <LinkWithIcon href={props.href}>
                     <span className="truncate text-base">@{props.companyName}</span>
@@ -29,7 +29,7 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
             <p className="truncate text-lg font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline md:text-xl">
                 {props.positionName}
             </p>
-            <p className="grow truncate text-right text-sm text-inactive">{props.dates}</p>
+            <p className="mr-2 grow truncate text-right text-xs text-inactive">{props.dates}</p>
         </div>
     )
 }
@@ -37,8 +37,8 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="Experiences">
-                <p className="pb-2 text-inactive">Non-exhaustive / Only fulltime xps</p>
-                <div className="flex w-full flex-col gap-4 border-l-2 border-dotted border-light-hover">
+                <p className="pb-2 text-inactive">Only fulltime xps</p>
+                <div className="flex w-full flex-col gap-4 border-l-2 border-dotted border-inactive">
                     <PositionLayout>
                         <li className={commonClasses}>
                             <PositionWrapper
@@ -95,7 +95,9 @@ export default function Page() {
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)
                             </p>
-                            <p className="mt-2 text-base text-inactive">Best xp so far. References on request. Left for DeFi</p>
+                            <div className="mt-2 flex flex-col text-sm text-inactive">
+                                <p className="">Best xp so far, references on request. Left for DeFi</p>
+                            </div>
                         </li>
                     </PositionLayout>
                     <PositionLayout>
@@ -107,7 +109,7 @@ export default function Page() {
                                 dates={`Jan 2021 > Oct 2021`}
                             />
                             <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
-                            <p className="mt-2 text-base text-inactive">Left to work in crypto</p>
+                            <p className="mt-2 text-sm text-inactive">Left to work in crypto</p>
                         </li>
                     </PositionLayout>
                     <PositionLayout>
@@ -121,7 +123,7 @@ export default function Page() {
 
                             <TextWithBulletPoint>Small & mid cap valuations in M&A context, waterfalls, statistical modelling</TextWithBulletPoint>
                             <TextWithBulletPoint>Memorandum, due diligences, litigation support</TextWithBulletPoint>
-                            <p className="mt-2 text-base text-inactive">Left to pivot in tech</p>
+                            <p className="mt-2 text-sm text-inactive">Left to pivot in tech</p>
                         </li>
                     </PositionLayout>
                 </div>
