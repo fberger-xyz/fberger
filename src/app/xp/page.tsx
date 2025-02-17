@@ -55,26 +55,28 @@ export default function Page() {
                         positionName="Risk and DeFi Developer"
                         dates="Nov 2021 > Nov 2024"
                     />
-                    <TextWithBulletPoint>
-                        Designed, coded and maintained risk UIs used daily by ops team + quants + traders + top management to monitor
-                    </TextWithBulletPoint>
+                    <TextWithBulletPoint>Designed, coded and maintained risk applications</TextWithBulletPoint>
                     <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                        Used daily by operations, quants, traders and top management to monitor:
+                    </p>
+                    <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                         1) P&L and risk exposure (hedge funds, lending and staking activities)
                     </p>
-                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                    <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                         2) Trading strategies (positions, volatility surfaces, greeks)
                     </p>
-                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">3) Strategies reactions to economic calendar</p>
-                    <TextWithBulletPoint>Practical research for Staking operations</TextWithBulletPoint>
-                    <TextWithBulletPoint>DeFi research for top management</TextWithBulletPoint>
+                    <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">3) Strategies reactions to economic calendar</p>
+                    <TextWithBulletPoint>Proactive to improve legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
+                    <TextWithBulletPoint>Research for top management</TextWithBulletPoint>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">For Staking operations</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">On DeFi protocols</p>
                     <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access via traefik)</TextWithBulletPoint>
-                    <TextWithBulletPoint>AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)</TextWithBulletPoint>
-                    <TextWithBulletPoint>Shipped an operational, audited DeFi dApp (solidity, hardhat, ethers, the Graph)</TextWithBulletPoint>
-                    <TextWithBulletPoint>
-                        Proactive to improve legacy stack w/ best-in-class typescript dev tools (eg. vite, tailwind, zustand)
-                    </TextWithBulletPoint>
-                    <TextWithBulletPoint>Best xp so far. References on request</TextWithBulletPoint>
-                    <p className="mt-2 text-base text-inactive">Left for DeFi</p>
+                    <TextWithBulletPoint>Shipped an operational, audited DeFi dApp to tokenize investment fund liabilities</TextWithBulletPoint>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Fullstack DeFi Developer</p>
+                    <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                        AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)
+                    </p>
+                    <p className="mt-2 text-base text-inactive">Best xp so far. References on request. Left for DeFi</p>
                 </li>
                 <li className={commonClasses}>
                     <PositionWrapper
