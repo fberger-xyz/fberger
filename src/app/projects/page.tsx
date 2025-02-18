@@ -12,7 +12,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="Side projects" ulClassname="gap-3">
-                <p className="text-inactive">Some projects I can publicly speak about</p>
+                <p className="text-inactive">Those I can publicly speak about</p>
                 {projectsList.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}

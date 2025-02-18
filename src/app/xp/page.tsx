@@ -37,7 +37,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="Experiences">
-                <p className="pb-2 text-inactive">Only fulltime xps</p>
+                <p className="pb-2 text-inactive">Non exhaustive, only fulltime xps</p>
                 <div className="flex w-full flex-col gap-4 border-l-2 border-dotted border-inactive">
                     <PositionLayout>
                         <li className={commonClasses}>
