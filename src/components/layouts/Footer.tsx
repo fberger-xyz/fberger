@@ -9,10 +9,10 @@ import LinkWithIcon from '../common/LinkWithIcon'
 
 export default function Footer(props: { className?: string }) {
     return (
-        <div className={cn('w-full flex justify-center text-sm border-t border-very-light-hover bg-background/30', props.className)}>
-            <div className="mx-auto my-8 flex max-w-[600px] flex-col justify-center gap-3 py-6 sm:max-w-[700px]">
+        <div className={cn('w-full flex justify-center text-sm border-t-2 border-very-light-hover bg-background/30', props.className)}>
+            <div className="mx-auto my-8 flex max-w-[600px] flex-col justify-center gap-4 py-6 sm:max-w-[700px]">
                 <div className="flex items-center gap-3">
-                    <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-full" />
+                    <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
                     <div className="flex h-min flex-col justify-center">
                         <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_NAME}</p>
                         <p className="text-inactive">Passionate 10x fullstack developer</p>

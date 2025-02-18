@@ -21,7 +21,7 @@ export default function HeaderButton(props: { pagePath: AppPagePaths; disabled?:
                 'md:hover:bg-very-light-hover border-transparent': !isCurrentPath(),
             })}
         >
-            <div className="flex items-center text-lg font-bold md:text-xl">
+            <div className="flex items-center text-base font-bold md:text-lg">
                 <p className={cn({ 'text-primary': isCurrentPath() })}>{link?.name ?? 'Not found'}</p>
             </div>
         </LinkWrapper>

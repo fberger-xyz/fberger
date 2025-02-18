@@ -17,6 +17,8 @@ export const APP_METADATA = {
     MAIL: 'tba@protonmail.com',
 }
 
+export const IS_DEV = process.env.NODE_ENV === 'development'
+
 export const APP_THEMES: Partial<Record<AppThemes, { index: number; iconId: IconIds }>> = {
     [AppThemes.LIGHT]: { index: 0, iconId: IconIds.THEME_LIGHT },
     [AppThemes.DARK]: { index: 1, iconId: IconIds.THEME_DARK },
@@ -34,6 +36,13 @@ export const APP_PAGES: InterfaceAppLink[] = [
         name: 'Projects',
         path: AppPagePaths.PROJECTS,
         inHeader: true,
+        description: '',
+        sublinks: [],
+    },
+    {
+        name: 'Articles',
+        path: AppPagePaths.ARTICLES,
+        inHeader: IS_DEV,
         description: '',
         sublinks: [],
     },

@@ -1,6 +1,7 @@
 export enum AppPagePaths {
     HOME = '/',
     PROJECTS = '/projects',
+    ARTICLES = '/articles',
     XP = '/xp',
 }
 

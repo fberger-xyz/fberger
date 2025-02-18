@@ -24,7 +24,7 @@ export default function PreviousOrNextPages({
                 {props.previous && (
                     <LinkWrapper
                         href={props.previous}
-                        className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-light-hover bg-background/50 p-3 hover:border-primary md:p-5"
+                        className="group flex flex-col items-start gap-1 rounded-3xl border border-light-hover bg-background/50 p-3 hover:border-primary md:p-5"
                     >
                         <div className="flex items-center justify-start gap-1 transition-all group-hover:gap-0.5">
                             <IconWrapper icon={IconIds.DOUBLE_CHEVRON_LEFT} className="size-6 text-inactive" />
@@ -38,7 +38,7 @@ export default function PreviousOrNextPages({
                 {props.next && (
                     <LinkWrapper
                         href={props.next}
-                        className="group flex flex-col items-end gap-1 rounded-3xl border-2 border-light-hover bg-background/50 p-3 hover:border-primary md:p-5"
+                        className="group flex flex-col items-end gap-1 rounded-3xl border border-light-hover bg-background/50 p-3 hover:border-primary md:p-5"
                     >
                         <div className="flex items-center justify-end gap-1 transition-all group-hover:gap-0.5">
                             <p className="text-base text-inactive">Next</p>
