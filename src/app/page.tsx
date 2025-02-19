@@ -26,7 +26,7 @@ export default function Page() {
                 <TextWithBulletPoint>Skin in the game</TextWithBulletPoint>
             </SectionWrapper> */}
             <SectionWrapper title="About">
-                <TextWithBulletPoint className="font-bold">Freelance — 10x fullstack developer</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">Freelance — 10x senior fullstack dev</TextWithBulletPoint>
                 <TextWithBulletPoint>
                     Connecting the dots
                     <span className="font-bold text-primary">TradFi</span>
@@ -57,8 +57,8 @@ export default function Page() {
                 </div> */}
             </SectionWrapper>
             <SectionWrapper title="Previously">
-                <TextWithBulletPoint className="font-bold">Risk / DeFi — fullstack developer @CoinShares</TextWithBulletPoint>
-                <TextWithBulletPoint>Fullstack developer @StationF</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">Risk / DeFi — fullstack dev @CoinShares</TextWithBulletPoint>
+                <TextWithBulletPoint>Fullstack dev @StationF</TextWithBulletPoint>
                 <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
                 <TextWithBulletPoint>42 + msc. finance + french CPA</TextWithBulletPoint>
             </SectionWrapper>
