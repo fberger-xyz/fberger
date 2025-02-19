@@ -57,7 +57,7 @@ export default function Page() {
                 </div> */}
             </SectionWrapper>
             <SectionWrapper title="Previously">
-                <TextWithBulletPoint className="font-bold">Risk / DeFi — fullstack dev @CoinShares</TextWithBulletPoint>
+                <TextWithBulletPoint className="font-bold">Risk + DeFi — senior fullstack dev @CoinShares</TextWithBulletPoint>
                 <TextWithBulletPoint>Fullstack dev @StationF</TextWithBulletPoint>
                 <TextWithBulletPoint>Transaction Services analyst @GrantThornton</TextWithBulletPoint>
                 <TextWithBulletPoint>42 + msc. finance + french CPA</TextWithBulletPoint>
