@@ -2,10 +2,10 @@ import { cn } from '@/utils'
 import { ReactNode } from 'react'
 
 export const BulletPoint = () => <span className="w-min pr-2 text-inactive">&#x2022;</span>
-export const TextWithBulletPoint = (props: { children?: ReactNode; className?: string }) => {
+export const TextWithBulletPoint = (props: { children?: ReactNode; className?: string; customBullet?: ReactNode }) => {
     return (
         <div className="flex items-baseline pl-1">
-            <BulletPoint />
+            {props.customBullet ?? <BulletPoint />}
             <p className={cn('flex items-baseline gap-1.5', props.className)}>{props.children}</p>
         </div>
     )

@@ -142,9 +142,10 @@ export default function Page() {
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Hobbies">
-                <TextWithBulletPoint>Philosophy</TextWithBulletPoint>
-                <TextWithBulletPoint>Boxing</TextWithBulletPoint>
-                <TextWithBulletPoint>Countryside to touch grass</TextWithBulletPoint>
+                <TextWithBulletPoint>Finance as a way of reading human societies</TextWithBulletPoint>
+                <TextWithBulletPoint>Philosophy - thx youtube, wikipedia</TextWithBulletPoint>
+                <TextWithBulletPoint customBullet={<span className="w-min pr-2 text-inactive">🥊</span>}>English boxing</TextWithBulletPoint>
+                <TextWithBulletPoint>Countryside (to touch grass)</TextWithBulletPoint>
             </SectionWrapper>
             <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>
