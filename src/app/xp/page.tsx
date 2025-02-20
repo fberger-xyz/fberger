@@ -65,7 +65,9 @@ export default function Page() {
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 DeFi: viem, ethers, hardhat (bit of foundry), the graph
                             </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Automations: inngest, openai, claude</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                Automations: telegram, inngest, openai, claude
+                            </p>
                         </li>
                     </PositionLayout>
                     <PositionLayout>
