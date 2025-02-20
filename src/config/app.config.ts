@@ -2,7 +2,7 @@ import { AppPagePaths, AppThemes, IconIds, SupportedProtocolsForRatesDashboard }
 import { InterfaceAppLink } from '@/interfaces'
 
 export const APP_METADATA = {
-    SITE_AUTHOR: 'fberger',
+    SITE_AUTHOR: 'fberger.xyz',
     SITE_NAME: 'fberger.xyz',
     SITE_DESCRIPTION: 'Skin in the game.',
     SITE_URL: 'https://fberger.xyz/',
