@@ -1,4 +1,5 @@
 import LinkWithIcon from '@/components/common/LinkWithIcon'
+import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
@@ -57,7 +58,9 @@ export default function Page() {
                                 Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand
                             </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, prisma, postgresql</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                Backend: next and nest APIs, prisma, postgresql
+                            </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
                             </p>
@@ -92,9 +95,18 @@ export default function Page() {
                                 3) Strategies reactions to economic calendar
                             </p>
                             <TextWithBulletPoint>Proactive to improve legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
-                            <TextWithBulletPoint>Research for top management</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- For Staking operations</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols</p>
+                            <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - Eth 2.0 deep dive for staking operations
+                            </p>
+                            <LinkWrapper
+                                className="pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
+                                href="https://blog.coinshares.com/unstaking-ethereum-piecing-the-exit-puzzle-7a0537b13349"
+                                target="_blank"
+                            >
+                                <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
+                            </LinkWrapper>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
                             <TextWithBulletPoint>Run ethereum nodes</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 - To test Shanghai upgrade (with https access via traefik)
@@ -127,7 +139,9 @@ export default function Page() {
                                 dates={`Jan 2021 > Oct 2021`}
                             />
                             <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
-                            <TextWithBulletPoint>Daily maintenance of applications used by startups incubated at StationF</TextWithBulletPoint>
+                            <TextWithBulletPoint>
+                                Maintenance of web services used by thousands of startuppers incubated at StationF
+                            </TextWithBulletPoint>
                             <p className="mt-2 text-sm text-inactive">Left to explore crypto</p>
                         </li>
                     </PositionLayout>
