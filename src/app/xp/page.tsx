@@ -126,7 +126,7 @@ export default function Page() {
                             </TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer + AWS devOps</p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
-                                <p>Best xp so far, references on request. Left for DeFi</p>
+                                <p>Best xp so far, references on request. Left to explore DeFi</p>
                             </div>
                         </li>
                     </PositionLayout>
