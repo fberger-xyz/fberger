@@ -21,6 +21,7 @@ export default function Footer(props: { className?: string }) {
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                     {[
+                        { href: `https://${APP_METADATA.SITE_AUTHOR}`, icon: IconIds.WEBSITE },
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
                         { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: '' },
                         {
