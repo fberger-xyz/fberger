@@ -107,7 +107,7 @@ export default function Page() {
                                 <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
                             </LinkWrapper>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
-                            <TextWithBulletPoint>Run ethereum nodes</TextWithBulletPoint>
+                            <TextWithBulletPoint>Run ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 - To test Shanghai upgrade (with https access via traefik)
                             </p>
