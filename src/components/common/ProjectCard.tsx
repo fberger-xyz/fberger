@@ -27,11 +27,11 @@ export default function ProjectCard({
             href={props.path}
             target="_blank"
             disabled={disabled}
-            className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-light-hover bg-background/50 p-3 hover:border-primary md:px-5"
+            className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-light-hover bg-background/50 p-3 transition duration-200 ease-in-out hover:border-primary md:px-5"
         >
-            <div className="flex w-full flex-col rounded-md transition duration-200 hover:border-primary">
+            <div className="flex w-full flex-col rounded-md transition duration-200 ease-in-out hover:border-primary">
                 <div className="flex w-full justify-between">
-                    <div className="flex items-center justify-center gap-1 border-b-2 border-transparent group-hover:border-primary">
+                    <div className="flex items-center justify-center gap-1 border-b-2 border-transparent transition duration-200 ease-in-out group-hover:border-primary">
                         <p className="text-xl font-bold text-secondary">{title}</p>
                         {/* this code is crap but I got 99 projects to code */}
                         {title === 'APYs' && (
@@ -73,7 +73,7 @@ export default function ProjectCard({
                     {skills.map((skill) => (
                         <div
                             key={skill}
-                            className="flex w-fit items-center rounded-lg border border-very-light-hover px-1.5 py-0.5 group-hover:bg-very-light-hover"
+                            className="flex w-fit items-center rounded-lg border border-very-light-hover px-1.5 py-0.5 transition duration-200 ease-in-out group-hover:bg-very-light-hover"
                         >
                             <p className="text-nowrap text-inactive group-hover:text-primary">{skill}</p>
                         </div>

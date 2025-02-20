@@ -11,13 +11,13 @@ export const metadata = generatePageMetadata(AppPagePaths.XP)
 const PositionLayout = (props: { children?: ReactNode }) => {
     return (
         <div className="flex w-full items-center">
-            <div className="w-6 border-b-2 border-dotted border-inactive" />
+            <div className="w-6 border-b-2 border-light-hover" />
             {props.children}
         </div>
     )
 }
 const commonClasses =
-    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-inactive hover:border-primary border-dotted hover:border-solid md:px-2 hover:bg-background/50 w-full'
+    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-light-hover hover:border-primary hover:border-solid md:px-2 hover:bg-background/50 w-full transition duration-200 ease-in-out'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 pl-2 sm:flex-row sm:gap-2 md:p-0">
@@ -38,7 +38,7 @@ export default function Page() {
         <PageWrapper>
             <SectionWrapper title="Experiences">
                 <p className="pb-2 text-inactive">Non exhaustive, only fulltime xps</p>
-                <div className="flex w-full flex-col gap-4 border-l-2 border-dotted border-inactive">
+                <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
                     <PositionLayout>
                         <li className={commonClasses}>
                             <PositionWrapper
@@ -48,7 +48,7 @@ export default function Page() {
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
-                            <TextWithBulletPoint>State-of-the-art Typescript stack</TextWithBulletPoint>
+                            <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 Frontend: next, tailwind, zustand (v good for SEO)
                             </p>
