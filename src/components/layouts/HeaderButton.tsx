@@ -16,10 +16,13 @@ export default function HeaderButton(props: { pagePath: AppPagePaths; disabled?:
     return (
         <LinkWrapper
             href={props.disabled ? pathname : props.pagePath}
-            className={cn('px-2 py-1.5 md:px-2.5 lg:px-3 rounded-2xl border-2 group text-inactive hover:text-default', {
-                'bg-very-light-hover border-light-hover': isCurrentPath(),
-                'md:hover:bg-very-light-hover border-transparent': !isCurrentPath(),
-            })}
+            className={cn(
+                'px-2 py-1.5 md:px-2.5 lg:px-3 rounded-2xl border-2 group text-inactive hover:text-default transition-all duration-200 ease-in-out',
+                {
+                    'bg-very-light-hover border-light-hover': isCurrentPath(),
+                    'md:hover:bg-very-light-hover border-transparent': !isCurrentPath(),
+                },
+            )}
         >
             <div className="flex items-center text-base font-bold md:text-lg">
                 <p className={cn({ 'text-primary': isCurrentPath() })}>{link?.name ?? 'Not found'}</p>

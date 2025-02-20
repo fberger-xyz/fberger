@@ -42,7 +42,7 @@ export const APP_PAGES: InterfaceAppLink[] = [
     {
         name: 'Articles',
         path: AppPagePaths.ARTICLES,
-        inHeader: IS_DEV,
+        inHeader: true,
         description: '',
         sublinks: [],
     },

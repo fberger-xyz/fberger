@@ -19,7 +19,6 @@ export enum IconIds {
     ARROW_RIGHT = 'carbon:arrow-right',
     IC_OUTLINE_CALENDAR_MONTH = 'ic:outline-calendar-month',
     IC_OUTLINE_MODE_EDIT = 'ic:outline-mode-edit',
-    // IC_BASELINE_OPEN_IN_NEW = 'ic:baseline-open-in-new',
     IC_BASELINE_OPEN_IN_NEW = 'carbon:arrow-up-right',
     THEME_LIGHT = 'line-md:sunny-filled-loop',
     THEME_DARK = 'line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition',
@@ -39,4 +38,5 @@ export enum IconIds {
     FLUID = 'token-branded:inst',
     COMPOUND = 'token-branded:comp',
     SPARK = 'SPARK',
+    MENU = 'material-symbols-light:menu',
 }

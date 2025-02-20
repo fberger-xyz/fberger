@@ -15,21 +15,9 @@ export default function Footer(props: { className?: string }) {
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
                     <div className="flex h-min flex-col justify-center">
                         <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_NAME}</p>
-                        <p className="text-inactive">Passionate 10x fullstack developer</p>
+                        <p className="text-inactive">Freelance — 10x senior fullstack dev</p>
                     </div>
                 </div>
-                {/* <div className="flex gap-4">
-                    {[
-                        { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO },
-                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X },
-                        { href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`, icon: IconIds.LINKEDIN },
-                        { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB },
-                    ].map((link) => (
-                        <LinkWrapper key={link.href} target="_blank" href={link.href} className="cursor-alias text-inactive hover:text-primary">
-                            <IconWrapper icon={link.icon} className="size-6" />
-                        </LinkWrapper>
-                    ))}
-                </div> */}
                 <div className="flex flex-wrap items-center gap-2">
                     {[
                         { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },

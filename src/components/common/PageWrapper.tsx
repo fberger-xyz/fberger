@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 import { cn } from '@/utils'
 
 export default function PageWrapper({ children, className, ...props }: { children: React.ReactNode; className?: string }) {
-    const commonClassName = 'mx-auto flex max-w-[600px] flex-col items-start overflow-auto px-2 sm:max-w-[700px] mt-24 sm:mt-28 px-6 mb-10 gap-7'
+    const commonClassName = 'mx-auto flex max-w-[600px] flex-col items-start overflow-auto px-2 sm:max-w-[700px] mt-24 sm:mt-28 px-4 mb-10 gap-7 min-h-[calc(100vh-374px)]'
     return (
         <Suspense
             fallback={
