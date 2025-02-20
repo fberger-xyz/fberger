@@ -48,9 +48,9 @@ export default function Page() {
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
-                            <TextWithBulletPoint>5 years of experience</TextWithBulletPoint>
+                            <TextWithBulletPoint>5 years' experience</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Spent on fulltime positions, weekend side projects, countless tutorials on youtube
+                                In fulltime positions, freelance, weekends/holidays side projects
                             </p>
                             <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
@@ -61,9 +61,9 @@ export default function Page() {
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
                             </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth, kinde</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth JWT, kinde</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                DeFi: viem, ethers, hardhat, the graph, dune
+                                DeFi: viem, ethers, hardhat (bit of foundry), the graph
                             </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Automations: inngest, openai, claude</p>
                         </li>
@@ -112,7 +112,7 @@ export default function Page() {
                             </TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer + AWS devOps</p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
-                                <p className="">Best xp so far, references on request. Left for DeFi</p>
+                                <p>Best xp so far, references on request. Left for DeFi</p>
                             </div>
                         </li>
                     </PositionLayout>
@@ -125,7 +125,8 @@ export default function Page() {
                                 dates={`Jan 2021 > Oct 2021`}
                             />
                             <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
-                            <p className="mt-2 text-sm text-inactive">Left to work in crypto</p>
+                            <TextWithBulletPoint>Daily maintenance of applications used by startups incubated at StationF</TextWithBulletPoint>
+                            <p className="mt-2 text-sm text-inactive">Left to explore crypto</p>
                         </li>
                     </PositionLayout>
                     <PositionLayout>
@@ -159,7 +160,7 @@ export default function Page() {
             </SectionWrapper>
             <SectionWrapper title="Hobbies">
                 <TextWithBulletPoint>Finance as a way of reading human societies</TextWithBulletPoint>
-                <TextWithBulletPoint>Philosophy - thx youtube, wikipedia</TextWithBulletPoint>
+                <TextWithBulletPoint>Philosophy - the why - thx wikipedia, youtube</TextWithBulletPoint>
                 <TextWithBulletPoint customBullet={<span className="w-min pr-2 text-inactive">🥊</span>}>English boxing</TextWithBulletPoint>
                 <TextWithBulletPoint>Countryside (to touch grass)</TextWithBulletPoint>
             </SectionWrapper>

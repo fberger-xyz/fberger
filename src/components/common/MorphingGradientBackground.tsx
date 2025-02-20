@@ -30,8 +30,8 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
 
             {/* pulsating ambient glow (adjusted for mobile) */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-white/40 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
-                <div className="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-gray-200/40 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
+                <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-white/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
+                <div className="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-gray-200/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
             </div>
 
             {/* additional floating lights (adjusted for mobile) */}
