@@ -37,7 +37,7 @@ export default function Page() {
                         <div className="flex max-h-20 w-full flex-col overflow-hidden">
                             <p className="text-justify text-sm leading-4 text-inactive">Cache your Zustand store.</p>
                             <p className="text-justify text-sm leading-4 text-inactive">Faster loads, fewer API calls, persistent state 🔥</p>
-                            <p className="text-justify text-sm leading-4 text-inactive">Devs don’t refetch what they already have.</p>
+                            <p className="text-justify text-sm leading-4 text-inactive">Do not refetch what you already have.</p>
                         </div>
                         <div className="flex flex-col">
                             <div className="flex items-center gap-2 font-bold">
