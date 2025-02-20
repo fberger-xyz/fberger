@@ -48,7 +48,7 @@ export default function Page() {
                                 positionName={'Senior Fullstack Developer'}
                                 dates={'Dec 2024 - now'}
                             />
-                            <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
+                            <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
                             <TextWithBulletPoint>5 years' experience</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 In fulltime positions, freelance, weekends/holidays side projects
@@ -81,7 +81,7 @@ export default function Page() {
                                 positionName="Risk / DeFi — Senior Fullstack Developer"
                                 dates="Nov 2021 > Nov 2024"
                             />
-                            <TextWithBulletPoint>Designed, coded and maintained risk applications</TextWithBulletPoint>
+                            <TextWithBulletPoint>Designed, coded and maintained real-time risk applications</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 Used daily by operations, quants, traders and top management to monitor:
                             </p>
@@ -94,7 +94,7 @@ export default function Page() {
                             <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 3) Strategies reactions to economic calendar
                             </p>
-                            <TextWithBulletPoint>Proactive to improve legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
+                            <TextWithBulletPoint>Proactively improved legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
                             <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 - Eth 2.0 deep dive for staking operations
@@ -107,14 +107,12 @@ export default function Page() {
                                 <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
                             </LinkWrapper>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
-                            <TextWithBulletPoint>Run ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
+                            <TextWithBulletPoint>Ran Ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - To test Shanghai upgrade (with https access via traefik)
+                                - To test the Shanghai upgrade (with https access via traefik)
                             </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - To explore MEV opportunities at CoinShares
-                            </p>
-                            <TextWithBulletPoint>AWS devOps to run Typescript bots</TextWithBulletPoint>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- To explore MEV opportunities</p>
+                            <TextWithBulletPoint>CI/CD to run several Typescript bots in AWS</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 - Several use cases - for instance SEC website scrappers
                             </p>
@@ -122,7 +120,7 @@ export default function Page() {
                                 - stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.
                             </p>
                             <TextWithBulletPoint>
-                                Shipped an operational, audited DeFi dApp to tokenize investment fund liabilities
+                                Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                             </TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer + AWS devOps</p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
@@ -138,7 +136,8 @@ export default function Page() {
                                 positionName="Fullstack Typescript Developer"
                                 dates={`Jan 2021 > Oct 2021`}
                             />
-                            <TextWithBulletPoint>Best practices to engineer + commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
+                            <TextWithBulletPoint>Shipped multiple new features for the Station F community</TextWithBulletPoint>
+                            <TextWithBulletPoint>Adopted best practices to commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
                             <TextWithBulletPoint>
                                 Maintenance of web services used by thousands of startuppers incubated at StationF
                             </TextWithBulletPoint>
@@ -171,7 +170,7 @@ export default function Page() {
                     French CPA <span className="text-inactive">2019</span>
                 </TextWithBulletPoint>
                 <TextWithBulletPoint>
-                    MSc Corporate Finance <span className="text-inactive">2019</span>
+                    MSc. Accounting and Corporate Finance <span className="text-inactive">2019</span>
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Hobbies">
