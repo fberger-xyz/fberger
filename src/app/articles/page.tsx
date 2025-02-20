@@ -48,7 +48,7 @@ export default function Page() {
                     </div>
                 </LinkWrapper>
             </SectionWrapper>
-            <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.XP} />
+            <PreviousOrNextPages previous={AppPagePaths.PROJECTS} next={AppPagePaths.XP} />
         </PageWrapper>
     )
 }

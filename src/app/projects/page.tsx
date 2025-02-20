@@ -17,7 +17,7 @@ export default function Page() {
                     <ProjectCard key={index} {...project} />
                 ))}
             </SectionWrapper>
-            <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.XP} />
+            <PreviousOrNextPages previous={AppPagePaths.HOME} next={AppPagePaths.ARTICLES} />
         </PageWrapper>
     )
 }
