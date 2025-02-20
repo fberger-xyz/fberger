@@ -54,7 +54,7 @@ export default function Page() {
                             </p>
                             <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Frontend: next (works flawlessly + smash SEO), tailwind, zustand, react-query...
+                                Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand
                             </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, prisma, postgresql</p>
