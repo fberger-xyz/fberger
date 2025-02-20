@@ -37,7 +37,7 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="Experiences">
-                <p className="pb-2 text-inactive">Non exhaustive, only fulltime xps</p>
+                <p className="pb-2 text-inactive">Below list is non exhaustive (only fulltime xps)</p>
                 <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
                     <PositionLayout>
                         <li className={commonClasses}>
@@ -48,13 +48,19 @@ export default function Page() {
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go getter for clients like @CoinShares</TextWithBulletPoint>
+                            <TextWithBulletPoint>5 years of experience</TextWithBulletPoint>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                Spent on fulltime positions, weekend side projects, countless tutorials on youtube
+                            </p>
                             <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Frontend: next, tailwind, zustand (v good for SEO)
+                                Frontend: next (works flawlessly + smash SEO), tailwind, zustand, react-query...
                             </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Backend: nest, prisma, postgresql</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DevOps: vercel, docker, AWS</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
+                            </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth, kinde</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 DeFi: viem, ethers, hardhat, the graph, dune
@@ -87,14 +93,24 @@ export default function Page() {
                             <TextWithBulletPoint>Research for top management</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- For Staking operations</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols</p>
-                            <TextWithBulletPoint>Run ethereum nodes to test Shanghai upgrade (with https access via traefik)</TextWithBulletPoint>
+                            <TextWithBulletPoint>Run ethereum nodes</TextWithBulletPoint>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - To test Shanghai upgrade (with https access via traefik)
+                            </p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - To explore MEV opportunities at CoinShares
+                            </p>
+                            <TextWithBulletPoint>AWS devOps to run Typescript bots</TextWithBulletPoint>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - Several use cases - for instance SEC website scrappers
+                            </p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.
+                            </p>
                             <TextWithBulletPoint>
                                 Shipped an operational, audited DeFi dApp to tokenize investment fund liabilities
                             </TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - AWS devOps to run bots (Nest.js API, AWS lambda/DynamoDB/Cloudwatch etc.)
-                            </p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer + AWS devOps</p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
                                 <p className="">Best xp so far, references on request. Left for DeFi</p>
                             </div>
