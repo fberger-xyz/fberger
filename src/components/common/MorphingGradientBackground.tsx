@@ -21,8 +21,8 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-60"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 20% 30%, rgba(0, 10, 0, 0.5) 10%, transparent 50%),
-                        radial-gradient(at 80% 70%, rgba(0, 0, 0, 0.3) 50%, transparent 85%)
+                        radial-gradient(at 20% 30%, rgba(10, 10, 10, 0.5) 10%, transparent 50%),
+                        radial-gradient(at 80% 70%, rgba(15, 15, 15, 0.3) 50%, transparent 85%)
                     `,
                     backgroundSize: '200% 200%',
                 }}
@@ -30,8 +30,8 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
 
             {/* pulsating ambient glow (adjusted for mobile) */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-white/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
-                <div className="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-gray-200/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
+                <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-white/40 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
+                <div className="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-gray-200/40 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
             </div>
 
             {/* additional floating lights (adjusted for mobile) */}

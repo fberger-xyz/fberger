@@ -14,8 +14,9 @@ export default function Footer(props: { className?: string }) {
                 <div className="flex items-center gap-3">
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
                     <div className="flex h-min flex-col justify-center">
-                        <p className="flex text-2xl font-bold text-default">{APP_METADATA.SITE_NAME}</p>
-                        <p className="text-inactive">Freelance — 10x senior fullstack dev</p>
+                        <p className="text-xs text-inactive">Coded by</p>
+                        <p className="flex text-xl font-bold text-primary">{APP_METADATA.SITE_NAME}</p>
+                        <p className="text-xs text-inactive">Freelance — 10x senior fullstack dev</p>
                     </div>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
