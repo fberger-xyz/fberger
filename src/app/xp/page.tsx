@@ -142,7 +142,7 @@ export default function Page() {
                             <TextWithBulletPoint>
                                 Maintenance of web services used by thousands of startuppers incubated at StationF
                             </TextWithBulletPoint>
-                            <p className="mt-2 text-sm text-inactive">Left to explore crypto</p>
+                            <p className="mt-2 text-sm text-inactive">Left to explore Ethereum</p>
                         </li>
                     </PositionLayout>
                     <PositionLayout>
