@@ -78,7 +78,7 @@ export default function Page() {
                             <PositionWrapper
                                 companyName="CoinShares"
                                 href="https://coinshares.com/"
-                                positionName="Risk and DeFi Developer"
+                                positionName="Risk / DeFi — Senior Fullstack Developer"
                                 dates="Nov 2021 > Nov 2024"
                             />
                             <TextWithBulletPoint>Designed, coded and maintained risk applications</TextWithBulletPoint>
