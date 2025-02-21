@@ -81,9 +81,9 @@ export default function Page() {
                                 positionName="Risk / DeFi — Senior Fullstack Developer"
                                 dates="Nov 2021 > Nov 2024"
                             />
-                            <TextWithBulletPoint>Designed, coded and maintained real-time risk applications</TextWithBulletPoint>
+                            <TextWithBulletPoint>Designed, coded and maintained real-time risk applications used 24/7</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Used 24/7 by operations, quants, traders and top management to monitor:
+                                By operations, quants, traders and top management to monitor:
                             </p>
                             <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 1) P&L and risk exposure (hedge funds, lending and staking activities)
