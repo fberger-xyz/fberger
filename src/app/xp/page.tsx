@@ -37,6 +37,11 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
 export default function Page() {
     return (
         <PageWrapper>
+            <SectionWrapper title="CV">
+                <a href="/Senior-Full-Stack-Engineer-FBERGER-CV.pdf" download className="hover:text-primary hover:underline">
+                    <p className="pb-2 text-inactive">Click here to download my one-pager CV in .pdf</p>
+                </a>
+            </SectionWrapper>
             <SectionWrapper title="Experiences">
                 <p className="pb-2 text-inactive">Below list is non exhaustive (only fulltime xps)</p>
                 <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
@@ -49,7 +54,7 @@ export default function Page() {
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
-                            <TextWithBulletPoint>5 years' experience</TextWithBulletPoint>
+                            <TextWithBulletPoint>5 years xp</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 In fulltime positions, freelance, weekends/holidays side projects
                             </p>
@@ -65,9 +70,7 @@ export default function Page() {
                                 DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
                             </p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth JWT, kinde</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                DeFi: viem, ethers, hardhat (bit of foundry), the graph
-                            </p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: viem, ethers, hardhat, the graph</p>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 Automations: telegram, inngest, openai, claude
                             </p>
@@ -123,7 +126,7 @@ export default function Page() {
                                 Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                             </TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - Fullstack DeFi Developer (hardhat, solidity) + AWS devOps
+                                - Fullstack DeFi Developer (solidity with hardhat - bit of foundry) + AWS devOps
                             </p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
                                 <p>Best xp so far, references on request. Left to explore DeFi</p>
