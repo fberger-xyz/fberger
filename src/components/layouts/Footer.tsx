@@ -34,11 +34,7 @@ export default function Footer(props: { className?: string }) {
                         <LinkWithIcon
                             key={link.href}
                             href={link.href}
-                            className={
-                                link.icon === IconIds.TELEGRAM_LOGO
-                                    ? 'border-2 border-telegram bg-telegram/10 py-1 text-telegram'
-                                    : 'h-9 border-2 py-1'
-                            }
+                            className={link.icon === IconIds.TELEGRAM_LOGO ? 'border-2 border-telegram bg-telegram/10 text-telegram' : 'h-9 border-2'}
                         >
                             {link.id && <p className="pr-1 text-base font-bold">{link.id}</p>}
                             <IconWrapper icon={link.icon} className="size-5" />

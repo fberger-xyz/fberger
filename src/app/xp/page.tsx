@@ -39,11 +39,11 @@ export default function Page() {
         <PageWrapper>
             <SectionWrapper title="CV">
                 <a href="/Senior-Full-Stack-Engineer-FBERGER-CV.pdf" download className="hover:text-primary hover:underline">
-                    <p>One-pager .pdf CV download</p>
+                    <p>One-pager pdf CV download</p>
                 </a>
             </SectionWrapper>
             <SectionWrapper title="Experiences">
-                <p className="pb-2 text-inactive">Below list is non exhaustive (only fulltime xps)</p>
+                <p className="pb-2 text-inactive">Only fulltime xps</p>
                 <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
                     <PositionLayout>
                         <li className={commonClasses}>

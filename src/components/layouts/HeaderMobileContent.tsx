@@ -25,7 +25,7 @@ export default function HeaderMobileContent() {
     return (
         <div className="w-full md:hidden" ref={modalRef}>
             <div
-                className={cn('flex items-center w-full border-b px-4 pt-4 pb-2', {
+                className={cn('flex items-center w-full border-b px-4 pt-4 pb-3', {
                     'bg-transparent border-transparent': showMobileMenu,
                     'border-very-light-hover bg-background/20 backdrop-blur-md': !showMobileMenu,
                 })}
