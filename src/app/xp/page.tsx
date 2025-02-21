@@ -39,7 +39,7 @@ export default function Page() {
         <PageWrapper>
             <SectionWrapper title="CV">
                 <a href="/Senior-Full-Stack-Engineer-FBERGER-CV.pdf" download className="hover:text-primary hover:underline">
-                    <p>Click here to download my one-pager CV in .pdf</p>
+                    <p>One-pager .pdf CV download</p>
                 </a>
             </SectionWrapper>
             <SectionWrapper title="Experiences">
