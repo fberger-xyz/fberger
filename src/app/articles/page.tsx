@@ -19,7 +19,7 @@ export default function Page() {
                     target="_blank"
                 >
                     {/* left  */}
-                    <div className="relative flex h-32 w-full md:w-48 overflow-hidden md:h-36">
+                    <div className="relative flex h-32 w-full overflow-hidden md:h-36 md:w-48">
                         <Image
                             src="https://raw.githubusercontent.com/pmndrs/zustand/main/docs/bear.jpg"
                             placeholder="blur"
@@ -32,7 +32,7 @@ export default function Page() {
                     </div>
 
                     {/* right */}
-                    <div className="flex grow flex-col gap-2 md:w-min md:flex-row">
+                    <div className="flex grow flex-col gap-2 md:w-min">
                         <p className="text-xl font-bold">Enable cache feature on zustand store</p>
                         <div className="flex max-h-20 w-full flex-col overflow-hidden">
                             <p className="text-justify text-sm leading-4 text-inactive">Cache your Zustand store.</p>
