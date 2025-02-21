@@ -83,7 +83,7 @@ export default function Page() {
                             />
                             <TextWithBulletPoint>Designed, coded and maintained real-time risk applications</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Used daily by operations, quants, traders and top management to monitor:
+                                Used 24/7 by operations, quants, traders and top management to monitor:
                             </p>
                             <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 1) P&L and risk exposure (hedge funds, lending and staking activities)
@@ -122,7 +122,9 @@ export default function Page() {
                             <TextWithBulletPoint>
                                 Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                             </TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Fullstack DeFi Developer + AWS devOps</p>
+                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                                - Fullstack DeFi Developer (hardhat, solidity) + AWS devOps
+                            </p>
                             <div className="mt-2 flex flex-col text-sm text-inactive">
                                 <p>Best xp so far, references on request. Left to explore DeFi</p>
                             </div>
@@ -174,6 +176,7 @@ export default function Page() {
                 </TextWithBulletPoint>
             </SectionWrapper>
             <SectionWrapper title="Hobbies">
+                <TextWithBulletPoint>Typescript</TextWithBulletPoint>
                 <TextWithBulletPoint>Finance as a way of reading human societies</TextWithBulletPoint>
                 <TextWithBulletPoint>Philosophy - the why - thx wikipedia, youtube</TextWithBulletPoint>
                 <TextWithBulletPoint customBullet={<span className="w-min pr-2 text-inactive">🥊</span>}>English boxing</TextWithBulletPoint>
