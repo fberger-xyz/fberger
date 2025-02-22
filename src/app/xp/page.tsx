@@ -56,7 +56,7 @@ export default function Page() {
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
-                            <TextWithBulletPoint>5 years xp</TextWithBulletPoint>
+                            <TextWithBulletPoint>5y full-stack engineer with 3+y in institutional crypto + TradFi xp</TextWithBulletPoint>
                             <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                                 In fulltime positions, freelance, weekends/holidays side projects
                             </p>
