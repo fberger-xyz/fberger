@@ -1,9 +1,10 @@
+import IconWrapper from '@/components/common/IconWrapper'
 import LinkWithIcon from '@/components/common/LinkWithIcon'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
-import { AppPagePaths } from '@/enums'
+import { AppPagePaths, IconIds } from '@/enums'
 import { generatePageMetadata } from '@/utils'
 import { ReactNode } from 'react'
 
@@ -18,7 +19,7 @@ const PositionLayout = (props: { children?: ReactNode }) => {
     )
 }
 const commonClasses =
-    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-light-hover hover:border-primary hover:border-solid md:px-2 hover:bg-background/50 w-full transition duration-200 ease-in-out'
+    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-light-hover hover:border-primary hover:border-solid md:px-2 bg-background/50 w-full transition duration-200 ease-in-out'
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 pl-2 sm:flex-row sm:gap-2 md:p-0">
@@ -27,7 +28,7 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
                     <span className="truncate text-base">@{props.companyName}</span>
                 </LinkWithIcon>
             )}
-            <p className="truncate text-lg font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline md:text-xl">
+            <p className="truncate text-wrap text-lg font-bold text-secondary decoration-primary decoration-2 underline-offset-4 group-hover:underline md:text-xl">
                 {props.positionName}
             </p>
             <p className="mr-2 grow truncate text-right text-xs text-inactive">{props.dates}</p>
@@ -38,8 +39,9 @@ export default function Page() {
     return (
         <PageWrapper>
             <SectionWrapper title="CV">
-                <a href="/Senior-Full-Stack-Engineer-FBERGER-CV.pdf" download className="hover:text-primary hover:underline">
-                    <p>One-pager pdf CV download</p>
+                <a href="/Senior-Full-Stack-Engineer-FBERGER-CV.pdf" download className="flex items-center gap-1 hover:text-primary hover:underline">
+                    <IconWrapper icon={IconIds.DOWNLOAD} />
+                    <p>Download one-pager CV in pdf</p>
                 </a>
             </SectionWrapper>
             <SectionWrapper title="Experiences">
@@ -50,7 +52,7 @@ export default function Page() {
                             <PositionWrapper
                                 companyName="Freelance"
                                 href="https://fberger.xyz/"
-                                positionName={'Senior Fullstack Developer'}
+                                positionName="Senior Fullstack Developer"
                                 dates={'Dec 2024 - now'}
                             />
                             <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
