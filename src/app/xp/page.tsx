@@ -168,6 +168,15 @@ export default function Page() {
                 </div>
             </SectionWrapper>
 
+            {/* hobbies */}
+            <SectionWrapper title="Hobbies">
+                <TextWithBulletPoint>Typescript</TextWithBulletPoint>
+                <TextWithBulletPoint>Finance as a way of reading human societies</TextWithBulletPoint>
+                <TextWithBulletPoint>Philosophy - the why - thx wikipedia, youtube</TextWithBulletPoint>
+                <TextWithBulletPoint customBullet={<span className="w-min pr-2 text-inactive">🥊</span>}>English boxing</TextWithBulletPoint>
+                <TextWithBulletPoint>Countryside (to touch grass)</TextWithBulletPoint>
+            </SectionWrapper>
+
             {/* studies */}
             <SectionWrapper title="Studies">
                 <TextWithBulletPoint>
@@ -179,13 +188,6 @@ export default function Page() {
                 <TextWithBulletPoint>
                     MSc. Accounting and Corporate Finance <span className="text-inactive">2019</span>
                 </TextWithBulletPoint>
-            </SectionWrapper>
-            <SectionWrapper title="Hobbies">
-                <TextWithBulletPoint>Typescript</TextWithBulletPoint>
-                <TextWithBulletPoint>Finance as a way of reading human societies</TextWithBulletPoint>
-                <TextWithBulletPoint>Philosophy - the why - thx wikipedia, youtube</TextWithBulletPoint>
-                <TextWithBulletPoint customBullet={<span className="w-min pr-2 text-inactive">🥊</span>}>English boxing</TextWithBulletPoint>
-                <TextWithBulletPoint>Countryside (to touch grass)</TextWithBulletPoint>
             </SectionWrapper>
             <PreviousOrNextPages previous={AppPagePaths.PROJECTS} />
         </PageWrapper>

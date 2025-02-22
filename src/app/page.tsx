@@ -57,9 +57,9 @@ export default function Page() {
                         ttc="4 days"
                         skills={['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel']}
                     />
-                    <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
                 </div>
             </SectionWrapper>
+            <PreviousOrNextPages next={AppPagePaths.PROJECTS} />
         </PageWrapper>
     )
 }
