@@ -10,7 +10,7 @@ export const cardGradientClasses = cn(
     // Optimized background with reduced transparency calculations
     'bg-background/95',
     // Hardware-accelerated transforms for better performance
-    'transform-gpu',
+    // 'transform-gpu',
     // Simplified hover effect
     'hover:shadow-sm',
 )
