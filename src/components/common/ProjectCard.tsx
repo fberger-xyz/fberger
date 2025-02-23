@@ -6,25 +6,20 @@ import { ProtocolsConfigForRatesDashboard } from '@/config/app.config'
 import Image from 'next/image'
 import SvgMapper from './SvgMapper'
 
-export default function ProjectCard({
-    disabled = false,
-    title,
-    date,
-    description,
-    skills,
-    ...props
-}: {
+// Update type definition for props
+interface ProjectCardProps {
     path: AppPagePaths | string
     disabled?: boolean
     title: string
     date: string
     description?: string
-    ttc: string
     skills: string[]
-}) {
+}
+
+export default function ProjectCard({ disabled = false, title, date, description, skills, path }: ProjectCardProps) {
     return (
         <LinkWrapper
-            href={props.path}
+            href={path}
             target="_blank"
             disabled={disabled}
             className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-very-light-hover bg-background/80 p-3 transition duration-200 ease-in-out hover:border-primary md:px-5"
@@ -55,7 +50,6 @@ export default function ProjectCard({
                                         />
                                     ),
                                 )}
-                                {/* <span className="mr-2" /> */}
                             </>
                         )}
                         {title === 'ETFs' && (

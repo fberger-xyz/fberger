@@ -10,6 +10,8 @@ import Image from 'next/image'
 export const metadata = generatePageMetadata(AppPagePaths.PROJECTS)
 
 export default function Page() {
+    const currentDate = dayjs().format('ddd. DD MMM. YYYY')
+
     return (
         <PageWrapper>
             <SectionWrapper title="Articles" ulClassname="gap-3">
@@ -18,7 +20,6 @@ export default function Page() {
                     href="https://github.com/fberger-xyz/next-with-zustand-cache"
                     target="_blank"
                 >
-                    {/* left  */}
                     <div className="relative flex h-32 w-full overflow-hidden md:h-36 md:w-48">
                         <Image
                             src="https://raw.githubusercontent.com/pmndrs/zustand/main/docs/bear.jpg"
@@ -30,8 +31,6 @@ export default function Page() {
                             className="min-w-48 rounded-xl grayscale group-hover:grayscale-0"
                         />
                     </div>
-
-                    {/* right */}
                     <div className="flex grow flex-col gap-2 md:w-min">
                         <p className="text-xl font-bold">Enable cache feature on zustand store</p>
                         <div className="flex max-h-20 w-full flex-col overflow-hidden">
@@ -41,7 +40,7 @@ export default function Page() {
                         </div>
                         <div className="flex flex-col">
                             <div className="flex items-center gap-2 font-bold">
-                                <p>{dayjs().format('ddd. DD MMM. YYYY')} ; 1 min read</p>
+                                <p>{currentDate} ; 1 min read</p>
                             </div>
                             <p>#fullstack</p>
                         </div>
