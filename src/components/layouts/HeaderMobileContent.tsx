@@ -4,7 +4,7 @@ import { APP_PAGES, APP_THEMES } from '@/config/app.config'
 import { IconIds } from '@/enums'
 import { useAppStore } from '@/stores/app.store'
 import { cn, isCurrentPath } from '@/utils'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { usePathname, useRouter } from 'next/navigation'
 import { useRef } from 'react'
@@ -14,14 +14,14 @@ import { useKeyboardShortcut } from '@/hooks/useKeyboardShortcutArgs'
 import Logo from './Logo'
 
 // Extract menu items into a separate component
-const NavigationItems = ({ pathname, router, onItemClick }: { pathname: string; router: ReturnType<typeof useRouter>; onItemClick: () => void }) => (
+const NavigationItems = ({ pathname, router }: { pathname: string; router: ReturnType<typeof useRouter>; onItemClick: () => void }) => (
     <div className="flex w-full flex-col items-end gap-1">
         {APP_PAGES.map((page) => (
             <button
                 key={page.path}
                 onClick={async () => {
                     await router.push(page.path)
-                    onItemClick()
+                    // onItemClick()
                 }}
                 className="ml-auto"
                 aria-current={isCurrentPath(pathname, page.path) ? 'page' : undefined}
@@ -90,29 +90,29 @@ export default function HeaderMobileContent() {
                 </button>
             </header>
 
-            <AnimatePresence>
-                {showMobileMenu && (
-                    <motion.div
-                        className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-sm"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={(e) => {
-                            // Only close if clicking the backdrop
-                            if (e.target === e.currentTarget) {
-                                setShowMobileMenu(false)
-                            }
-                        }}
-                    >
-                        <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
-                            <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
-                                <NavigationItems pathname={pathname} router={router} onItemClick={() => setShowMobileMenu(false)} />
-                                <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
-                            </div>
-                        </nav>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            {/* <AnimatePresence> */}
+            {showMobileMenu && (
+                <motion.div
+                    className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-sm"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onClick={(e) => {
+                        // Only close if clicking the backdrop
+                        if (e.target === e.currentTarget) {
+                            setShowMobileMenu(false)
+                        }
+                    }}
+                >
+                    <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
+                        <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
+                            <NavigationItems pathname={pathname} router={router} onItemClick={() => setShowMobileMenu(false)} />
+                            <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
+                        </div>
+                    </nav>
+                </motion.div>
+            )}
+            {/* </AnimatePresence> */}
         </div>
     )
 }
