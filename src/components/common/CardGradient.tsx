@@ -2,13 +2,15 @@ import { cn } from '@/utils'
 
 export const cardGradientClasses = cn(
     // Base card styles
-    'group relative flex flex-col rounded-3xl border-2 border-very-light-hover transition duration-300 ease-in-out hover:border-primary',
-    // Enhanced gradient background - increased light mode opacity
-    'before:absolute before:inset-0 before:rounded-3xl before:opacity-[0.15] before:transition-opacity before:duration-300 dark:before:opacity-[0.15]',
-    'before:bg-[radial-gradient(circle_at_0%_0%,hsl(var(--color-primary)/0.6),transparent_70%),radial-gradient(circle_at_100%_100%,hsl(var(--color-secondary)/0.4),transparent_70%)]',
+    'group relative flex flex-col rounded-3xl border-2 border-very-light-hover transition duration-100 ease-in-out hover:border-primary',
+    // Simplified gradient background for better performance
+    'before:absolute before:inset-0 before:rounded-3xl before:opacity-[0.15] before:transition-opacity before:duration-100 dark:before:opacity-[0.15]',
+    'before:bg-[linear-gradient(120deg,hsl(var(--color-primary)/0.4)_0%,transparent_40%,transparent_60%,hsl(var(--color-secondary)/0.3)_100%)]',
     'hover:before:opacity-[0.2] dark:hover:before:opacity-[0.25]',
-    // Glassy background effect
-    'bg-background/90 backdrop-blur-[2px]',
-    // Subtle shadow on hover
-    'hover:shadow-[0_0_30px_-20px_hsl(var(--color-primary))]',
+    // Optimized background with reduced transparency calculations
+    'bg-background/95',
+    // Hardware-accelerated transforms for better performance
+    'transform-gpu',
+    // Simplified hover effect
+    'hover:shadow-sm',
 )
