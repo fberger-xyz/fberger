@@ -13,10 +13,10 @@ export const metadata = generatePageMetadata(AppPagePaths.PROJECTS)
 
 export default function Page() {
     const currentDate = dayjs().format('ddd. DD MMM. YYYY')
-
     return (
         <PageWrapper>
             <SectionWrapper title="Articles" ulClassname="gap-3">
+                {/* to imrpove later */}
                 <LinkWrapper
                     className={cn(cardGradientClasses, 'items-center gap-4 p-5 md:flex-row')}
                     href="https://github.com/fberger-xyz/next-with-zustand-cache"

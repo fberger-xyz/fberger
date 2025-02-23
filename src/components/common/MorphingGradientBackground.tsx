@@ -5,7 +5,6 @@ import { cn } from '@/utils'
 export const MorphingGradientBackground = ({ children, className }: { children: React.ReactNode; className?: string }) => {
     return (
         <main className={cn('relative flex min-h-screen w-screen flex-col bg-white dark:bg-black', className)}>
-            {/* Primary gradient layer - Optimized with will-change */}
             <div
                 className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 will-change-[background-position] dark:opacity-45"
                 style={{
@@ -21,8 +20,6 @@ export const MorphingGradientBackground = ({ children, className }: { children: 
                     backgroundSize: '150% 150%',
                 }}
             />
-
-            {/* Ambient effects container - Reduced DOM nesting */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
                 <div
                     className="absolute -left-10 -top-10 size-72 animate-pulse-slow rounded-full bg-blue-300/10 
@@ -34,8 +31,6 @@ export const MorphingGradientBackground = ({ children, className }: { children: 
                                blur-[100px] will-change-transform dark:bg-[hsl(156,72%,67%)]/10
                                sm:size-96 sm:blur-[140px]"
                 />
-
-                {/* Floating orbs with optimized animations */}
                 <div
                     className="absolute left-1/4 top-1/4 size-32 animate-float rounded-full bg-rose-300/15 
                                blur-[50px] will-change-transform dark:bg-[hsl(217,33%,17%)]/15
@@ -47,8 +42,6 @@ export const MorphingGradientBackground = ({ children, className }: { children: 
                                sm:size-40 sm:blur-[60px]"
                 />
             </div>
-
-            {/* Content with improved z-index handling */}
             <div className="relative z-10 flex h-fit w-full flex-col">{children}</div>
         </main>
     )
