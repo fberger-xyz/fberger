@@ -8,6 +8,14 @@ import Image from 'next/image'
 import LinkWithIcon from '../common/LinkWithIcon'
 
 export default function Footer(props: { className?: string }) {
+    const socialLinks = [
+        { href: `https://${APP_METADATA.SITE_AUTHOR}`, icon: IconIds.WEBSITE },
+        { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
+        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X },
+        { href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`, icon: IconIds.LINKEDIN },
+        { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB },
+    ]
+
     return (
         <div className={cn('w-full flex justify-center text-sm border-t-2 border-very-light-hover bg-background/30', props.className)}>
             <div className="mx-auto my-8 flex max-w-[600px] flex-col justify-center gap-4 py-6 sm:max-w-[700px]">
@@ -19,18 +27,9 @@ export default function Footer(props: { className?: string }) {
                         <p className="text-xs text-inactive">Freelance — 10x senior fullstack dev</p>
                     </div>
                 </div>
+
                 <div className="flex flex-wrap items-center gap-2">
-                    {[
-                        { href: `https://${APP_METADATA.SITE_AUTHOR}`, icon: IconIds.WEBSITE },
-                        { href: `https://t.me/${APP_METADATA.SOCIALS.TELEGRAM}`, icon: IconIds.TELEGRAM_LOGO, id: APP_METADATA.SOCIALS.TELEGRAM },
-                        { href: `https://x.com/${APP_METADATA.SOCIALS.X}`, icon: IconIds.X, id: '' },
-                        {
-                            href: `https://www.linkedin.com/in/${APP_METADATA.SOCIALS.LINKEDIN}`,
-                            icon: IconIds.LINKEDIN,
-                            id: '',
-                        },
-                        { href: `https://github.com/${APP_METADATA.SOCIALS.GITHUB}`, icon: IconIds.GITHUB, id: '' },
-                    ].map((link) => (
+                    {socialLinks.map((link) => (
                         <LinkWithIcon
                             key={link.href}
                             href={link.href}
