@@ -6,7 +6,7 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
         <main className="relative flex min-h-screen w-screen flex-col bg-white dark:bg-black">
             {/* Primary gradient layer */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 dark:opacity-30"
+                className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 dark:opacity-45"
                 style={{
                     backgroundImage: `
                         radial-gradient(at 40% 20%, hsla(156, 72%, 67%, 0.15) 0px, transparent 50%),

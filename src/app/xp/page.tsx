@@ -11,6 +11,21 @@ import { cardGradientClasses } from '@/components/common/CardGradient'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
+interface PositionProps {
+    companyName?: string
+    href?: string
+    positionName: string
+    dates: string
+    children: ReactNode
+}
+
+interface PositionWrapperProps {
+    companyName?: string
+    href?: string
+    positionName: string
+    dates: string
+}
+
 const PositionLayout = (props: { children?: ReactNode }) => {
     return (
         <div className="flex w-full items-center">
@@ -19,8 +34,10 @@ const PositionLayout = (props: { children?: ReactNode }) => {
         </div>
     )
 }
+
 const commonClasses = cn(cardGradientClasses, 'items-start gap-0.5 p-2 md:px-2 w-full', '!rounded-2xl')
-const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
+
+const PositionWrapper = (props: PositionWrapperProps) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 pl-2 sm:flex-row sm:gap-2 md:p-0">
             {props.companyName && props.href && (
@@ -35,6 +52,16 @@ const PositionWrapper = (props: { companyName?: string; href?: string; positionN
         </div>
     )
 }
+
+const Position = ({ companyName, href, positionName, dates, children }: PositionProps) => (
+    <PositionLayout>
+        <li className={commonClasses}>
+            <PositionWrapper companyName={companyName} href={href} positionName={positionName} dates={dates} />
+            {children}
+        </li>
+    </PositionLayout>
+)
+
 export default function Page() {
     return (
         <PageWrapper>
@@ -47,124 +74,102 @@ export default function Page() {
             <SectionWrapper title="Experiences">
                 <p className="pb-2 text-inactive">Only fulltime xps</p>
                 <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
-                    <PositionLayout>
-                        <li className={commonClasses}>
-                            <PositionWrapper
-                                companyName="Freelance"
-                                href="https://fberger.xyz/"
-                                positionName="Senior Fullstack Developer"
-                                dates={'Dec 2024 - now'}
-                            />
-                            <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
-                            <TextWithBulletPoint>5y full-stack engineer with 3+y in institutional crypto + TradFi xp</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                In fulltime positions, freelance, weekends/holidays side projects
-                            </p>
-                            <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand
-                            </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Backend: next and nest APIs, prisma, postgresql
-                            </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
-                            </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth JWT, kinde</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: viem, ethers, hardhat, the graph</p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                Automations: telegram, inngest, openai, claude
-                            </p>
-                        </li>
-                    </PositionLayout>
-                    <PositionLayout>
-                        <li className={commonClasses}>
-                            <PositionWrapper
-                                companyName="CoinShares"
-                                href="https://coinshares.com/"
-                                positionName="Risk / DeFi — Senior Fullstack Developer"
-                                dates="Nov 2021 > Nov 2024"
-                            />
-                            <TextWithBulletPoint>Designed, coded and maintained real-time risk applications used 24/7</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                By operations, quants, traders and top management to monitor:
-                            </p>
-                            <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                1) P&L and risk exposure (hedge funds, lending and staking activities)
-                            </p>
-                            <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                2) Trading strategies (positions, volatility surfaces, greeks)
-                            </p>
-                            <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                3) Strategies reactions to economic calendar
-                            </p>
-                            <TextWithBulletPoint>Proactively improved legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
-                            <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - Eth 2.0 deep dive for staking operations
-                            </p>
-                            <LinkWrapper
-                                className="pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
-                                href="https://blog.coinshares.com/unstaking-ethereum-piecing-the-exit-puzzle-7a0537b13349"
-                                target="_blank"
-                            >
-                                <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
-                            </LinkWrapper>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
-                            <TextWithBulletPoint>Ran Ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - To test the Shanghai upgrade (with https access via traefik)
-                            </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- To explore MEV opportunities</p>
-                            <TextWithBulletPoint>CI/CD to run several Typescript bots in AWS</TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - Several use cases - for instance SEC website scrappers
-                            </p>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.
-                            </p>
-                            <TextWithBulletPoint>
-                                Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
-                            </TextWithBulletPoint>
-                            <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                                - Fullstack DeFi Developer (solidity with hardhat - bit of foundry) + AWS devOps
-                            </p>
-                            <div className="mt-2 flex flex-col text-sm text-inactive">
-                                <p>Best xp so far, references on request. Left to explore DeFi</p>
-                            </div>
-                        </li>
-                    </PositionLayout>
-                    <PositionLayout>
-                        <li className={commonClasses}>
-                            <PositionWrapper
-                                companyName="StationF"
-                                href="https://stationf.co/"
-                                positionName="Fullstack Typescript Developer"
-                                dates={`Jan 2021 > Oct 2021`}
-                            />
-                            <TextWithBulletPoint>Shipped multiple new features for the Station F community</TextWithBulletPoint>
-                            <TextWithBulletPoint>Adopted best practices to commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
-                            <TextWithBulletPoint>
-                                Maintenance of web services used by thousands of startuppers incubated at StationF
-                            </TextWithBulletPoint>
-                            <p className="mt-2 text-sm text-inactive">Left to explore Ethereum</p>
-                        </li>
-                    </PositionLayout>
-                    <PositionLayout>
-                        <li className={commonClasses}>
-                            <PositionWrapper
-                                companyName="GrantThornton"
-                                href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/"
-                                positionName="Transaction Services Analyst"
-                                dates={`2017 & 2019`}
-                            />
-
-                            <TextWithBulletPoint>Small & mid cap valuations in M&A context, waterfalls, statistical modelling</TextWithBulletPoint>
-                            <TextWithBulletPoint>Memorandum, due diligences, litigation support</TextWithBulletPoint>
-                            <p className="mt-2 text-sm text-inactive">Left to pivot in tech</p>
-                        </li>
-                    </PositionLayout>
+                    <Position companyName="Freelance" href="https://fberger.xyz/" positionName="Senior Fullstack Developer" dates="Dec 2024 - now">
+                        <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
+                        <TextWithBulletPoint>5y full-stack engineer with 3+y in institutional crypto + TradFi xp</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            In fulltime positions, freelance, weekends/holidays side projects
+                        </p>
+                        <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand
+                        </p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            Backend: next and nest APIs, prisma, postgresql
+                        </p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
+                        </p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth JWT, kinde</p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: viem, ethers, hardhat, the graph</p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            Automations: telegram, inngest, openai, claude
+                        </p>
+                    </Position>
+                    <Position
+                        companyName="CoinShares"
+                        href="https://coinshares.com/"
+                        positionName="Risk / DeFi — Senior Fullstack Developer"
+                        dates="Nov 2021 > Nov 2024"
+                    >
+                        <TextWithBulletPoint>Designed, coded and maintained real-time risk applications used 24/7</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            By operations, quants, traders and top management to monitor:
+                        </p>
+                        <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            1) P&L and risk exposure (hedge funds, lending and staking activities)
+                        </p>
+                        <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            2) Trading strategies (positions, volatility surfaces, greeks)
+                        </p>
+                        <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            3) Strategies reactions to economic calendar
+                        </p>
+                        <TextWithBulletPoint>Proactively improved legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
+                        <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Eth 2.0 deep dive for staking operations</p>
+                        <LinkWrapper
+                            className="pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
+                            href="https://blog.coinshares.com/unstaking-ethereum-piecing-the-exit-puzzle-7a0537b13349"
+                            target="_blank"
+                        >
+                            <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
+                        </LinkWrapper>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
+                        <TextWithBulletPoint>Ran Ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            - To test the Shanghai upgrade (with https access via traefik)
+                        </p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- To explore MEV opportunities</p>
+                        <TextWithBulletPoint>CI/CD to run several Typescript bots in AWS</TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            - Several use cases - for instance SEC website scrappers
+                        </p>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            - stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.
+                        </p>
+                        <TextWithBulletPoint>
+                            Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
+                        </TextWithBulletPoint>
+                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
+                            - Fullstack DeFi Developer (solidity with hardhat - bit of foundry) + AWS devOps
+                        </p>
+                        <div className="mt-2 flex flex-col text-sm text-inactive">
+                            <p>Best xp so far, references on request. Left to explore DeFi</p>
+                        </div>
+                    </Position>
+                    <Position
+                        companyName="StationF"
+                        href="https://stationf.co/"
+                        positionName="Fullstack Typescript Developer"
+                        dates="Jan 2021 > Oct 2021"
+                    >
+                        <TextWithBulletPoint>Shipped multiple new features for the Station F community</TextWithBulletPoint>
+                        <TextWithBulletPoint>Adopted best practices to commit a clean code (unit, integration, e2e tests)</TextWithBulletPoint>
+                        <TextWithBulletPoint>Maintenance of web services used by thousands of startuppers incubated at StationF</TextWithBulletPoint>
+                        <p className="mt-2 text-sm text-inactive">Left to explore Ethereum</p>
+                    </Position>
+                    <Position
+                        companyName="GrantThornton"
+                        href="https://www.grantthornton.fr/fr/secteurs/capital-investissement/"
+                        positionName="Transaction Services Analyst"
+                        dates="2017 & 2019"
+                    >
+                        <TextWithBulletPoint>Small & mid cap valuations in M&A context, waterfalls, statistical modelling</TextWithBulletPoint>
+                        <TextWithBulletPoint>Memorandum, due diligences, litigation support</TextWithBulletPoint>
+                        <p className="mt-2 text-sm text-inactive">Left to pivot in tech</p>
+                    </Position>
                 </div>
             </SectionWrapper>
 
