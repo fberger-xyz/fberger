@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 
-import { APP_METADATA } from '@/config/app.config'
+import { APP_METADATA, sideProjectList } from '@/config/app.config'
 import { AppPagePaths, IconIds } from '@/enums'
 
 import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
-import ProjectCard from '@/components/common/ProjectCard'
+import SideProjectCard from '@/components/common/SideProjectCard'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import SvgMapper from '@/components/common/SvgMapper'
 
@@ -39,33 +39,8 @@ const PreviousSection = () => (
 const ProjectsSection = () => (
     <SectionWrapper title="Side projects">
         <div className="flex w-full flex-col gap-2">
-            {[
-                {
-                    path: 'https://apy.fberger.xyz',
-                    title: 'APYs',
-                    description: 'Live metrics on lending markets',
-                    date: 'Jan 2025',
-                    ttc: 'WIP 🚧',
-                    skills: ['Aave', 'Morpho', 'Fluid', 'Liquity'],
-                },
-                {
-                    path: 'https://trustee.fund',
-                    title: 'Trustee 💸',
-                    description: 'Dynamic management for busy holders',
-                    date: 'Dec 2024',
-                    ttc: '2 weeks',
-                    skills: ['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum'],
-                },
-                {
-                    path: 'https://etfs.fberger.xyz',
-                    title: 'ETFs',
-                    description: 'Better farside',
-                    date: 'Nov 2024',
-                    ttc: '4 days',
-                    skills: ['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel'],
-                },
-            ].map((project) => (
-                <ProjectCard key={project.path} {...project} />
+            {sideProjectList.slice(0, 3).map((project) => (
+                <SideProjectCard key={project.path} {...project} />
             ))}
         </div>
     </SectionWrapper>

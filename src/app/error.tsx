@@ -1,7 +1,6 @@
 'use client'
 
 import PageWrapper from '@/components/common/PageWrapper'
-import JsonField from '@/components/common/JsonField'
 import { useEffect } from 'react'
 import { extractErrorMessage } from '@/utils'
 import IconWrapper from '@/components/common/IconWrapper'
@@ -15,7 +14,9 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
                 <p className="font-bold">Something went wrong!</p>
                 <div className="flex w-full flex-col items-center gap-2 rounded-xl border border-light-hover p-4">
                     <p className="text-inactive">Error logs</p>
-                    <JsonField className="text-orange-500">{JSON.stringify(extractErrorMessage(error), null, 2)}</JsonField>
+                    <pre className="max-h-96 overflow-y-auto text-wrap rounded-md p-2 text-center text-xs text-orange-500">
+                        {JSON.stringify(extractErrorMessage(error), null, 2)}
+                    </pre>
                 </div>
                 <div className="flex w-full flex-col items-center gap-3">
                     <button

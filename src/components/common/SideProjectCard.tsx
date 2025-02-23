@@ -1,25 +1,16 @@
 import LinkWrapper from '@/components/common/LinkWrapper'
-import { AppPagePaths, IconIds } from '@/enums'
+import { IconIds } from '@/enums'
 import { cn } from '@/utils'
 import IconWrapper from './IconWrapper'
 import { ProtocolsConfigForRatesDashboard } from '@/config/app.config'
 import Image from 'next/image'
 import SvgMapper from './SvgMapper'
 import { cardGradientClasses } from './CardGradient'
+import { SideProject } from '@/interfaces'
 
-// Update type definition for props
-interface ProjectCardProps {
-    path: AppPagePaths | string
-    disabled?: boolean
-    title: string
-    date: string
-    description?: string
-    skills: string[]
-}
-
-export default function ProjectCard({ disabled = false, title, date, description, skills, path }: ProjectCardProps) {
+export default function SideProjectCard({ title, date, description, skills, path }: SideProject) {
     return (
-        <LinkWrapper href={path} target="_blank" disabled={disabled} className={cn(cardGradientClasses, 'items-start gap-1 p-3 md:px-5')}>
+        <LinkWrapper href={path} target="_blank" className={cn(cardGradientClasses, 'items-start gap-1 p-3 md:px-5')}>
             <div className="relative flex w-full flex-col rounded-md transition duration-100 ease-in-out">
                 <div className="flex w-full justify-between">
                     <div className="flex items-center justify-center gap-1 border-b-2 border-transparent transition duration-200 ease-in-out group-hover:border-primary">

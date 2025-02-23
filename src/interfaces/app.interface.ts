@@ -13,3 +13,11 @@ export interface APIResponse<Data> {
     data?: Data
     error: string
 }
+
+export interface SideProject {
+    path: string
+    title: string
+    description: string
+    date: string
+    skills: string[]
+}

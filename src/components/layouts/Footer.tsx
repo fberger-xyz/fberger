@@ -17,7 +17,7 @@ export default function Footer(props: { className?: string }) {
     ]
 
     return (
-        <div className={cn('w-full flex justify-center text-sm border-t-2 border-very-light-hover bg-background/30', props.className)}>
+        <div className={cn('w-full flex justify-center text-sm border-t-2 border-background bg-background/30', props.className)}>
             <div className="mx-auto my-8 flex max-w-[600px] flex-col justify-center gap-4 py-6 sm:max-w-[700px]">
                 <div className="flex items-center gap-3">
                     <Image src={APP_METADATA.PROFILE_PICTURE} width={56} height={56} alt="https://x.com/fberger_xyz/photo" className="rounded-2xl" />
