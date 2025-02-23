@@ -25,26 +25,26 @@ export const MorphingGradientBackground = ({ children, className }: { children: 
             {/* Ambient effects container - Reduced DOM nesting */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
                 <div
-                    className="absolute -left-10 -top-10 h-72 w-72 animate-pulse-slow rounded-full 
-                               bg-blue-300/10 blur-[100px] will-change-transform
-                               dark:bg-[hsl(215,20%,62%)]/10 sm:h-96 sm:w-96 sm:blur-[140px]"
+                    className="absolute -left-10 -top-10 size-72 animate-pulse-slow rounded-full bg-blue-300/10 
+                               blur-[100px] will-change-transform dark:bg-[hsl(215,20%,62%)]/10
+                               sm:size-96 sm:blur-[140px]"
                 />
                 <div
-                    className="absolute -bottom-10 -right-10 h-72 w-72 animate-pulse-slow rounded-full 
-                               bg-purple-300/10 blur-[100px] will-change-transform
-                               dark:bg-[hsl(156,72%,67%)]/10 sm:h-96 sm:w-96 sm:blur-[140px]"
+                    className="absolute -bottom-10 -right-10 size-72 animate-pulse-slow rounded-full bg-purple-300/10 
+                               blur-[100px] will-change-transform dark:bg-[hsl(156,72%,67%)]/10
+                               sm:size-96 sm:blur-[140px]"
                 />
 
                 {/* Floating orbs with optimized animations */}
                 <div
-                    className="absolute left-1/4 top-1/4 h-32 w-32 animate-float rounded-full 
-                               bg-rose-300/15 blur-[50px] will-change-transform
-                               dark:bg-[hsl(217,33%,17%)]/15 sm:h-40 sm:w-40 sm:blur-[60px]"
+                    className="absolute left-1/4 top-1/4 size-32 animate-float rounded-full bg-rose-300/15 
+                               blur-[50px] will-change-transform dark:bg-[hsl(217,33%,17%)]/15
+                               sm:size-40 sm:blur-[60px]"
                 />
                 <div
-                    className="absolute bottom-1/4 right-1/4 h-32 w-32 animate-float rounded-full 
-                               bg-amber-300/15 blur-[50px] delay-1000 will-change-transform
-                               dark:bg-[hsl(217,19%,27%)]/15 sm:h-40 sm:w-40 sm:blur-[60px]"
+                    className="absolute bottom-1/4 right-1/4 size-32 animate-float rounded-full bg-amber-300/15 
+                               blur-[50px] delay-1000 will-change-transform dark:bg-[hsl(217,19%,27%)]/15
+                               sm:size-40 sm:blur-[60px]"
                 />
             </div>
 

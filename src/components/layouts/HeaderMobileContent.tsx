@@ -14,11 +14,7 @@ import { useKeyboardShortcut } from '@/hooks/useKeyboardShortcutArgs'
 import Logo from './Logo'
 
 // Extract menu items into a separate component
-const NavigationItems = ({ pathname, router, onItemClick }: {
-    pathname: string
-    router: ReturnType<typeof useRouter>
-    onItemClick: () => void
-}) => (
+const NavigationItems = ({ pathname, router, onItemClick }: { pathname: string; router: ReturnType<typeof useRouter>; onItemClick: () => void }) => (
     <div className="flex w-full flex-col items-end gap-1">
         {APP_PAGES.map((page) => (
             <button
@@ -44,10 +40,7 @@ const NavigationItems = ({ pathname, router, onItemClick }: {
 )
 
 // Extract theme switcher into a separate component
-const ThemeSwitcher = ({ resolvedTheme, setTheme }: {
-    resolvedTheme: string | undefined
-    setTheme: (theme: string) => void
-}) => (
+const ThemeSwitcher = ({ resolvedTheme, setTheme }: { resolvedTheme: string | undefined; setTheme: (theme: string) => void }) => (
     <div className="mt-6 flex w-full justify-end gap-3">
         {Object.entries(APP_THEMES)
             .sort((curr, next) => curr[1].index - next[1].index)
@@ -87,16 +80,13 @@ export default function HeaderMobileContent() {
                 })}
             >
                 <Logo />
-                <button 
-                    onClick={() => setShowMobileMenu(!showMobileMenu)} 
+                <button
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
                     className="z-40 flex w-full grow justify-end"
                     aria-expanded={showMobileMenu}
                     aria-label="Toggle mobile menu"
                 >
-                    <IconWrapper 
-                        icon={showMobileMenu ? IconIds.CLOSE : IconIds.MENU} 
-                        className="size-10 text-primary md:size-12" 
-                    />
+                    <IconWrapper icon={showMobileMenu ? IconIds.CLOSE : IconIds.MENU} className="size-10 text-primary md:size-12" />
                 </button>
             </header>
 
@@ -116,15 +106,8 @@ export default function HeaderMobileContent() {
                     >
                         <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
                             <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
-                                <NavigationItems 
-                                    pathname={pathname} 
-                                    router={router} 
-                                    onItemClick={() => setShowMobileMenu(false)} 
-                                />
-                                <ThemeSwitcher 
-                                    resolvedTheme={resolvedTheme} 
-                                    setTheme={setTheme} 
-                                />
+                                <NavigationItems pathname={pathname} router={router} onItemClick={() => setShowMobileMenu(false)} />
+                                <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
                             </div>
                         </nav>
                     </motion.div>

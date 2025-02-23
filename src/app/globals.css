@@ -3,52 +3,23 @@
 @tailwind utilities;
 
 html.light {
-    /* Refined sage green as primary - sophisticated yet natural */
     --color-primary: 158 30% 45%;
-    /* Deep navy for secondary - professional and grounding */
     --color-secondary: 215 35% 20%;
-    /* Neutral graphite for default text - softer than pure gray */
     --color-default: 220 15% 40%;
-    /* Muted slate for inactive - elegant and subtle */
     --color-inactive: 215 15% 65%;
-    /* Pure white background with slight warmth */
     --color-background: 40 20% 99%;
-    /* Soft pearl hover - barely tinted */
     --color-light-hover: 220 15% 95%;
-    /* Ethereal hover - even lighter */
     --color-very-light-hover: 220 20% 97%;
-    /* Refined border - slightly warmer */
     --color-light-border: 220 15% 90%;
 }
 
 html.dark {
-    /* Luminous sage for primary - glows without being harsh */
     --color-primary: 158 35% 65%;
-    /* Sophisticated gray for secondary - warm undertones */
     --color-secondary: 220 15% 40%;
-    /* Ethereal silver for default - easy on the eyes */
     --color-default: 220 15% 65%;
-    /* Deep slate for inactive - mysterious but visible */
     --color-inactive: 215 20% 30%;
-    /* Rich dark background - not quite black */
     --color-background: 220 25% 9%;
-    /* Deep hover with slight glow */
     --color-light-hover: 215 30% 15%;
-    /* Even deeper hover - maintains hierarchy */
     --color-very-light-hover: 215 35% 12%;
-    /* Refined dark border - subtle separation */
     --color-light-border: 215 25% 22%;
-}
-
-@layer utilities {
-    .animate-gradient-slow {
-        animation: gradient-xy 22s ease-in-out infinite;
-        background-size: 200% 200%;
-    }
-}
-
-.test-gradient {
-    background: linear-gradient(270deg, #ff0000, #0000ff);
-    background-size: 400% 400%;
-    animation: gradient-xy 14s ease infinite;
 }

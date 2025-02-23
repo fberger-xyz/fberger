@@ -53,7 +53,7 @@ export default function RootLayout({
                         <Header />
                         <Suspense
                             fallback={
-                                <div className="flex h-full w-full items-center justify-center">
+                                <div className="flex size-full items-center justify-center">
                                     <p className="text-orange-500">Loading...</p>
                                 </div>
                             }
