@@ -2,6 +2,7 @@ import { AppPagePaths, IconIds } from '@/enums'
 import { cn, getPageConfig } from '@/utils'
 import IconWrapper from '../common/IconWrapper'
 import LinkWrapper from '../common/LinkWrapper'
+import { cardGradientClasses } from './CardGradient'
 
 export default function PreviousOrNextPages({
     isIphoneDemo = false,
@@ -22,10 +23,7 @@ export default function PreviousOrNextPages({
                 })}
             >
                 {props.previous && (
-                    <LinkWrapper
-                        href={props.previous}
-                        className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-very-light-hover bg-background/80 p-3 hover:border-primary md:p-5"
-                    >
+                    <LinkWrapper href={props.previous} className={cn(cardGradientClasses, 'items-start gap-1 p-3 md:p-5')}>
                         <div className="flex items-center justify-start gap-1 transition-all group-hover:gap-0.5">
                             <IconWrapper icon={IconIds.DOUBLE_CHEVRON_LEFT} className="size-6 text-inactive" />
                             <p className="text-base text-inactive">Previous</p>
@@ -36,10 +34,7 @@ export default function PreviousOrNextPages({
                     </LinkWrapper>
                 )}
                 {props.next && (
-                    <LinkWrapper
-                        href={props.next}
-                        className="group flex flex-col items-end gap-1 rounded-3xl border-2 border-very-light-hover bg-background/80 p-3 hover:border-primary md:p-5"
-                    >
+                    <LinkWrapper href={props.next} className={cn(cardGradientClasses, 'items-end gap-1 p-3 md:p-5')}>
                         <div className="flex items-center justify-end gap-1 transition-all group-hover:gap-0.5">
                             <p className="text-base text-inactive">Next</p>
                             <IconWrapper icon={IconIds.DOUBLE_CHEVRON_RIGHT} className="size-6 text-inactive" />

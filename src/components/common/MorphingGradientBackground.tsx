@@ -4,44 +4,59 @@ import React from 'react'
 export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
     return (
         <main className="relative flex min-h-screen w-screen flex-col bg-white dark:bg-black">
-            {/* dynamic morphing gradient for light mode */}
+            {/* Primary gradient layer */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-95 blur-2xl dark:opacity-0"
+                className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 dark:opacity-30"
                 style={{
                     backgroundImage: `
-                        radial-gradient(at 20% 30%, rgba(255, 255, 255, 0.1) 10%, transparent 55%),
-                        radial-gradient(at 80% 70%, rgba(240, 240, 240, 0.7) 50%, transparent 85%)
+                        radial-gradient(at 40% 20%, hsla(156, 72%, 67%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 80% 0%, hsla(215, 20%, 62%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 0% 50%, hsla(217, 33%, 17%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 80% 50%, hsla(217, 19%, 27%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 0% 100%, hsla(221, 39%, 11%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 80% 100%, hsla(215, 14%, 34%, 0.15) 0px, transparent 50%),
+                        radial-gradient(at 0% 0%, hsla(25, 5%, 45%, 0.15) 0px, transparent 50%)
                     `,
-                    backgroundSize: '200% 200%',
+                    backgroundSize: '150% 150%',
                 }}
             />
 
-            {/* dynamic morphing gradient for dark mode */}
-            <div
-                className="absolute inset-0 animate-gradient-morph opacity-0 blur-xl dark:opacity-60"
-                style={{
-                    backgroundImage: `
-                        radial-gradient(at 20% 30%, rgba(10, 10, 10, 0.5) 10%, transparent 50%),
-                        radial-gradient(at 80% 70%, rgba(15, 15, 15, 0.3) 50%, transparent 85%)
-                    `,
-                    backgroundSize: '200% 200%',
-                }}
-            />
+            {/* Ambient glow effects */}
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+                {/* Top left glow */}
+                <div
+                    className="absolute -left-10 -top-10 h-72 w-72 animate-pulse-slow rounded-full 
+                              bg-blue-300/10 blur-[100px] dark:bg-[hsl(215,20%,62%)]/10
+                              sm:h-96 sm:w-96 sm:blur-[140px]"
+                />
 
-            {/* pulsating ambient glow (adjusted for mobile) */}
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-white/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
-                <div className="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-gray-200/30 blur-[110px] sm:h-80 sm:w-80 sm:blur-[170px] lg:h-96 lg:w-96 lg:blur-[190px]" />
+                {/* Bottom right glow */}
+                <div
+                    className="absolute -bottom-10 -right-10 h-72 w-72 animate-pulse-slow rounded-full 
+                              bg-purple-300/10 blur-[100px] dark:bg-[hsl(156,72%,67%)]/10
+                              sm:h-96 sm:w-96 sm:blur-[140px]"
+                />
             </div>
 
-            {/* additional floating lights (adjusted for mobile) */}
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/3 top-16 h-24 w-24 animate-float rounded-full bg-white/50 blur-[90px] sm:h-32 sm:w-32 sm:blur-[110px] lg:h-40 lg:w-40 lg:blur-[130px]" />
-                <div className="absolute bottom-16 right-1/3 h-24 w-24 animate-float rounded-full bg-gray-100/50 blur-[90px] delay-500 sm:h-32 sm:w-32 sm:blur-[110px] lg:h-40 lg:w-40 lg:blur-[130px]" />
+            {/* Floating orbs */}
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+                {/* Top floating orb */}
+                <div
+                    className="absolute left-1/4 top-1/4 h-32 w-32 animate-float rounded-full 
+                              bg-rose-300/15 blur-[50px] dark:bg-[hsl(217,33%,17%)]/15
+                              sm:h-40 sm:w-40 sm:blur-[60px]"
+                />
+
+                {/* Bottom floating orb */}
+                <div
+                    className="absolute bottom-1/4 right-1/4 h-32 w-32 animate-float rounded-full 
+                              bg-amber-300/15 blur-[50px] delay-1000 dark:bg-[hsl(217,19%,27%)]/15
+                              sm:h-40 sm:w-40 sm:blur-[60px]"
+                />
             </div>
 
-            {/* Scrollable Content Wrapper */}
-            <div className="z-10 flex h-fit flex-col">{children}</div>
+            {/* Content */}
+            <div className="relative z-10 flex h-fit w-full flex-col">{children}</div>
         </main>
     )
 }

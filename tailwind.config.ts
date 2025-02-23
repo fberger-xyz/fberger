@@ -17,25 +17,18 @@ const config: Config = {
                 telegram: '#24A1DE',
             },
             animation: {
-                'gradient-morph': 'gradient-morph 12s ease-in-out infinite',
-                'pulse-slow': 'pulse-ambient 6s infinite ease-in-out',
-                float: 'float 8s infinite ease-in-out',
+                'gradient-morph': 'gradient 15s ease infinite',
+                'pulse-slow': 'pulse 8s ease-in-out infinite',
+                float: 'float 6s ease-in-out infinite',
             },
             keyframes: {
-                'gradient-morph': {
-                    '0%': { backgroundPosition: '0% 0%' },
-                    '50%': { backgroundPosition: '100% 100%' },
-                    '100%': { backgroundPosition: '0% 0%' },
-                },
-                'pulse-ambient': {
-                    '0%': { opacity: '0.5', transform: 'scale(1)' },
-                    '50%': { opacity: '0.8', transform: 'scale(1.1)' },
-                    '100%': { opacity: '0.5', transform: 'scale(1)' },
+                gradient: {
+                    '0%, 100%': { backgroundPosition: '0% 50%' },
+                    '50%': { backgroundPosition: '100% 50%' },
                 },
                 float: {
-                    '0%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-10px)' },
-                    '100%': { transform: 'translateY(0)' },
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-20px)' },
                 },
             },
         },

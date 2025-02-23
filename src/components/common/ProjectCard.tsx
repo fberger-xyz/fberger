@@ -5,6 +5,7 @@ import IconWrapper from './IconWrapper'
 import { ProtocolsConfigForRatesDashboard } from '@/config/app.config'
 import Image from 'next/image'
 import SvgMapper from './SvgMapper'
+import { cardGradientClasses } from './CardGradient'
 
 // Update type definition for props
 interface ProjectCardProps {
@@ -18,13 +19,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ disabled = false, title, date, description, skills, path }: ProjectCardProps) {
     return (
-        <LinkWrapper
-            href={path}
-            target="_blank"
-            disabled={disabled}
-            className="group flex flex-col items-start gap-1 rounded-3xl border-2 border-very-light-hover bg-background/80 p-3 transition duration-200 ease-in-out hover:border-primary md:px-5"
-        >
-            <div className="flex w-full flex-col rounded-md transition duration-200 ease-in-out hover:border-primary">
+        <LinkWrapper href={path} target="_blank" disabled={disabled} className={cn(cardGradientClasses, 'items-start gap-1 p-3 md:px-5')}>
+            <div className="relative flex w-full flex-col rounded-md transition duration-100 ease-in-out">
                 <div className="flex w-full justify-between">
                     <div className="flex items-center justify-center gap-1 border-b-2 border-transparent transition duration-200 ease-in-out group-hover:border-primary">
                         <p className="text-xl font-bold text-secondary">{title}</p>

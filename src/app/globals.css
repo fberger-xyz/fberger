@@ -3,25 +3,41 @@
 @tailwind utilities;
 
 html.light {
-    --color-primary: 142 71% 45%;
-    --color-secondary: 221 39% 11%;
-    --color-default: 240 4% 46%;
-    --color-inactive: 218 11% 65%;
-    --color-background: 0 0% 100%;
-    --color-light-hover: 240 6% 90%;
-    --color-very-light-hover: 240 5% 96%;
-    --color-light-border: 220 13% 91%;
+    /* Refined sage green as primary - sophisticated yet natural */
+    --color-primary: 158 30% 45%;
+    /* Deep navy for secondary - professional and grounding */
+    --color-secondary: 215 35% 20%;
+    /* Neutral graphite for default text - softer than pure gray */
+    --color-default: 220 15% 40%;
+    /* Muted slate for inactive - elegant and subtle */
+    --color-inactive: 215 15% 65%;
+    /* Pure white background with slight warmth */
+    --color-background: 40 20% 99%;
+    /* Soft pearl hover - barely tinted */
+    --color-light-hover: 220 15% 95%;
+    /* Ethereal hover - even lighter */
+    --color-very-light-hover: 220 20% 97%;
+    /* Refined border - slightly warmer */
+    --color-light-border: 220 15% 90%;
 }
 
 html.dark {
-    --color-primary: 156 72% 67%;
-    --color-secondary: 25 5% 45%;
-    --color-default: 215 20% 62%;
-    --color-inactive: 215 14% 34%;
-    --color-background: 0 0% 6%;
-    --color-light-hover: 217 33% 17%;
-    --color-very-light-hover: 221 39% 11%;
-    --color-light-border: 217 19% 27%;
+    /* Luminous sage for primary - glows without being harsh */
+    --color-primary: 158 35% 65%;
+    /* Sophisticated gray for secondary - warm undertones */
+    --color-secondary: 220 15% 40%;
+    /* Ethereal silver for default - easy on the eyes */
+    --color-default: 220 15% 65%;
+    /* Deep slate for inactive - mysterious but visible */
+    --color-inactive: 215 20% 30%;
+    /* Rich dark background - not quite black */
+    --color-background: 220 25% 9%;
+    /* Deep hover with slight glow */
+    --color-light-hover: 215 30% 15%;
+    /* Even deeper hover - maintains hierarchy */
+    --color-very-light-hover: 215 35% 12%;
+    /* Refined dark border - subtle separation */
+    --color-light-border: 215 25% 22%;
 }
 
 @layer utilities {

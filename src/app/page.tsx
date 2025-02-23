@@ -9,42 +9,6 @@ import ProjectCard from '@/components/common/ProjectCard'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import SvgMapper from '@/components/common/SvgMapper'
 
-type SideProject = {
-    path: string
-    title: string
-    description: string
-    date: string
-    ttc: string
-    skills: string[]
-}
-
-const SIDE_PROJECTS: readonly SideProject[] = [
-    {
-        path: 'https://apy.fberger.xyz',
-        title: 'APYs',
-        description: 'Live metrics on lending markets',
-        date: 'Jan 2025',
-        ttc: 'WIP 🚧',
-        skills: ['Aave', 'Morpho', 'Fluid', 'Liquity'],
-    },
-    {
-        path: 'https://trustee.fund',
-        title: 'Trustee 💸',
-        description: 'Dynamic management for busy holders',
-        date: 'Dec 2024',
-        ttc: '2 weeks',
-        skills: ['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum'],
-    },
-    {
-        path: 'https://etfs.fberger.xyz',
-        title: 'ETFs',
-        description: 'Better farside',
-        date: 'Nov 2024',
-        ttc: '4 days',
-        skills: ['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel'],
-    },
-] as const
-
 export const metadata: Metadata = {
     title: APP_METADATA.SITE_NAME,
     description: APP_METADATA.SITE_DESCRIPTION,
@@ -75,7 +39,32 @@ const PreviousSection = () => (
 const ProjectsSection = () => (
     <SectionWrapper title="Side projects">
         <div className="flex w-full flex-col gap-2">
-            {SIDE_PROJECTS.map((project) => (
+            {[
+                {
+                    path: 'https://apy.fberger.xyz',
+                    title: 'APYs',
+                    description: 'Live metrics on lending markets',
+                    date: 'Jan 2025',
+                    ttc: 'WIP 🚧',
+                    skills: ['Aave', 'Morpho', 'Fluid', 'Liquity'],
+                },
+                {
+                    path: 'https://trustee.fund',
+                    title: 'Trustee 💸',
+                    description: 'Dynamic management for busy holders',
+                    date: 'Dec 2024',
+                    ttc: '2 weeks',
+                    skills: ['Telegram', 'OpenAI', 'Safe', 'Debank', 'Arbitrum'],
+                },
+                {
+                    path: 'https://etfs.fberger.xyz',
+                    title: 'ETFs',
+                    description: 'Better farside',
+                    date: 'Nov 2024',
+                    ttc: '4 days',
+                    skills: ['Next', 'Prisma', 'Inngest', 'Grammy', 'Vercel'],
+                },
+            ].map((project) => (
                 <ProjectCard key={project.path} {...project} />
             ))}
         </div>

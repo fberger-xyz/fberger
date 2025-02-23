@@ -5,8 +5,9 @@ import PageWrapper from '@/components/common/PageWrapper'
 import PreviousOrNextPages from '@/components/common/PreviousOrNextPages'
 import { SectionWrapper, TextWithBulletPoint } from '@/components/common/SectionWrapper'
 import { AppPagePaths, IconIds } from '@/enums'
-import { generatePageMetadata } from '@/utils'
+import { cn, generatePageMetadata } from '@/utils'
 import { ReactNode } from 'react'
+import { cardGradientClasses } from '@/components/common/CardGradient'
 
 export const metadata = generatePageMetadata(AppPagePaths.XP)
 
@@ -18,8 +19,7 @@ const PositionLayout = (props: { children?: ReactNode }) => {
         </div>
     )
 }
-const commonClasses =
-    'group flex flex-col items-start gap-0.5 rounded-2xl border-2 p-2 border-light-hover hover:border-primary hover:border-solid md:px-2 bg-background/50 w-full transition duration-200 ease-in-out'
+const commonClasses = cn(cardGradientClasses, 'items-start gap-0.5 p-2 md:px-2 w-full', '!rounded-2xl')
 const PositionWrapper = (props: { companyName?: string; href?: string; positionName: string; dates: string }) => {
     return (
         <div className="flex w-full flex-col items-baseline gap-1 pl-2 sm:flex-row sm:gap-2 md:p-0">
