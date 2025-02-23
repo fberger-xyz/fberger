@@ -1,12 +1,13 @@
 'use client'
 import React from 'react'
+import { cn } from '@/utils'
 
-export const MorphingGradientBackground = ({ children }: { children: React.ReactNode }) => {
+export const MorphingGradientBackground = ({ children, className }: { children: React.ReactNode; className?: string }) => {
     return (
-        <main className="relative flex min-h-screen w-screen flex-col bg-white dark:bg-black">
-            {/* Primary gradient layer */}
+        <main className={cn('relative flex min-h-screen w-screen flex-col bg-white dark:bg-black', className)}>
+            {/* Primary gradient layer - Optimized with will-change */}
             <div
-                className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 dark:opacity-45"
+                className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 will-change-[background-position] dark:opacity-45"
                 style={{
                     backgroundImage: `
                         radial-gradient(at 40% 20%, hsla(156, 72%, 67%, 0.15) 0px, transparent 50%),
@@ -21,41 +22,33 @@ export const MorphingGradientBackground = ({ children }: { children: React.React
                 }}
             />
 
-            {/* Ambient glow effects */}
+            {/* Ambient effects container - Reduced DOM nesting */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
-                {/* Top left glow */}
                 <div
                     className="absolute -left-10 -top-10 h-72 w-72 animate-pulse-slow rounded-full 
-                              bg-blue-300/10 blur-[100px] dark:bg-[hsl(215,20%,62%)]/10
-                              sm:h-96 sm:w-96 sm:blur-[140px]"
+                               bg-blue-300/10 blur-[100px] will-change-transform
+                               dark:bg-[hsl(215,20%,62%)]/10 sm:h-96 sm:w-96 sm:blur-[140px]"
                 />
-
-                {/* Bottom right glow */}
                 <div
                     className="absolute -bottom-10 -right-10 h-72 w-72 animate-pulse-slow rounded-full 
-                              bg-purple-300/10 blur-[100px] dark:bg-[hsl(156,72%,67%)]/10
-                              sm:h-96 sm:w-96 sm:blur-[140px]"
+                               bg-purple-300/10 blur-[100px] will-change-transform
+                               dark:bg-[hsl(156,72%,67%)]/10 sm:h-96 sm:w-96 sm:blur-[140px]"
                 />
-            </div>
 
-            {/* Floating orbs */}
-            <div className="pointer-events-none absolute inset-0 overflow-hidden">
-                {/* Top floating orb */}
+                {/* Floating orbs with optimized animations */}
                 <div
                     className="absolute left-1/4 top-1/4 h-32 w-32 animate-float rounded-full 
-                              bg-rose-300/15 blur-[50px] dark:bg-[hsl(217,33%,17%)]/15
-                              sm:h-40 sm:w-40 sm:blur-[60px]"
+                               bg-rose-300/15 blur-[50px] will-change-transform
+                               dark:bg-[hsl(217,33%,17%)]/15 sm:h-40 sm:w-40 sm:blur-[60px]"
                 />
-
-                {/* Bottom floating orb */}
                 <div
                     className="absolute bottom-1/4 right-1/4 h-32 w-32 animate-float rounded-full 
-                              bg-amber-300/15 blur-[50px] delay-1000 dark:bg-[hsl(217,19%,27%)]/15
-                              sm:h-40 sm:w-40 sm:blur-[60px]"
+                               bg-amber-300/15 blur-[50px] delay-1000 will-change-transform
+                               dark:bg-[hsl(217,19%,27%)]/15 sm:h-40 sm:w-40 sm:blur-[60px]"
                 />
             </div>
 
-            {/* Content */}
+            {/* Content with improved z-index handling */}
             <div className="relative z-10 flex h-fit w-full flex-col">{children}</div>
         </main>
     )
