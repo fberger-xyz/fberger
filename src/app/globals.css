@@ -10,7 +10,6 @@ html.light {
     --color-background: 40 20% 99%;
     --color-light-hover: 220 15% 95%;
     --color-very-light-hover: 220 20% 97%;
-    --color-light-border: 220 15% 90%;
 }
 
 html.dark {
@@ -21,5 +20,4 @@ html.dark {
     --color-background: 220 25% 9%;
     --color-light-hover: 215 30% 15%;
     --color-very-light-hover: 215 35% 12%;
-    --color-light-border: 215 25% 22%;
 }

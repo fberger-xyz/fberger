@@ -13,7 +13,6 @@ const config: Config = {
                 background: 'hsl(var(--color-background) / <alpha-value>)',
                 'light-hover': 'hsl(var(--color-light-hover) / <alpha-value>)',
                 'very-light-hover': 'hsl(var(--color-very-light-hover) / <alpha-value>)',
-                'light-border': 'hsl(var(--color-light-border) / <alpha-value>)',
                 telegram: '#24A1DE',
             },
             animation: {

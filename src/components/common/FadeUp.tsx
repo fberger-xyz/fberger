@@ -13,6 +13,7 @@ export function FadeUp({ children, delay = 0, ...rest }: FadeUpProps) {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeInOut', delay }}
+            viewport={{ once: true, amount: 0.2 }}
             {...rest} //sSpread props for additional motion.div properties
         >
             {children}
