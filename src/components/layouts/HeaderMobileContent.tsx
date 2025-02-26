@@ -64,7 +64,7 @@ export default function HeaderMobileContent() {
 
             {showMobileMenu && (
                 <div
-                    className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-md"
+                    className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-lg"
                     onClick={(e) => {
                         // to improve later
                         if (e.target === e.currentTarget) {
@@ -72,32 +72,29 @@ export default function HeaderMobileContent() {
                         }
                     }}
                 >
-                    <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
-                        <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
-                            {/* pages */}
-                            <div className="flex w-full flex-col items-end gap-1">
-                                {APP_PAGES.map((page) => (
-                                    <button
-                                        key={page.path}
-                                        onClick={async () => {
-                                            await router.push(page.path)
-                                        }}
-                                        className="ml-auto"
-                                        aria-current={isCurrentPath(pathname, page.path) ? 'page' : undefined}
+                    <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 pb-6 pr-10 pt-20 shadow-md">
+                        <div className="flex w-full flex-col items-end gap-1">
+                            {APP_PAGES.map((page) => (
+                                <button
+                                    key={page.path}
+                                    onClick={async () => {
+                                        await router.push(page.path)
+                                    }}
+                                    className="ml-auto"
+                                    aria-current={isCurrentPath(pathname, page.path) ? 'page' : undefined}
+                                >
+                                    <p
+                                        className={cn('text-right text-2xl px-3 py-1.5 rounded-xl transition-colors', {
+                                            'font-bold text-primary bg-light-hover': isCurrentPath(pathname, page.path),
+                                            'text-inactive hover:text-primary': !isCurrentPath(pathname, page.path),
+                                        })}
                                     >
-                                        <p
-                                            className={cn('text-right text-2xl px-3 py-1.5 rounded-xl transition-colors', {
-                                                'font-bold text-primary bg-light-hover': isCurrentPath(pathname, page.path),
-                                                'text-inactive hover:text-primary': !isCurrentPath(pathname, page.path),
-                                            })}
-                                        >
-                                            {page.name}
-                                        </p>
-                                    </button>
-                                ))}
-                            </div>
-                            <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
+                                        {page.name}
+                                    </p>
+                                </button>
+                            ))}
                         </div>
+                        <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
                     </nav>
                 </div>
             )}
