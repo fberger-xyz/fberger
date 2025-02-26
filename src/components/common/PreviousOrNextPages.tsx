@@ -1,3 +1,5 @@
+'use client'
+
 import { AppPagePaths, IconIds } from '@/enums'
 import { cn, getPageConfig } from '@/utils'
 import IconWrapper from '../common/IconWrapper'
