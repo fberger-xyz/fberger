@@ -35,7 +35,7 @@ const PositionLayout = (props: { children?: ReactNode }) => {
     )
 }
 
-const commonClasses = cn(cardGradientClasses, 'items-start gap-0.5 p-2 md:px-2 w-full', '!rounded-2xl')
+const commonClasses = cn(cardGradientClasses, 'items-start gap-0.5 p-2 w-full')
 
 const PositionWrapper = (props: PositionWrapperProps) => {
     return (

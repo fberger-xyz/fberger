@@ -10,8 +10,8 @@ import { SideProject } from '@/interfaces'
 
 export default function SideProjectCard({ title, date, description, skills, path }: SideProject) {
     return (
-        <LinkWrapper href={path} target="_blank" className={cn(cardGradientClasses, 'items-start gap-1 p-3 md:px-5')}>
-            <div className="relative flex w-full flex-col rounded-md transition duration-100 ease-in-out">
+        <LinkWrapper href={path} target="_blank" className={cn(cardGradientClasses, 'gap-1 p-3 md:px-5')}>
+            <div className="relative flex w-full flex-col transition duration-100 ease-in-out">
                 <div className="flex w-full justify-between">
                     <div className="flex items-center justify-center gap-1 border-b-2 border-transparent transition duration-200 ease-in-out group-hover:border-primary">
                         <p className="text-xl font-bold text-secondary">{title}</p>
