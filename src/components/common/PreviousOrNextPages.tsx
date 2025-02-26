@@ -1,4 +1,4 @@
-'use client'
+'use client' // otherwise it does not load properly on viewport
 
 import { AppPagePaths, IconIds } from '@/enums'
 import { cn, getPageConfig } from '@/utils'
