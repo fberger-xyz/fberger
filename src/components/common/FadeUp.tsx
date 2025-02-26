@@ -10,11 +10,11 @@ interface FadeUpProps extends HTMLMotionProps<'div'> {
 export function FadeUp({ children, delay = 0, ...rest }: FadeUpProps) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeInOut', delay }}
-            viewport={{ once: true, amount: 0.2 }}
-            {...rest} //sSpread props for additional motion.div properties
+            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 1, ease: 'easeOut', delay }}
+            viewport={{ once: true, amount: 0.1 }} // animates only when 10% visible
+            {...rest}
         >
             {children}
         </motion.div>

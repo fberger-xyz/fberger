@@ -4,7 +4,6 @@ import { APP_PAGES, APP_THEMES } from '@/config/app.config'
 import { IconIds } from '@/enums'
 import { useAppStore } from '@/stores/app.store'
 import { cn, isCurrentPath } from '@/utils'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { usePathname, useRouter } from 'next/navigation'
 import { useRef } from 'react'
@@ -63,49 +62,45 @@ export default function HeaderMobileContent() {
                 </button>
             </header>
 
-            <AnimatePresence>
-                {showMobileMenu && (
-                    <motion.div
-                        className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-md"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={(e) => {
-                            if (e.target === e.currentTarget) {
-                                setShowMobileMenu(false)
-                            }
-                        }}
-                    >
-                        <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
-                            <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
-                                {/* pages */}
-                                <div className="flex w-full flex-col items-end gap-1">
-                                    {APP_PAGES.map((page) => (
-                                        <button
-                                            key={page.path}
-                                            onClick={async () => {
-                                                await router.push(page.path)
-                                            }}
-                                            className="ml-auto"
-                                            aria-current={isCurrentPath(pathname, page.path) ? 'page' : undefined}
+            {showMobileMenu && (
+                <div
+                    className="fixed inset-0 z-30 flex size-full items-center justify-center overflow-y-auto bg-light-hover/20 px-4 backdrop-blur-md"
+                    onClick={(e) => {
+                        // to improve later
+                        if (e.target === e.currentTarget) {
+                            setShowMobileMenu(false)
+                        }
+                    }}
+                >
+                    <nav className="absolute inset-1 z-30 flex h-fit flex-col gap-2 rounded-2xl border-2 border-primary/50 bg-background/80 shadow-md">
+                        <div className="flex flex-col gap-1 pb-6 pr-10 pt-20">
+                            {/* pages */}
+                            <div className="flex w-full flex-col items-end gap-1">
+                                {APP_PAGES.map((page) => (
+                                    <button
+                                        key={page.path}
+                                        onClick={async () => {
+                                            await router.push(page.path)
+                                        }}
+                                        className="ml-auto"
+                                        aria-current={isCurrentPath(pathname, page.path) ? 'page' : undefined}
+                                    >
+                                        <p
+                                            className={cn('text-right text-2xl px-3 py-1.5 rounded-xl transition-colors', {
+                                                'font-bold text-primary bg-light-hover': isCurrentPath(pathname, page.path),
+                                                'text-inactive hover:text-primary': !isCurrentPath(pathname, page.path),
+                                            })}
                                         >
-                                            <p
-                                                className={cn('text-right text-2xl px-3 py-1.5 rounded-xl transition-colors', {
-                                                    'font-bold text-primary bg-light-hover': isCurrentPath(pathname, page.path),
-                                                    'text-inactive hover:text-primary': !isCurrentPath(pathname, page.path),
-                                                })}
-                                            >
-                                                {page.name}
-                                            </p>
-                                        </button>
-                                    ))}
-                                </div>
-                                <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
+                                            {page.name}
+                                        </p>
+                                    </button>
+                                ))}
                             </div>
-                        </nav>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                            <ThemeSwitcher resolvedTheme={resolvedTheme} setTheme={setTheme} />
+                        </div>
+                    </nav>
+                </div>
+            )}
         </div>
     )
 }
