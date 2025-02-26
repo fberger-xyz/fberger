@@ -120,7 +120,7 @@ export default function Page() {
                         <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
                         <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Eth 2.0 deep dive for staking operations</p>
                         <LinkWrapper
-                            className="pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
+                            className="z-50 pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
                             href="https://blog.coinshares.com/unstaking-ethereum-piecing-the-exit-puzzle-7a0537b13349"
                             target="_blank"
                         >
@@ -143,7 +143,7 @@ export default function Page() {
                             Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                         </TextWithBulletPoint>
                         <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            - Fullstack DeFi Developer (solidity with hardhat - bit of foundry) + AWS devOps
+                            - Fullstack DeFi Developer (VueJs + vite + solidity with hardhat - bit of foundry) + AWS devOps
                         </p>
                         <div className="mt-2 flex flex-col text-sm text-inactive">
                             <p>Best xp so far, references on request. Left to explore DeFi</p>
