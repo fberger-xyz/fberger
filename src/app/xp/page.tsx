@@ -146,7 +146,7 @@ export default function Page() {
                             - Fullstack DeFi Developer (VueJs + vite + solidity with hardhat - bit of foundry) + AWS devOps
                         </p>
                         <div className="mt-2 flex flex-col text-sm text-inactive">
-                            <p>Best xp so far, references on request. Left to explore DeFi</p>
+                            <p>Best xp so far, references on request. Left to explore EVM use cases (tokenization/lending/stablecoins)</p>
                         </div>
                     </Position>
                     <Position
