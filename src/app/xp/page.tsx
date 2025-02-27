@@ -76,7 +76,7 @@ export default function Page() {
                 <div className="flex w-full flex-col gap-4 border-l-2 border-light-hover">
                     <Position companyName="Freelance" href="https://fberger.xyz/" positionName="Senior Fullstack Developer" dates="Dec 2024 - now">
                         <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
-                        <TextWithBulletPoint>5y full-stack engineer with 3+y in institutional crypto + TradFi xp</TextWithBulletPoint>
+                        <TextWithBulletPoint>5y fullstack + 3y in institutional crypto + tradFi xp</TextWithBulletPoint>
                         <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
                             In fulltime positions, freelance, weekends/holidays side projects
                         </p>
