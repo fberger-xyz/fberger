@@ -8,22 +8,24 @@ interface MorphingGradientBackgroundProps {
     className?: string
 }
 
-export const MorphingGradientBackground = ({ children, className }: MorphingGradientBackgroundProps): React.ReactElement => {
+export const MorphingGradientBackground = React.memo(({ children, className }: MorphingGradientBackgroundProps): React.ReactElement => {
+    const gradients = [
+        'radial-gradient(at 40% 20%, hsla(210, 45%, 65%, 0.18) 0px, transparent 50%)',
+        'radial-gradient(at 80% 0%, hsla(225, 40%, 55%, 0.16) 0px, transparent 50%)',
+        'radial-gradient(at 0% 50%, hsla(220, 50%, 40%, 0.18) 0px, transparent 50%)',
+        'radial-gradient(at 80% 50%, hsla(215, 40%, 30%, 0.16) 0px, transparent 50%)',
+        'radial-gradient(at 0% 100%, hsla(220, 35%, 40%, 0.18) 0px, transparent 50%)',
+        'radial-gradient(at 80% 100%, hsla(215, 40%, 35%, 0.16) 0px, transparent 50%)',
+        'radial-gradient(at 0% 0%, hsla(210, 40%, 45%, 0.18) 0px, transparent 50%)',
+    ].join(',')
+
     return (
         <main className={cn('relative flex min-h-screen w-screen flex-col bg-white dark:bg-black', className)}>
             <div
                 className="absolute inset-0 animate-gradient-morph opacity-50 blur-3xl transition-opacity duration-500 
                            will-change-[background-position] dark:opacity-60"
                 style={{
-                    backgroundImage: [
-                        'radial-gradient(at 40% 20%, hsla(210, 45%, 65%, 0.18) 0px, transparent 50%)',
-                        'radial-gradient(at 80% 0%, hsla(225, 40%, 55%, 0.16) 0px, transparent 50%)',
-                        'radial-gradient(at 0% 50%, hsla(220, 50%, 40%, 0.18) 0px, transparent 50%)',
-                        'radial-gradient(at 80% 50%, hsla(215, 40%, 30%, 0.16) 0px, transparent 50%)',
-                        'radial-gradient(at 0% 100%, hsla(220, 35%, 40%, 0.18) 0px, transparent 50%)',
-                        'radial-gradient(at 80% 100%, hsla(215, 40%, 35%, 0.16) 0px, transparent 50%)',
-                        'radial-gradient(at 0% 0%, hsla(210, 40%, 45%, 0.18) 0px, transparent 50%)',
-                    ].join(','),
+                    backgroundImage: gradients,
                     backgroundSize: '150% 150%',
                 }}
             />
@@ -52,4 +54,4 @@ export const MorphingGradientBackground = ({ children, className }: MorphingGrad
             <div className="relative z-10 flex h-fit w-full flex-col">{children}</div>
         </main>
     )
-}
+})
