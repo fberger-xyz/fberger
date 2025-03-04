@@ -35,7 +35,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/creation/#fill-attributes',
             contracts: {
                 factory: 'https://basescan.org/address/0xFf62A7c278C62eD665133147129245053Bbf5918#code',
-                function: 'createMetaMorpho',
                 params: {
                     initialOwner: owner,
                     initialTimelock: 0,
@@ -55,7 +54,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'setCurator',
                 params: {
                     curator: curator,
                 },
@@ -69,7 +67,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'setIsAllocator',
                 params: {
                     newAllocator: allocator,
                     newIsAllocator: true,
@@ -84,7 +81,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#fee',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'setFeeRecipient',
                 params: {
                     fee: feeRecipient,
                 },
@@ -98,7 +94,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#fee',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'setFee',
                 params: {
                     fee: '10000000000000000',
                 },
@@ -112,7 +107,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#1---submit-the-cap',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'submitCap',
                 params: {
                     marketParams: cbETH_USDC_Market.marketParams,
                     newSupplyCap: cbETH_USDC_Market.newSupplyCap,
@@ -127,7 +121,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#1---submit-the-cap',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'submitCap',
                 params: {
                     marketParams: cbETH_USDC_Market.marketParams,
                     newSupplyCap: cbETH_USDC_Market.newSupplyCap,
@@ -142,7 +135,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#1---submit-the-cap',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'submitCap',
                 params: {
                     marketParams: {
                         loanToken: baseUsdc,
@@ -164,7 +156,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#1---submit-the-cap',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'submitCap',
                 params: {
                     marketParams: {
                         loanToken: baseUsdc,
@@ -184,7 +175,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup#3---set-the-supplyqueue',
             contracts: {
                 vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
-                function: 'submitCap',
                 params: {
                     marketParams: {
                         loanToken: baseUsdc,
@@ -204,7 +194,6 @@ export default function Page() {
             doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/setup/#4---deposit-liquidity',
             contracts: {
                 vault: 'https://app.morpho.org/base/vault/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE/test-usdc-vault',
-                function: 'submitCap',
                 params: {
                     marketParams: {
                         loanToken: baseUsdc,
@@ -216,7 +205,26 @@ export default function Page() {
                 },
             },
             output: {
-                tx: 'https://basescan.org/tx/0x95eee6574c1a4a93eba9249bb05a806d958580783d9a8b67c8886026950ac234',
+                tx: 'https://basescan.org/tx/0x3c4718d230b543b70047a84305e0bcc892bc3c474c078ab06a0e64edc4a0fe3e#eventlog',
+            },
+        },
+        {
+            name: 'Update withdraw queue',
+            doc: 'https://docs.morpho.org/morpho-vaults/tutorials/become-a-curator/manage-exposure#update-the-withdraw-queue',
+            contracts: {
+                vault: 'https://basescan.org/address/0x93BB46b3abd806F57273F2bEabCa6E9665DA63CE#writeContract',
+                params: {
+                    marketParams: {
+                        loanToken: baseUsdc,
+                        collateralToken: address0,
+                        oracle: address0,
+                        irm: address0,
+                        lltv: 0,
+                    },
+                },
+            },
+            output: {
+                tx: 'https://basescan.org/tx/0xbe564efb2b1009937e662b085aa78a73a85f605156245d1f30425a653fe8790c',
             },
         },
     ]
