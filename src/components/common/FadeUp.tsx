@@ -1,15 +1,10 @@
 'use client'
 
-import { motion, HTMLMotionProps } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ReactNode, useEffect, useState, useCallback } from 'react'
 
-interface FadeUpProps extends HTMLMotionProps<'div'> {
-    children: ReactNode
-    delay?: number
-}
-
 // does not work on mobile (<md)
-export function FadeUp({ children, delay = 0, ...rest }: FadeUpProps) {
+export function FadeUp({ children, delay = 0, ...rest }: { children: ReactNode; delay?: number }) {
     const [isMobile, setIsMobile] = useState(false)
 
     const checkMobile = useCallback(() => {
@@ -22,7 +17,7 @@ export function FadeUp({ children, delay = 0, ...rest }: FadeUpProps) {
         return () => window.removeEventListener('resize', checkMobile)
     }, [checkMobile])
     if (isMobile) {
-        return <motion.div {...rest}>{children}</motion.div>
+        return <div {...rest}>{children}</div>
     }
 
     return (

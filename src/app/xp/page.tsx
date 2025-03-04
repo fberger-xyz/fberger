@@ -118,7 +118,7 @@ export default function Page() {
                         </LinkWrapper>
                         <p className={details}>- On DeFi protocols</p>
                         <TextWithBulletPoint>Ran Ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
-                        <p className={details}>- To test the Shanghai upgrade (with https access via traefik)</p>
+                        <p className={details}>- To test the Shanghai upgrade (AWS EC2 + docker + traefik)</p>
                         <p className={details}>- To explore MEV opportunities</p>
                         <TextWithBulletPoint>CI/CD to run several Typescript bots in AWS</TextWithBulletPoint>
                         <p className={details}>- Several use cases - for instance SEC website scrappers</p>
