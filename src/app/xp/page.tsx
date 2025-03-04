@@ -100,7 +100,7 @@ export default function Page() {
                             1) P&L and risk exposure (hedge funds, lending and staking activities)
                         </p>
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            2) Trading strategies (positions, volatility surfaces, greeks)
+                            2) Trading strategies (positions, volatility surfaces, greeks) with Reddis and Nats.js
                         </p>
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                             3) Strategies reactions to economic calendar
