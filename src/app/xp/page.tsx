@@ -36,6 +36,7 @@ const PositionLayout = (props: { children?: ReactNode }) => {
 }
 
 const commonClasses = cn(cardGradientClasses, 'items-start gap-0.5 p-2 w-full')
+const details = 'pl-8 text-xs text-inactive group-hover:text-default lg:text-sm'
 
 const PositionWrapper = (props: PositionWrapperProps) => {
     return (
@@ -77,25 +78,15 @@ export default function Page() {
                     <Position companyName="Freelance" href="https://fberger.xyz/" positionName="Senior Fullstack Developer" dates="Dec 2024 - now">
                         <TextWithBulletPoint>Go-getter for clients like @CoinShares and other Web2 clients</TextWithBulletPoint>
                         <TextWithBulletPoint>5y fullstack + 3y in institutional crypto + tradFi xp</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            In fulltime positions, freelance, weekends/holidays side projects
-                        </p>
+                        <p className={details}>In fulltime positions, freelance, weekends/holidays side projects</p>
                         <TextWithBulletPoint>Typescript stack</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand
-                        </p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Charts: echarts, highcharts</p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            Backend: next and nest APIs, prisma, postgresql
-                        </p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            DevOps: github/gitlab pipelines with docker and AWS (or just vercel)
-                        </p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">Auth: next-auth JWT, kinde</p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">DeFi: viem, ethers, hardhat, the graph</p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            Automations: telegram, inngest, openai, claude
-                        </p>
+                        <p className={details}>Frontend: next (works flawlessly + smash SEO), tailwind, tanstack/query, zustand</p>
+                        <p className={details}>Charts: echarts, highcharts</p>
+                        <p className={details}>Backend: next and nest APIs, prisma, postgresql</p>
+                        <p className={details}>DevOps: github/gitlab pipelines with docker and AWS (or just vercel)</p>
+                        <p className={details}>Auth: next-auth JWT, kinde</p>
+                        <p className={details}>DeFi: viem, ethers, hardhat, the graph</p>
+                        <p className={details}>Automations: telegram, inngest, openai, claude</p>
                     </Position>
                     <Position
                         companyName="CoinShares"
@@ -104,9 +95,7 @@ export default function Page() {
                         dates="Nov 2021 > Nov 2024"
                     >
                         <TextWithBulletPoint>Designed, coded and maintained real-time risk applications used 24/7</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            By operations, quants, traders and top management to monitor:
-                        </p>
+                        <p className={details}>By operations, quants, traders and top management to monitor:</p>
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                             1) P&L and risk exposure (hedge funds, lending and staking activities)
                         </p>
@@ -116,9 +105,10 @@ export default function Page() {
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                             3) Strategies reactions to economic calendar
                         </p>
-                        <TextWithBulletPoint>Proactively improved legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
+                        <TextWithBulletPoint>Automated the edit of complex risk reports for top management</TextWithBulletPoint>
+                        <TextWithBulletPoint>Improved legacy stack w/ best-in-class typescript dev tools</TextWithBulletPoint>
                         <TextWithBulletPoint>Research analyst for top management</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- Eth 2.0 deep dive for staking operations</p>
+                        <p className={details}>- Eth 2.0 deep dive for staking operations</p>
                         <LinkWrapper
                             className="z-50 pl-12 text-xs text-inactive underline hover:text-primary lg:text-sm"
                             href="https://blog.coinshares.com/unstaking-ethereum-piecing-the-exit-puzzle-7a0537b13349"
@@ -126,25 +116,17 @@ export default function Page() {
                         >
                             <p>for example: "Unstaking Ether: Piecing the Exit Puzzle"</p>
                         </LinkWrapper>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- On DeFi protocols, to keep up to date</p>
+                        <p className={details}>- On DeFi protocols</p>
                         <TextWithBulletPoint>Ran Ethereum nodes in AWS EC2 (eth-docker)</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            - To test the Shanghai upgrade (with https access via traefik)
-                        </p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">- To explore MEV opportunities</p>
+                        <p className={details}>- To test the Shanghai upgrade (with https access via traefik)</p>
+                        <p className={details}>- To explore MEV opportunities</p>
                         <TextWithBulletPoint>CI/CD to run several Typescript bots in AWS</TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            - Several use cases - for instance SEC website scrappers
-                        </p>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            - stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.
-                        </p>
+                        <p className={details}>- Several use cases - for instance SEC website scrappers</p>
+                        <p className={details}>- stack: Nest.js APIs with CI/CD pipelines for AWS lambda/DynamoDB/Cloudwatch etc.</p>
                         <TextWithBulletPoint>
                             Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                         </TextWithBulletPoint>
-                        <p className="pl-8 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            - Fullstack DeFi Developer (VueJs + vite + solidity with hardhat - bit of foundry) + AWS devOps
-                        </p>
+                        <p className={details}>- Fullstack DeFi Developer (VueJs + Vite + Solidity + Hardhat + The Graph)</p>
                         <div className="mt-2 flex flex-col text-sm text-inactive">
                             <p>Best xp so far, references on request. Left to explore EVM use cases (tokenization/lending/stablecoins)</p>
                         </div>
