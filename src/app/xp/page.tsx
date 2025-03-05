@@ -100,7 +100,7 @@ export default function Page() {
                             1) P&L and risk exposure (hedge funds, lending and staking activities)
                         </p>
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
-                            2) Trading strategies (positions, volatility surfaces, greeks) with Reddis and Nats.js
+                            2) Trading strategies (positions, volatility surfaces, greeks - lot of data streamed via Nats.js)
                         </p>
                         <p className="pl-10 text-xs text-inactive group-hover:text-default lg:text-sm">
                             3) Strategies reactions to economic calendar
@@ -126,9 +126,10 @@ export default function Page() {
                         <TextWithBulletPoint>
                             Developed and deployed an audited DeFi dApp for tokenizing on-chain fund liabilities
                         </TextWithBulletPoint>
-                        <p className={details}>- Fullstack DeFi Developer (VueJs + Vite + Solidity + Hardhat + The Graph)</p>
+                        <p className={details}>- Fullstack DeFi Developer (VueJs + Vite + Solidity + Hardhat + The Graph + Synaps KYC)</p>
                         <div className="mt-2 flex flex-col text-sm text-inactive">
-                            <p>Best xp so far, references on request. Left to explore EVM use cases (tokenization/lending/stablecoins)</p>
+                            <p>Best xp so far, references on request.</p>
+                            <p>Left to explore EVM use cases (tokenization/lending/stablecoins)</p>
                         </div>
                     </Position>
                     <Position
